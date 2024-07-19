@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'NppUIModule'
-  s.version = '2.1.67'
+  s.version = '2.1.68'
   s.license = 'MIT'
   s.summary = 'Nopaper iOS framework'
   s.homepage = 'https://github.com/MaxCode2023/nopaper-sdk-ios'
@@ -31,6 +31,6 @@ Pod::Spec.new do |s|
   s.dependency 'SwiftKeychainWrapper'
   s.dependency 'PromiseKit', '8.1.1'
   s.dependency 'PanModal'
-  s.dependency 'Sentry', 7.7.0
+  s.dependency 'Sentry', '7.7.0'
   
 end
