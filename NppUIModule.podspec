@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'NppUIModule'
-  s.version = '2.1.65'
+  s.version = '2.1.66'
   s.license = 'MIT'
   s.summary = 'Nopaper iOS framework'
   s.homepage = 'https://github.com/MaxCode2023/nopaper-sdk-ios'
