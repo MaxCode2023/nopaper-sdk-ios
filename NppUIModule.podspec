@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.static_framework = true
 
   s.dependency 'Swinject', '2.8.2'
-  s.dependency 'Alamofire', '5.6.3'
+  s.dependency 'Alamofire'
   s.dependency 'RxSwift', '6.5.0'
   s.dependency 'RxCocoa', '6.5.0'
   s.dependency 'RxAlamofire', '6.1.1'
