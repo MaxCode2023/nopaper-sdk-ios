@@ -1,0 +1,3812 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "Import",
+        "name": "AbSDKMain",
+        "printedName": "AbSDKMain",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthInteractorImpl",
+        "printedName": "AuthInteractorImpl",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getToken",
+            "printedName": "getToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule18AuthInteractorImplC8getToken7RxSwift10ObservableCySSGyF",
+            "mangledName": "$s16NppNetworkModule18AuthInteractorImplC8getToken7RxSwift10ObservableCySSGyF",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getToken",
+            "printedName": "getToken(login:password:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<NppNetworkModule.AuthResponse>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthResponse",
+                    "printedName": "NppNetworkModule.AuthResponse",
+                    "usr": "s:16NppNetworkModule12AuthResponseV"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule18AuthInteractorImplC8getToken5login8password7RxSwift10ObservableCyAA0D8ResponseVGSS_SStF",
+            "mangledName": "$s16NppNetworkModule18AuthInteractorImplC8getToken5login8password7RxSwift10ObservableCyAA0D8ResponseVGSS_SStF",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAccessRefresh",
+            "printedName": "getAccessRefresh(token:userGuid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<NppNetworkModule.AccessRefreshResponse>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AccessRefreshResponse",
+                    "printedName": "NppNetworkModule.AccessRefreshResponse",
+                    "usr": "s:16NppNetworkModule21AccessRefreshResponseV"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule18AuthInteractorImplC16getAccessRefresh5token8userGuid7RxSwift10ObservableCyAA0hI8ResponseVGSS_SStF",
+            "mangledName": "$s16NppNetworkModule18AuthInteractorImplC16getAccessRefresh5token8userGuid7RxSwift10ObservableCyAA0hI8ResponseVGSS_SStF",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAccessRefreshTwoFactor",
+            "printedName": "getAccessRefreshTwoFactor()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<NppNetworkModule.AccessRefreshResponse>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AccessRefreshResponse",
+                    "printedName": "NppNetworkModule.AccessRefreshResponse",
+                    "usr": "s:16NppNetworkModule21AccessRefreshResponseV"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule18AuthInteractorImplC25getAccessRefreshTwoFactor7RxSwift10ObservableCyAA0hI8ResponseVGyF",
+            "mangledName": "$s16NppNetworkModule18AuthInteractorImplC25getAccessRefreshTwoFactor7RxSwift10ObservableCyAA0hI8ResponseVGyF",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveToken",
+            "printedName": "saveToken(accessToken:refreshToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule18AuthInteractorImplC9saveToken06accessH007refreshH0ySS_SStF",
+            "mangledName": "$s16NppNetworkModule18AuthInteractorImplC9saveToken06accessH007refreshH0ySS_SStF",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteAllLocalTokens",
+            "printedName": "deleteAllLocalTokens()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule18AuthInteractorImplC20deleteAllLocalTokensyyF",
+            "mangledName": "$s16NppNetworkModule18AuthInteractorImplC20deleteAllLocalTokensyyF",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "revokeCurrentRefreshToken",
+            "printedName": "revokeCurrentRefreshToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<AbSDKMain.VoidCodable>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VoidCodable",
+                    "printedName": "AbSDKMain.VoidCodable",
+                    "usr": "s:9AbSDKMain11VoidCodableV"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule18AuthInteractorImplC25revokeCurrentRefreshToken7RxSwift10ObservableCy9AbSDKMain11VoidCodableVGyF",
+            "mangledName": "$s16NppNetworkModule18AuthInteractorImplC25revokeCurrentRefreshToken7RxSwift10ObservableCy9AbSDKMain11VoidCodableVGyF",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16NppNetworkModule18AuthInteractorImplC",
+        "mangledName": "$s16NppNetworkModule18AuthInteractorImplC",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AuthInteractor",
+            "printedName": "AuthInteractor",
+            "usr": "s:16NppNetworkModule14AuthInteractorP",
+            "mangledName": "$s16NppNetworkModule14AuthInteractorP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AbSDKMain",
+        "printedName": "AbSDKMain",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthError",
+        "printedName": "AuthError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule9AuthErrorV5errorSSvp",
+            "mangledName": "$s16NppNetworkModule9AuthErrorV5errorSSvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule9AuthErrorV5errorSSvg",
+                "mangledName": "$s16NppNetworkModule9AuthErrorV5errorSSvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "error_description",
+            "printedName": "error_description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule9AuthErrorV17error_descriptionSSvp",
+            "mangledName": "$s16NppNetworkModule9AuthErrorV17error_descriptionSSvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule9AuthErrorV17error_descriptionSSvg",
+                "mangledName": "$s16NppNetworkModule9AuthErrorV17error_descriptionSSvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "access_token",
+            "printedName": "access_token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule9AuthErrorV12access_tokenSSSgvp",
+            "mangledName": "$s16NppNetworkModule9AuthErrorV12access_tokenSSSgvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule9AuthErrorV12access_tokenSSSgvg",
+                "mangledName": "$s16NppNetworkModule9AuthErrorV12access_tokenSSSgvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "token",
+            "printedName": "token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule9AuthErrorV5tokenSSSgvp",
+            "mangledName": "$s16NppNetworkModule9AuthErrorV5tokenSSSgvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule9AuthErrorV5tokenSSSgvg",
+                "mangledName": "$s16NppNetworkModule9AuthErrorV5tokenSSSgvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "twoFactor",
+            "printedName": "twoFactor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule9AuthErrorV9twoFactorSbvp",
+            "mangledName": "$s16NppNetworkModule9AuthErrorV9twoFactorSbvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule9AuthErrorV9twoFactorSbvg",
+                "mangledName": "$s16NppNetworkModule9AuthErrorV9twoFactorSbvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthError",
+                "printedName": "NppNetworkModule.AuthError",
+                "usr": "s:16NppNetworkModule9AuthErrorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NppNetworkModule9AuthErrorV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16NppNetworkModule9AuthErrorV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NppNetworkModule",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16NppNetworkModule9AuthErrorV",
+        "mangledName": "$s16NppNetworkModule9AuthErrorV",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "DecodableError",
+            "printedName": "DecodableError",
+            "usr": "s:9AbSDKMain14DecodableErrorP",
+            "mangledName": "$s9AbSDKMain14DecodableErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "Import",
+        "name": "AbSDKMain",
+        "printedName": "AbSDKMain",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthRepository",
+        "printedName": "AuthRepository",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getToken",
+            "printedName": "getToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule14AuthRepositoryP8getToken7RxSwift10ObservableCySSGyF",
+            "mangledName": "$s16NppNetworkModule14AuthRepositoryP8getToken7RxSwift10ObservableCySSGyF",
+            "moduleName": "NppNetworkModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppNetworkModule.AuthRepository>",
+            "sugared_genericSig": "<Self where Self : NppNetworkModule.AuthRepository>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getToken",
+            "printedName": "getToken(login:password:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<NppNetworkModule.AuthResponse>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthResponse",
+                    "printedName": "NppNetworkModule.AuthResponse",
+                    "usr": "s:16NppNetworkModule12AuthResponseV"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule14AuthRepositoryP8getToken5login8password7RxSwift10ObservableCyAA0D8ResponseVGSS_SStF",
+            "mangledName": "$s16NppNetworkModule14AuthRepositoryP8getToken5login8password7RxSwift10ObservableCyAA0D8ResponseVGSS_SStF",
+            "moduleName": "NppNetworkModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppNetworkModule.AuthRepository>",
+            "sugared_genericSig": "<Self where Self : NppNetworkModule.AuthRepository>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAccessRefresh",
+            "printedName": "getAccessRefresh(token:userGuid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<NppNetworkModule.AccessRefreshResponse>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AccessRefreshResponse",
+                    "printedName": "NppNetworkModule.AccessRefreshResponse",
+                    "usr": "s:16NppNetworkModule21AccessRefreshResponseV"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule14AuthRepositoryP16getAccessRefresh5token8userGuid7RxSwift10ObservableCyAA0gH8ResponseVGSS_SStF",
+            "mangledName": "$s16NppNetworkModule14AuthRepositoryP16getAccessRefresh5token8userGuid7RxSwift10ObservableCyAA0gH8ResponseVGSS_SStF",
+            "moduleName": "NppNetworkModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppNetworkModule.AuthRepository>",
+            "sugared_genericSig": "<Self where Self : NppNetworkModule.AuthRepository>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAccessRefreshTwoFactor",
+            "printedName": "getAccessRefreshTwoFactor()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<NppNetworkModule.AccessRefreshResponse>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AccessRefreshResponse",
+                    "printedName": "NppNetworkModule.AccessRefreshResponse",
+                    "usr": "s:16NppNetworkModule21AccessRefreshResponseV"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule14AuthRepositoryP25getAccessRefreshTwoFactor7RxSwift10ObservableCyAA0gH8ResponseVGyF",
+            "mangledName": "$s16NppNetworkModule14AuthRepositoryP25getAccessRefreshTwoFactor7RxSwift10ObservableCyAA0gH8ResponseVGyF",
+            "moduleName": "NppNetworkModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppNetworkModule.AuthRepository>",
+            "sugared_genericSig": "<Self where Self : NppNetworkModule.AuthRepository>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveToken",
+            "printedName": "saveToken(accessToken:refreshToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule14AuthRepositoryP9saveToken06accessG007refreshG0ySS_SStF",
+            "mangledName": "$s16NppNetworkModule14AuthRepositoryP9saveToken06accessG007refreshG0ySS_SStF",
+            "moduleName": "NppNetworkModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppNetworkModule.AuthRepository>",
+            "sugared_genericSig": "<Self where Self : NppNetworkModule.AuthRepository>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteAll",
+            "printedName": "deleteAll()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule14AuthRepositoryP9deleteAllyyF",
+            "mangledName": "$s16NppNetworkModule14AuthRepositoryP9deleteAllyyF",
+            "moduleName": "NppNetworkModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppNetworkModule.AuthRepository>",
+            "sugared_genericSig": "<Self where Self : NppNetworkModule.AuthRepository>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "revokeCurrentRefreshToken",
+            "printedName": "revokeCurrentRefreshToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<AbSDKMain.VoidCodable>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VoidCodable",
+                    "printedName": "AbSDKMain.VoidCodable",
+                    "usr": "s:9AbSDKMain11VoidCodableV"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule14AuthRepositoryP25revokeCurrentRefreshToken7RxSwift10ObservableCy9AbSDKMain11VoidCodableVGyF",
+            "mangledName": "$s16NppNetworkModule14AuthRepositoryP25revokeCurrentRefreshToken7RxSwift10ObservableCy9AbSDKMain11VoidCodableVGyF",
+            "moduleName": "NppNetworkModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppNetworkModule.AuthRepository>",
+            "sugared_genericSig": "<Self where Self : NppNetworkModule.AuthRepository>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16NppNetworkModule14AuthRepositoryP",
+        "mangledName": "$s16NppNetworkModule14AuthRepositoryP",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AccessRefresh",
+        "printedName": "AccessRefresh",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "access",
+            "printedName": "access",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule13AccessRefreshV6accessSSvp",
+            "mangledName": "$s16NppNetworkModule13AccessRefreshV6accessSSvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule13AccessRefreshV6accessSSvg",
+                "mangledName": "$s16NppNetworkModule13AccessRefreshV6accessSSvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "refresh",
+            "printedName": "refresh",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule13AccessRefreshV7refreshSSvp",
+            "mangledName": "$s16NppNetworkModule13AccessRefreshV7refreshSSvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule13AccessRefreshV7refreshSSvg",
+                "mangledName": "$s16NppNetworkModule13AccessRefreshV7refreshSSvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AccessRefresh",
+                "printedName": "NppNetworkModule.AccessRefresh",
+                "usr": "s:16NppNetworkModule13AccessRefreshV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NppNetworkModule13AccessRefreshV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16NppNetworkModule13AccessRefreshV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NppNetworkModule",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule13AccessRefreshV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s16NppNetworkModule13AccessRefreshV6encode2toys7Encoder_p_tKF",
+            "moduleName": "NppNetworkModule",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16NppNetworkModule13AccessRefreshV",
+        "mangledName": "$s16NppNetworkModule13AccessRefreshV",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AccessRefreshResponse",
+        "printedName": "AccessRefreshResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "access_token",
+            "printedName": "access_token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule21AccessRefreshResponseV12access_tokenSSvp",
+            "mangledName": "$s16NppNetworkModule21AccessRefreshResponseV12access_tokenSSvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule21AccessRefreshResponseV12access_tokenSSvg",
+                "mangledName": "$s16NppNetworkModule21AccessRefreshResponseV12access_tokenSSvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "refresh_token",
+            "printedName": "refresh_token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule21AccessRefreshResponseV13refresh_tokenSSvp",
+            "mangledName": "$s16NppNetworkModule21AccessRefreshResponseV13refresh_tokenSSvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule21AccessRefreshResponseV13refresh_tokenSSvg",
+                "mangledName": "$s16NppNetworkModule21AccessRefreshResponseV13refresh_tokenSSvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AccessRefreshResponse",
+                "printedName": "NppNetworkModule.AccessRefreshResponse",
+                "usr": "s:16NppNetworkModule21AccessRefreshResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NppNetworkModule21AccessRefreshResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16NppNetworkModule21AccessRefreshResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NppNetworkModule",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16NppNetworkModule21AccessRefreshResponseV",
+        "mangledName": "$s16NppNetworkModule21AccessRefreshResponseV",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OneTimeLinkResponse",
+        "printedName": "OneTimeLinkResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "authLink",
+            "printedName": "authLink",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule19OneTimeLinkResponseV04authF0SSvp",
+            "mangledName": "$s16NppNetworkModule19OneTimeLinkResponseV04authF0SSvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule19OneTimeLinkResponseV04authF0SSvg",
+                "mangledName": "$s16NppNetworkModule19OneTimeLinkResponseV04authF0SSvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OneTimeLinkResponse",
+                "printedName": "NppNetworkModule.OneTimeLinkResponse",
+                "usr": "s:16NppNetworkModule19OneTimeLinkResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NppNetworkModule19OneTimeLinkResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16NppNetworkModule19OneTimeLinkResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NppNetworkModule",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule19OneTimeLinkResponseV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s16NppNetworkModule19OneTimeLinkResponseV6encode2toys7Encoder_p_tKF",
+            "moduleName": "NppNetworkModule",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16NppNetworkModule19OneTimeLinkResponseV",
+        "mangledName": "$s16NppNetworkModule19OneTimeLinkResponseV",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppCoreModule",
+        "printedName": "NppCoreModule",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftKeychainWrapper",
+        "printedName": "SwiftKeychainWrapper",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "Import",
+        "name": "AbSDKMain",
+        "printedName": "AbSDKMain",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SessionManager",
+        "printedName": "SessionManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "baseUrl",
+            "printedName": "baseUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule14SessionManagerC7baseUrlSSvp",
+            "mangledName": "$s16NppNetworkModule14SessionManagerC7baseUrlSSvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule14SessionManagerC7baseUrlSSvg",
+                "mangledName": "$s16NppNetworkModule14SessionManagerC7baseUrlSSvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule14SessionManagerC7baseUrlSSvs",
+                "mangledName": "$s16NppNetworkModule14SessionManagerC7baseUrlSSvs",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule14SessionManagerC7baseUrlSSvM",
+                "mangledName": "$s16NppNetworkModule14SessionManagerC7baseUrlSSvM",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "session",
+            "printedName": "session",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Session",
+                "printedName": "Alamofire.Session",
+                "usr": "s:9Alamofire7SessionC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule14SessionManagerC7session9Alamofire0D0Cvp",
+            "mangledName": "$s16NppNetworkModule14SessionManagerC7session9Alamofire0D0Cvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Session",
+                    "printedName": "Alamofire.Session",
+                    "usr": "s:9Alamofire7SessionC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule14SessionManagerC7session9Alamofire0D0Cvg",
+                "mangledName": "$s16NppNetworkModule14SessionManagerC7session9Alamofire0D0Cvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(const:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SessionManager",
+                "printedName": "NppNetworkModule.SessionManager",
+                "usr": "s:16NppNetworkModule14SessionManagerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ConstSDK",
+                "printedName": "any NppCoreModule.ConstSDK",
+                "usr": "s:13NppCoreModule8ConstSDKP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NppNetworkModule14SessionManagerC5constAC0a4CoreC08ConstSDK_p_tcfc",
+            "mangledName": "$s16NppNetworkModule14SessionManagerC5constAC0a4CoreC08ConstSDK_p_tcfc",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getToken",
+            "printedName": "getToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule14SessionManagerC8getTokenSSyF",
+            "mangledName": "$s16NppNetworkModule14SessionManagerC8getTokenSSyF",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "BaseInterceptor",
+            "printedName": "BaseInterceptor",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "adapt",
+                "printedName": "adapt(_:for:completion:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLRequest",
+                    "printedName": "Foundation.URLRequest",
+                    "usr": "s:10Foundation10URLRequestV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Session",
+                    "printedName": "Alamofire.Session",
+                    "usr": "s:9Alamofire7SessionC"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Result<Foundation.URLRequest, any Swift.Error>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Result",
+                        "printedName": "Swift.Result<Foundation.URLRequest, any Swift.Error>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLRequest",
+                            "printedName": "Foundation.URLRequest",
+                            "usr": "s:10Foundation10URLRequestV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:s6ResultO"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16NppNetworkModule14SessionManagerC15BaseInterceptorC5adapt_3for10completiony10Foundation10URLRequestV_9Alamofire0D0Cys6ResultOyAKs5Error_pGctF",
+                "mangledName": "$s16NppNetworkModule14SessionManagerC15BaseInterceptorC5adapt_3for10completiony10Foundation10URLRequestV_9Alamofire0D0Cys6ResultOyAKs5Error_pGctF",
+                "moduleName": "NppNetworkModule",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "retry",
+                "printedName": "retry(_:for:dueTo:completion:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Request",
+                    "printedName": "Alamofire.Request",
+                    "usr": "s:9Alamofire7RequestC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Session",
+                    "printedName": "Alamofire.Session",
+                    "usr": "s:9Alamofire7SessionC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Alamofire.RetryResult) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RetryResult",
+                        "printedName": "Alamofire.RetryResult",
+                        "usr": "s:9Alamofire11RetryResultO"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16NppNetworkModule14SessionManagerC15BaseInterceptorC5retry_3for5dueTo10completiony9Alamofire7RequestC_AJ0D0Cs5Error_pyAJ11RetryResultOctF",
+                "mangledName": "$s16NppNetworkModule14SessionManagerC15BaseInterceptorC5retry_3for5dueTo10completiony9Alamofire7RequestC_AJ0D0Cs5Error_pyAJ11RetryResultOctF",
+                "moduleName": "NppNetworkModule",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:16NppNetworkModule14SessionManagerC15BaseInterceptorC",
+            "mangledName": "$s16NppNetworkModule14SessionManagerC15BaseInterceptorC",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "hasMissingDesignatedInitializers": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "RequestInterceptor",
+                "printedName": "RequestInterceptor",
+                "usr": "s:9Alamofire18RequestInterceptorP",
+                "mangledName": "$s9Alamofire18RequestInterceptorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RequestAdapter",
+                "printedName": "RequestAdapter",
+                "usr": "s:9Alamofire14RequestAdapterP",
+                "mangledName": "$s9Alamofire14RequestAdapterP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RequestRetrier",
+                "printedName": "RequestRetrier",
+                "usr": "s:9Alamofire14RequestRetrierP",
+                "mangledName": "$s9Alamofire14RequestRetrierP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16NppNetworkModule14SessionManagerC",
+        "mangledName": "$s16NppNetworkModule14SessionManagerC",
+        "moduleName": "NppNetworkModule",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "Import",
+        "name": "AbSDKMain",
+        "printedName": "AbSDKMain",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthInteractor",
+        "printedName": "AuthInteractor",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getToken",
+            "printedName": "getToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule14AuthInteractorP8getToken7RxSwift10ObservableCySSGyF",
+            "mangledName": "$s16NppNetworkModule14AuthInteractorP8getToken7RxSwift10ObservableCySSGyF",
+            "moduleName": "NppNetworkModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppNetworkModule.AuthInteractor>",
+            "sugared_genericSig": "<Self where Self : NppNetworkModule.AuthInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getToken",
+            "printedName": "getToken(login:password:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<NppNetworkModule.AuthResponse>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthResponse",
+                    "printedName": "NppNetworkModule.AuthResponse",
+                    "usr": "s:16NppNetworkModule12AuthResponseV"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule14AuthInteractorP8getToken5login8password7RxSwift10ObservableCyAA0D8ResponseVGSS_SStF",
+            "mangledName": "$s16NppNetworkModule14AuthInteractorP8getToken5login8password7RxSwift10ObservableCyAA0D8ResponseVGSS_SStF",
+            "moduleName": "NppNetworkModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppNetworkModule.AuthInteractor>",
+            "sugared_genericSig": "<Self where Self : NppNetworkModule.AuthInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAccessRefresh",
+            "printedName": "getAccessRefresh(token:userGuid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<NppNetworkModule.AccessRefreshResponse>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AccessRefreshResponse",
+                    "printedName": "NppNetworkModule.AccessRefreshResponse",
+                    "usr": "s:16NppNetworkModule21AccessRefreshResponseV"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule14AuthInteractorP16getAccessRefresh5token8userGuid7RxSwift10ObservableCyAA0gH8ResponseVGSS_SStF",
+            "mangledName": "$s16NppNetworkModule14AuthInteractorP16getAccessRefresh5token8userGuid7RxSwift10ObservableCyAA0gH8ResponseVGSS_SStF",
+            "moduleName": "NppNetworkModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppNetworkModule.AuthInteractor>",
+            "sugared_genericSig": "<Self where Self : NppNetworkModule.AuthInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAccessRefreshTwoFactor",
+            "printedName": "getAccessRefreshTwoFactor()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<NppNetworkModule.AccessRefreshResponse>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AccessRefreshResponse",
+                    "printedName": "NppNetworkModule.AccessRefreshResponse",
+                    "usr": "s:16NppNetworkModule21AccessRefreshResponseV"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule14AuthInteractorP25getAccessRefreshTwoFactor7RxSwift10ObservableCyAA0gH8ResponseVGyF",
+            "mangledName": "$s16NppNetworkModule14AuthInteractorP25getAccessRefreshTwoFactor7RxSwift10ObservableCyAA0gH8ResponseVGyF",
+            "moduleName": "NppNetworkModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppNetworkModule.AuthInteractor>",
+            "sugared_genericSig": "<Self where Self : NppNetworkModule.AuthInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveToken",
+            "printedName": "saveToken(accessToken:refreshToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule14AuthInteractorP9saveToken06accessG007refreshG0ySS_SStF",
+            "mangledName": "$s16NppNetworkModule14AuthInteractorP9saveToken06accessG007refreshG0ySS_SStF",
+            "moduleName": "NppNetworkModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppNetworkModule.AuthInteractor>",
+            "sugared_genericSig": "<Self where Self : NppNetworkModule.AuthInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteAllLocalTokens",
+            "printedName": "deleteAllLocalTokens()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule14AuthInteractorP20deleteAllLocalTokensyyF",
+            "mangledName": "$s16NppNetworkModule14AuthInteractorP20deleteAllLocalTokensyyF",
+            "moduleName": "NppNetworkModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppNetworkModule.AuthInteractor>",
+            "sugared_genericSig": "<Self where Self : NppNetworkModule.AuthInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "revokeCurrentRefreshToken",
+            "printedName": "revokeCurrentRefreshToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<AbSDKMain.VoidCodable>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VoidCodable",
+                    "printedName": "AbSDKMain.VoidCodable",
+                    "usr": "s:9AbSDKMain11VoidCodableV"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule14AuthInteractorP25revokeCurrentRefreshToken7RxSwift10ObservableCy9AbSDKMain11VoidCodableVGyF",
+            "mangledName": "$s16NppNetworkModule14AuthInteractorP25revokeCurrentRefreshToken7RxSwift10ObservableCy9AbSDKMain11VoidCodableVGyF",
+            "moduleName": "NppNetworkModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppNetworkModule.AuthInteractor>",
+            "sugared_genericSig": "<Self where Self : NppNetworkModule.AuthInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16NppNetworkModule14AuthInteractorP",
+        "mangledName": "$s16NppNetworkModule14AuthInteractorP",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthResponse",
+        "printedName": "AuthResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "access_token",
+            "printedName": "access_token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule12AuthResponseV12access_tokenSSvp",
+            "mangledName": "$s16NppNetworkModule12AuthResponseV12access_tokenSSvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule12AuthResponseV12access_tokenSSvg",
+                "mangledName": "$s16NppNetworkModule12AuthResponseV12access_tokenSSvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expires_in",
+            "printedName": "expires_in",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule12AuthResponseV10expires_inSivp",
+            "mangledName": "$s16NppNetworkModule12AuthResponseV10expires_inSivp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule12AuthResponseV10expires_inSivg",
+                "mangledName": "$s16NppNetworkModule12AuthResponseV10expires_inSivg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "token_type",
+            "printedName": "token_type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule12AuthResponseV10token_typeSSSgvp",
+            "mangledName": "$s16NppNetworkModule12AuthResponseV10token_typeSSSgvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule12AuthResponseV10token_typeSSSgvg",
+                "mangledName": "$s16NppNetworkModule12AuthResponseV10token_typeSSSgvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "refresh_token",
+            "printedName": "refresh_token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule12AuthResponseV13refresh_tokenSSvp",
+            "mangledName": "$s16NppNetworkModule12AuthResponseV13refresh_tokenSSvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule12AuthResponseV13refresh_tokenSSvg",
+                "mangledName": "$s16NppNetworkModule12AuthResponseV13refresh_tokenSSvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "scope",
+            "printedName": "scope",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule12AuthResponseV5scopeSSSgvp",
+            "mangledName": "$s16NppNetworkModule12AuthResponseV5scopeSSSgvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule12AuthResponseV5scopeSSSgvg",
+                "mangledName": "$s16NppNetworkModule12AuthResponseV5scopeSSSgvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "loginResponse",
+            "printedName": "loginResponse",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule12AuthResponseV05loginE0SSSgvp",
+            "mangledName": "$s16NppNetworkModule12AuthResponseV05loginE0SSSgvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule12AuthResponseV05loginE0SSSgvg",
+                "mangledName": "$s16NppNetworkModule12AuthResponseV05loginE0SSSgvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthResponse",
+                "printedName": "NppNetworkModule.AuthResponse",
+                "usr": "s:16NppNetworkModule12AuthResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NppNetworkModule12AuthResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16NppNetworkModule12AuthResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NppNetworkModule",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule12AuthResponseV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s16NppNetworkModule12AuthResponseV6encode2toys7Encoder_p_tKF",
+            "moduleName": "NppNetworkModule",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16NppNetworkModule12AuthResponseV",
+        "mangledName": "$s16NppNetworkModule12AuthResponseV",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthTwoFactorResponse",
+        "printedName": "AuthTwoFactorResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id_token",
+            "printedName": "id_token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule21AuthTwoFactorResponseV8id_tokenSSvp",
+            "mangledName": "$s16NppNetworkModule21AuthTwoFactorResponseV8id_tokenSSvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule21AuthTwoFactorResponseV8id_tokenSSvg",
+                "mangledName": "$s16NppNetworkModule21AuthTwoFactorResponseV8id_tokenSSvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "access_token",
+            "printedName": "access_token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule21AuthTwoFactorResponseV12access_tokenSivp",
+            "mangledName": "$s16NppNetworkModule21AuthTwoFactorResponseV12access_tokenSivp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule21AuthTwoFactorResponseV12access_tokenSivg",
+                "mangledName": "$s16NppNetworkModule21AuthTwoFactorResponseV12access_tokenSivg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expires_in",
+            "printedName": "expires_in",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule21AuthTwoFactorResponseV10expires_inSivp",
+            "mangledName": "$s16NppNetworkModule21AuthTwoFactorResponseV10expires_inSivp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule21AuthTwoFactorResponseV10expires_inSivg",
+                "mangledName": "$s16NppNetworkModule21AuthTwoFactorResponseV10expires_inSivg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "token_Type",
+            "printedName": "token_Type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule21AuthTwoFactorResponseV10token_TypeSSSgvp",
+            "mangledName": "$s16NppNetworkModule21AuthTwoFactorResponseV10token_TypeSSSgvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule21AuthTwoFactorResponseV10token_TypeSSSgvg",
+                "mangledName": "$s16NppNetworkModule21AuthTwoFactorResponseV10token_TypeSSSgvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "refresh_token",
+            "printedName": "refresh_token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule21AuthTwoFactorResponseV13refresh_tokenSSvp",
+            "mangledName": "$s16NppNetworkModule21AuthTwoFactorResponseV13refresh_tokenSSvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule21AuthTwoFactorResponseV13refresh_tokenSSvg",
+                "mangledName": "$s16NppNetworkModule21AuthTwoFactorResponseV13refresh_tokenSSvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "scope",
+            "printedName": "scope",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule21AuthTwoFactorResponseV5scopeSSSgvp",
+            "mangledName": "$s16NppNetworkModule21AuthTwoFactorResponseV5scopeSSSgvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule21AuthTwoFactorResponseV5scopeSSSgvg",
+                "mangledName": "$s16NppNetworkModule21AuthTwoFactorResponseV5scopeSSSgvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthTwoFactorResponse",
+                "printedName": "NppNetworkModule.AuthTwoFactorResponse",
+                "usr": "s:16NppNetworkModule21AuthTwoFactorResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NppNetworkModule21AuthTwoFactorResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16NppNetworkModule21AuthTwoFactorResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NppNetworkModule",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule21AuthTwoFactorResponseV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s16NppNetworkModule21AuthTwoFactorResponseV6encode2toys7Encoder_p_tKF",
+            "moduleName": "NppNetworkModule",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16NppNetworkModule21AuthTwoFactorResponseV",
+        "mangledName": "$s16NppNetworkModule21AuthTwoFactorResponseV",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DownloadFileResponse",
+        "printedName": "DownloadFileResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule20DownloadFileResponseV4data10Foundation4DataVvp",
+            "mangledName": "$s16NppNetworkModule20DownloadFileResponseV4data10Foundation4DataVvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule20DownloadFileResponseV4data10Foundation4DataVvg",
+                "mangledName": "$s16NppNetworkModule20DownloadFileResponseV4data10Foundation4DataVvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fileBase64",
+            "printedName": "fileBase64",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule20DownloadFileResponseV10fileBase64SSvp",
+            "mangledName": "$s16NppNetworkModule20DownloadFileResponseV10fileBase64SSvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule20DownloadFileResponseV10fileBase64SSvg",
+                "mangledName": "$s16NppNetworkModule20DownloadFileResponseV10fileBase64SSvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "contentType",
+            "printedName": "contentType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule20DownloadFileResponseV11contentTypeSSvp",
+            "mangledName": "$s16NppNetworkModule20DownloadFileResponseV11contentTypeSSvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule20DownloadFileResponseV11contentTypeSSvg",
+                "mangledName": "$s16NppNetworkModule20DownloadFileResponseV11contentTypeSSvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16NppNetworkModule20DownloadFileResponseV",
+        "mangledName": "$s16NppNetworkModule20DownloadFileResponseV",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Swinject",
+        "printedName": "Swinject",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppCoreModule",
+        "printedName": "NppCoreModule",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NppNetworkModuleAssemblyContainer",
+        "printedName": "NppNetworkModuleAssemblyContainer",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NppNetworkModuleAssemblyContainer",
+                "printedName": "NppNetworkModule.NppNetworkModuleAssemblyContainer",
+                "usr": "s:16NppNetworkModule0abC17AssemblyContainerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NppNetworkModule0abC17AssemblyContainerCACycfc",
+            "mangledName": "$s16NppNetworkModule0abC17AssemblyContainerCACycfc",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "assemble",
+            "printedName": "assemble(container:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Container",
+                "printedName": "Swinject.Container",
+                "usr": "s:8Swinject9ContainerC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule0abC17AssemblyContainerC8assemble9containery8Swinject0E0C_tF",
+            "mangledName": "$s16NppNetworkModule0abC17AssemblyContainerC8assemble9containery8Swinject0E0C_tF",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16NppNetworkModule0abC17AssemblyContainerC",
+        "mangledName": "$s16NppNetworkModule0abC17AssemblyContainerC",
+        "moduleName": "NppNetworkModule",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Assembly",
+            "printedName": "Assembly",
+            "usr": "s:8Swinject8AssemblyP",
+            "mangledName": "$s8Swinject8AssemblyP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Swinject",
+        "printedName": "Swinject",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppCoreModule",
+        "printedName": "NppCoreModule",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NppNetworkModuleDI",
+        "printedName": "NppNetworkModuleDI",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "assemblies",
+            "printedName": "assemblies",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any Swinject.Assembly]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Assembly",
+                    "printedName": "any Swinject.Assembly",
+                    "usr": "s:8Swinject8AssemblyP"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NppNetworkModule0abC2DIC10assembliesSay8Swinject8Assembly_pGvp",
+            "mangledName": "$s16NppNetworkModule0abC2DIC10assembliesSay8Swinject8Assembly_pGvp",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[any Swinject.Assembly]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Assembly",
+                        "printedName": "any Swinject.Assembly",
+                        "usr": "s:8Swinject8AssemblyP"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule0abC2DIC10assembliesSay8Swinject8Assembly_pGvg",
+                "mangledName": "$s16NppNetworkModule0abC2DIC10assembliesSay8Swinject8Assembly_pGvg",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[any Swinject.Assembly]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Assembly",
+                        "printedName": "any Swinject.Assembly",
+                        "usr": "s:8Swinject8AssemblyP"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule0abC2DIC10assembliesSay8Swinject8Assembly_pGvs",
+                "mangledName": "$s16NppNetworkModule0abC2DIC10assembliesSay8Swinject8Assembly_pGvs",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NppNetworkModule0abC2DIC10assembliesSay8Swinject8Assembly_pGvM",
+                "mangledName": "$s16NppNetworkModule0abC2DIC10assembliesSay8Swinject8Assembly_pGvM",
+                "moduleName": "NppNetworkModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(parentAssembler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NppNetworkModuleDI",
+                "printedName": "NppNetworkModule.NppNetworkModuleDI",
+                "usr": "c:@M@NppNetworkModule@objc(cs)NppNetworkModuleDI"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Assembler",
+                "printedName": "Swinject.Assembler",
+                "usr": "s:8Swinject9AssemblerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NppNetworkModule0abC2DIC15parentAssemblerAC8Swinject0F0C_tcfc",
+            "mangledName": "$s16NppNetworkModule0abC2DIC15parentAssemblerAC8Swinject0F0C_tcfc",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NppNetworkModuleDI",
+                "printedName": "NppNetworkModule.NppNetworkModuleDI",
+                "usr": "c:@M@NppNetworkModule@objc(cs)NppNetworkModuleDI"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NppNetworkModule@objc(cs)NppNetworkModuleDI(im)init",
+            "mangledName": "$s16NppNetworkModule0abC2DICACycfc",
+            "moduleName": "NppNetworkModule",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NppNetworkModule@objc(cs)NppNetworkModuleDI",
+        "mangledName": "$s16NppNetworkModule0abC2DIC",
+        "moduleName": "NppNetworkModule",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReactiveCompatible",
+            "printedName": "ReactiveCompatible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReactiveBase",
+                "printedName": "ReactiveBase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSObject",
+                    "printedName": "ObjectiveC.NSObject",
+                    "usr": "c:objc(cs)NSObject"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7RxSwift18ReactiveCompatibleP",
+            "mangledName": "$s7RxSwift18ReactiveCompatibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppCoreModule",
+        "printedName": "NppCoreModule",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftKeychainWrapper",
+        "printedName": "SwiftKeychainWrapper",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "Import",
+        "name": "AbSDKMain",
+        "printedName": "AbSDKMain",
+        "declKind": "Import",
+        "moduleName": "NppNetworkModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthRepositoryImpl",
+        "printedName": "AuthRepositoryImpl",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(const:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthRepositoryImpl",
+                "printedName": "NppNetworkModule.AuthRepositoryImpl",
+                "usr": "s:16NppNetworkModule18AuthRepositoryImplC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ConstSDK",
+                "printedName": "any NppCoreModule.ConstSDK",
+                "usr": "s:13NppCoreModule8ConstSDKP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NppNetworkModule18AuthRepositoryImplC5constAC0a4CoreC08ConstSDK_p_tcfc",
+            "mangledName": "$s16NppNetworkModule18AuthRepositoryImplC5constAC0a4CoreC08ConstSDK_p_tcfc",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getToken",
+            "printedName": "getToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule18AuthRepositoryImplC8getToken7RxSwift10ObservableCySSGyF",
+            "mangledName": "$s16NppNetworkModule18AuthRepositoryImplC8getToken7RxSwift10ObservableCySSGyF",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getToken",
+            "printedName": "getToken(login:password:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<NppNetworkModule.AuthResponse>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthResponse",
+                    "printedName": "NppNetworkModule.AuthResponse",
+                    "usr": "s:16NppNetworkModule12AuthResponseV"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule18AuthRepositoryImplC8getToken5login8password7RxSwift10ObservableCyAA0D8ResponseVGSS_SStF",
+            "mangledName": "$s16NppNetworkModule18AuthRepositoryImplC8getToken5login8password7RxSwift10ObservableCyAA0D8ResponseVGSS_SStF",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAccessRefresh",
+            "printedName": "getAccessRefresh(token:userGuid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<NppNetworkModule.AccessRefreshResponse>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AccessRefreshResponse",
+                    "printedName": "NppNetworkModule.AccessRefreshResponse",
+                    "usr": "s:16NppNetworkModule21AccessRefreshResponseV"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule18AuthRepositoryImplC16getAccessRefresh5token8userGuid7RxSwift10ObservableCyAA0hI8ResponseVGSS_SStF",
+            "mangledName": "$s16NppNetworkModule18AuthRepositoryImplC16getAccessRefresh5token8userGuid7RxSwift10ObservableCyAA0hI8ResponseVGSS_SStF",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAccessRefreshTwoFactor",
+            "printedName": "getAccessRefreshTwoFactor()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<NppNetworkModule.AccessRefreshResponse>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AccessRefreshResponse",
+                    "printedName": "NppNetworkModule.AccessRefreshResponse",
+                    "usr": "s:16NppNetworkModule21AccessRefreshResponseV"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule18AuthRepositoryImplC25getAccessRefreshTwoFactor7RxSwift10ObservableCyAA0hI8ResponseVGyF",
+            "mangledName": "$s16NppNetworkModule18AuthRepositoryImplC25getAccessRefreshTwoFactor7RxSwift10ObservableCyAA0hI8ResponseVGyF",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveToken",
+            "printedName": "saveToken(accessToken:refreshToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule18AuthRepositoryImplC9saveToken06accessH007refreshH0ySS_SStF",
+            "mangledName": "$s16NppNetworkModule18AuthRepositoryImplC9saveToken06accessH007refreshH0ySS_SStF",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteAll",
+            "printedName": "deleteAll()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule18AuthRepositoryImplC9deleteAllyyF",
+            "mangledName": "$s16NppNetworkModule18AuthRepositoryImplC9deleteAllyyF",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "revokeCurrentRefreshToken",
+            "printedName": "revokeCurrentRefreshToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<AbSDKMain.VoidCodable>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VoidCodable",
+                    "printedName": "AbSDKMain.VoidCodable",
+                    "usr": "s:9AbSDKMain11VoidCodableV"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NppNetworkModule18AuthRepositoryImplC25revokeCurrentRefreshToken7RxSwift10ObservableCy9AbSDKMain11VoidCodableVGyF",
+            "mangledName": "$s16NppNetworkModule18AuthRepositoryImplC25revokeCurrentRefreshToken7RxSwift10ObservableCy9AbSDKMain11VoidCodableVGyF",
+            "moduleName": "NppNetworkModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16NppNetworkModule18AuthRepositoryImplC",
+        "mangledName": "$s16NppNetworkModule18AuthRepositoryImplC",
+        "moduleName": "NppNetworkModule",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AuthRepository",
+            "printedName": "AuthRepository",
+            "usr": "s:16NppNetworkModule14AuthRepositoryP",
+            "mangledName": "$s16NppNetworkModule14AuthRepositoryP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Session",
+        "printedName": "Session",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "downloadFile",
+            "printedName": "downloadFile(url:method:interceptor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Observable",
+                "printedName": "RxSwift.Observable<NppNetworkModule.DownloadFileResponse>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DownloadFileResponse",
+                    "printedName": "NppNetworkModule.DownloadFileResponse",
+                    "usr": "s:16NppNetworkModule20DownloadFileResponseV"
+                  }
+                ],
+                "usr": "s:7RxSwift10ObservableC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "Alamofire.HTTPMethod",
+                "usr": "s:9Alamofire10HTTPMethodV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Alamofire.RequestInterceptor)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RequestInterceptor",
+                    "printedName": "any Alamofire.RequestInterceptor",
+                    "usr": "s:9Alamofire18RequestInterceptorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Alamofire7SessionC16NppNetworkModuleE12downloadFile3url6method11interceptor7RxSwift10ObservableCyAD08DownloadG8ResponseVGSS_AA10HTTPMethodVAA18RequestInterceptor_pSgtF",
+            "mangledName": "$s9Alamofire7SessionC16NppNetworkModuleE12downloadFile3url6method11interceptor7RxSwift10ObservableCyAD08DownloadG8ResponseVGSS_AA10HTTPMethodVAA18RequestInterceptor_pSgtF",
+            "moduleName": "NppNetworkModule",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9Alamofire7SessionC",
+        "mangledName": "$s9Alamofire7SessionC",
+        "moduleName": "Alamofire",
+        "isOpen": true,
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "RequestDelegate",
+            "printedName": "RequestDelegate",
+            "usr": "s:9Alamofire15RequestDelegateP",
+            "mangledName": "$s9Alamofire15RequestDelegateP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/network\/BaseRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 268,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/network\/BaseRepository.swift",
+      "kind": "IntegerLiteral",
+      "offset": 953,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/network\/BaseRepository.swift",
+      "kind": "BooleanLiteral",
+      "offset": 980,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/network\/BaseRepository.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1025,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/NppNetworkModuleDI.swift",
+      "kind": "StringLiteral",
+      "offset": 161,
+      "length": 18,
+      "value": "\"NppNetworkModule.NppNetworkModuleDI\""
+    },
+    {
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/auth\/data\/AuthRepositoryImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 244,
+      "length": 14,
+      "value": "\"access_token\""
+    },
+    {
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/auth\/data\/AuthRepositoryImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 290,
+      "length": 15,
+      "value": "\"refresh_token\""
+    },
+    {
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/auth\/data\/AuthRepositoryImpl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 456,
+      "length": 1,
+      "value": "1"
+    }
+  ]
+}

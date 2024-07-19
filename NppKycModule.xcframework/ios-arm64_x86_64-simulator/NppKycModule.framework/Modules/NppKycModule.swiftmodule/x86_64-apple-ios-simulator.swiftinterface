@@ -1,0 +1,90 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NppKycModule
+import AVFoundation
+import AbSDKMain
+import Foundation
+import NppCoreModule
+import NppNetworkModule
+import NppSDKModule
+import OZLivenessSDK
+import PCKYCModule
+import PCSDKModule
+import RxSwift
+import Swift
+import Swinject
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension NppKycModule.EkycInteractorImpl : OZLivenessSDK.OZLivenessDelegate {
+  public func onOZLivenessResult(results: [OZLivenessSDK.OZMedia])
+  public func onError(status: OZLivenessSDK.OZVerificationStatus?)
+}
+extension NppKycModule.EkycInteractorImpl : UIKit.UIImagePickerControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
+}
+extension NppKycModule.EkycInteractorImpl : UIKit.UINavigationControllerDelegate {
+}
+extension PCKYCModule.PCKYCSessionStatus.Status {
+  public func statusDescription() -> Swift.String
+}
+@_hasMissingDesignatedInitializers final public class EkycSDK {
+  public static var ekycInteractor: (any NppKycModule.EkycInteractor)!
+  public static func create() -> any NppKycModule.EkycInteractor
+  public static func setLogLevel(logLevel: AbSDKMain.AbLogLevel)
+  @objc deinit
+}
+public enum KycException : Swift.Error {
+  case noSession
+  case wrongMediaType
+  case timeoutExceeded
+  case notVerification
+  case keyFailure
+  public static func == (a: NppKycModule.KycException, b: NppKycModule.KycException) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc public class EkycInteractorImpl : ObjectiveC.NSObject, NppKycModule.EkycInteractor, AbSDKMain.TaskOwner {
+  public init(const: any NppCoreModule.ConstSDK, certificateInteractor: any NppSDKModule.CertificateInteractor, pcUserInteractor: any NppSDKModule.PCUserInteractor, profileInteractor: any NppSDKModule.ProfileInteractor, sentryInteractor: any NppSDKModule.SentryInteractor, monitoringInteractor: any NppSDKModule.MonitoringInteractor)
+  public func verificate(isNew: Swift.Bool) -> AbSDKMain.Task<PCKYCModule.PCKYCSessionStatus.Status>
+  public func status() -> AbSDKMain.Task<PCKYCModule.PCKYCSessionStatus.Status>
+  public func createMediaSource(mediaType: PCKYCModule.PCKYCMediaType, viewController: UIKit.UIViewController) -> AbSDKMain.Task<Swift.Set<PCKYCModule.PCKYCMediaType>>
+  public func getRequiredSources() -> AbSDKMain.Task<Swift.Set<PCKYCModule.PCKYCMediaType>>
+  public func uploadAndAnalyze()
+  public func getOCRResult() -> AbSDKMain.Task<NppKycModule.OCRResults>
+  public func approveOCRResults(isApproved: Swift.Bool)
+  public func deleteSessions()
+  @objc deinit
+}
+public struct OCRResults : Swift.Codable {
+  public let fieldTexts: NppKycModule.fieldTextsData
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct fieldTextsData : Swift.Codable {
+  public let dateofbirth: Swift.String
+  public let number: Swift.String
+  public let address: Swift.String
+  public let dateofissue: Swift.String
+  public let sex: Swift.String
+  public let name: Swift.String
+  public let issuecode: Swift.String
+  public let placeofissue: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol EkycInteractor {
+  func status() -> AbSDKMain.Task<PCKYCModule.PCKYCSessionStatus.Status>
+  func verificate(isNew: Swift.Bool) -> AbSDKMain.Task<PCKYCModule.PCKYCSessionStatus.Status>
+  func getRequiredSources() -> AbSDKMain.Task<Swift.Set<PCKYCModule.PCKYCMediaType>>
+  func getOCRResult() -> AbSDKMain.Task<NppKycModule.OCRResults>
+  func createMediaSource(mediaType: PCKYCModule.PCKYCMediaType, viewController: UIKit.UIViewController) -> AbSDKMain.Task<Swift.Set<PCKYCModule.PCKYCMediaType>>
+  func uploadAndAnalyze()
+  func approveOCRResults(isApproved: Swift.Bool)
+  func deleteSessions()
+}
+extension NppKycModule.KycException : Swift.Equatable {}
+extension NppKycModule.KycException : Swift.Hashable {}

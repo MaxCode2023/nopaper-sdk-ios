@@ -1,0 +1,11 @@
+framework module AbSDKMain {
+  umbrella header "AbSDKMain.h"
+  export *
+
+  module * { export * }
+}
+
+module AbSDKMain.Swift {
+  header "AbSDKMain-Swift.h"
+  requires objc
+}

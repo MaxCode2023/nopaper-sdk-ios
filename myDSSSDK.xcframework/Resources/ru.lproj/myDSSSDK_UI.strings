@@ -1,0 +1,110 @@
+/* Password And Activation */
+
+"activation_enter_code_title" = "Введите код активации";
+
+"password_enter_title" = "Введите текущий ПИН-код";
+"password_length" = "6 символов";
+
+"password_action_forgot" = "Забыли ПИН-код?";
+"password_action_close" = "Закрыть";
+
+"password_enter_new_title" = "Введите новый ПИН-код";
+"password_repeat_new_title" = "Повторите ПИН-код";
+
+"password_biometry_reason" = "Получение доступа к ПИН-коду";
+
+"password_invalid" = "Неверный ПИН-код. Осталось попыток: %d \nCможете повторить через: %d";
+
+"password_error_pass_do_not_match" = "Пароли не совпадают!";
+"password_error_weak_pins" = "Ваш ПИН-код слишком легко угадать, \nпопробуйте установить другой";
+
+"password_action_forgot_pass" = "Забыли пароль?";
+"password_error_wrong_pass" = "Неверный пароль. \nОсталось попыток: %d";
+"password_error_repeat_pass" = "Неверный пароль.\nСледующая попытка через: ";
+"password_error_wrong_pins" = "Неверный ПИН-код.\nОсталось попыток: %d";
+"password_error_repeat_pins" = "Неверный ПИН-код.\nСледующая попытка через ";
+"password_label_repeat_pin" = "Повторите новый ПИН-код";
+"password_label_pass_instructions" = "Пароль должен содержать не менее 8 символов, заглавную букву и цифру";
+"password_label_enter_pass" = "Введите пароль";
+"password_label_repeat_pass" = "Повторите новый пароль";
+"password_error_must_meet_policy" = "Пароль не соотвествует требованиям к сложности пароля";
+"password_next_button" = "Продолжить";
+
+"password_label_set_pass" = "Set new password";
+"password_title_setting_pass" = "Setting a password";
+
+/* Suggesting Biometry */
+
+"suggesting_biometry_title_faceid" = "Использовать Face ID для подписи?";
+"suggesting_biometry_title_touchid" = "Использовать Touch ID для подписи?";
+
+"suggesting_biometry_action_primary" = "Использовать";
+"suggesting_biometry_action_secondary" = "Не сейчас";
+
+/* Operations And Documents */
+
+"documents_action_sign" = "Подписать";
+
+"operation_action_primary" = "Подтвердить";
+"operation_action_secondary" = "Отказать";
+"operation_action_details" = "Подробнее";
+"operation_action_close" = "Закрыть";
+
+"operation_list_title" = "Предпросмотр";
+"operation_document_preview_title" = "Предпросмотр";
+
+"operation_preview_options_print" = "Версия для печати";
+"operation_preview_options_raw" = "Оригинал документа";
+"operation_preview_options_cancel" = "Отмена";
+
+"operation_info_title" = "Подробнее об операции";
+"operation_info_action_close" = "Закрыть";
+
+"operation_no_certificate_title" = "Нет активного сертификата для подписания";
+"operation_no_certificate_message" = "Доступно только отклонение документа";
+
+"operation_decline_warning_message" = "Вы действительно хотите отказаться от подписи выбранных документов?";
+"operation_decline_warning_action" = "Отказаться";
+"operation_decline_warning_cancel" = "Отменить";
+
+"operation_error_alert_close" = "Закрыть";
+"operation_pdf_preview_close" = "Закрыть";
+
+"operation_documents_selected" = "Выбрано: %d из %d";
+
+/* Accept Account Changes */
+
+"accept_account_changes_title" = "Подтвердите использование данного устройства для подписания документов электронной подписью";
+
+"accept_account_changes_action_primary" = "Подтвердить";
+"accept_account_changes_action_secondary" = "Отклонить";
+"accept_account_changes_action_close" = "Закрыть";
+
+/* Process Awaiting Device */
+
+"process_device_approve_title" = "Подтвердите добавление устройства";
+
+"process_device_action_primary" = "Подтвердить";
+"process_device_action_secondary" = "Отказать";
+"process_device_action_close"  = "Закрыть";
+
+/* Approving with QR */
+
+"approving_qr_title" = "Отсканируйте QR-код на первом устройстве";
+
+"approving_qr_action_primary" = "Готово";
+"approving_qr_action_secondary" = "Позже";
+"approving_qr_action_close" = "Закрыть";
+
+// Camera
+
+"camera_action_close" = "Закрыть";
+"camera_action_cancel" = "Отменить";
+"camera_action_settings" = "Настройки";
+"camera_status_show_qr" = "Наведите камеру на QR-код";
+"camera_status_not_available"  = "Нет доступа к камере";
+"camera_status_not_found" = "Камера не найдена";
+"camera_status_configuration_error" = "Ошибка конфигурации камеры";
+"camera_status_wrong_qr" = "QR-код не может быть использован";
+"camera_authorization_title" = "Разрешите доступ к камере";
+"camera_authorization_description" = "Для сканирования QR-кодов нужен доступ к камере. Вы можете включить его в Настройках";

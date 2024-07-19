@@ -1,0 +1,11 @@
+framework module AbSDKUI {
+  umbrella header "AbSDKUI.h"
+  export *
+
+  module * { export * }
+}
+
+module AbSDKUI.Swift {
+  header "AbSDKUI-Swift.h"
+  requires objc
+}

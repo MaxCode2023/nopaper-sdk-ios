@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<div id="chatra-wrapper" style="width: 100vw; height: 100vh;"></div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<script type="text/javascript">
+                function openChatra(document, window, chatra) {
+                    const pageHref = document.location.href;
+                    const searchParams = new URLSearchParams(pageHref.substring(pageHref.indexOf('?')));
+                    const chatraToken = searchParams.get('chatraToken');
+                    const userId = searchParams.get('userId');
+                    const testAlert = searchParams.get('testAlert');
+                    const phone = searchParams.get('phone');
+                    const name = searchParams.get('name');
+
+                    window.ChatraIntegration = {
+                        testAlert: testAlert,
+                        phone: phone,
+                        name: name,
+                        userGuid: userId
+                    };
+                    window.ChatraSetup = {
+                        language: 'ru',
+                        mode: 'frame',
+                        injectTo: 'chatra-wrapper',
+                        clientId: userId,
+                    };
+                    window.ChatraID = chatraToken;
+
+                    var script = document.createElement('script');
+                    window[chatra] = window[chatra] || function() {
+                        (window[chatra].q = window[chatra].q || []).push(arguments);
+                    };
+                    script.async = true;
+                    script.src = 'https://call.chatra.io/chatra.js';
+                    if (document.head) document.head.appendChild(script);
+
+                    window.Chatra('sendAutoMessage', 'Добрый день! Выпуск подписи будет стоить 1000 рублей. Вы хотите оплатить по карте или по счёту?');
+                }
+                openChatra(document, window, 'Chatra');
+</script>
+</html>
+

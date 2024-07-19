@@ -1,0 +1,1761 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "myDSSSDK",
+        "printedName": "myDSSSDK",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppSDKModule",
+        "printedName": "NppSDKModule",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppCoreModule",
+        "printedName": "NppCoreModule",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppNetworkModule",
+        "printedName": "NppNetworkModule",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "PromiseKit",
+        "printedName": "PromiseKit",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "AbSDKMain",
+        "printedName": "AbSDKMain",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Swinject",
+        "printedName": "Swinject",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppSDKModule",
+        "printedName": "NppSDKModule",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppCoreModule",
+        "printedName": "NppCoreModule",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppNetworkModule",
+        "printedName": "NppNetworkModule",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "myDSSSDK",
+        "printedName": "myDSSSDK",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "AbSDKMain",
+        "printedName": "AbSDKMain",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MyDSSModule",
+        "printedName": "MyDSSModule",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "myDSSInteractor",
+            "printedName": "myDSSInteractor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "(any NppMyDSSModule.MyDSSInteractor)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MyDSSInteractor",
+                    "printedName": "any NppMyDSSModule.MyDSSInteractor",
+                    "usr": "s:14NppMyDSSModule0B13DSSInteractorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14NppMyDSSModule0bC0C15myDSSInteractorAA0bE0_pSgvpZ",
+            "mangledName": "$s14NppMyDSSModule0bC0C15myDSSInteractorAA0bE0_pSgvpZ",
+            "moduleName": "NppMyDSSModule",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "(any NppMyDSSModule.MyDSSInteractor)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MyDSSInteractor",
+                        "printedName": "any NppMyDSSModule.MyDSSInteractor",
+                        "usr": "s:14NppMyDSSModule0B13DSSInteractorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14NppMyDSSModule0bC0C15myDSSInteractorAA0bE0_pSgvgZ",
+                "mangledName": "$s14NppMyDSSModule0bC0C15myDSSInteractorAA0bE0_pSgvgZ",
+                "moduleName": "NppMyDSSModule",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "(any NppMyDSSModule.MyDSSInteractor)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MyDSSInteractor",
+                        "printedName": "any NppMyDSSModule.MyDSSInteractor",
+                        "usr": "s:14NppMyDSSModule0B13DSSInteractorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14NppMyDSSModule0bC0C15myDSSInteractorAA0bE0_pSgvsZ",
+                "mangledName": "$s14NppMyDSSModule0bC0C15myDSSInteractorAA0bE0_pSgvsZ",
+                "moduleName": "NppMyDSSModule",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14NppMyDSSModule0bC0C15myDSSInteractorAA0bE0_pSgvMZ",
+                "mangledName": "$s14NppMyDSSModule0bC0C15myDSSInteractorAA0bE0_pSgvMZ",
+                "moduleName": "NppMyDSSModule",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MyDSSInteractor",
+                "printedName": "any NppMyDSSModule.MyDSSInteractor",
+                "usr": "s:14NppMyDSSModule0B13DSSInteractorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0bC0C6createAA0B13DSSInteractor_pyFZ",
+            "mangledName": "$s14NppMyDSSModule0bC0C6createAA0B13DSSInteractor_pyFZ",
+            "moduleName": "NppMyDSSModule",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLogLevel",
+            "printedName": "setLogLevel(logLevel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AbLogLevel",
+                "printedName": "AbSDKMain.AbLogLevel",
+                "usr": "s:9AbSDKMain0A8LogLevelO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0bC0C11setLogLevel03logF0y9AbSDKMain0heF0O_tFZ",
+            "mangledName": "$s14NppMyDSSModule0bC0C11setLogLevel03logF0y9AbSDKMain0heF0O_tFZ",
+            "moduleName": "NppMyDSSModule",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14NppMyDSSModule0bC0C",
+        "mangledName": "$s14NppMyDSSModule0bC0C",
+        "moduleName": "NppMyDSSModule",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "myDSSSDK",
+        "printedName": "myDSSSDK",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PromiseKit",
+        "printedName": "PromiseKit",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "myDSSSDK",
+        "printedName": "myDSSSDK",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PromiseKit",
+        "printedName": "PromiseKit",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppSDKModule",
+        "printedName": "NppSDKModule",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "myDSSSDK",
+        "printedName": "myDSSSDK",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PromiseKit",
+        "printedName": "PromiseKit",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NppSDKModule",
+        "printedName": "NppSDKModule",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MyDssStorage",
+        "printedName": "MyDssStorage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "certificateId",
+            "printedName": "certificateId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14NppMyDSSModule0B10DssStorageC13certificateIdSSSgvp",
+            "mangledName": "$s14NppMyDSSModule0B10DssStorageC13certificateIdSSSgvp",
+            "moduleName": "NppMyDSSModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14NppMyDSSModule0B10DssStorageC13certificateIdSSSgvg",
+                "mangledName": "$s14NppMyDSSModule0B10DssStorageC13certificateIdSSSgvg",
+                "moduleName": "NppMyDSSModule",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14NppMyDSSModule0B10DssStorageC13certificateIdSSSgvs",
+                "mangledName": "$s14NppMyDSSModule0B10DssStorageC13certificateIdSSSgvs",
+                "moduleName": "NppMyDSSModule",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14NppMyDSSModule0B10DssStorageC13certificateIdSSSgvM",
+                "mangledName": "$s14NppMyDSSModule0B10DssStorageC13certificateIdSSSgvM",
+                "moduleName": "NppMyDSSModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userId",
+            "printedName": "userId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14NppMyDSSModule0B10DssStorageC6userIdSSSgvp",
+            "mangledName": "$s14NppMyDSSModule0B10DssStorageC6userIdSSSgvp",
+            "moduleName": "NppMyDSSModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14NppMyDSSModule0B10DssStorageC6userIdSSSgvg",
+                "mangledName": "$s14NppMyDSSModule0B10DssStorageC6userIdSSSgvg",
+                "moduleName": "NppMyDSSModule",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14NppMyDSSModule0B10DssStorageC6userIdSSSgvs",
+                "mangledName": "$s14NppMyDSSModule0B10DssStorageC6userIdSSSgvs",
+                "moduleName": "NppMyDSSModule",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14NppMyDSSModule0B10DssStorageC6userIdSSSgvM",
+                "mangledName": "$s14NppMyDSSModule0B10DssStorageC6userIdSSSgvM",
+                "moduleName": "NppMyDSSModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "keyId",
+            "printedName": "keyId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14NppMyDSSModule0B10DssStorageC5keyIdSSSgvp",
+            "mangledName": "$s14NppMyDSSModule0B10DssStorageC5keyIdSSSgvp",
+            "moduleName": "NppMyDSSModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14NppMyDSSModule0B10DssStorageC5keyIdSSSgvg",
+                "mangledName": "$s14NppMyDSSModule0B10DssStorageC5keyIdSSSgvg",
+                "moduleName": "NppMyDSSModule",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14NppMyDSSModule0B10DssStorageC5keyIdSSSgvs",
+                "mangledName": "$s14NppMyDSSModule0B10DssStorageC5keyIdSSSgvs",
+                "moduleName": "NppMyDSSModule",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14NppMyDSSModule0B10DssStorageC5keyIdSSSgvM",
+                "mangledName": "$s14NppMyDSSModule0B10DssStorageC5keyIdSSSgvM",
+                "moduleName": "NppMyDSSModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14NppMyDSSModule0B10DssStorageC",
+        "mangledName": "$s14NppMyDSSModule0B10DssStorageC",
+        "moduleName": "NppMyDSSModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MyDSSException",
+        "printedName": "MyDSSException",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NppMyDSSModule.MyDSSException.Type) -> NppMyDSSModule.MyDSSException",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MyDSSException",
+                    "printedName": "NppMyDSSModule.MyDSSException",
+                    "usr": "s:14NppMyDSSModule0B12DSSExceptionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NppMyDSSModule.MyDSSException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MyDSSException",
+                        "printedName": "NppMyDSSModule.MyDSSException",
+                        "usr": "s:14NppMyDSSModule0B12DSSExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14NppMyDSSModule0B12DSSExceptionO5erroryA2CmF",
+            "mangledName": "$s14NppMyDSSModule0B12DSSExceptionO5erroryA2CmF",
+            "moduleName": "NppMyDSSModule"
+          },
+          {
+            "kind": "Var",
+            "name": "userNotFound",
+            "printedName": "userNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NppMyDSSModule.MyDSSException.Type) -> NppMyDSSModule.MyDSSException",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MyDSSException",
+                    "printedName": "NppMyDSSModule.MyDSSException",
+                    "usr": "s:14NppMyDSSModule0B12DSSExceptionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NppMyDSSModule.MyDSSException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MyDSSException",
+                        "printedName": "NppMyDSSModule.MyDSSException",
+                        "usr": "s:14NppMyDSSModule0B12DSSExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14NppMyDSSModule0B12DSSExceptionO12userNotFoundyA2CmF",
+            "mangledName": "$s14NppMyDSSModule0B12DSSExceptionO12userNotFoundyA2CmF",
+            "moduleName": "NppMyDSSModule"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MyDSSException",
+                "printedName": "NppMyDSSModule.MyDSSException",
+                "usr": "s:14NppMyDSSModule0B12DSSExceptionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MyDSSException",
+                "printedName": "NppMyDSSModule.MyDSSException",
+                "usr": "s:14NppMyDSSModule0B12DSSExceptionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B12DSSExceptionO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14NppMyDSSModule0B12DSSExceptionO2eeoiySbAC_ACtFZ",
+            "moduleName": "NppMyDSSModule",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14NppMyDSSModule0B12DSSExceptionO9hashValueSivp",
+            "mangledName": "$s14NppMyDSSModule0B12DSSExceptionO9hashValueSivp",
+            "moduleName": "NppMyDSSModule",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14NppMyDSSModule0B12DSSExceptionO9hashValueSivg",
+                "mangledName": "$s14NppMyDSSModule0B12DSSExceptionO9hashValueSivg",
+                "moduleName": "NppMyDSSModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B12DSSExceptionO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s14NppMyDSSModule0B12DSSExceptionO4hash4intoys6HasherVz_tF",
+            "moduleName": "NppMyDSSModule",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14NppMyDSSModule0B12DSSExceptionO",
+        "mangledName": "$s14NppMyDSSModule0B12DSSExceptionO",
+        "moduleName": "NppMyDSSModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "myDSSSDK",
+        "printedName": "myDSSSDK",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppCoreModule",
+        "printedName": "NppCoreModule",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppNetworkModule",
+        "printedName": "NppNetworkModule",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppSDKModule",
+        "printedName": "NppSDKModule",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "Import",
+        "name": "AbSDKMain",
+        "printedName": "AbSDKMain",
+        "declKind": "Import",
+        "moduleName": "NppMyDSSModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MyDSSInteractor",
+        "printedName": "MyDSSInteractor",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "createDSSUser",
+            "printedName": "createDSSUser()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP13createDSSUser9AbSDKMain4TaskCySSGyF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP13createDSSUser9AbSDKMain4TaskCySSGyF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createDssUserAliasReceiving",
+            "printedName": "createDssUserAliasReceiving()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<()>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP27createDssUserAliasReceiving9AbSDKMain4TaskCyytGyF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP27createDssUserAliasReceiving9AbSDKMain4TaskCyytGyF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteDssUser",
+            "printedName": "deleteDssUser()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP13deleteDssUseryyF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP13deleteDssUseryyF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signCertificateRequest",
+            "printedName": "signCertificateRequest()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<()>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP22signCertificateRequest9AbSDKMain4TaskCyytGyF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP22signCertificateRequest9AbSDKMain4TaskCyytGyF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "installCertificate",
+            "printedName": "installCertificate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<()>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP18installCertificate9AbSDKMain4TaskCyytGyF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP18installCertificate9AbSDKMain4TaskCyytGyF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signDocumentWithKep",
+            "printedName": "signDocumentWithKep(signingPartyId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<()>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP19signDocumentWithKep14signingPartyId9AbSDKMain4TaskCyytGSi_tF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP19signDocumentWithKep14signingPartyId9AbSDKMain4TaskCyytGSi_tF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "status",
+            "printedName": "status()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<NppSDKModule.CsrStatus>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CsrStatus",
+                    "printedName": "NppSDKModule.CsrStatus",
+                    "usr": "s:12NppSDKModule9CsrStatusO"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP6status9AbSDKMain4TaskCy0A9SDKModule9CsrStatusOGyF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP6status9AbSDKMain4TaskCy0A9SDKModule9CsrStatusOGyF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isCertificateAccessibleOnThisDevice",
+            "printedName": "isCertificateAccessibleOnThisDevice()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP35isCertificateAccessibleOnThisDevice9AbSDKMain4TaskCySbGyF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP35isCertificateAccessibleOnThisDevice9AbSDKMain4TaskCySbGyF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isCertificateAvailable",
+            "printedName": "isCertificateAvailable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<NppSDKModule.Certificate>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Certificate",
+                    "printedName": "NppSDKModule.Certificate",
+                    "usr": "s:12NppSDKModule11CertificateV"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP22isCertificateAvailable9AbSDKMain4TaskCy0A9SDKModule0F0VGyF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP22isCertificateAvailable9AbSDKMain4TaskCy0A9SDKModule0F0VGyF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getRegionsList",
+            "printedName": "getRegionsList()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<NppSDKModule.RegionsList>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RegionsList",
+                    "printedName": "NppSDKModule.RegionsList",
+                    "usr": "s:12NppSDKModule11RegionsListV"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP14getRegionsList9AbSDKMain4TaskCy0A9SDKModule0fG0VGyF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP14getRegionsList9AbSDKMain4TaskCy0A9SDKModule0fG0VGyF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getChatraPaymentPageUrl",
+            "printedName": "getChatraPaymentPageUrl()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URLRequest?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLRequest",
+                    "printedName": "Foundation.URLRequest",
+                    "usr": "s:10Foundation10URLRequestV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP23getChatraPaymentPageUrl10Foundation10URLRequestVSgyF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP23getChatraPaymentPageUrl10Foundation10URLRequestVSgyF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCertificate",
+            "printedName": "getCertificate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<NppSDKModule.GetItmCertificate>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GetItmCertificate",
+                    "printedName": "NppSDKModule.GetItmCertificate",
+                    "usr": "s:12NppSDKModule17GetItmCertificateV"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP14getCertificate9AbSDKMain4TaskCy0A9SDKModule06GetItmF0VGyF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP14getCertificate9AbSDKMain4TaskCy0A9SDKModule06GetItmF0VGyF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPartnerPointList",
+            "printedName": "getPartnerPointList()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<NppSDKModule.PartnerPointList>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PartnerPointList",
+                    "printedName": "NppSDKModule.PartnerPointList",
+                    "usr": "s:12NppSDKModule16PartnerPointListV"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP19getPartnerPointList9AbSDKMain4TaskCy0A9SDKModule0fgH0VGyF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP19getPartnerPointList9AbSDKMain4TaskCy0A9SDKModule0fgH0VGyF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPartnerPoint",
+            "printedName": "setPartnerPoint(identificationPointId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<AbSDKMain.VoidCodable>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VoidCodable",
+                    "printedName": "AbSDKMain.VoidCodable",
+                    "usr": "s:9AbSDKMain11VoidCodableV"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP15setPartnerPoint014identificationG2Id9AbSDKMain4TaskCyAF11VoidCodableVGSS_tF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP15setPartnerPoint014identificationG2Id9AbSDKMain4TaskCyAF11VoidCodableVGSS_tF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSelectedPartnerPoint",
+            "printedName": "getSelectedPartnerPoint()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<NppSDKModule.PartnerPointModel>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PartnerPointModel",
+                    "printedName": "NppSDKModule.PartnerPointModel",
+                    "usr": "s:12NppSDKModule17PartnerPointModelV"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP23getSelectedPartnerPoint9AbSDKMain4TaskCy0A9SDKModule0gH5ModelVGyF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP23getSelectedPartnerPoint9AbSDKMain4TaskCy0A9SDKModule0gH5ModelVGyF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "submitForm",
+            "printedName": "submitForm()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<AbSDKMain.VoidCodable>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VoidCodable",
+                    "printedName": "AbSDKMain.VoidCodable",
+                    "usr": "s:9AbSDKMain11VoidCodableV"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP10submitForm9AbSDKMain4TaskCyAE11VoidCodableVGyF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP10submitForm9AbSDKMain4TaskCyAE11VoidCodableVGyF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveForm",
+            "printedName": "saveForm(itmForm:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<AbSDKMain.VoidCodable>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VoidCodable",
+                    "printedName": "AbSDKMain.VoidCodable",
+                    "usr": "s:9AbSDKMain11VoidCodableV"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ItmForm",
+                "printedName": "NppSDKModule.ItmForm",
+                "usr": "s:12NppSDKModule7ItmFormV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP8saveForm03itmF09AbSDKMain4TaskCyAF11VoidCodableVG0A9SDKModule03ItmF0V_tF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP8saveForm03itmF09AbSDKMain4TaskCyAF11VoidCodableVG0A9SDKModule03ItmF0V_tF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getForm",
+            "printedName": "getForm()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<NppSDKModule.ItmFormResponse>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ItmFormResponse",
+                    "printedName": "NppSDKModule.ItmFormResponse",
+                    "usr": "s:12NppSDKModule15ItmFormResponseV"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP7getForm9AbSDKMain4TaskCy0A9SDKModule03ItmF8ResponseVGyF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP7getForm9AbSDKMain4TaskCy0A9SDKModule03ItmF8ResponseVGyF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadPassportFile",
+            "printedName": "uploadPassportFile(file:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<NppSDKModule.UploadFile>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UploadFile",
+                    "printedName": "NppSDKModule.UploadFile",
+                    "usr": "s:12NppSDKModule10UploadFileV"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UploadFileForRequest",
+                "printedName": "NppSDKModule.UploadFileForRequest",
+                "usr": "s:12NppSDKModule20UploadFileForRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP18uploadPassportFile4file9AbSDKMain4TaskCy0A9SDKModule06UploadG0VGAI0mG10ForRequestV_tF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP18uploadPassportFile4file9AbSDKMain4TaskCy0A9SDKModule06UploadG0VGAI0mG10ForRequestV_tF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removePassportFile",
+            "printedName": "removePassportFile(csrFileId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<AbSDKMain.VoidCodable>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VoidCodable",
+                    "printedName": "AbSDKMain.VoidCodable",
+                    "usr": "s:9AbSDKMain11VoidCodableV"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP18removePassportFile03csrG2Id9AbSDKMain4TaskCyAF11VoidCodableVGSS_tF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP18removePassportFile03csrG2Id9AbSDKMain4TaskCyAF11VoidCodableVGSS_tF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPassportFiles",
+            "printedName": "getPassportFiles()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<NppSDKModule.CsrFileList>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CsrFileList",
+                    "printedName": "NppSDKModule.CsrFileList",
+                    "usr": "s:12NppSDKModule11CsrFileListV"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP16getPassportFiles9AbSDKMain4TaskCy0A9SDKModule11CsrFileListVGyF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP16getPassportFiles9AbSDKMain4TaskCy0A9SDKModule11CsrFileListVGyF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadPassportFiles",
+            "printedName": "downloadPassportFiles(csrFileId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP21downloadPassportFiles9csrFileId9AbSDKMain4TaskCySSGSS_tF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP21downloadPassportFiles9csrFileId9AbSDKMain4TaskCySSGSS_tF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getRejectCommentList",
+            "printedName": "getRejectCommentList()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<[Swift.String]>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NppMyDSSModule0B13DSSInteractorP20getRejectCommentList9AbSDKMain4TaskCySaySSGGyF",
+            "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP20getRejectCommentList9AbSDKMain4TaskCySaySSGGyF",
+            "moduleName": "NppMyDSSModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppMyDSSModule.MyDSSInteractor>",
+            "sugared_genericSig": "<Self where Self : NppMyDSSModule.MyDSSInteractor>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:14NppMyDSSModule0B13DSSInteractorP",
+        "mangledName": "$s14NppMyDSSModule0B13DSSInteractorP",
+        "moduleName": "NppMyDSSModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppMyDSSModule\/MyDSSStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 190,
+      "length": 13,
+      "value": "\"mydssCertId\""
+    },
+    {
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppMyDSSModule\/MyDSSStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 232,
+      "length": 13,
+      "value": "\"myDssUserUd\""
+    },
+    {
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppMyDSSModule\/MyDSSStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 273,
+      "length": 12,
+      "value": "\"myDssKeyId\""
+    }
+  ]
+}

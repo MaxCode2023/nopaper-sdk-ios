@@ -1,0 +1,4 @@
+framework module NppSignalRModule {
+  header "NppSignalRModule-Swift.h"
+  requires objc
+}

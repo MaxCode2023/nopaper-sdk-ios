@@ -1,0 +1,74 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NppMyDSSModule
+import AbSDKMain
+import Foundation
+import NppCoreModule
+@_exported import NppMyDSSModule
+import NppNetworkModule
+import NppSDKModule
+import PromiseKit
+import RxSwift
+import Swift
+import Swinject
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import myDSSSDK
+@_hasMissingDesignatedInitializers final public class MyDSSModule {
+  public static var myDSSInteractor: (any NppMyDSSModule.MyDSSInteractor)!
+  public static func create() -> any NppMyDSSModule.MyDSSInteractor
+  public static func setLogLevel(logLevel: AbSDKMain.AbLogLevel)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class MyDssStorage {
+  public var certificateId: Swift.String? {
+    get
+    set
+  }
+  public var userId: Swift.String? {
+    get
+    set
+  }
+  public var keyId: Swift.String? {
+    get
+    set
+  }
+  @objc deinit
+}
+public enum MyDSSException : Swift.Error {
+  case error
+  case userNotFound
+  public static func == (a: NppMyDSSModule.MyDSSException, b: NppMyDSSModule.MyDSSException) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol MyDSSInteractor {
+  func createDSSUser() -> AbSDKMain.Task<Swift.String>
+  func createDssUserAliasReceiving() -> AbSDKMain.Task<Swift.Void>
+  func deleteDssUser()
+  func signCertificateRequest() -> AbSDKMain.Task<Swift.Void>
+  func installCertificate() -> AbSDKMain.Task<Swift.Void>
+  func signDocumentWithKep(signingPartyId: Swift.Int) -> AbSDKMain.Task<Swift.Void>
+  func status() -> AbSDKMain.Task<NppSDKModule.CsrStatus>
+  func isCertificateAccessibleOnThisDevice() -> AbSDKMain.Task<Swift.Bool>
+  func isCertificateAvailable() -> AbSDKMain.Task<NppSDKModule.Certificate>
+  func getRegionsList() -> AbSDKMain.Task<NppSDKModule.RegionsList>
+  func getChatraPaymentPageUrl() -> Foundation.URLRequest?
+  func getCertificate() -> AbSDKMain.Task<NppSDKModule.GetItmCertificate>
+  func getPartnerPointList() -> AbSDKMain.Task<NppSDKModule.PartnerPointList>
+  func setPartnerPoint(identificationPointId: Swift.String) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  func getSelectedPartnerPoint() -> AbSDKMain.Task<NppSDKModule.PartnerPointModel>
+  func submitForm() -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  func saveForm(itmForm: NppSDKModule.ItmForm) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  func getForm() -> AbSDKMain.Task<NppSDKModule.ItmFormResponse>
+  func uploadPassportFile(file: NppSDKModule.UploadFileForRequest) -> AbSDKMain.Task<NppSDKModule.UploadFile>
+  func removePassportFile(csrFileId: Swift.String) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  func getPassportFiles() -> AbSDKMain.Task<NppSDKModule.CsrFileList>
+  func downloadPassportFiles(csrFileId: Swift.String) -> AbSDKMain.Task<Swift.String>
+  func getRejectCommentList() -> AbSDKMain.Task<[Swift.String]>
+}
+extension NppMyDSSModule.MyDSSException : Swift.Equatable {}
+extension NppMyDSSModule.MyDSSException : Swift.Hashable {}

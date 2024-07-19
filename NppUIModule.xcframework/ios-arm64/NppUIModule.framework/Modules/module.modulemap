@@ -1,0 +1,11 @@
+framework module NppUIModule {
+  umbrella header "NppUIModule.h"
+  export *
+
+  module * { export * }
+}
+
+module NppUIModule.Swift {
+  header "NppUIModule-Swift.h"
+  requires objc
+}

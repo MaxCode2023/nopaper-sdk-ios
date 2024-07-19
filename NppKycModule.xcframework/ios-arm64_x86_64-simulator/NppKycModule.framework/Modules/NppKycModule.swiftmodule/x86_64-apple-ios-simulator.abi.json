@@ -1,0 +1,2298 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppKycModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "OZLivenessSDK",
+        "printedName": "OZLivenessSDK",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "PCKYCModule",
+        "printedName": "PCKYCModule",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "AbSDKMain",
+        "printedName": "AbSDKMain",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppKycModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NppCoreModule",
+        "printedName": "NppCoreModule",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppNetworkModule",
+        "printedName": "NppNetworkModule",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppSDKModule",
+        "printedName": "NppSDKModule",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Swinject",
+        "printedName": "Swinject",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "AbSDKMain",
+        "printedName": "AbSDKMain",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EkycSDK",
+        "printedName": "EkycSDK",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ekycInteractor",
+            "printedName": "ekycInteractor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "(any NppKycModule.EkycInteractor)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EkycInteractor",
+                    "printedName": "any NppKycModule.EkycInteractor",
+                    "usr": "s:12NppKycModule14EkycInteractorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NppKycModule7EkycSDKC14ekycInteractorAA0dG0_pSgvpZ",
+            "mangledName": "$s12NppKycModule7EkycSDKC14ekycInteractorAA0dG0_pSgvpZ",
+            "moduleName": "NppKycModule",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "(any NppKycModule.EkycInteractor)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EkycInteractor",
+                        "printedName": "any NppKycModule.EkycInteractor",
+                        "usr": "s:12NppKycModule14EkycInteractorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NppKycModule7EkycSDKC14ekycInteractorAA0dG0_pSgvgZ",
+                "mangledName": "$s12NppKycModule7EkycSDKC14ekycInteractorAA0dG0_pSgvgZ",
+                "moduleName": "NppKycModule",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "(any NppKycModule.EkycInteractor)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EkycInteractor",
+                        "printedName": "any NppKycModule.EkycInteractor",
+                        "usr": "s:12NppKycModule14EkycInteractorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NppKycModule7EkycSDKC14ekycInteractorAA0dG0_pSgvsZ",
+                "mangledName": "$s12NppKycModule7EkycSDKC14ekycInteractorAA0dG0_pSgvsZ",
+                "moduleName": "NppKycModule",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NppKycModule7EkycSDKC14ekycInteractorAA0dG0_pSgvMZ",
+                "mangledName": "$s12NppKycModule7EkycSDKC14ekycInteractorAA0dG0_pSgvMZ",
+                "moduleName": "NppKycModule",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EkycInteractor",
+                "printedName": "any NppKycModule.EkycInteractor",
+                "usr": "s:12NppKycModule14EkycInteractorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule7EkycSDKC6createAA0D10Interactor_pyFZ",
+            "mangledName": "$s12NppKycModule7EkycSDKC6createAA0D10Interactor_pyFZ",
+            "moduleName": "NppKycModule",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLogLevel",
+            "printedName": "setLogLevel(logLevel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AbLogLevel",
+                "printedName": "AbSDKMain.AbLogLevel",
+                "usr": "s:9AbSDKMain0A8LogLevelO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule7EkycSDKC11setLogLevel03logH0y9AbSDKMain0jgH0O_tFZ",
+            "mangledName": "$s12NppKycModule7EkycSDKC11setLogLevel03logH0y9AbSDKMain0jgH0O_tFZ",
+            "moduleName": "NppKycModule",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12NppKycModule7EkycSDKC",
+        "mangledName": "$s12NppKycModule7EkycSDKC",
+        "moduleName": "NppKycModule",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppKycModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KycException",
+        "printedName": "KycException",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "noSession",
+            "printedName": "noSession",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NppKycModule.KycException.Type) -> NppKycModule.KycException",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KycException",
+                    "printedName": "NppKycModule.KycException",
+                    "usr": "s:12NppKycModule0B9ExceptionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NppKycModule.KycException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KycException",
+                        "printedName": "NppKycModule.KycException",
+                        "usr": "s:12NppKycModule0B9ExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NppKycModule0B9ExceptionO9noSessionyA2CmF",
+            "mangledName": "$s12NppKycModule0B9ExceptionO9noSessionyA2CmF",
+            "moduleName": "NppKycModule"
+          },
+          {
+            "kind": "Var",
+            "name": "wrongMediaType",
+            "printedName": "wrongMediaType",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NppKycModule.KycException.Type) -> NppKycModule.KycException",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KycException",
+                    "printedName": "NppKycModule.KycException",
+                    "usr": "s:12NppKycModule0B9ExceptionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NppKycModule.KycException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KycException",
+                        "printedName": "NppKycModule.KycException",
+                        "usr": "s:12NppKycModule0B9ExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NppKycModule0B9ExceptionO14wrongMediaTypeyA2CmF",
+            "mangledName": "$s12NppKycModule0B9ExceptionO14wrongMediaTypeyA2CmF",
+            "moduleName": "NppKycModule"
+          },
+          {
+            "kind": "Var",
+            "name": "timeoutExceeded",
+            "printedName": "timeoutExceeded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NppKycModule.KycException.Type) -> NppKycModule.KycException",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KycException",
+                    "printedName": "NppKycModule.KycException",
+                    "usr": "s:12NppKycModule0B9ExceptionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NppKycModule.KycException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KycException",
+                        "printedName": "NppKycModule.KycException",
+                        "usr": "s:12NppKycModule0B9ExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NppKycModule0B9ExceptionO15timeoutExceededyA2CmF",
+            "mangledName": "$s12NppKycModule0B9ExceptionO15timeoutExceededyA2CmF",
+            "moduleName": "NppKycModule"
+          },
+          {
+            "kind": "Var",
+            "name": "notVerification",
+            "printedName": "notVerification",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NppKycModule.KycException.Type) -> NppKycModule.KycException",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KycException",
+                    "printedName": "NppKycModule.KycException",
+                    "usr": "s:12NppKycModule0B9ExceptionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NppKycModule.KycException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KycException",
+                        "printedName": "NppKycModule.KycException",
+                        "usr": "s:12NppKycModule0B9ExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NppKycModule0B9ExceptionO15notVerificationyA2CmF",
+            "mangledName": "$s12NppKycModule0B9ExceptionO15notVerificationyA2CmF",
+            "moduleName": "NppKycModule"
+          },
+          {
+            "kind": "Var",
+            "name": "keyFailure",
+            "printedName": "keyFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NppKycModule.KycException.Type) -> NppKycModule.KycException",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KycException",
+                    "printedName": "NppKycModule.KycException",
+                    "usr": "s:12NppKycModule0B9ExceptionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NppKycModule.KycException.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KycException",
+                        "printedName": "NppKycModule.KycException",
+                        "usr": "s:12NppKycModule0B9ExceptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NppKycModule0B9ExceptionO10keyFailureyA2CmF",
+            "mangledName": "$s12NppKycModule0B9ExceptionO10keyFailureyA2CmF",
+            "moduleName": "NppKycModule"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KycException",
+                "printedName": "NppKycModule.KycException",
+                "usr": "s:12NppKycModule0B9ExceptionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KycException",
+                "printedName": "NppKycModule.KycException",
+                "usr": "s:12NppKycModule0B9ExceptionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule0B9ExceptionO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s12NppKycModule0B9ExceptionO2eeoiySbAC_ACtFZ",
+            "moduleName": "NppKycModule",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NppKycModule0B9ExceptionO9hashValueSivp",
+            "mangledName": "$s12NppKycModule0B9ExceptionO9hashValueSivp",
+            "moduleName": "NppKycModule",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NppKycModule0B9ExceptionO9hashValueSivg",
+                "mangledName": "$s12NppKycModule0B9ExceptionO9hashValueSivg",
+                "moduleName": "NppKycModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule0B9ExceptionO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s12NppKycModule0B9ExceptionO4hash4intoys6HasherVz_tF",
+            "moduleName": "NppKycModule",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12NppKycModule0B9ExceptionO",
+        "mangledName": "$s12NppKycModule0B9ExceptionO",
+        "moduleName": "NppKycModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppKycModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PCKYCModule",
+        "printedName": "PCKYCModule",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppKycModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "OZLivenessSDK",
+        "printedName": "OZLivenessSDK",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "PCSDKModule",
+        "printedName": "PCSDKModule",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "PCKYCModule",
+        "printedName": "PCKYCModule",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppSDKModule",
+        "printedName": "NppSDKModule",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppCoreModule",
+        "printedName": "NppCoreModule",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "AbSDKMain",
+        "printedName": "AbSDKMain",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EkycInteractorImpl",
+        "printedName": "EkycInteractorImpl",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(const:certificateInteractor:pcUserInteractor:profileInteractor:sentryInteractor:monitoringInteractor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EkycInteractorImpl",
+                "printedName": "NppKycModule.EkycInteractorImpl",
+                "usr": "c:@M@NppKycModule@objc(cs)EkycInteractorImpl"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ConstSDK",
+                "printedName": "any NppCoreModule.ConstSDK",
+                "usr": "s:13NppCoreModule8ConstSDKP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CertificateInteractor",
+                "printedName": "any NppSDKModule.CertificateInteractor",
+                "usr": "s:12NppSDKModule21CertificateInteractorP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PCUserInteractor",
+                "printedName": "any NppSDKModule.PCUserInteractor",
+                "usr": "s:12NppSDKModule16PCUserInteractorP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProfileInteractor",
+                "printedName": "any NppSDKModule.ProfileInteractor",
+                "usr": "s:12NppSDKModule17ProfileInteractorP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SentryInteractor",
+                "printedName": "any NppSDKModule.SentryInteractor",
+                "usr": "s:12NppSDKModule16SentryInteractorP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MonitoringInteractor",
+                "printedName": "any NppSDKModule.MonitoringInteractor",
+                "usr": "s:12NppSDKModule20MonitoringInteractorP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NppKycModule18EkycInteractorImplC5const011certificateE006pcUserE007profileE006sentryE0010monitoringE0AC0a4CoreC08ConstSDK_p_0A9SDKModule011CertificateE0_pAL06PCUserE0_pAL07ProfileE0_pAL06SentryE0_pAL010MonitoringE0_ptcfc",
+            "mangledName": "$s12NppKycModule18EkycInteractorImplC5const011certificateE006pcUserE007profileE006sentryE0010monitoringE0AC0a4CoreC08ConstSDK_p_0A9SDKModule011CertificateE0_pAL06PCUserE0_pAL07ProfileE0_pAL06SentryE0_pAL010MonitoringE0_ptcfc",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "verificate",
+            "printedName": "verificate(isNew:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<PCKYCModule.PCKYCSessionStatus.Status>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Status",
+                    "printedName": "PCKYCModule.PCKYCSessionStatus.Status",
+                    "usr": "s:11PCKYCModule18PCKYCSessionStatusV0C0O"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule18EkycInteractorImplC10verificate5isNew9AbSDKMain4TaskCy11PCKYCModule18PCKYCSessionStatusV0O0OGSb_tF",
+            "mangledName": "$s12NppKycModule18EkycInteractorImplC10verificate5isNew9AbSDKMain4TaskCy11PCKYCModule18PCKYCSessionStatusV0O0OGSb_tF",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "status",
+            "printedName": "status()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<PCKYCModule.PCKYCSessionStatus.Status>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Status",
+                    "printedName": "PCKYCModule.PCKYCSessionStatus.Status",
+                    "usr": "s:11PCKYCModule18PCKYCSessionStatusV0C0O"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule18EkycInteractorImplC6status9AbSDKMain4TaskCy11PCKYCModule18PCKYCSessionStatusV0M0OGyF",
+            "mangledName": "$s12NppKycModule18EkycInteractorImplC6status9AbSDKMain4TaskCy11PCKYCModule18PCKYCSessionStatusV0M0OGyF",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createMediaSource",
+            "printedName": "createMediaSource(mediaType:viewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<Swift.Set<PCKYCModule.PCKYCMediaType>>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<PCKYCModule.PCKYCMediaType>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PCKYCMediaType",
+                        "printedName": "PCKYCModule.PCKYCMediaType",
+                        "usr": "s:11PCKYCModule14PCKYCMediaTypeO"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PCKYCMediaType",
+                "printedName": "PCKYCModule.PCKYCMediaType",
+                "usr": "s:11PCKYCModule14PCKYCMediaTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule18EkycInteractorImplC17createMediaSource9mediaType14viewController9AbSDKMain4TaskCyShy11PCKYCModule010PCKYCMediaK0OGGAL_So06UIViewM0CtF",
+            "mangledName": "$s12NppKycModule18EkycInteractorImplC17createMediaSource9mediaType14viewController9AbSDKMain4TaskCyShy11PCKYCModule010PCKYCMediaK0OGGAL_So06UIViewM0CtF",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getRequiredSources",
+            "printedName": "getRequiredSources()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<Swift.Set<PCKYCModule.PCKYCMediaType>>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<PCKYCModule.PCKYCMediaType>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PCKYCMediaType",
+                        "printedName": "PCKYCModule.PCKYCMediaType",
+                        "usr": "s:11PCKYCModule14PCKYCMediaTypeO"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule18EkycInteractorImplC18getRequiredSources9AbSDKMain4TaskCyShy11PCKYCModule14PCKYCMediaTypeOGGyF",
+            "mangledName": "$s12NppKycModule18EkycInteractorImplC18getRequiredSources9AbSDKMain4TaskCyShy11PCKYCModule14PCKYCMediaTypeOGGyF",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadAndAnalyze",
+            "printedName": "uploadAndAnalyze()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule18EkycInteractorImplC16uploadAndAnalyzeyyF",
+            "mangledName": "$s12NppKycModule18EkycInteractorImplC16uploadAndAnalyzeyyF",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getOCRResult",
+            "printedName": "getOCRResult()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<NppKycModule.OCRResults>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OCRResults",
+                    "printedName": "NppKycModule.OCRResults",
+                    "usr": "s:12NppKycModule10OCRResultsV"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule18EkycInteractorImplC12getOCRResult9AbSDKMain4TaskCyAA10OCRResultsVGyF",
+            "mangledName": "$s12NppKycModule18EkycInteractorImplC12getOCRResult9AbSDKMain4TaskCyAA10OCRResultsVGyF",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "approveOCRResults",
+            "printedName": "approveOCRResults(isApproved:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule18EkycInteractorImplC17approveOCRResults10isApprovedySb_tF",
+            "mangledName": "$s12NppKycModule18EkycInteractorImplC17approveOCRResults10isApprovedySb_tF",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteSessions",
+            "printedName": "deleteSessions()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule18EkycInteractorImplC14deleteSessionsyyF",
+            "mangledName": "$s12NppKycModule18EkycInteractorImplC14deleteSessionsyyF",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EkycInteractorImpl",
+                "printedName": "NppKycModule.EkycInteractorImpl",
+                "usr": "c:@M@NppKycModule@objc(cs)EkycInteractorImpl"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NppKycModule@objc(cs)EkycInteractorImpl(im)init",
+            "mangledName": "$s12NppKycModule18EkycInteractorImplCACycfc",
+            "moduleName": "NppKycModule",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "onOZLivenessResult",
+            "printedName": "onOZLivenessResult(results:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[OZLivenessSDK.OZMedia]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OZMedia",
+                    "printedName": "OZLivenessSDK.OZMedia",
+                    "usr": "s:13OZLivenessSDK7OZMediaV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule18EkycInteractorImplC18onOZLivenessResult7resultsySay0H3SDK7OZMediaVG_tF",
+            "mangledName": "$s12NppKycModule18EkycInteractorImplC18onOZLivenessResult7resultsySay0H3SDK7OZMediaVG_tF",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onError",
+            "printedName": "onError(status:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "OZLivenessSDK.OZVerificationStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OZVerificationStatus",
+                    "printedName": "OZLivenessSDK.OZVerificationStatus",
+                    "usr": "s:13OZLivenessSDK20OZVerificationStatusO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule18EkycInteractorImplC7onError6statusy13OZLivenessSDK20OZVerificationStatusOSg_tF",
+            "mangledName": "$s12NppKycModule18EkycInteractorImplC7onError6statusy13OZLivenessSDK20OZVerificationStatusOSg_tF",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "imagePickerController",
+            "printedName": "imagePickerController(_:didFinishPickingMediaWithInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImagePickerController",
+                "printedName": "UIKit.UIImagePickerController",
+                "usr": "c:objc(cs)UIImagePickerController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[UIKit.UIImagePickerController.InfoKey : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InfoKey",
+                    "printedName": "UIKit.UIImagePickerController.InfoKey",
+                    "usr": "c:@T@UIImagePickerControllerInfoKey"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@NppKycModule@objc(cs)EkycInteractorImpl(im)imagePickerController:didFinishPickingMediaWithInfo:",
+            "mangledName": "$s12NppKycModule18EkycInteractorImplC21imagePickerController_29didFinishPickingMediaWithInfoySo07UIImagehI0C_SDySo0phiO3KeyaypGtF",
+            "moduleName": "NppKycModule",
+            "objc_name": "imagePickerController:didFinishPickingMediaWithInfo:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NppKycModule@objc(cs)EkycInteractorImpl",
+        "mangledName": "$s12NppKycModule18EkycInteractorImplC",
+        "moduleName": "NppKycModule",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "EkycInteractor",
+            "printedName": "EkycInteractor",
+            "usr": "s:12NppKycModule14EkycInteractorP",
+            "mangledName": "$s12NppKycModule14EkycInteractorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TaskOwner",
+            "printedName": "TaskOwner",
+            "usr": "s:9AbSDKMain9TaskOwnerP",
+            "mangledName": "$s9AbSDKMain9TaskOwnerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReactiveCompatible",
+            "printedName": "ReactiveCompatible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReactiveBase",
+                "printedName": "ReactiveBase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSObject",
+                    "printedName": "ObjectiveC.NSObject",
+                    "usr": "c:objc(cs)NSObject"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7RxSwift18ReactiveCompatibleP",
+            "mangledName": "$s7RxSwift18ReactiveCompatibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "OZLivenessDelegate",
+            "printedName": "OZLivenessDelegate",
+            "usr": "s:13OZLivenessSDK0A8DelegateP",
+            "mangledName": "$s13OZLivenessSDK0A8DelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppKycModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OCRResults",
+        "printedName": "OCRResults",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "fieldTexts",
+            "printedName": "fieldTexts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "fieldTextsData",
+                "printedName": "NppKycModule.fieldTextsData",
+                "usr": "s:12NppKycModule14fieldTextsDataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NppKycModule10OCRResultsV10fieldTextsAA0eF4DataVvp",
+            "mangledName": "$s12NppKycModule10OCRResultsV10fieldTextsAA0eF4DataVvp",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "fieldTextsData",
+                    "printedName": "NppKycModule.fieldTextsData",
+                    "usr": "s:12NppKycModule14fieldTextsDataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NppKycModule10OCRResultsV10fieldTextsAA0eF4DataVvg",
+                "mangledName": "$s12NppKycModule10OCRResultsV10fieldTextsAA0eF4DataVvg",
+                "moduleName": "NppKycModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OCRResults",
+                "printedName": "NppKycModule.OCRResults",
+                "usr": "s:12NppKycModule10OCRResultsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NppKycModule10OCRResultsV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s12NppKycModule10OCRResultsV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NppKycModule",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule10OCRResultsV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s12NppKycModule10OCRResultsV6encode2toys7Encoder_p_tKF",
+            "moduleName": "NppKycModule",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12NppKycModule10OCRResultsV",
+        "mangledName": "$s12NppKycModule10OCRResultsV",
+        "moduleName": "NppKycModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "fieldTextsData",
+        "printedName": "fieldTextsData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "dateofbirth",
+            "printedName": "dateofbirth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NppKycModule14fieldTextsDataV11dateofbirthSSvp",
+            "mangledName": "$s12NppKycModule14fieldTextsDataV11dateofbirthSSvp",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NppKycModule14fieldTextsDataV11dateofbirthSSvg",
+                "mangledName": "$s12NppKycModule14fieldTextsDataV11dateofbirthSSvg",
+                "moduleName": "NppKycModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "number",
+            "printedName": "number",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NppKycModule14fieldTextsDataV6numberSSvp",
+            "mangledName": "$s12NppKycModule14fieldTextsDataV6numberSSvp",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NppKycModule14fieldTextsDataV6numberSSvg",
+                "mangledName": "$s12NppKycModule14fieldTextsDataV6numberSSvg",
+                "moduleName": "NppKycModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "address",
+            "printedName": "address",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NppKycModule14fieldTextsDataV7addressSSvp",
+            "mangledName": "$s12NppKycModule14fieldTextsDataV7addressSSvp",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NppKycModule14fieldTextsDataV7addressSSvg",
+                "mangledName": "$s12NppKycModule14fieldTextsDataV7addressSSvg",
+                "moduleName": "NppKycModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dateofissue",
+            "printedName": "dateofissue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NppKycModule14fieldTextsDataV11dateofissueSSvp",
+            "mangledName": "$s12NppKycModule14fieldTextsDataV11dateofissueSSvp",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NppKycModule14fieldTextsDataV11dateofissueSSvg",
+                "mangledName": "$s12NppKycModule14fieldTextsDataV11dateofissueSSvg",
+                "moduleName": "NppKycModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sex",
+            "printedName": "sex",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NppKycModule14fieldTextsDataV3sexSSvp",
+            "mangledName": "$s12NppKycModule14fieldTextsDataV3sexSSvp",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NppKycModule14fieldTextsDataV3sexSSvg",
+                "mangledName": "$s12NppKycModule14fieldTextsDataV3sexSSvg",
+                "moduleName": "NppKycModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NppKycModule14fieldTextsDataV4nameSSvp",
+            "mangledName": "$s12NppKycModule14fieldTextsDataV4nameSSvp",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NppKycModule14fieldTextsDataV4nameSSvg",
+                "mangledName": "$s12NppKycModule14fieldTextsDataV4nameSSvg",
+                "moduleName": "NppKycModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "issuecode",
+            "printedName": "issuecode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NppKycModule14fieldTextsDataV9issuecodeSSvp",
+            "mangledName": "$s12NppKycModule14fieldTextsDataV9issuecodeSSvp",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NppKycModule14fieldTextsDataV9issuecodeSSvg",
+                "mangledName": "$s12NppKycModule14fieldTextsDataV9issuecodeSSvg",
+                "moduleName": "NppKycModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "placeofissue",
+            "printedName": "placeofissue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NppKycModule14fieldTextsDataV12placeofissueSSvp",
+            "mangledName": "$s12NppKycModule14fieldTextsDataV12placeofissueSSvp",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NppKycModule14fieldTextsDataV12placeofissueSSvg",
+                "mangledName": "$s12NppKycModule14fieldTextsDataV12placeofissueSSvg",
+                "moduleName": "NppKycModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "fieldTextsData",
+                "printedName": "NppKycModule.fieldTextsData",
+                "usr": "s:12NppKycModule14fieldTextsDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NppKycModule14fieldTextsDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s12NppKycModule14fieldTextsDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NppKycModule",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule14fieldTextsDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s12NppKycModule14fieldTextsDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "NppKycModule",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12NppKycModule14fieldTextsDataV",
+        "mangledName": "$s12NppKycModule14fieldTextsDataV",
+        "moduleName": "NppKycModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NppKycModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "PCKYCModule",
+        "printedName": "PCKYCModule",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "NppCoreModule",
+        "printedName": "NppCoreModule",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "Import",
+        "name": "AbSDKMain",
+        "printedName": "AbSDKMain",
+        "declKind": "Import",
+        "moduleName": "NppKycModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EkycInteractor",
+        "printedName": "EkycInteractor",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "status",
+            "printedName": "status()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<PCKYCModule.PCKYCSessionStatus.Status>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Status",
+                    "printedName": "PCKYCModule.PCKYCSessionStatus.Status",
+                    "usr": "s:11PCKYCModule18PCKYCSessionStatusV0C0O"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule14EkycInteractorP6status9AbSDKMain4TaskCy11PCKYCModule18PCKYCSessionStatusV0L0OGyF",
+            "mangledName": "$s12NppKycModule14EkycInteractorP6status9AbSDKMain4TaskCy11PCKYCModule18PCKYCSessionStatusV0L0OGyF",
+            "moduleName": "NppKycModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppKycModule.EkycInteractor>",
+            "sugared_genericSig": "<Self where Self : NppKycModule.EkycInteractor>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "verificate",
+            "printedName": "verificate(isNew:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<PCKYCModule.PCKYCSessionStatus.Status>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Status",
+                    "printedName": "PCKYCModule.PCKYCSessionStatus.Status",
+                    "usr": "s:11PCKYCModule18PCKYCSessionStatusV0C0O"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule14EkycInteractorP10verificate5isNew9AbSDKMain4TaskCy11PCKYCModule18PCKYCSessionStatusV0N0OGSb_tF",
+            "mangledName": "$s12NppKycModule14EkycInteractorP10verificate5isNew9AbSDKMain4TaskCy11PCKYCModule18PCKYCSessionStatusV0N0OGSb_tF",
+            "moduleName": "NppKycModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppKycModule.EkycInteractor>",
+            "sugared_genericSig": "<Self where Self : NppKycModule.EkycInteractor>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getRequiredSources",
+            "printedName": "getRequiredSources()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<Swift.Set<PCKYCModule.PCKYCMediaType>>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<PCKYCModule.PCKYCMediaType>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PCKYCMediaType",
+                        "printedName": "PCKYCModule.PCKYCMediaType",
+                        "usr": "s:11PCKYCModule14PCKYCMediaTypeO"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule14EkycInteractorP18getRequiredSources9AbSDKMain4TaskCyShy11PCKYCModule14PCKYCMediaTypeOGGyF",
+            "mangledName": "$s12NppKycModule14EkycInteractorP18getRequiredSources9AbSDKMain4TaskCyShy11PCKYCModule14PCKYCMediaTypeOGGyF",
+            "moduleName": "NppKycModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppKycModule.EkycInteractor>",
+            "sugared_genericSig": "<Self where Self : NppKycModule.EkycInteractor>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getOCRResult",
+            "printedName": "getOCRResult()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<NppKycModule.OCRResults>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OCRResults",
+                    "printedName": "NppKycModule.OCRResults",
+                    "usr": "s:12NppKycModule10OCRResultsV"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule14EkycInteractorP12getOCRResult9AbSDKMain4TaskCyAA10OCRResultsVGyF",
+            "mangledName": "$s12NppKycModule14EkycInteractorP12getOCRResult9AbSDKMain4TaskCyAA10OCRResultsVGyF",
+            "moduleName": "NppKycModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppKycModule.EkycInteractor>",
+            "sugared_genericSig": "<Self where Self : NppKycModule.EkycInteractor>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createMediaSource",
+            "printedName": "createMediaSource(mediaType:viewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Task",
+                "printedName": "AbSDKMain.Task<Swift.Set<PCKYCModule.PCKYCMediaType>>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<PCKYCModule.PCKYCMediaType>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PCKYCMediaType",
+                        "printedName": "PCKYCModule.PCKYCMediaType",
+                        "usr": "s:11PCKYCModule14PCKYCMediaTypeO"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "usr": "s:9AbSDKMain4TaskC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PCKYCMediaType",
+                "printedName": "PCKYCModule.PCKYCMediaType",
+                "usr": "s:11PCKYCModule14PCKYCMediaTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule14EkycInteractorP17createMediaSource9mediaType14viewController9AbSDKMain4TaskCyShy11PCKYCModule010PCKYCMediaJ0OGGAL_So06UIViewL0CtF",
+            "mangledName": "$s12NppKycModule14EkycInteractorP17createMediaSource9mediaType14viewController9AbSDKMain4TaskCyShy11PCKYCModule010PCKYCMediaJ0OGGAL_So06UIViewL0CtF",
+            "moduleName": "NppKycModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppKycModule.EkycInteractor>",
+            "sugared_genericSig": "<Self where Self : NppKycModule.EkycInteractor>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadAndAnalyze",
+            "printedName": "uploadAndAnalyze()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule14EkycInteractorP16uploadAndAnalyzeyyF",
+            "mangledName": "$s12NppKycModule14EkycInteractorP16uploadAndAnalyzeyyF",
+            "moduleName": "NppKycModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppKycModule.EkycInteractor>",
+            "sugared_genericSig": "<Self where Self : NppKycModule.EkycInteractor>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "approveOCRResults",
+            "printedName": "approveOCRResults(isApproved:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule14EkycInteractorP17approveOCRResults10isApprovedySb_tF",
+            "mangledName": "$s12NppKycModule14EkycInteractorP17approveOCRResults10isApprovedySb_tF",
+            "moduleName": "NppKycModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppKycModule.EkycInteractor>",
+            "sugared_genericSig": "<Self where Self : NppKycModule.EkycInteractor>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteSessions",
+            "printedName": "deleteSessions()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NppKycModule14EkycInteractorP14deleteSessionsyyF",
+            "mangledName": "$s12NppKycModule14EkycInteractorP14deleteSessionsyyF",
+            "moduleName": "NppKycModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : NppKycModule.EkycInteractor>",
+            "sugared_genericSig": "<Self where Self : NppKycModule.EkycInteractor>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12NppKycModule14EkycInteractorP",
+        "mangledName": "$s12NppKycModule14EkycInteractorP",
+        "moduleName": "NppKycModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Status",
+        "printedName": "Status",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "statusDescription",
+            "printedName": "statusDescription()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11PCKYCModule18PCKYCSessionStatusV0C0O12NppKycModuleE17statusDescriptionSSyF",
+            "mangledName": "$s11PCKYCModule18PCKYCSessionStatusV0C0O12NppKycModuleE17statusDescriptionSSyF",
+            "moduleName": "NppKycModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11PCKYCModule18PCKYCSessionStatusV0C0O",
+        "mangledName": "$s11PCKYCModule18PCKYCSessionStatusV0C0O",
+        "moduleName": "PCKYCModule",
+        "enumRawTypeName": "Int",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppKycModule\/domain\/EkycInteractorImpl.swift",
+      "kind": "Array",
+      "offset": 885,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppKycModule\/domain\/EkycInteractorImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 1076,
+      "length": 11,
+      "value": "\"kycUserId\""
+    },
+    {
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppKycModule\/domain\/EkycInteractorImpl.swift",
+      "kind": "FloatLiteral",
+      "offset": 1125,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppKycModule\/domain\/EkycInteractorImpl.swift",
+      "kind": "Array",
+      "offset": 1295,
+      "length": 26,
+      "value": "[\"FNS\", \"ASTRAL_PLATFORM\"]"
+    },
+    {
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppKycModule\/domain\/EkycInteractorImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 280,
+      "length": 18,
+      "value": "\"NppKycModule.EkycInteractorImpl\""
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+framework module PCSDKModule {
+  header "PCSDKModule-Swift.h"
+  requires objc
+}

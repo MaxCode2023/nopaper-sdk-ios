@@ -1,0 +1,731 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target i386-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PCSDKModule
+import SystemConfiguration.CaptiveNetwork
+import CommonCrypto
+import CoreData
+import CoreLocation
+import CoreTelephony
+import Foundation
+import Security
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+import os.log
+import os
+public struct PCCertificateInfo : Swift.Decodable, Swift.Equatable {
+  public enum Status : Swift.String, Swift.Decodable {
+    case undefined
+    case requestInfoCreated
+    case requestCreated
+    case issued
+    case issueError
+    case revoked
+    case expired
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public let certificateRequest: Foundation.Data?
+  public let certificate: Foundation.Data?
+  public let status: PCSDKModule.PCCertificateInfo.Status
+  public static func == (a: PCSDKModule.PCCertificateInfo, b: PCSDKModule.PCCertificateInfo) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct PCScoringSettings<SettingsType> where SettingsType : Swift.Decodable {
+  public let provider: Swift.String
+  public let settings: SettingsType
+}
+public struct PCLogin : Swift.Decodable, Swift.Equatable {
+  public let systemID: Swift.String
+  public let expirationTime: Foundation.TimeInterval
+  public static func importFromJSON(_ source: Swift.String) throws -> PCSDKModule.PCLogin
+  public func requestLoginTransaction(for user: PCSDKModule.PCUser, targetQueue: Dispatch.DispatchQueue = .main, _ completion: @escaping (Swift.Result<PCSDKModule.PCTransaction, Swift.Error>) -> Swift.Void)
+  public func confirm(loginTransaction: PCSDKModule.PCTransaction, user: PCSDKModule.PCUser, keysProcessor: PCSDKModule.KeysProcessor? = nil, targetQueue: Dispatch.DispatchQueue = .main, _ completion: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public func decline(loginTransaction: PCSDKModule.PCTransaction, user: PCSDKModule.PCUser, keysProcessor: PCSDKModule.KeysProcessor? = nil, targetQueue: Dispatch.DispatchQueue = .main, _ completion: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func == (a: PCSDKModule.PCLogin, b: PCSDKModule.PCLogin) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers final public class PCUserRestore {
+  public static func getRegisteredExtAuthType(for user: PCSDKModule.PCUser, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<PCSDKModule.PCExtendedAuthType, Swift.Error>) -> Swift.Void)
+  public static func createBackupData(user: PCSDKModule.PCUser, backupPassword: Swift.String, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<PCSDKModule.PCUserBackupData, Swift.Error>) -> Swift.Void)
+  public static func restore(userID: Swift.String, systemID: Swift.String, interactionURL: Foundation.URL, extAuthTemplate: PCSDKModule.PCExtendedAuthTemplate, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<PCSDKModule.PCUser, Swift.Error>) -> Swift.Void)
+  public static func restore(qrValue: Swift.String, extAuthTemplate: PCSDKModule.PCExtendedAuthTemplate, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<PCSDKModule.PCUser, Swift.Error>) -> Swift.Void)
+  public static func restore(backupData: PCSDKModule.PCUserBackupData, backupPassword: Swift.String, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<PCSDKModule.PCUser, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+public struct PCLoggingOptions : Swift.OptionSet {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public static let debug: PCSDKModule.PCLoggingOptions
+  public static let sensitive: PCSDKModule.PCLoggingOptions
+  public typealias ArrayLiteralElement = PCSDKModule.PCLoggingOptions
+  public typealias Element = PCSDKModule.PCLoggingOptions
+  public typealias RawValue = Swift.Int
+}
+public struct PCResult {
+  public let result: Swift.Result<Swift.Void, Swift.Error>
+  public let transaction: PCSDKModule.PCTransaction
+}
+public struct PCTransaction : Swift.Equatable {
+  public let transactionID: Swift.String
+  public let userID: Swift.String
+  public let systemID: Swift.String
+  public let confirmationCodeLength: Swift.Int
+  public let extendedCheck: Swift.Bool
+  public var confirmationType: PCSDKModule.PCConfirmationType {
+    get
+  }
+  public let text: Swift.String?
+  public let snippet: PCSDKModule.Snippet?
+  public var hasBinaryData: Swift.Bool {
+    get
+  }
+  public var downloadedBinaryData: Foundation.Data? {
+    get
+  }
+  public var storedBinaryDataURL: Foundation.URL? {
+    get
+  }
+  public let textRenderType: PCSDKModule.TextRenderType
+  public let type: PCSDKModule.TransactionType
+  public let cmsAuthenticatedAttributes: Foundation.Data?
+  public static func == (a: PCSDKModule.PCTransaction, b: PCSDKModule.PCTransaction) -> Swift.Bool
+}
+public struct Snippet : Swift.Decodable, Swift.Equatable {
+  public var text: Swift.String
+  public var textRenderType: PCSDKModule.TextRenderType
+  public static func == (a: PCSDKModule.Snippet, b: PCSDKModule.Snippet) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum TextRenderType : Swift.String, Swift.Decodable {
+  case raw, markdown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension PCTransaction : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension PCTransaction : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public struct ResponseType : Swift.CodingKey, Swift.Codable {
+  public let stringValue: Swift.String
+  public init(stringValue: Swift.String)
+  public init(_ value: Swift.String)
+  public var intValue: Swift.Int?
+  public init?(intValue: Swift.Int)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct PCRenewRequest {
+}
+extension PCRenewRequest {
+  public static func create(userToRenew: PCSDKModule.PCUser, challenge: PCSDKModule.RenewKeyChallenge, password: Swift.String, newPublicKey: Swift.String, signer: @escaping (Foundation.Data) -> Swift.Result<Swift.String, Swift.Error>, completion: @escaping (Swift.Result<PCSDKModule.PCRenewRequest, Swift.Error>) -> Swift.Void)
+}
+public enum PCQRType : Swift.String, Swift.Decodable {
+  case user
+  case transaction
+  case restoreRequisites
+  case login
+  case kyc
+  case none
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PCKeysProcessorPolicy : Swift.String {
+  case notAllowed
+  case allowed
+  case required
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+final public class PCScoringParameters : PCSDKModule.PCParameters {
+  public init(provider: Swift.String, parameters: Swift.Encodable)
+  override public init(key: Swift.String, parameters: Swift.Encodable)
+  @objc deinit
+}
+public struct PCDeclination {
+  public let declineCode: Swift.String
+  public let shortDeclineCode: Swift.String
+  public let declineReason: Swift.String
+  public let timestamp: Foundation.TimeInterval
+  public let transaction: PCSDKModule.PCTransaction
+}
+public struct PushAddress : Swift.Codable {
+  public init(deviceToken: Swift.String, bundleID: Swift.String?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Request {
+  public let endpoint: PCSDKModule.Endpoint
+  public let version: Swift.Int
+  public var headers: [Swift.String : Swift.String]
+  public init<T>(to endpoint: PCSDKModule.Endpoint, version: Swift.Int, body: T, user: PCSDKModule.PCUser? = nil, parameters: PCSDKModule.PCParameters? = nil, headers: [Swift.String : Swift.String] = [:]) where T : Swift.Encodable
+  public init(to endpoint: PCSDKModule.Endpoint, version: Swift.Int, user: PCSDKModule.PCUser? = nil, headers: [Swift.String : Swift.String] = [:])
+}
+public struct PCProcessingRequest {
+  public let confirmationResults: [Swift.Result<PCSDKModule.PCConfirmation, Swift.Error>]
+  public let declineResults: [Swift.Result<PCSDKModule.PCDeclination, Swift.Error>]
+}
+extension PCProcessingRequest {
+  public static func create(toConfirm: [PCSDKModule.PCTransaction], toDecline: [PCSDKModule.PCTransaction], user: PCSDKModule.PCUser, password: Swift.String, signer: @escaping ([Foundation.Data]) -> [Swift.Result<Swift.String, Swift.Error>], completion: @escaping (Swift.Result<PCSDKModule.PCProcessingRequest, Swift.Error>) -> Swift.Void)
+}
+public struct Endpoint {
+  public enum HTTPMethod : Swift.String {
+    case get
+    case post
+    case patch
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public let method: PCSDKModule.Endpoint.HTTPMethod
+  public let url: Foundation.URL
+  public init(_ method: PCSDKModule.Endpoint.HTTPMethod, _ baseURL: Foundation.URL, _ components: Swift.String..., queryParams: [Swift.String : Any] = [:])
+}
+public enum TransactionType : Swift.String, Swift.Decodable {
+  case csr
+  case cms
+  case pdf
+  case undefined
+  public init(from decoder: Swift.Decoder) throws
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct PCUserOptions : Swift.Equatable {
+  public var passwordPolicy: PCSDKModule.PCPasswordPolicy {
+    get
+  }
+  public var nfcPolicy: PCSDKModule.PCKeysProcessorPolicy {
+    get
+  }
+  public var isWithFingerprint: Swift.Bool {
+    get
+  }
+  public var isCollectEvents: Swift.Bool {
+    get
+  }
+  public var isCollectDeviceInfo: Swift.Bool {
+    get
+  }
+  public var isCollectSimInfo: Swift.Bool {
+    get
+  }
+  public var isCollectLocation: Swift.Bool {
+    get
+  }
+  public var isDenyStoreWithOSProtection: Swift.Bool {
+    get
+  }
+  public var isDenyRenewPubKey: Swift.Bool {
+    get
+  }
+  public var isAutosignEnabled: Swift.Bool {
+    get
+  }
+  public var isScoringEnabled: Swift.Bool {
+    get
+  }
+  public var isRemoteUpdateEnabled: Swift.Bool {
+    get
+  }
+  public static func == (a: PCSDKModule.PCUserOptions, b: PCSDKModule.PCUserOptions) -> Swift.Bool
+}
+final public class PCKeysManager {
+  public init(applicationTag: Swift.String)
+  @discardableResult
+  final public func createKeyPair(label: Swift.String, overwrite: Swift.Bool = false) throws -> PCSDKModule.KeyPair
+  final public func removeKeyPair(label: Swift.String)
+  final public func retrieveKeyPair(label: Swift.String) throws -> PCSDKModule.KeyPair
+  @objc deinit
+}
+public protocol PCLoggerProtocol {
+  func debug(_ message: Swift.String, category: PCSDKModule.PCLoggingCategory)
+  func error(_ message: Swift.String, category: PCSDKModule.PCLoggingCategory)
+  func sensitive(_ message: Swift.String, category: PCSDKModule.PCLoggingCategory)
+}
+public enum PCConfirmationType : Swift.String, Swift.Decodable {
+  case offline
+  case online
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct PCLoggingCategory : Swift.Equatable {
+  public let rawValue: Swift.String
+  public init(value: Swift.String)
+  public static let common: PCSDKModule.PCLoggingCategory
+  public static let network: PCSDKModule.PCLoggingCategory
+  public static let users: PCSDKModule.PCLoggingCategory
+  public static let operations: PCSDKModule.PCLoggingCategory
+  public static let security: PCSDKModule.PCLoggingCategory
+  public static let data: PCSDKModule.PCLoggingCategory
+  public static let keychain: PCSDKModule.PCLoggingCategory
+  public static let storage: PCSDKModule.PCLoggingCategory
+  public static let events: PCSDKModule.PCLoggingCategory
+  public static let handles: PCSDKModule.PCLoggingCategory
+  public static let autosign: PCSDKModule.PCLoggingCategory
+  public static let renewing: PCSDKModule.PCLoggingCategory
+  public static let login: PCSDKModule.PCLoggingCategory
+  public static let tests: PCSDKModule.PCLoggingCategory
+  public static let backups: PCSDKModule.PCLoggingCategory
+  public static func == (a: PCSDKModule.PCLoggingCategory, b: PCSDKModule.PCLoggingCategory) -> Swift.Bool
+}
+extension PCLoggingCategory : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class PCAutoSigner {
+  public static func registerToAutosign(user: PCSDKModule.PCUser, targetQueue: Dispatch.DispatchQueue = .main, _ completion: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func getScoringSettings<T>(for user: PCSDKModule.PCUser, targetQueue: Dispatch.DispatchQueue = .main, _ completion: @escaping (Swift.Result<T, Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  public static func getAutosignTransactionsList(for user: PCSDKModule.PCUser, targetQueue: Dispatch.DispatchQueue = .main, _ completion: @escaping (Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)
+  public static func autosign(transaction: PCSDKModule.PCTransaction, user: PCSDKModule.PCUser, scoringParameters: PCSDKModule.PCScoringParameters, targetQueue: Dispatch.DispatchQueue = .main, _ completion: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+public protocol KeysProcessor {
+  func getPublicKey(user: PCSDKModule.PCUser, completion: @escaping (Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)
+  func process(toConfirm: [PCSDKModule.PCTransaction], toDecline: [PCSDKModule.PCTransaction], user: PCSDKModule.PCUser, completion: @escaping (Swift.Result<PCSDKModule.PCProcessingRequest, Swift.Error>) -> Swift.Void)
+  func renew(user: PCSDKModule.PCUser, newUniqueID: Swift.String, challenge: PCSDKModule.RenewKeyChallenge, completion: @escaping (Swift.Result<PCSDKModule.PCRenewRequest, Swift.Error>) -> Swift.Void)
+}
+public struct PCUser : Swift.Decodable, Swift.Equatable {
+  public let userID: Swift.String
+  public var expirationDate: Foundation.Date {
+    get
+  }
+  public let systemID: Swift.String
+  public let options: PCSDKModule.PCUserOptions
+  public let interactionURL: Foundation.URL
+  public var name: Swift.String?
+  public var registeredDeviceToken: Swift.String?
+  public var suggestedUserName: Swift.String?
+  public var publicKey: Swift.String?
+  public var apiVersion: Swift.Int? {
+    get
+  }
+  public var systemName: Swift.String? {
+    get
+  }
+  public var extAuthMethods: Swift.Set<PCSDKModule.PCExtendedAuthType> {
+    get
+  }
+  public var isActivated: Swift.Bool {
+    get
+  }
+  public var isReadyToSign: Swift.Bool {
+    get
+  }
+  public var hasKeyPair: Swift.Bool {
+    get
+  }
+  public var isExpired: Swift.Bool {
+    get
+  }
+  public var confirmationCodeTSI: Foundation.TimeInterval
+  public var authorizationCodeTSI: Foundation.TimeInterval
+  public var uniqueID: Swift.String {
+    get
+  }
+  public var isRegisteredToAutosign: Swift.Bool {
+    get
+  }
+  public init(from decoder: Swift.Decoder) throws
+  public static func == (a: PCSDKModule.PCUser, b: PCSDKModule.PCUser) -> Swift.Bool
+}
+public struct PCUserBackupData : Swift.Codable {
+  public let username: Swift.String
+  public let userID: Swift.String
+  public let systemID: Swift.String
+  public let interactionURL: Foundation.URL
+  public let encryptedCodeword: Foundation.Data
+  public init(username: Swift.String, userID: Swift.String, systemID: Swift.String, interactionURL: Foundation.URL, encryptedCodeword: Foundation.Data)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension SecKey {
+  public var value: Foundation.Data {
+    get
+  }
+  public var der: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class PCUsersManager {
+  public static var users: [PCSDKModule.PCUser] {
+    get
+  }
+  public static var fingerprint: Swift.String {
+    get
+  }
+  public static func importUser(from string: Swift.String) throws -> PCSDKModule.PCUser
+  public static func activate(user: PCSDKModule.PCUser, using code: Swift.String) throws
+  public static func submit(password: Swift.String, for user: PCSDKModule.PCUser) throws
+  public static func register(user: PCSDKModule.PCUser, deviceToken: Swift.String?, keysProcessor: PCSDKModule.KeysProcessor? = nil, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func registerExtAuthTemplate(_ template: PCSDKModule.PCExtendedAuthTemplate, user: PCSDKModule.PCUser, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func store(user: PCSDKModule.PCUser, name: Swift.String? = nil, password: Swift.String? = nil) throws
+  public static func delete(user: PCSDKModule.PCUser) throws
+  public static func renew(user: PCSDKModule.PCUser, keysProcessor: PCSDKModule.KeysProcessor? = nil, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<PCSDKModule.PCUser, Swift.Error>) -> Swift.Void)
+  public static func getCertificateInfo(user: PCSDKModule.PCUser, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<PCSDKModule.PCCertificateInfo, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+public struct KeyPair {
+  public let publicKey: Security.SecKey
+  public let privateKey: Security.SecKey
+}
+public enum PCExtendedAuthType : Swift.String, Swift.Codable {
+  case codeword
+  case ozBiometry
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct PCExtendedAuthTemplate : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct RenewKeyChallenge : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum PCServerError : Swift.Int, Foundation.LocalizedError {
+  case undefined
+  case serverDoesNotRespond
+  case javaInternalError
+  case systemPropertyError
+  case systemIdIsNull
+  case systemIdIsWrong
+  case systemNotFound
+  case systemIsDeleted
+  case systemNameIsNull
+  case userIdIsNull
+  case userIdPrefIsNull
+  case userNotFound
+  case userIsDeleted
+  case dsVerifyError
+  case dsStructError
+  case storeTypeIsWrong
+  case keyContainerAliasIsNull
+  case keyContainerNotExists
+  case transactionDataUidError
+  case transactionDataError
+  case transactionDataIsNull
+  case reportTplIsNull
+  case requestError
+  case systemIdNotUnique
+  case requestSignatureNotValid
+  case systemNotValid
+  case transactionIsNull
+  case transactionChecked
+  case errorParseRegisterSystemInfo
+  case incorrectUserType
+  case collectionIsEmpty
+  case noResult
+  case pinIsEmpty
+  case fprintIsEmpty
+  case otpIsNotValid
+  case validDateExpired
+  case systemTypeIsWrong
+  case spartLengthIsWrong
+  case dataTypeIsWrong
+  case invalidHmac
+  case keyInfoNotFound
+  case wrongSystemType
+  case fprintIsNotEmpty
+  case wrongAuthCode
+  case confirmTypeIsNull
+  case storeTypeIsNull
+  case deviceTypeIsNull
+  case transactionDataTypeIsNull
+  case userIdPrefTooLong
+  case confirmCodeLengthIsWrong
+  case confirmCodeIsNull
+  case transactionIdIsNull
+  case statusListIsEmpty
+  case deviceIdIsNull
+  case deviceTypeIsIncorrect
+  case invalidOtp
+  case invalidKdf
+  case pinLengthIsWrong
+  case pushIdIsNull
+  case transactionStatusInvalid
+  case authCodeIsNull
+  case statusListIsIncorrect
+  case declineReasonIsNull
+  case transactionIsNotUnique
+  case billDateCorrupted
+  case userBillDateCorrupted
+  case transactionIsDeleted
+  case billRequestAlreadyProcessed
+  case pubkeyIsEmpty
+  case pubkeyIsNotEmpty
+  case signatureIsInvalid
+  case signatureIsNull
+  case signatureAndConfirmCodeAreNull
+  case transactionExpired
+  case jsonSchemeNotSupported
+  case jsonRequestIncorrect
+  case licenseUpdateError
+  case licenseExpired
+  case licenseUserCountExceeded
+  case billingTypeCorrupted
+  case httpAuthCodeInvalid
+  case notSupported
+  case extAuthTemplateNotFound
+  case extAuthFailed
+  case extAuthTypeNotSupported
+  case extAuthNeeded
+  case userIsBlocked
+  case keyExpired
+  case licenseNotFound
+  case pushNotFound
+  case scoringSettingsIsNull
+  case autosingSignatureIsInvalid
+  case serverScoringSettingsIncorrect
+  case scoringFailed
+  case highScoringRiskLevel
+  case autosignFailed
+  case autosignNotAllowed
+  case attemptIdIsNull
+  case flexibleLicenseError
+  case unsupportedBillingType
+  case licenseError
+  case operationNotExists
+  case transactionIsNotInOperation
+  case operationStatusInvalid
+  case createOperationError
+  case remoteUpdateError
+  case remoteUpdateErrorBlock
+  case remoteUpdateDisabled
+  case operationExpired
+  case dnIsNull
+  case certRequestParamsIsNull
+  case certIssueError
+  case noCertRequest
+  case noCert
+  case noPkiSettingsDefined
+  case canNotUseCertificateChain
+  case certStatusInvalid
+  case certRevokeError
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension Request {
+  public func perform<T>(sensitive: Swift.Bool = false, decoder: Foundation.JSONDecoder = JSONDecoder(), customErrorHandler: (([Swift.String : Any]) -> Swift.Error)? = nil, completion: @escaping (Swift.Result<T, Swift.Error>) -> Swift.Void) where T : Swift.Decodable
+  public func perform(sensitive: Swift.Bool = false, customErrorHandler: (([Swift.String : Any]) -> Swift.Error)? = nil, completion: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+}
+public class PCParameters {
+  final public let key: Swift.String
+  final public let parameters: Swift.Encodable
+  public init(key: Swift.String, parameters: Swift.Encodable)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class PCTransactionsManager {
+  public static func importTransaction(from string: Swift.String) throws -> PCSDKModule.PCTransaction
+  public static func getTransactionList(for user: PCSDKModule.PCUser, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)
+  public static func getTransaction(for transactionID: Swift.String, user: PCSDKModule.PCUser, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<PCSDKModule.PCTransaction, Swift.Error>) -> Swift.Void)
+  public static func getTransactionBinaryData(for transaction: PCSDKModule.PCTransaction, user: PCSDKModule.PCUser, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<PCSDKModule.PCTransaction, Swift.Error>) -> Swift.Void)
+  public static func sign(transactions: [PCSDKModule.PCTransaction], by user: PCSDKModule.PCUser, parameters: PCSDKModule.PCParameters? = nil, extendedAuthTemplate: PCSDKModule.PCExtendedAuthTemplate? = nil, keysProcessor: PCSDKModule.KeysProcessor? = nil, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<[PCSDKModule.PCResult], Swift.Error>) -> Swift.Void)
+  public static func sign(transaction: PCSDKModule.PCTransaction, by user: PCSDKModule.PCUser, parameters: PCSDKModule.PCParameters? = nil, extendedAuthTemplate: PCSDKModule.PCExtendedAuthTemplate? = nil, keysProcessor: PCSDKModule.KeysProcessor? = nil, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func decline(transactions: [PCSDKModule.PCTransaction], by user: PCSDKModule.PCUser, keysProcessor: PCSDKModule.KeysProcessor? = nil, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<[PCSDKModule.PCResult], Swift.Error>) -> Swift.Void)
+  public static func decline(transaction: PCSDKModule.PCTransaction, by user: PCSDKModule.PCUser, keysProcessor: PCSDKModule.KeysProcessor? = nil, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func signOffline(transaction: PCSDKModule.PCTransaction, by user: PCSDKModule.PCUser, keysProcessor: PCSDKModule.KeysProcessor? = nil, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<PCSDKModule.PCConfirmation, Swift.Error>) -> Swift.Void)
+  public static func declineOffline(transaction: PCSDKModule.PCTransaction, by user: PCSDKModule.PCUser, keysProcessor: PCSDKModule.KeysProcessor? = nil, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<PCSDKModule.PCDeclination, Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, message: "Use async method instead:\n`public static func signOffline(\ntransaction: PCTransaction,\nby user: PCUser,\nkeysProcessor: KeysProcessor?,\ntargetQueue: DispatchQueue,\ncompletion: @escaping (_ result: Result<PCConfirmation, Error>) -> Void\n)`")
+  public static func signOffline(transaction: PCSDKModule.PCTransaction, by user: PCSDKModule.PCUser) throws -> PCSDKModule.PCConfirmation
+  @available(*, deprecated, message: "Use async method instead:\n`public static func declineOffline(\ntransaction: PCTransaction,\nby user: PCUser,\nkeysProcessor: KeysProcessor?,\ntargetQueue: DispatchQueue,\ncompletion: @escaping (_ result: Result<PCDeclination, Error>) -> Void\n)`")
+  public static func declineOffline(transaction: PCSDKModule.PCTransaction, by user: PCSDKModule.PCUser) throws -> PCSDKModule.PCDeclination
+  @objc deinit
+}
+public enum PCError : Swift.Error, Swift.Equatable {
+  case internalError
+  case emptyKeys
+  case emptyDeviceToken
+  case invalidPassword
+  case passwordDoesNotMatchTheConditions
+  case invalidActivationCode
+  case emptyPassword
+  case emptyName
+  case missingKAuth
+  case missingInteractionURL
+  case missingTransactionData
+  case missingRequestedData
+  case userIsNotActivated
+  case userIsNotRegistered
+  case userIsExpired
+  case userNotFound
+  case binaryDataIsUnavaiable
+  case binaryDataIsRequired
+  case unableToStoreBinaryData
+  case binaryDataIsCorrupted
+  case endpointUnavailable
+  case apiIsNotSupported
+  case unsupportedKeyVersion
+  case handleInvalid
+  case signingError
+  case transferStorage
+  case scoringUnavailable
+  case autosignUnavailable
+  case invalidJSON
+  case invalidQR
+  case extAuthNotFound
+  case remoteUpdateIsDisabled
+  case loginSessionIsExpired
+  case secureEnclaveError(message: Swift.String)
+  case processingError([Swift.String : PCSDKModule.PCServerError])
+  case externalKeysProcessorIsRequired
+  public static func == (a: PCSDKModule.PCError, b: PCSDKModule.PCError) -> Swift.Bool
+}
+extension PCError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class PCSDK {
+  public enum Mode {
+    case app
+    case `extension`(mainAppBundleIdentifier: Swift.String)
+  }
+  public static var version: Swift.String {
+    get
+  }
+  public static var apiVersion: Swift.Int {
+    get
+  }
+  public static var now: Foundation.Date {
+    get
+  }
+  public static let defaultDatabaseFileName: Swift.String
+  public static var urlSession: Foundation.URLSession
+  public static var locationUpdatesFrequency: Swift.Double
+  public static var defaultDatabaseURL: Foundation.URL {
+    get
+  }
+  public static var logger: PCSDKModule.PCLoggerProtocol {
+    get
+  }
+  public static var fixedAPI: Swift.Bool
+  public static var requestsTimeoutInterval: Swift.Double
+  public static func initialize(databaseURL: Foundation.URL? = nil, accessGroup: Swift.String? = nil, mode: PCSDKModule.PCSDK.Mode = .app)
+  public static func setHandlesBackgroundTimeout(_ timeout: Foundation.TimeInterval)
+  public static func setLogger(_ logger: PCSDKModule.PCLoggerProtocol, options: PCSDKModule.PCLoggingOptions = .debug)
+  public static func setLogLevel(_ logLevel: PCSDKModule.PCLoggingOptions)
+  public static func checkRoot() -> Swift.Bool
+  public static func analyze(qrValue: Swift.String) -> PCSDKModule.PCQRType
+  @available(iOS 10.0, iOSApplicationExtension 10.0, *)
+  public static func removeLocalKeypair()
+  public static func removeAllUsers()
+  @objc deinit
+}
+public struct PCConfirmation {
+  public let confirmationCode: Swift.String
+  public let shortConfirmationCode: Swift.String
+  public let signature: Swift.String
+  public let timestamp: Foundation.TimeInterval
+  public let transaction: PCSDKModule.PCTransaction
+  public init(confirmationCode: Swift.String, shortConfirmationCode: Swift.String, signature: Swift.String, timestamp: Foundation.TimeInterval, transaction: PCSDKModule.PCTransaction)
+}
+@_hasMissingDesignatedInitializers final public class PCOperationsManager {
+  public static func importOperation(from json: Swift.String) throws -> PCSDKModule.PCOperation
+  public static func getOperationList(for user: PCSDKModule.PCUser, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)
+  public static func getOperation(for operationID: Swift.String, user: PCSDKModule.PCUser, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<PCSDKModule.PCOperation, Swift.Error>) -> Swift.Void)
+  public static func process(operation: PCSDKModule.PCOperation, toConfirm: [PCSDKModule.PCTransaction], toDecline: [PCSDKModule.PCTransaction], user: PCSDKModule.PCUser, extAuth: PCSDKModule.PCExtendedAuthTemplate? = nil, keysProcessor: PCSDKModule.KeysProcessor? = nil, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func confirmEntireOperation(_ operation: PCSDKModule.PCOperation, user: PCSDKModule.PCUser, extAuth: PCSDKModule.PCExtendedAuthTemplate? = nil, keysProcessor: PCSDKModule.KeysProcessor? = nil, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func declineEntireOperation(_ operation: PCSDKModule.PCOperation, user: PCSDKModule.PCUser, extAuth: PCSDKModule.PCExtendedAuthTemplate? = nil, keysProcessor: PCSDKModule.KeysProcessor? = nil, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+public enum PCPasswordPolicy {
+  case optional
+  case short
+  case longWithLetters
+  case longWithLettersAndDigits
+  public func validate(password: Swift.String) -> Swift.Bool
+  public static func == (a: PCSDKModule.PCPasswordPolicy, b: PCSDKModule.PCPasswordPolicy) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct DeviceInfo : Swift.Encodable {
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension DeviceInfo {
+  public static var current: PCSDKModule.DeviceInfo {
+    get
+  }
+}
+public struct PCOperation : Swift.Decodable, Swift.Equatable {
+  public let operationID: Swift.String
+  public let description: PCSDKModule.PCOperation.Description?
+  public let systemID: Swift.String
+  public let userID: Swift.String
+  public let transactions: [PCSDKModule.PCTransaction]
+  public struct Description : Swift.Decodable, Swift.Equatable {
+    public let text: Swift.String
+    public let textRenderType: PCSDKModule.TextRenderType
+    public static func == (a: PCSDKModule.PCOperation.Description, b: PCSDKModule.PCOperation.Description) -> Swift.Bool
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public static func == (a: PCSDKModule.PCOperation, b: PCSDKModule.PCOperation) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+extension PCSDKModule.PCCertificateInfo.Status : Swift.Equatable {}
+extension PCSDKModule.PCCertificateInfo.Status : Swift.Hashable {}
+extension PCSDKModule.PCCertificateInfo.Status : Swift.RawRepresentable {}
+extension PCSDKModule.TextRenderType : Swift.Equatable {}
+extension PCSDKModule.TextRenderType : Swift.Hashable {}
+extension PCSDKModule.TextRenderType : Swift.RawRepresentable {}
+extension PCSDKModule.PCQRType : Swift.Equatable {}
+extension PCSDKModule.PCQRType : Swift.Hashable {}
+extension PCSDKModule.PCQRType : Swift.RawRepresentable {}
+extension PCSDKModule.PCKeysProcessorPolicy : Swift.Equatable {}
+extension PCSDKModule.PCKeysProcessorPolicy : Swift.Hashable {}
+extension PCSDKModule.PCKeysProcessorPolicy : Swift.RawRepresentable {}
+extension PCSDKModule.Endpoint.HTTPMethod : Swift.Equatable {}
+extension PCSDKModule.Endpoint.HTTPMethod : Swift.Hashable {}
+extension PCSDKModule.Endpoint.HTTPMethod : Swift.RawRepresentable {}
+extension PCSDKModule.TransactionType : Swift.Equatable {}
+extension PCSDKModule.TransactionType : Swift.Hashable {}
+extension PCSDKModule.TransactionType : Swift.RawRepresentable {}
+extension PCSDKModule.PCConfirmationType : Swift.Equatable {}
+extension PCSDKModule.PCConfirmationType : Swift.Hashable {}
+extension PCSDKModule.PCConfirmationType : Swift.RawRepresentable {}
+extension PCSDKModule.PCExtendedAuthType : Swift.Equatable {}
+extension PCSDKModule.PCExtendedAuthType : Swift.Hashable {}
+extension PCSDKModule.PCExtendedAuthType : Swift.RawRepresentable {}
+extension PCSDKModule.PCServerError : Swift.Equatable {}
+extension PCSDKModule.PCServerError : Swift.Hashable {}
+extension PCSDKModule.PCServerError : Swift.RawRepresentable {}
+extension PCSDKModule.PCPasswordPolicy : Swift.Equatable {}
+extension PCSDKModule.PCPasswordPolicy : Swift.Hashable {}

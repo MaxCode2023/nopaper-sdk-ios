@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoViewController" customModule="myDSSSDK">
+            <connections>
+                <outlet property="tableView" destination="wGb-e9-E34" id="6vH-A1-4xg"/>
+                <outlet property="titleContainerView" destination="kJ2-TL-kgY" id="mRe-F0-gSy"/>
+                <outlet property="titleLabel" destination="UN8-1y-TfT" id="3zm-jB-Zgk"/>
+                <outlet property="view" destination="iN0-l3-epB" id="cFL-KQ-AcR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomView" customModule="myDSSSDK">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="824"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wGb-e9-E34">
+                    <rect key="frame" x="0.0" y="44" width="414" height="780"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJ2-TL-kgY" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="44" width="414" height="61"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBh-SD-Dy6" customClass="CustomGradientView" customModule="myDSSSDK">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                                    <real key="value" value="-90"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UN8-1y-TfT" customClass="CustomLabel" customModule="myDSSSDK">
+                            <rect key="frame" x="16" y="16" width="366" height="29"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="style" value="h1"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="KBh-SD-Dy6" secondAttribute="trailing" id="Fkw-Fk-6as"/>
+                        <constraint firstItem="UN8-1y-TfT" firstAttribute="leading" secondItem="kJ2-TL-kgY" secondAttribute="leading" constant="16" id="IgT-81-seX"/>
+                        <constraint firstAttribute="bottom" secondItem="KBh-SD-Dy6" secondAttribute="bottom" id="Irk-I0-eKX"/>
+                        <constraint firstItem="UN8-1y-TfT" firstAttribute="centerY" secondItem="kJ2-TL-kgY" secondAttribute="centerY" id="RAu-xe-8sB"/>
+                        <constraint firstAttribute="height" secondItem="UN8-1y-TfT" secondAttribute="height" constant="32" id="Vx7-Qd-QrX"/>
+                        <constraint firstAttribute="trailing" secondItem="UN8-1y-TfT" secondAttribute="trailing" constant="32" id="hda-2W-sHc"/>
+                        <constraint firstItem="KBh-SD-Dy6" firstAttribute="top" secondItem="kJ2-TL-kgY" secondAttribute="top" id="t1f-jk-B7G"/>
+                        <constraint firstItem="KBh-SD-Dy6" firstAttribute="leading" secondItem="kJ2-TL-kgY" secondAttribute="leading" id="z9H-vo-aBW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="wGb-e9-E34" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="DBk-Ta-hZM"/>
+                <constraint firstItem="kJ2-TL-kgY" firstAttribute="leading" secondItem="wGb-e9-E34" secondAttribute="leading" id="FC9-O6-PAn"/>
+                <constraint firstItem="wGb-e9-E34" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="StE-Lk-bm7"/>
+                <constraint firstItem="kJ2-TL-kgY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="TNU-a2-7A1"/>
+                <constraint firstItem="wGb-e9-E34" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="YHb-qQ-kpy"/>
+                <constraint firstItem="wGb-e9-E34" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="dMk-Zf-2QL"/>
+                <constraint firstItem="kJ2-TL-kgY" firstAttribute="trailing" secondItem="wGb-e9-E34" secondAttribute="trailing" id="nM2-x4-WRJ"/>
+                <constraint firstItem="wGb-e9-E34" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="yPT-zB-oQz"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="style" value="main"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="242.0289855072464" y="17.410714285714285"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="UN8-1y-TfT">
+            <size key="intrinsicContentSize" width="49" height="29"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

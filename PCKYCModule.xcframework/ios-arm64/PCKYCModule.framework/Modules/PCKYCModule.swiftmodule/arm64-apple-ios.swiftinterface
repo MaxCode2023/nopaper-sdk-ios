@@ -1,0 +1,202 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PCKYCModule
+import Foundation
+import PCSDKModule
+import Swift
+import _Concurrency
+extension PCKYCModule.PCKYCManager {
+  public static func startAstralPlatformValidation(session: PCKYCModule.PCKYCSession, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+}
+public struct PCKYCError : Foundation.LocalizedError {
+  public var type: PCKYCModule.PCKYCError.`Type` {
+    get
+  }
+  public let code: Swift.Int
+  public let message: Swift.String?
+  public enum `Type` : Swift.Int {
+    case undefined
+    case internalError
+    case publicKeyNotSet
+    case sourceTypeNotSet
+    case sessionNotExists
+    case signatureNotSet
+    case signatureIsInvalid
+    case saltNotSet
+    case challengeNotFound
+    case sessionStatusInvalid
+    case pcKeyNotSet
+    case sessionIsNull
+    case analyseResultsAreNull
+    case ocrResultsAreNull
+    case pcErrorGetKey
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension PCKYCModule.PCKYCManager {
+  public struct SberIDCredentials : Swift.Codable {
+    public let clientId: Swift.String
+    public let redirectUrl: Swift.String
+    public let state: Swift.String
+    public let nonce: Swift.String
+    public let codeChallenge: Swift.String
+    public let codeChallengeMethod: Swift.String
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct SberIDAuthParameters : Swift.Codable {
+    public let state: Swift.String
+    public let authCode: Swift.String
+    public init(state: Swift.String, authCode: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public static func getSberIDCredentials(session: PCKYCModule.PCKYCSession, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<PCKYCModule.PCKYCManager.SberIDCredentials, Swift.Error>) -> Swift.Void)
+}
+public struct PCKYCSession : Swift.Codable {
+  public let sessionID: Swift.String
+  public let analyserType: Swift.String
+  public let requiredSources: Swift.Set<PCKYCModule.PCKYCMediaType>
+  public let kycConnectorURL: Foundation.URL
+  public let sessionKeypairLabel: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension PCKYCModule.PCKYCSession : Swift.Equatable {
+  public static func == (lhs: PCKYCModule.PCKYCSession, rhs: PCKYCModule.PCKYCSession) -> Swift.Bool
+}
+public struct PCKYCManager {
+  public static var externalLogger: PCSDKModule.PCLoggerProtocol? {
+    get
+    set
+  }
+  public static var sessions: [PCKYCModule.PCKYCSession] {
+    get
+    set
+  }
+  public static func startSession(kycInfoJSON: Swift.String, deviceToken: Swift.String?, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<PCKYCModule.PCKYCSession, Swift.Error>) -> Swift.Void)
+  public static func startSession(kycConnectorURL: Foundation.URL, systemID: Swift.String?, appExtra: [Swift.String : Any]?, deviceToken: Swift.String?, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<PCKYCModule.PCKYCSession, Swift.Error>) -> Swift.Void)
+  public static func closeSession(session: PCKYCModule.PCKYCSession)
+  public static func getSessionStatus(session: PCKYCModule.PCKYCSession, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<PCKYCModule.PCKYCSessionStatus, Swift.Error>) -> Swift.Void)
+  public static func getRequiredSources(session: PCKYCModule.PCKYCSession, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<Swift.Set<PCKYCModule.PCKYCMediaType>, Swift.Error>) -> Swift.Void)
+  public static func getStatusHistory(session: PCKYCModule.PCKYCSession, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<[PCKYCModule.PCKYCStatusHistoryItem], Swift.Error>) -> Swift.Void)
+  public static func uploadMedia(mediaURL: Foundation.URL, type: PCKYCModule.PCKYCMediaType, session: PCKYCModule.PCKYCSession, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func uploadMedia(data: Foundation.Data, extension: Swift.String, type: PCKYCModule.PCKYCMediaType, session: PCKYCModule.PCKYCSession, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func getOCRResults(session: PCKYCModule.PCKYCSession, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<[Swift.String : Any], Swift.Error>) -> Swift.Void)
+  public static func approveOCRResults(session: PCKYCModule.PCKYCSession, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func declineOCRResults(session: PCKYCModule.PCKYCSession, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func getVerifiers(session: PCKYCModule.PCKYCSession, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)
+  public static func declineSession(session: PCKYCModule.PCKYCSession, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func getPCUser(session: PCKYCModule.PCKYCSession, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<PCSDKModule.PCUser, Swift.Error>) -> Swift.Void)
+}
+public enum PCKYCMediaType : Swift.String, Swift.Equatable, Swift.Codable {
+  case videoLivenessSmile
+  case videoLivenessScan
+  case photoPassportPage2
+  case photoPassportPage3
+  case photoPassportPages23
+  case photoSelfie
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension PCKYCModule.PCKYCManager {
+  public static func startFNSValidation(session: PCKYCModule.PCKYCSession, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+}
+public struct PCKYCStatusHistoryItem : Swift.Codable, Swift.Equatable {
+  public let status: PCKYCModule.PCKYCSessionStatus.Status
+  public let reason: Swift.Int
+  public let timestamp: Foundation.Date
+  public static func == (a: PCKYCModule.PCKYCStatusHistoryItem, b: PCKYCModule.PCKYCStatusHistoryItem) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension PCKYCModule.PCKYCManager {
+  public struct ESIACredentials : Swift.Codable {
+    public let url: Foundation.URL
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public static func getESIACredentials(session: PCKYCModule.PCKYCSession, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<PCKYCModule.PCKYCManager.ESIACredentials, Swift.Error>) -> Swift.Void)
+}
+public struct PCKYCSessionStatus : Swift.Decodable {
+  public enum Status : Swift.Int, Swift.Codable {
+    case undefined
+    case created
+    case readyToCheck
+    case analysing
+    case analysingBiometry
+    case biometryAnalyseFailed
+    case biometryAnalyseSuccess
+    case analysingOCR
+    case ocrFailed
+    case ocrSuccess
+    case ocrApprovedByUser
+    case ocrRejectedByUser
+    case requestingVerifier
+    case verifyingOCRResults
+    case verificationDeclinedByUser
+    case verificationFailed
+    case verificationSuccess
+    case verificationPostponed
+    case analysedSuccessfully
+    case analysisFailed
+    case waitingForApprove
+    case approved
+    case declined
+    case pcKeyReady
+    case pcKeyRetrievingFailed
+    case finished
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public var status: PCKYCModule.PCKYCSessionStatus.Status
+  public var createdAt: Foundation.Date
+  public let updatedAt: Foundation.Date?
+  public let systemID: Swift.String?
+  public let appExtra: [Swift.String : Any]
+  public let deviceInfo: [Swift.String : Any]
+  public let analysesResults: [Swift.String : Any]
+  public let verifier: PCKYCModule.PCKYCSessionStatus.Verifier?
+  public struct Verifier : Swift.Codable {
+    public enum Status : Swift.String, Swift.Codable, Swift.Equatable {
+      case postponed
+      case success
+      case failed
+      case started
+      case credentialsRequested
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public var status: PCKYCModule.PCKYCSessionStatus.Verifier.Status
+    public var name: Swift.String
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
+extension PCKYCModule.PCKYCError.`Type` : Swift.Equatable {}
+extension PCKYCModule.PCKYCError.`Type` : Swift.Hashable {}
+extension PCKYCModule.PCKYCError.`Type` : Swift.RawRepresentable {}
+extension PCKYCModule.PCKYCMediaType : Swift.Hashable {}
+extension PCKYCModule.PCKYCMediaType : Swift.RawRepresentable {}
+extension PCKYCModule.PCKYCSessionStatus.Status : Swift.Equatable {}
+extension PCKYCModule.PCKYCSessionStatus.Status : Swift.Hashable {}
+extension PCKYCModule.PCKYCSessionStatus.Status : Swift.RawRepresentable {}
+extension PCKYCModule.PCKYCSessionStatus.Verifier.Status : Swift.Hashable {}
+extension PCKYCModule.PCKYCSessionStatus.Verifier.Status : Swift.RawRepresentable {}

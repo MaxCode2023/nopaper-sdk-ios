@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraViewController" customModule="myDSSSDK">
+            <connections>
+                <outlet property="messageLabel" destination="t3L-rt-Igu" id="e7C-jo-d5F"/>
+                <outlet property="overlayView" destination="bhC-rJ-UwF" id="RXP-Oc-UDg"/>
+                <outlet property="videoPreviewView" destination="rvX-Ef-6pD" id="DCR-0Q-rl6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="w2v-yp-Igd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvX-Ef-6pD" userLabel="Camera View">
+                    <rect key="frame" x="0.0" y="44" width="414" height="673"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhC-rJ-UwF" userLabel="Overlay" customClass="CustomView" customModule="myDSSSDK">
+                    <rect key="frame" x="0.0" y="717" width="414" height="179"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3L-rt-Igu" customClass="CustomLabel" customModule="myDSSSDK">
+                            <rect key="frame" x="182.5" y="79" width="49" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="style" value="scannerMessage"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="main_background"/>
+                    <constraints>
+                        <constraint firstItem="t3L-rt-Igu" firstAttribute="width" relation="lessThanOrEqual" secondItem="bhC-rJ-UwF" secondAttribute="width" constant="-32" id="0Zb-WT-12s"/>
+                        <constraint firstItem="t3L-rt-Igu" firstAttribute="centerY" secondItem="bhC-rJ-UwF" secondAttribute="centerY" id="W12-Zv-Bom"/>
+                        <constraint firstItem="t3L-rt-Igu" firstAttribute="centerX" secondItem="bhC-rJ-UwF" secondAttribute="centerX" id="e7E-8X-ZDa"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="style" value="scannerOverlay"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bhC-rJ-UwF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="J1a-pV-wyb"/>
+                <constraint firstItem="bhC-rJ-UwF" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.2" id="Lji-eL-RmS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rvX-Ef-6pD" secondAttribute="trailing" id="LuC-u5-K8N"/>
+                <constraint firstItem="rvX-Ef-6pD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Nek-qz-Ob3"/>
+                <constraint firstItem="bhC-rJ-UwF" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="VlJ-RO-fs2"/>
+                <constraint firstItem="rvX-Ef-6pD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dHq-1I-Rb9"/>
+                <constraint firstItem="bhC-rJ-UwF" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="vlr-8c-czi"/>
+                <constraint firstItem="bhC-rJ-UwF" firstAttribute="top" secondItem="rvX-Ef-6pD" secondAttribute="bottom" id="yGI-65-SH9"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="130.88455772113943"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="t3L-rt-Igu">
+            <size key="intrinsicContentSize" width="49" height="20.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="main_background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

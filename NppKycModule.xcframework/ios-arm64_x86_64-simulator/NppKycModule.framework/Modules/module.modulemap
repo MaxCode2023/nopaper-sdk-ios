@@ -1,0 +1,4 @@
+framework module NppKycModule {
+  header "NppKycModule-Swift.h"
+  requires objc
+}

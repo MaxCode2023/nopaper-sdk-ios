@@ -1,0 +1,4 @@
+framework module NppNetworkModule {
+  header "NppNetworkModule-Swift.h"
+  requires objc
+}

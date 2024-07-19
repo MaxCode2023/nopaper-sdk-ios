@@ -1,0 +1,1617 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NppSDKModule
+import AbSDKMain
+import Alamofire
+import Foundation
+import NppCoreModule
+import NppNetworkModule
+import NppSignalRModule
+import PCSDKModule
+import PromiseKit
+import RxAlamofire
+import RxSwift
+import Sentry
+import Swift
+import SwiftUI
+import Swinject
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol ProfileFlModel {
+  var isVerified: Swift.Bool { get }
+  var phoneNumber: Swift.String { get }
+  var surnameFirstChar: Swift.String? { get }
+  var email: Swift.String? { get }
+  var birthDate: Swift.String? { get }
+  var name: Swift.String? { get }
+  var surname: Swift.String? { get }
+  var patronymic: Swift.String? { get }
+  var userGuid: Swift.String { get }
+  var inn: Swift.String? { get }
+  var isEmailConfirmed: Swift.Bool? { get }
+  var isPasswordTemporary: Swift.Bool { get }
+  var isPhoneConfirmed: Swift.Bool { get }
+  var isTwoFactorEnabled: Swift.Bool { get }
+  var partnerIdentifier: Swift.String? { get }
+  var gender: NppSDKModule.Gender? { get }
+  var passportRusInfo: NppSDKModule.PassportRusInfo? { get }
+}
+public enum Gender : Swift.Int {
+  case unknown
+  case male
+  case female
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers public class PassportRusInfo : ObjectiveC.NSObject, Foundation.NSCoding {
+  public var series: Swift.String?
+  public var number: Swift.String?
+  public var issuedBy: Swift.String?
+  public var issuingDate: Swift.String?
+  public var issuerDepartmentCode: Swift.String?
+  public var birthPlace: Swift.String?
+  @objc public func encode(with aCoder: Foundation.NSCoder)
+  @objc required public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public class CertificateInteractorImpl : NppSDKModule.CertificateInteractor, AbSDKMain.TaskOwner {
+  public init(certificateRepository: any NppSDKModule.CertificateRepository)
+  final public let certificateRepository: any NppSDKModule.CertificateRepository
+  public func getAllCertificate() -> RxSwift.Observable<Swift.Array<NppSDKModule.Certificate>>
+  public func getCertificateInfo(certificateId: Swift.String) -> RxSwift.Observable<NppSDKModule.Certificate>
+  @objc deinit
+}
+public struct DocSigningPartyChangeStatusModel : Swift.Codable {
+  public let documentId: Swift.Int?
+  public let recipientInfo: NppSDKModule.RecipientInfoModel
+  public let currentSigningPartyInfo: NppSDKModule.CurrentSigningPartyInfo
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CurrentSigningPartyInfo : Swift.Codable {
+  public let fromStatus: Swift.Int
+  public let toStatus: Swift.Int
+  public let companyId: Swift.Int?
+  public let userGuid: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CertificateSigning {
+  public var certificate: NppSDKModule.Certificate
+  public var rule: NppSDKModule.CertificateRule
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SigningRepositoryImpl : NppNetworkModule.SessionManager {
+  @objc deinit
+}
+public struct Recipient {
+  public let recipientId: Swift.Int
+  public let userGuid: Swift.String?
+  public let companyId: Swift.Int?
+  public let companyNameWithShortOpf: Swift.String?
+  public let inn: Swift.String?
+  public let kpp: Swift.String?
+  public let recipientType: NppSDKModule.RecipientType?
+  public let recipientStatus: Swift.Int?
+  public let fullName: Swift.String?
+  public let phone: Swift.String?
+  public let email: Swift.String?
+}
+public enum RecipientType : Swift.Int {
+  case unknown
+  case fl
+  case ul
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct DocumentCountInfoResponse : Swift.Codable {
+  public let signingPartyExpectedActionType: Swift.Int
+  public let documentCount: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol MonitoringInteractor {
+  func sendEventToMonitoring(eventName: Swift.String) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+}
+public struct CertificateInfoRequest {
+  public let signingCertificateId: Swift.String?
+  public let pcUserId: Swift.String?
+  public let sessionId: Swift.String?
+  public let reissuingId: Swift.Int?
+  public func getParams() -> Alamofire.Parameters
+}
+public struct Draft {
+  public let documentId: Swift.Int
+  public let signingPartyId: Swift.Int
+}
+public struct TariffList {
+  public let tariffSettingList: [NppSDKModule.TariffSettingList]?
+}
+public struct TariffSettingList {
+  public let tariffType: Swift.Int?
+  public let dssServiceHost: Swift.String?
+}
+public struct SearchCompanyList {
+  public let companyList: [NppSDKModule.SearchCompany]
+}
+public struct SearchCompany {
+  public let company: NppSDKModule.CompanyData
+  public let companyDocumentRecipient: NppSDKModule.CompanyDocumentRecipient
+}
+public struct ItmForm {
+  public var form: NppSDKModule.ItmFormModel
+  public init(response: NppSDKModule.ItmFormResponse?)
+  public init()
+}
+public struct ItmFormModel {
+  public var inn: Swift.String?
+  public var snils: Swift.String?
+  public var firstName: Swift.String?
+  public var secondName: Swift.String?
+  public var patronymic: Swift.String?
+  public var email: Swift.String?
+  public var phone: Swift.String?
+  public var regionId: Swift.String?
+  public var passportSeries: Swift.String?
+  public var passportNumber: Swift.String?
+  public var placeOfIssuePassport: Swift.String?
+  public var dateOfIssuePassport: Swift.String?
+  public var codeOfIssuePassport: Swift.String?
+  public var dateOfBirthday: Swift.String?
+  public var placeOfBirthday: Swift.String?
+  public var gender: NppSDKModule.Gender?
+  public init(response: NppSDKModule.ItmFormModelResponse?)
+}
+public struct CsrFileList {
+  public let csrFileList: [NppSDKModule.CsrFile]?
+}
+public struct CsrFile {
+  public let csrFileId: Swift.String
+  public let fileName: Swift.String?
+  public let type: Swift.Int
+}
+public struct PCUserInfo : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UploadFileForRequest {
+  public let fileName: Swift.String
+  public let fileContent: Swift.String
+  public let fileType: Swift.Int
+  public init(fileName: Swift.String, fileContent: Swift.String, fileType: Swift.Int)
+}
+public protocol DocumentsInteractor {
+  func getAllDocuments(documentStatusList: [NppSDKModule.DocumentStatus]?) -> RxSwift.Observable<[NppSDKModule.Document]>
+  func getAllDrafts() -> RxSwift.Observable<[NppSDKModule.Document]>
+  func getDocumentDetails(documentId: Swift.Int) -> RxSwift.Observable<NppSDKModule.DocumentDetails>
+  func uploadDocumentFile(documentId: Swift.Int, fileBase64: Swift.String, nameWithExtension: Swift.String) -> RxSwift.Observable<NppSDKModule.AddDocumentFile>
+  func getDocumentFile(documentId: Swift.Int, fileId: Swift.String) -> RxSwift.Observable<NppSDKModule.DocumentFile>
+  func deleteDocumentFile(documentId: Swift.Int, fileId: Swift.String) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func createSigningParty(recipientId: Swift.Int, actionType: Swift.Int, order: Swift.Int, queueType: Swift.Int, parentSigningPartyId: Swift.Int) -> RxSwift.Observable<NppSDKModule.CreateSigningParty>
+  func getSigningParty(signingPartyId: Swift.Int) -> RxSwift.Observable<NppSDKModule.SigningPartyInfo>
+  func deleteSigningParty(signingPartyId: Swift.Int) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func editActionTypeSigningParty(signingPartyId: Swift.Int, actionType: Swift.Int, signType: Swift.Int) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func editQueueTypeSigningParty(signingPartyId: Swift.Int, queueType: Swift.Int) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func editOrderSigningParty(signingPartyId: Swift.Int, childSigningParty: Swift.Array<NppSDKModule.SigningPartyWithOrder>) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func createDraft() -> RxSwift.Observable<NppSDKModule.Draft>
+  func patchDraft(documentId: Swift.Int, title: Swift.String) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func sendDraft(documentId: Swift.Int) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func deleteDraft(documentId: Swift.Int) -> RxSwift.Observable<Swift.String>
+  func createRecipient(userGuid: Swift.String, phoneNumber: Swift.String?, companyInn: Swift.String?, companyKpp: Swift.String?, companyShortName: Swift.String?, companyId: Swift.Int?) -> RxSwift.Observable<NppSDKModule.Recipient>
+  func getRecipientList(type: NppSDKModule.RecipientType, count: Swift.Int) -> RxSwift.Observable<[NppSDKModule.Recipient]>
+  func createContainerForDocument(signingPartyId: Swift.Int, fromEmployee: Swift.Bool) -> RxSwift.Observable<Swift.String>
+  func downloadZipDocument(documentId: Swift.Int, fileId: Swift.String) -> RxSwift.Observable<NppNetworkModule.DownloadFileResponse>
+  func rejectDocument(documentId: Swift.Int) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func getDocumentsCount(signingPartyStatus: NppSDKModule.SigningPartyStatus?, expectedActionTypeList: [NppSDKModule.ActionType]?, documentStatus: NppSDKModule.DocumentStatus?) -> RxSwift.Observable<Swift.Array<NppSDKModule.DocumentCountInfo>>
+  func changeSigningPartyRoute(signingPartyId: Swift.Int, isDisableChange: Swift.Bool) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+}
+public struct CertificateResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PropertiesResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum SigningProviderType : Swift.Int, Swift.Codable {
+  case debugSimpleProvider
+  case debugProvider
+  case debugExternalProvider
+  case unknown
+  case payControl
+  case payControlMyDss
+  case payControlServer
+  case payControlPKI
+  case cryptoToken
+  case myDssItm
+  case payControlSMS
+  case goskey
+  case autoSign
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers open class NppSDKInteractorImpl : NppSDKModule.NppSDKInteractor, AbSDKMain.TaskOwner {
+  public func getUISettings() -> NppCoreModule.UISettings
+  public func getInternetReachable() -> AbSDKMain.Task<Swift.Bool>
+  public func verificate() -> AbSDKMain.Task<NppSDKModule.Certificate>
+  public func getAllCertificate() -> AbSDKMain.Task<[NppSDKModule.Certificate]>
+  public func getCertificate(certificateId: Swift.String) -> AbSDKMain.Task<NppSDKModule.Certificate>
+  public func getKeyAcceptanceAct(certificateId: Swift.String) -> AbSDKMain.Task<NppNetworkModule.DownloadFileResponse>
+  public func acceptKeyAcceptanceAct(certificateId: Swift.String) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  public func startObserveFTFCertificateStatus(certificateId: Swift.String) -> AbSDKMain.Task<Swift.String>
+  public func stopObserveFTFCertificateStatus()
+  public func getActiveProfile() -> any NppSDKModule.Profile
+  public func setActiveProfile(_ id: Swift.String)
+  public func getAllProfile() -> [any NppSDKModule.Profile]
+  public func getCompanyList() -> AbSDKMain.Task<[NppSDKModule.DataCompanyModel]>
+  public func getCompanyInfo(companyId: Swift.Int) -> AbSDKMain.Task<NppSDKModule.CompanyData>
+  public func addCompany(inn: Swift.String, kpp: Swift.String) -> AbSDKMain.Task<Swift.Void>
+  public func twoFactorChangeFlag(isEnabled: Swift.Bool) -> AbSDKMain.Task<Swift.Void>
+  public func twoFactorSend() -> AbSDKMain.Task<NppSDKModule.ConfirmOperationSendResponse>
+  public func twoFactorVerify(code: Swift.String) -> AbSDKMain.Task<Swift.Int>
+  public func getProfileTwoFactorStatus() -> Swift.Bool
+  @objc deinit
+}
+extension NppSDKModule.NppSDKInteractorImpl {
+  public func login(login: Swift.String, password: Swift.String) -> AbSDKMain.Task<Swift.Void>
+  public func auth(token: Swift.String, userGuid: Swift.String) -> AbSDKMain.Task<Swift.Void>
+  public func logout()
+}
+extension NppSDKModule.NppSDKInteractorImpl {
+  public func getAllDocuments(documentStatusList: [NppSDKModule.DocumentStatus]?) -> AbSDKMain.Task<[NppSDKModule.Document]>
+  public func getAllDrafts() -> AbSDKMain.Task<[NppSDKModule.Document]>
+  public func getDocumentDetails(documentId: Swift.Int) -> AbSDKMain.Task<NppSDKModule.DocumentDetails>
+  public func uploadDocumentFile(documentId: Swift.Int, fileBase64: Swift.String, nameWithExtension: Swift.String) -> AbSDKMain.Task<NppSDKModule.AddDocumentFile>
+  public func getDocumentFile(documentId: Swift.Int, fileId: Swift.String) -> AbSDKMain.Task<NppSDKModule.DocumentFile>
+  public func deleteDocumentFile(documentId: Swift.Int, fileId: Swift.String) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  public func getAgreementList() -> AbSDKMain.Task<NppSDKModule.AgreementList>
+  public func acceptAgreementList(agreementIdList: [Swift.String]) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  public func createDraft() -> AbSDKMain.Task<NppSDKModule.Draft>
+  public func changeDraftTitle(documentId: Swift.Int, title: Swift.String) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  public func sendDraft(documentId: Swift.Int) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  public func deleteDraft(documentId: Swift.Int) -> AbSDKMain.Task<Swift.String>
+  public func createRecipient(userGuid: Swift.String, phoneNumber: Swift.String?, companyInn: Swift.String? = nil, companyKpp: Swift.String?, companyShortName: Swift.String?, companyId: Swift.Int?) -> AbSDKMain.Task<NppSDKModule.Recipient>
+  public func getRecipientList(type: NppSDKModule.RecipientType, count: Swift.Int) -> AbSDKMain.Task<[NppSDKModule.Recipient]>
+  public func getCompanySuggestList(suggestInfo: Swift.String) -> AbSDKMain.Task<NppSDKModule.CompanySuggestInfoList>
+  public func createSigningParty(recipientId: Swift.Int, actionType: NppSDKModule.ActionType, order: Swift.Int, queueType: NppSDKModule.QueueType, parentSigningPartyId: Swift.Int) -> AbSDKMain.Task<NppSDKModule.CreateSigningParty>
+  public func getSigningParty(signingPartyId: Swift.Int) -> AbSDKMain.Task<NppSDKModule.SigningPartyInfo>
+  public func editActionTypeSigningParty(signingPartyId: Swift.Int, actionType: NppSDKModule.ActionType, signType: NppSDKModule.SignType) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  public func editQueueTypeSigningParty(signingPartyId: Swift.Int, queueType: NppSDKModule.QueueType) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  public func editOrderSigningParty(rootSigningPartyId: Swift.Int, childSigningPartyList: [NppSDKModule.SigningPartyWithOrder]) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  public func changeSigningPartyRoute(signingPartyId: Swift.Int, isDisableChange: Swift.Bool) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  public func deleteSigningParty(signingPartyId: Swift.Int) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  public func findProfileByPhoneNumber(phoneNumber: Swift.String) -> AbSDKMain.Task<NppSDKModule.FindUserModel?>
+  public func searchCompany(inn: Swift.String, kpp: Swift.String) -> AbSDKMain.Task<NppSDKModule.SearchCompanyList>
+  public func getSignatureList(signedFileId: Swift.String) -> AbSDKMain.Task<NppSDKModule.SignatureInfoList>
+  public func getSignatureInfoFile(signatureFileId: Swift.String) -> AbSDKMain.Task<NppNetworkModule.DownloadFileResponse>
+  public func downloadZipDocument(documentId: Swift.Int, fileId: Swift.String) -> AbSDKMain.Task<NppNetworkModule.DownloadFileResponse>
+  public func startCertReissuingAndFNSChecking(certificateId: Swift.String) -> AbSDKMain.Task<NppSDKModule.PcSigningCertificateInfo>
+  public func setKeyForReissuedCertificate(reissuedCertificateId: Swift.String) -> AbSDKMain.Task<Swift.Void>
+  public func signReissuedKeyAcceptanceAct(reissuedCertificateId: Swift.String) -> AbSDKMain.Task<Swift.Void>
+  public func signDocumentWithNep(signingPartyId: Swift.Int) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  public func rejectDocument(documentId: Swift.Int) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  public func getDocumentsCount(signingPartyStatus: NppSDKModule.SigningPartyStatus?, expectedActionTypeList: [NppSDKModule.ActionType]?, documentStatus: NppSDKModule.DocumentStatus?) -> AbSDKMain.Task<[NppSDKModule.DocumentCountInfo]>
+  public func sendCodeForSmsSign() -> AbSDKMain.Task<NppSDKModule.ConfirmOperationSendResponse>
+  public func verifySmsSignCode(code: Swift.String) -> AbSDKMain.Task<Swift.Int>
+  public func startSignWithPaycontrolSms(signingPartyId: Swift.Int) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  public func revokeAndDeleteAllCertificates() -> AbSDKMain.Task<Swift.Void>
+}
+public protocol ItmInteractor {
+  func createCertificate() -> RxSwift.Observable<NppSDKModule.ITMCreateCertificate>
+  func passAlias(certificateId: Swift.String, alias: Swift.String) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func getTarriffList() -> RxSwift.Observable<NppSDKModule.TariffList>
+  func getItmCertificate(certificateId: Swift.String) -> RxSwift.Observable<NppSDKModule.GetItmCertificate>
+  func getRegionsList() -> RxSwift.Observable<NppSDKModule.RegionsList>
+  func getPartnerPointList() -> RxSwift.Observable<NppSDKModule.PartnerPointList>
+  func setPartnerPoint(certificateId: Swift.String, identificationPointId: Swift.String) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func getSelectedPartnerPoint(certificateId: Swift.String) -> RxSwift.Observable<NppSDKModule.PartnerPointModel>
+  func submit(certificateId: Swift.String) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func saveForm(certificateId: Swift.String, itmForm: NppSDKModule.ItmForm) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func getForm(certificateId: Swift.String) -> RxSwift.Observable<NppSDKModule.ItmFormResponse>
+  func uploadFile(certificateId: Swift.String, uploadFile: NppSDKModule.UploadFileForRequest) -> RxSwift.Observable<NppSDKModule.UploadFile>
+  func deleteFile(certificateId: Swift.String, csrFileId: Swift.String) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func getFileList(certificateId: Swift.String, fileType: Swift.Int) -> RxSwift.Observable<NppSDKModule.CsrFileList>
+  func downloadFile(certificateId: Swift.String, csrFileId: Swift.String) -> RxSwift.Observable<Swift.String>
+  func identificationApproach(certificateId: Swift.String, identificationApproach: Swift.Int) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func getItmContainer(containerId: Swift.String) -> RxSwift.Observable<NppSDKModule.ItmContainer>
+  func getRejectCommentList(certificateId: Swift.String) -> RxSwift.Observable<[Swift.String]>
+}
+public struct Certificate : Swift.Hashable, Swift.Equatable {
+  public static func == (lhs: NppSDKModule.Certificate, rhs: NppSDKModule.Certificate) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public let certificateId: Swift.String
+  public let isAvailableForSigning: Swift.Bool
+  public let issuedDateTimeUtc: Swift.String?
+  public let ownerGuid: Swift.String?
+  public let ownerName: Swift.String?
+  public let pcProviderData: NppSDKModule.PCProvider?
+  public let providerStatus: Swift.Int
+  public let providerStatusString: Swift.String
+  public let providerType: NppSDKModule.SigningProviderType
+  public let providerTypeString: Swift.String
+  public let signingLevel: Swift.Int?
+  public let signingLevelString: Swift.String
+  public let validUntilDateTimeUtc: Swift.String?
+  public let createdUtc: Swift.String?
+  public let properties: NppSDKModule.Properties?
+  public let selfReissuable: Swift.Bool
+  public var isExpired: Swift.Bool {
+    get
+  }
+  public func getDaysUntilExpire() -> Swift.Int?
+  public func getDaysUntilExpireString() -> Swift.String
+  public func getExpiringStatus() -> Swift.Bool
+  public enum CertificateProviderStatus : Swift.Int {
+    case UNKNOWN
+    case TEMPLATE
+    case INITIALIZATION
+    case INITIALIZATION_ERROR
+    case AVAILABLE
+    case BLOCKED
+    case DELETED
+    case ATTACHING_ERROR
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @_hasMissingDesignatedInitializers public class SigningLevel {
+    public static let unknown: Swift.Int
+    public static let pep: Swift.Int
+    public static let nep: Swift.Int
+    public static let kep: Swift.Int
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers public class SigningCertificateLkStatus {
+    public static let UNKNOWN: Swift.Int
+    public static let AVAILABLE: Swift.Int
+    public static let DISABLE: Swift.Int
+    public static let NEW: Swift.Int
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers public class CertificateIssuer {
+    public static let UNKNOWN: Swift.Int
+    public static let NOPAPER_API: Swift.Int
+    public static let CLIENT_API: Swift.Int
+    @objc deinit
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Properties : Swift.Codable {
+  public let payControlIssuerName: Swift.String?
+  public let payControlIssuingType: Swift.String?
+  public let parent: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum PCCertificateStatus : Swift.Int, Swift.Codable {
+  case Unknown
+  case Active
+  case Blocked
+  case NotCreated
+  case Deleted
+  case ReissuingStarted
+  case ReissuingUserDataCheckingFailed
+  case ReissuingError
+  case New
+  case Activated
+  case Accepted
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum PayControlCertificateIssuingType : Swift.Int, Swift.Codable {
+  case Unknown
+  case Ekyc
+  case External
+  case Anonimous
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum PCAcceptingAcceptanceActType : Swift.Int, Swift.Codable {
+  case Unknown
+  case ByRest
+  case Signing
+  case InFirstSigning
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct DataCompanyModel {
+  public let inn: Swift.String
+  public let fullNameWithOpf: Swift.String
+  public let shortNameWithOpf: Swift.String
+  public let ogrn: Swift.String
+  public let ogrnDateUtc: Swift.String
+  public let kpp: Swift.String?
+  public let companyStatus: Swift.Int
+  public let address: Swift.String?
+  public let companyType: Swift.Int
+  public let headerFio: Swift.String?
+  public let okved: Swift.String
+  public let lastChangeDateUtc: Swift.String
+  public let opf: Swift.String?
+}
+public struct SignatureInfoListResponse : Swift.Codable {
+  public let signatureInfoList: [NppSDKModule.SignatureInfoResponse?]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SignatureInfoResponse : Swift.Codable {
+  public let signatureId: Swift.String
+  public let certificate: NppSDKModule.CertificateResponse
+  public let providerDataJson: NppSDKModule.ProviderDataJsonResponse?
+  public let signedUtc: Swift.String
+  public let fileOriginalId: Swift.String?
+  public let transactionId: Swift.String
+  public let signingDataCustomJson: NppSDKModule.SigningDataCustomJsonResponse?
+  public let signatureFileIdList: [Swift.String]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ProviderDataJsonResponse : Swift.Codable {
+  public let Signature: Swift.String?
+  public let ConfirmCode: Swift.String?
+  public let ProviderType: Swift.Double?
+  public let TransactionId: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SigningDataCustomJsonResponse : Swift.Codable {
+  public let Version: Swift.String?
+  public let SenderInfo: NppSDKModule.SenderInfoResponse?
+  public let CompanyInfo: NppSDKModule.SignatureInfoCompanyInfoResponse?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SignatureInfoCompanyInfoResponse : Swift.Codable {
+  public let CompanyId: Swift.Double?
+  public let FromEmployee: Swift.Bool?
+  public let IsHead: Swift.Bool?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SenderInfoResponse : Swift.Codable {
+  public let CompanyInn: Swift.String?
+  public let ShortCompanyName: Swift.String?
+  public let IsCompanyRecipient: Swift.Bool?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RelatedClient : Swift.Codable {
+  public let id: Swift.Int
+  public let attachmentType: Swift.Int
+  public let clientFl: NppSDKModule.ClientFl?
+  public let clientUl: NppSDKModule.ClientUl?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AddDocumentFile {
+  public let fileId: Swift.String
+}
+public struct ConfirmOperationSendResponse : Swift.Codable {
+  public let operationId: Swift.String?
+  public let leftAttempts: Swift.Int?
+  public let endCodeSec: Swift.Double
+  public let resendTimeoutSec: Swift.Double
+  public let recreateTimeoutSec: Swift.Double
+  public let validTimeSec: Swift.Double
+  public let codeLength: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PcSettings {
+  public let systemId: Swift.String
+  public let ekycPublicEndpoint: Foundation.URL?
+}
+@_hasMissingDesignatedInitializers open class SentryAssembly : Swinject.Assembly {
+  public func assemble(container: Swinject.Container)
+  @objc deinit
+}
+public struct PCCreateUserRequest : Swift.Codable {
+  public let pin: Swift.String
+  public let certificateId: Swift.String
+  public func getParams() -> Alamofire.Parameters
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PCCreateUserResponse : Swift.Encodable, Swift.Decodable {
+  public let keyJson: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PartnerPointList {
+  public let itmPartnerPointList: [NppSDKModule.PartnerPointModel]?
+}
+public struct PartnerPointModel {
+  public let identificationPointId: Swift.String?
+  public let fullName: Swift.String?
+  public let phone: Swift.String?
+  public let email: Swift.String?
+  public let country: Swift.String?
+  public let region: Swift.String?
+  public let locality: Swift.String?
+  public let address: Swift.String?
+  public let latitude: Swift.Float
+  public let longitude: Swift.Float
+  public func getFullAddress() -> Swift.String
+}
+public struct UserProfilePassport : Swift.Codable {
+  public let birthDate: Swift.String
+  public let birthPlace: Swift.String
+  public let passportSeries: Swift.String
+  public let issueCode: Swift.String
+  public let issueDate: Swift.String
+  public let issued: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UploadFileRequest : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RuleResponse : Swift.Codable {
+  public let priority: Swift.Int
+  public let isSuccess: Swift.Bool
+  public let ruleAlias: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DocumentCountInfo {
+  public let signingPartyExpectedActionType: NppSDKModule.ActionType
+  public let documentCount: Swift.Int
+}
+public struct CreateCertificateResponse : Swift.Codable {
+  public let certificateId: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DocumentFile {
+  public let fileName: Swift.String
+  public let originFileNameWithoutExtension: Swift.String
+  public let extensionWithDot: Swift.String?
+  public let sizeKB: Swift.Int
+  public let fileBase64: Swift.String
+}
+public struct CsrFileListResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CsrFileResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CreateSigningPartyResponse : Swift.Codable {
+  public let signingPartyId: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserCompany {
+  public let employeeStatus: Swift.Int
+  public let position: Swift.String?
+  public let isHead: Swift.Bool
+  public let isCompanyDocumentsRecipient: Swift.Bool
+  public let employeePrivelegedPermissionList: Swift.Array<NppSDKModule.EmployeePrivelegedPermission>?
+  public let company: NppSDKModule.GetCompanyInfoResponse
+}
+public struct CreateSigningParty {
+  public let signingPartyId: Swift.Int
+}
+public struct AddDocumentFileResponse : Swift.Codable {
+  public let fileId: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct KeyJSON : Swift.Codable {
+  public let value: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct EmployeePrivelegedPermission : Swift.Codable {
+  public let confirmProcuratoryId: Swift.Int?
+  public let startDateUtc: Swift.String
+  public let endDateUtc: Swift.String
+  public let alias: Swift.String?
+  public let displayName: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum EmployeePermission : Swift.String, Swift.Codable {
+  case canReadDocument
+  case canAddEmployee
+  case canDeleteEmployee
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol ISigningAction {
+  var signingPartyInfo: NppSDKModule.SigningPartyInfo? { get set }
+  var type: NppSDKModule.ActionType { get }
+  var signType: NppSDKModule.SignType { get }
+  var title: Swift.String { get }
+  var isNoRight: Swift.Bool { get }
+  var priority: Swift.Int { get }
+  var signerName: Swift.String? { get set }
+  func execute() -> AbSDKMain.Task<Swift.String>
+}
+public struct ClientUl : Swift.Codable {
+  public let id: Swift.Int
+  public let inn: Swift.String?
+  public let companyName: Swift.String?
+  public let signerEmployeeFio: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Document {
+  public var id: Swift.Int
+  public var status: NppSDKModule.DocumentStatus?
+  public var title: Swift.String?
+  public var expectedActionType: NppSDKModule.ActionType?
+  public var expectedSignType: NppSDKModule.SignType?
+  public var createDate: Swift.String?
+  public var lastChangeDate: Swift.String?
+  public var fileCount: Swift.Int?
+  public var signingPartyList: [NppSDKModule.DocumentSigningPartyInfo]?
+  public var lastChangeHistory: NppSDKModule.LastChangeHistory?
+  public func getStatus() -> Swift.String
+}
+public struct DocumentSigningPartyInfo {
+  public var recipientType: Swift.Int
+  public var fullName: Swift.String?
+  public var companyName: Swift.String?
+}
+public struct LastChangeHistory {
+  public var eventName: Swift.String?
+  public var fullName: Swift.String?
+  public var eventType: Swift.Int
+}
+public enum DocumentStatus : Swift.Int {
+  case draft
+  case inProgress
+  case complete
+  case revoke
+  case error
+  case rejected
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct GetItmCertificate {
+  public let csrStatus: NppSDKModule.CsrStatus
+  public let csrStatusString: Swift.String?
+  public let csrStatusMessage: Swift.String?
+  public let failed: Swift.Bool
+  public let paid: Swift.Bool
+  public let identificationApproach: Swift.Int?
+  public let issuingType: Swift.Int
+  public let tariffType: Swift.Int
+}
+public enum CsrStatus : Swift.Int {
+  case Unknown
+  case DataCapture
+  case ClientInitialization
+  case ClientInitializationError
+  case UserDocumentsUploading
+  case SmevReview
+  case AliasReceiving
+  case UserDocumentsSending
+  case UserDocumentsReview
+  case UserDocumentsCommentsReceiving
+  case DataCorrection
+  case RequestSigning
+  case IdentificationWaiting
+  case RequestReview
+  case IdentificationDocumentsCommentsReceiving
+  case AttachmentsCorrection
+  case Issuing
+  case Installing
+  case Saving
+  case Completed
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct DocumentCommentSseModel : Swift.Codable {
+  public let documentId: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SigningPartyInfoResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum ActionType : Swift.Int, Swift.Codable {
+  case unknown
+  case signPerson
+  case confirm
+  case remind
+  case revoke
+  case reject
+  case signCompany
+  case delegation
+  case sendDraft
+  case deleteDraft
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct RecepientInfoResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ClientFl : Swift.Codable {
+  public let id: Swift.String
+  public let userId: Swift.String
+  public let phoneNumber: Swift.String?
+  public let email: Swift.String?
+  public let name: Swift.String?
+  public let surname: Swift.String?
+  public let patronymic: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UploadFileResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserProfileResponse : Swift.Codable {
+  public let isVerified: Swift.Bool
+  public let phoneNumber: Swift.String
+  public let surnameFirstChar: Swift.String?
+  public let email: Swift.String?
+  public let birthDate: Swift.String?
+  public let name: Swift.String?
+  public let surname: Swift.String?
+  public let patronymic: Swift.String?
+  public let userGuid: Swift.String
+  public let inn: Swift.String?
+  public let gender: Swift.Int?
+  public let isEmailConfirmed: Swift.Bool?
+  public let isPasswordTemporary: Swift.Bool
+  public let isPhoneConfirmed: Swift.Bool
+  public let isTwoFactorEnabled: Swift.Bool
+  public let partnerIdentifier: Swift.String?
+  public let passportRusInfo: NppSDKModule.PassportRusInfoResponse?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PassportRusInfoResponse : Swift.Codable {
+  public let series: Swift.String?
+  public let number: Swift.String?
+  public let issuedBy: Swift.String?
+  public let issuingDate: Swift.String?
+  public let issuerDepartmentCode: Swift.String?
+  public let birthPlace: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DocumentDetails {
+  public let id: Swift.Int
+  public let title: Swift.String?
+  public let status: NppSDKModule.DocumentStatusType
+  public let printFormStatus: NppSDKModule.PrintFormStatus
+  public let ownerUserGuid: Swift.String?
+  public let rootSigningPartyInfo: NppSDKModule.SigningPartyInfo?
+  public var fileList: [NppSDKModule.FileDetails]
+  public var signingPartyActionTypeList: Swift.Array<NppSDKModule.ActionType>?
+  public var mainAction: (any NppSDKModule.ISigningAction)?
+  public var availableActions: Swift.Array<any NppSDKModule.ISigningAction>?
+  public var isOwner: Swift.Bool
+  public var currentSigningPartyInfo: NppSDKModule.SigningPartyInfo?
+  public func getStatus() -> Swift.String
+  public func getCorrectFileList() -> [NppSDKModule.FileDetails]
+}
+public struct FileDetails {
+  public let fileId: Swift.String
+  public let originNameWithExtension: Swift.String?
+  public let type: NppSDKModule.DocumentFileType
+  public let relatedFileId: Swift.String?
+}
+public enum DocumentStatusType : Swift.Int {
+  case unknown
+  case draft
+  case inProgress
+  case complete
+  case revoke
+  case error
+  case rejected
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum DocumentFileType : Swift.Int {
+  case Unknown
+  case OriginFile
+  case OfertaWithStamp
+  case OriginFileWithStamp
+  case GeneratedOferta
+  case Procuratory
+  case ProcuratoryWithStamp
+  case ZipArchiveWithSignature
+  case KedoXml
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum PrintFormStatus : Swift.Int {
+  case Unknown
+  case None
+  case Ready
+  case DontNeed
+  case InProcess
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct CompanyDocumentRecipient {
+  public let userGuid: Swift.String?
+  public let fullName: Swift.String?
+  public let isHead: Swift.Bool
+  public let isCompanyDocumentsRecipient: Swift.Bool
+}
+public struct CreateDraftResponse : Swift.Codable {
+  public let documentId: Swift.Int
+  public let signingPartyId: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ItmContainer : Swift.Codable {
+  public let itmContainerStatus: NppSDKModule.ItmContainerStatus
+  public let itmOperationId: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum ItmContainerStatus : Swift.Int, Swift.Codable {
+  case Unknown
+  case New
+  case DocumentsUploaded
+  case Created
+  case ReadyForSigning
+  case Signing
+  case Confirmed
+  case NotConfirmed
+  case Signed
+  case Faile
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct VerifyCodeErrorResponse : AbSDKMain.DecodableError {
+  public let description: Swift.String
+  public let code: Swift.String
+  public let customErrorValues: NppSDKModule.CustomErrorValues?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CustomErrorValues : Swift.Codable {
+  public let operationId: Swift.String
+  public let attemptsLeft: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PCProvider {
+  public let deviceId: Swift.String?
+  public let pcUserId: Swift.String?
+  public let systemId: Swift.String?
+  public let publicKey: Swift.String?
+  public let issuingType: Swift.Int?
+  public let providerType: Swift.Int?
+  public let ekycSessionId: Swift.String?
+  public let serialNumber: Swift.String?
+  public let clientBuildName: Swift.String?
+}
+public struct SignatureInfoList {
+  public let signatureInfoList: [NppSDKModule.SignatureInfo?]
+  public init(response: NppSDKModule.SignatureInfoListResponse)
+}
+public struct SignatureInfo {
+  public let signatureId: Swift.String
+  public let certificate: NppSDKModule.Certificate
+  public let providerDataJson: NppSDKModule.ProviderDataJson?
+  public let signedUtc: Swift.String
+  public let fileOriginalId: Swift.String?
+  public let transactionId: Swift.String
+  public let signingDataCustomJson: NppSDKModule.SigningDataCustomJson?
+  public let signatureFileIdList: [Swift.String]?
+  public var companyInfo: NppSDKModule.CompanyData?
+  public init(response: NppSDKModule.SignatureInfoResponse)
+  public func getData(companyData: NppSDKModule.CompanyData?) -> [Swift.String : Swift.String?]
+}
+public struct ProviderDataJson {
+  public let Signature: Swift.String?
+  public let ConfirmCode: Swift.String?
+  public let ProviderType: Swift.Double?
+  public let TransactionId: Swift.String?
+}
+public struct SigningDataCustomJson {
+  public let version: Swift.String?
+  public let senderInfo: NppSDKModule.SenderInfo?
+  public let companyInfo: NppSDKModule.SignatureInfoCompanyInfo?
+}
+public struct SenderInfo {
+  public let companyInn: Swift.String?
+  public let shortCompanyName: Swift.String?
+  public let isCompanyRecipient: Swift.Bool?
+}
+public struct SignatureInfoCompanyInfo {
+  public let companyId: Swift.Double?
+  public let fromEmployee: Swift.Bool?
+  public let isHead: Swift.Bool?
+}
+public struct SearchCompanyListResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SearchCompanyResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CompanyDocumentRecipientResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CreateOperationContainerResponse : Swift.Codable {
+  public let operationId: Swift.String?
+  public let senderTypeList: Swift.Array<Swift.String>?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AgreementList {
+  public let data: Swift.Array<NppSDKModule.Agreement>
+  public let isNewAccept: Swift.Bool
+}
+public struct Agreement {
+  public let id: Swift.String
+  public let isRequired: Swift.Bool
+  public let title: Swift.String?
+  public let url: Swift.String?
+}
+public protocol SigningInteractor {
+  func getMainAction(document: NppSDKModule.DocumentDetails) -> (any NppSDKModule.ISigningAction)?
+  func getAvailableAction(document: NppSDKModule.DocumentDetails) -> Swift.Array<any NppSDKModule.ISigningAction>
+  func initializeContainer(certificateId: Swift.String, containerId: Swift.String) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func getContainerInfo(containerId: Swift.String) -> RxSwift.Observable<NppSDKModule.SigningContainer>
+  func getCertificateListForSigning(containerId: Swift.String) -> RxSwift.Observable<[NppSDKModule.Certificate]>
+  func signContainerWithNepPaycontrol(containerId: Swift.String, certificate: NppSDKModule.Certificate) -> PromiseKit.Promise<Swift.Void>
+  func startSignContainerWithNepSms(containerId: Swift.String, certificateId: Swift.String) -> PromiseKit.Promise<Swift.Void>
+  func prepareContainer(container: NppSDKModule.SigningContainer, certificate: NppSDKModule.Certificate) -> PromiseKit.Promise<NppSDKModule.SigningContainer>
+  func awaitingForContainerStatus(container: NppSDKModule.SigningContainer?, statusList: [NppSDKModule.SigningContainerStatus]) -> PromiseKit.Promise<NppSDKModule.SigningContainer>
+  func getAvailableCertificateForContainerPaycontrol(certificateList: [NppSDKModule.Certificate]) -> PromiseKit.Promise<NppSDKModule.Certificate>
+  func getAvailableCertificateForContainerPaycontrolSms(certificateList: [NppSDKModule.Certificate]) -> PromiseKit.Promise<NppSDKModule.Certificate>
+  func getCertificateForAcceptanceNeeded(certificateList: [NppSDKModule.Certificate]) -> PromiseKit.Promise<NppSDKModule.Certificate>
+  func getSignatureList(signedFileId: Swift.String) -> RxSwift.Observable<NppSDKModule.SignatureInfoList>
+  func getSignatureInfoFile(signatureFileId: Swift.String) -> RxSwift.Observable<NppNetworkModule.DownloadFileResponse>
+  func verifyConfirmOperation(code: Swift.String, onSuccessVerifiedCode: @escaping () -> Swift.Void) -> PromiseKit.Promise<Swift.Void>
+}
+public struct CertificateRule {
+}
+public protocol Company {
+  var id: Swift.Int { get }
+  var inn: Swift.String? { get }
+  var kpp: Swift.String? { get }
+  var shortName: Swift.String? { get }
+  var fullName: Swift.String? { get }
+  var okved: Swift.String? { get }
+  var opf: Swift.String? { get }
+  var address: Swift.String? { get }
+  var ogrnDate: Swift.String? { get }
+  var status: Swift.Int { get }
+  var isVerified: Swift.Bool { get }
+  var companyCheckDataId: Swift.Int? { get }
+  var ogrn: Swift.String? { get }
+}
+public struct ItmFormResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ItmFormModelResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SigningPartyInfo {
+  public let signingPartyId: Swift.Int
+  public let isDisableChange: Swift.Bool
+  public let order: Swift.Int
+  public let actionType: NppSDKModule.ActionType
+  public let actualActionType: NppSDKModule.ActionType
+  public let signingPartyStatus: NppSDKModule.SigningPartyStatus?
+  public let queueType: NppSDKModule.QueueType
+  public let signingPartyType: Swift.Int
+  public let expectedSignType: NppSDKModule.SignType?
+  public let actualSignType: NppSDKModule.SignType?
+  public let recipientInfo: NppSDKModule.RecepientInfo?
+  public let childSigningPartyList: Swift.Array<NppSDKModule.SigningPartyInfo>?
+  public func getActionTypeText() -> Swift.String
+}
+public struct RecepientInfo : Swift.Codable {
+  public let recipientId: Swift.Int
+  public let userGuid: Swift.String?
+  public let companyId: Swift.Int?
+  public let companyNameWithShortOpf: Swift.String?
+  public let inn: Swift.String?
+  public let kpp: Swift.String?
+  public let recipientType: Swift.Int?
+  public let recipientStatus: Swift.Int?
+  public let fullName: Swift.String?
+  public let phone: Swift.String?
+  public let email: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum SigningPartyStatus : Swift.Int, Swift.Codable {
+  case notActive
+  case active
+  case complete
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum SignType : Swift.Int, Swift.Codable {
+  case unknown
+  case nep
+  case kep
+  case pep
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum QueueType : Swift.Int, Swift.Codable {
+  case sequential
+  case parallel
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct PCContainerInfo {
+}
+public struct DocPrintFormChangeStatusModel : Swift.Codable {
+  public let documentId: Swift.Int?
+  public let recipientInfo: NppSDKModule.RecipientInfoModel
+  public let printFormStatus: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol UserCompanyModel {
+  var employeeStatus: Swift.Int { get }
+  var position: Swift.String? { get }
+  var isHead: Swift.Bool { get }
+  var isCompanyDocumentsRecipient: Swift.Bool { get }
+  var company: any NppSDKModule.Company { get }
+}
+public protocol Profile {
+  var fl: (any NppSDKModule.ProfileFlModel)? { get }
+  var ul: (any NppSDKModule.UserCompanyModel)? { get }
+  var id: Swift.String { get }
+  var isActive: Swift.Bool { get }
+}
+open class NppSDKModuleAssembly : Swinject.Assembly {
+  public init()
+  public func assemble(container: Swinject.Container)
+  @objc deinit
+}
+public struct ITMCreateCertificate {
+  public let certificateId: Swift.String
+}
+public struct AvailableCertificateResponse : Swift.Codable {
+  public let certificate: NppSDKModule.CertificateResponse?
+  public let ruleList: Swift.Array<NppSDKModule.RuleResponse>
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PcSigningCertificateInfo {
+  public let certificateId: Swift.String?
+  public let status: NppSDKModule.PCCertificateStatus
+  public let statusString: Swift.String?
+  public let pcUserId: Swift.String?
+  public let signingCertificateId: Swift.String?
+  public let userGuid: Swift.String?
+  public let sessionId: Swift.String?
+  public let providerType: NppSDKModule.SigningProviderType
+  public let providerTypeString: Swift.String?
+  public let payControlIssuingType: NppSDKModule.PayControlCertificateIssuingType
+  public let payControlIssuingTypeString: Swift.String?
+  public let issuerName: Swift.String?
+  public let issuedDateTimeUtc: Swift.String?
+  public let keyExpirationTime: Swift.String?
+  public let publicKey: Swift.String?
+  public let deviceFingerprint: Swift.String?
+  public let mobileAccept: Swift.Bool?
+  public let acceptanceActFileId: Swift.String?
+  public let acceptingAcceptanceActTimeUtc: Swift.String?
+  public let acceptingAcceptanceActType: NppSDKModule.PCAcceptingAcceptanceActType
+  public let reissuingId: Swift.Int?
+  public let parentCertificateId: Swift.String?
+}
+public struct ClientUlResponse : Swift.Codable {
+  public let id: Swift.Int
+  public let inn: Swift.String?
+  public let companyName: Swift.String?
+  public let signerEmployeeFio: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DocumentFileResponse : Swift.Codable {
+  public let fileName: Swift.String
+  public let originFileNameWithoutExtension: Swift.String
+  public let extensionWithDot: Swift.String
+  public let sizeKB: Swift.Int
+  public let fileBase64: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DocSigningPartyChangedModel : Swift.Codable {
+  public var documentId: Swift.Int?
+  public var recipientInfo: NppSDKModule.RecipientInfoModel
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RecipientInfoModel : Swift.Codable {
+  public let companyIdList: [Swift.Int]
+  public let userGuidList: [Swift.String]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol NppSDKInteractor {
+  func getUISettings() -> NppCoreModule.UISettings
+  func login(login: Swift.String, password: Swift.String) -> AbSDKMain.Task<Swift.Void>
+  func auth(token: Swift.String, userGuid: Swift.String) -> AbSDKMain.Task<Swift.Void>
+  func verificate() -> AbSDKMain.Task<NppSDKModule.Certificate>
+  func getAllDocuments(documentStatusList: [NppSDKModule.DocumentStatus]?) -> AbSDKMain.Task<[NppSDKModule.Document]>
+  func getAllDrafts() -> AbSDKMain.Task<[NppSDKModule.Document]>
+  func getCompanyList() -> AbSDKMain.Task<[NppSDKModule.DataCompanyModel]>
+  func getCompanyInfo(companyId: Swift.Int) -> AbSDKMain.Task<NppSDKModule.CompanyData>
+  func addCompany(inn: Swift.String, kpp: Swift.String) -> AbSDKMain.Task<Swift.Void>
+  func getDocumentDetails(documentId: Swift.Int) -> AbSDKMain.Task<NppSDKModule.DocumentDetails>
+  func uploadDocumentFile(documentId: Swift.Int, fileBase64: Swift.String, nameWithExtension: Swift.String) -> AbSDKMain.Task<NppSDKModule.AddDocumentFile>
+  func getDocumentFile(documentId: Swift.Int, fileId: Swift.String) -> AbSDKMain.Task<NppSDKModule.DocumentFile>
+  func deleteDocumentFile(documentId: Swift.Int, fileId: Swift.String) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  func getAgreementList() -> AbSDKMain.Task<NppSDKModule.AgreementList>
+  func acceptAgreementList(agreementIdList: Swift.Array<Swift.String>) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  func getAllCertificate() -> AbSDKMain.Task<[NppSDKModule.Certificate]>
+  func getCertificate(certificateId: Swift.String) -> AbSDKMain.Task<NppSDKModule.Certificate>
+  func acceptKeyAcceptanceAct(certificateId: Swift.String) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  func getKeyAcceptanceAct(certificateId: Swift.String) -> AbSDKMain.Task<NppNetworkModule.DownloadFileResponse>
+  func getActiveProfile() -> any NppSDKModule.Profile
+  func setActiveProfile(_ id: Swift.String)
+  func getAllProfile() -> [any NppSDKModule.Profile]
+  func logout()
+  func twoFactorChangeFlag(isEnabled: Swift.Bool) -> AbSDKMain.Task<Swift.Void>
+  func twoFactorSend() -> AbSDKMain.Task<NppSDKModule.ConfirmOperationSendResponse>
+  func twoFactorVerify(code: Swift.String) -> AbSDKMain.Task<Swift.Int>
+  func getProfileTwoFactorStatus() -> Swift.Bool
+  func findProfileByPhoneNumber(phoneNumber: Swift.String) -> AbSDKMain.Task<NppSDKModule.FindUserModel?>
+  func getInternetReachable() -> AbSDKMain.Task<Swift.Bool>
+  func createSigningParty(recipientId: Swift.Int, actionType: NppSDKModule.ActionType, order: Swift.Int, queueType: NppSDKModule.QueueType, parentSigningPartyId: Swift.Int) -> AbSDKMain.Task<NppSDKModule.CreateSigningParty>
+  func getSigningParty(signingPartyId: Swift.Int) -> AbSDKMain.Task<NppSDKModule.SigningPartyInfo>
+  func editActionTypeSigningParty(signingPartyId: Swift.Int, actionType: NppSDKModule.ActionType, signType: NppSDKModule.SignType) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  func editQueueTypeSigningParty(signingPartyId: Swift.Int, queueType: NppSDKModule.QueueType) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  func editOrderSigningParty(rootSigningPartyId: Swift.Int, childSigningPartyList: Swift.Array<NppSDKModule.SigningPartyWithOrder>) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  func changeSigningPartyRoute(signingPartyId: Swift.Int, isDisableChange: Swift.Bool) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  func deleteSigningParty(signingPartyId: Swift.Int) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  func createDraft() -> AbSDKMain.Task<NppSDKModule.Draft>
+  func changeDraftTitle(documentId: Swift.Int, title: Swift.String) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  func sendDraft(documentId: Swift.Int) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  func deleteDraft(documentId: Swift.Int) -> AbSDKMain.Task<Swift.String>
+  func createRecipient(userGuid: Swift.String, phoneNumber: Swift.String?, companyInn: Swift.String?, companyKpp: Swift.String?, companyShortName: Swift.String?, companyId: Swift.Int?) -> AbSDKMain.Task<NppSDKModule.Recipient>
+  func getRecipientList(type: NppSDKModule.RecipientType, count: Swift.Int) -> AbSDKMain.Task<[NppSDKModule.Recipient]>
+  func getCompanySuggestList(suggestInfo: Swift.String) -> AbSDKMain.Task<NppSDKModule.CompanySuggestInfoList>
+  func searchCompany(inn: Swift.String, kpp: Swift.String) -> AbSDKMain.Task<NppSDKModule.SearchCompanyList>
+  func startObserveFTFCertificateStatus(certificateId: Swift.String) -> AbSDKMain.Task<Swift.String>
+  func stopObserveFTFCertificateStatus()
+  func getSignatureList(signedFileId: Swift.String) -> AbSDKMain.Task<NppSDKModule.SignatureInfoList>
+  func getSignatureInfoFile(signatureFileId: Swift.String) -> AbSDKMain.Task<NppNetworkModule.DownloadFileResponse>
+  func downloadZipDocument(documentId: Swift.Int, fileId: Swift.String) -> AbSDKMain.Task<NppNetworkModule.DownloadFileResponse>
+  func signDocumentWithNep(signingPartyId: Swift.Int) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  func rejectDocument(documentId: Swift.Int) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  func getDocumentsCount(signingPartyStatus: NppSDKModule.SigningPartyStatus?, expectedActionTypeList: [NppSDKModule.ActionType]?, documentStatus: NppSDKModule.DocumentStatus?) -> AbSDKMain.Task<Swift.Array<NppSDKModule.DocumentCountInfo>>
+  func sendCodeForSmsSign() -> AbSDKMain.Task<NppSDKModule.ConfirmOperationSendResponse>
+  func verifySmsSignCode(code: Swift.String) -> AbSDKMain.Task<Swift.Int>
+  func startSignWithPaycontrolSms(signingPartyId: Swift.Int) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
+  func startCertReissuingAndFNSChecking(certificateId: Swift.String) -> AbSDKMain.Task<NppSDKModule.PcSigningCertificateInfo>
+  func setKeyForReissuedCertificate(reissuedCertificateId: Swift.String) -> AbSDKMain.Task<Swift.Void>
+  func signReissuedKeyAcceptanceAct(reissuedCertificateId: Swift.String) -> AbSDKMain.Task<Swift.Void>
+  func revokeAndDeleteAllCertificates() -> AbSDKMain.Task<Swift.Void>
+}
+public struct GetCompanyInfoResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CompanyHeadListResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CheckDataResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RelatedClientResponse : Swift.Codable {
+  public let id: Swift.Int
+  public let attachmentType: Swift.Int
+  public let clientFl: NppSDKModule.ClientFlResponse?
+  public let clientUl: NppSDKModule.ClientUlResponse?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MessageSseModel : Swift.Codable {
+  public let companyId: Swift.Int?
+  public let message: NppSDKModule.MessageSse
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MessageSse : Swift.Codable {
+  public let id: Swift.String
+  public let header: Swift.String
+  public let text: Swift.String
+  public let isRead: Swift.Bool
+  public let createDateUtc: Swift.String
+  public let isPrivate: Swift.Bool
+  public let category: Swift.Int
+  public let extraData: NppSDKModule.MessageExtraData?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MessageExtraData : Swift.Codable {
+  public let documentId: [Swift.Int]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SetVerifiedCompanyResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DocChangeStatusModel : Swift.Codable {
+  public let documentId: Swift.Int
+  public let recipientInfo: NppSDKModule.RecipientInfoModel?
+  public let documentStatus: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserRegistrationModel {
+  public init(userKeysJson: Swift.String?, keyPassword: Swift.String?, toStoreFriendlyKeyName: Swift.String?, storeKeyPassword: Swift.String?)
+  public var userKeysJson: Swift.String?
+  public var keyPassword: Swift.String?
+  public var toStoreFriendlyKeyName: Swift.String?
+  public var storeKeyPassword: Swift.String?
+}
+@_hasMissingDesignatedInitializers final public class NppSDK {
+  public static var shared: NppSDKModule.NppSDK
+  final public var assembler: Swinject.Assembler
+  public static var sdkInteractor: (any NppSDKModule.NppSDKInteractor)!
+  public static func create() -> any NppSDKModule.NppSDKInteractor
+  public static func setLogLevel(logLevel: AbSDKMain.AbLogLevel)
+  final public func getAssemblies() -> [any Swinject.Assembly]
+  @objc deinit
+}
+public struct RegionsList {
+  public let itmRegionList: [NppSDKModule.RegionModel]?
+}
+public struct RegionModel {
+  public let itmRegionId: Swift.String?
+  public let code: Swift.Int
+  public let name: Swift.String?
+}
+public protocol CertificateInteractor {
+  func getAllCertificate() -> RxSwift.Observable<Swift.Array<NppSDKModule.Certificate>>
+  func getCertificateInfo(certificateId: Swift.String) -> RxSwift.Observable<NppSDKModule.Certificate>
+}
+public struct ClientFlResponse : Swift.Codable {
+  public let id: Swift.Int
+  public let userId: Swift.String
+  public let phoneNumber: Swift.String?
+  public let email: Swift.String?
+  public let name: Swift.String?
+  public let surname: Swift.String?
+  public let patronymic: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Transaction {
+  public let transactionPayControlIdList: Swift.Array<Swift.String>
+  public let ttl: Swift.String?
+  public let pcUserId: Swift.String
+}
+public struct CompanySuggestInfoList {
+  public let companyInfoList: [NppSDKModule.CompanySuggestInfo]
+}
+public struct CompanySuggestInfo {
+  public let inn: Swift.String?
+  public let kpp: Swift.String?
+  public let shortNameWithOpf: Swift.String?
+  public let status: NppSDKModule.CompanyInfoStatus
+}
+public enum CompanyInfoStatus : Swift.Int, Swift.Codable {
+  case Undefined
+  case Active
+  case Liquidating
+  case Liquidated
+  case Reorganizing
+  case Bankrupt
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct SigningContainer {
+}
+public enum SigningContainerStatus : Swift.Int, Swift.Codable {
+  case Unknown
+  case New
+  case Initialization
+  case ReadyForSigning
+  case Signing
+  case Signed
+  case NotSigned
+  case Failed
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol CertificateRepository {
+  func getAllCertificate() -> RxSwift.Observable<Swift.Array<NppSDKModule.CertificateResponse>>
+  func getCertificateInfo(certificateId: Swift.String) -> RxSwift.Observable<NppSDKModule.CertificateResponse>
+}
+public protocol PCUserInteractor {
+  func getPcSettings() -> RxSwift.Observable<NppSDKModule.PcSettings>
+  func getPCUserInfo(certificateId: Swift.String) -> RxSwift.Observable<NppSDKModule.PCUserInfo>
+  func registerUser(userRegistrationModel: NppSDKModule.UserRegistrationModel, completion: @escaping (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)
+  func registerUser(user: PCSDKModule.PCUser, keyName: Swift.String, keyPassword: Swift.String, keyStore: Swift.String?, completion: @escaping (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)
+  func registerUser(userKyc: PCSDKModule.PCUser, keyName: Swift.String, keyPassword: Swift.String, storePassword: Swift.String, completion: @escaping (Swift.Result<Swift.Void?, any Swift.Error>) -> Swift.Void)
+  func getUserFromStorage(pcUserId: Swift.String) throws -> PCSDKModule.PCUser?
+  func deleteUser(user: PCSDKModule.PCUser) throws
+  func deleteAllUser()
+  func createUser(certificateId: Swift.String, pin: Swift.String) -> RxSwift.Observable<Swift.String>
+  func createCertificateFl(ownerGuid: Swift.String, ownerName: Swift.String, completion: @escaping (Swift.Result<NppSDKModule.Certificate, any Swift.Error>) -> Swift.Void)
+  func createCertificateEkyc(ekycSessionId: Swift.String) -> RxSwift.Observable<NppSDKModule.Certificate>
+  func importUserFromJson(userRegistrationModel: NppSDKModule.UserRegistrationModel) throws -> PCSDKModule.PCUser
+  func getCertificatesFromStorage(certificates: Swift.Array<NppSDKModule.Certificate>) -> Swift.Array<NppSDKModule.Certificate>
+  func getAllTransactions(containerId: Swift.String) -> RxSwift.Observable<NppSDKModule.Transaction>
+  func getKeyAcceptanceAct(certificateId: Swift.String) -> RxSwift.Observable<NppNetworkModule.DownloadFileResponse>
+  func updateCertificateStatus(certificateId: Swift.String, newStatus: Swift.Int) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func getCeritifcateInfoBySessionId(sessionId: Swift.String) -> RxSwift.Observable<NppSDKModule.PcSigningCertificateInfo>
+  func getCertificateByCertificateId(signingCertificateId: Swift.String) -> RxSwift.Observable<NppSDKModule.PcSigningCertificateInfo>
+  func getCertificateByPcUserId(pcUserId: Swift.String) -> RxSwift.Observable<NppSDKModule.PcSigningCertificateInfo>
+  func sendConfirmCode() -> RxSwift.Observable<NppSDKModule.ConfirmOperationSendResponse>
+  func verifyConfirmOperation(code: Swift.String) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func createOperationContainer(signingContainerId: Swift.String) -> RxSwift.Observable<NppSDKModule.CreateOperationContainerResponse>
+  func startCertReissuingAndFNSChecking(certificateId: Swift.String) -> PromiseKit.Promise<NppSDKModule.PcSigningCertificateInfo>
+  func getKeyJson(certificateId: Swift.String, pin: Swift.String) -> RxSwift.Observable<Swift.String?>
+  func createContainerForAct(certificateId: Swift.String) -> RxSwift.Observable<Swift.String>
+  func getPCContainerInfo(containerId: Swift.String) -> RxSwift.Observable<NppSDKModule.PCContainerInfo>
+  func revokeCertificate(certificateId: Swift.String) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+}
+public struct AgreementListResponse : Swift.Codable {
+  public let agreementList: Swift.Array<NppSDKModule.AgreementResponse>
+  public let isNewAccept: Swift.Bool
+  public func toAgreementList() -> NppSDKModule.AgreementList
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AgreementResponse : Swift.Codable {
+  public let id: Swift.String
+  public let isRequired: Swift.Bool
+  public let title: Swift.String?
+  public let url: Swift.String?
+  public func agreement() -> NppSDKModule.Agreement
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GetDocumentRequest {
+  public let stepSystemName: [Swift.String]
+}
+public struct UploadFile {
+  public let csrFileId: Swift.String
+  public init(response: NppSDKModule.UploadFileResponse)
+}
+public protocol ProfileInteractor {
+  func getMyProfile(_ isNeedToClearCurrentProfiles: Swift.Bool) -> RxSwift.Observable<any NppSDKModule.Profile>
+  func getActiveProfileId() -> Swift.String
+  func getAgreementList() -> RxSwift.Observable<NppSDKModule.AgreementList>
+  func acceptAgreementList(agreementIdList: Swift.Array<Swift.String>) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func twoFactorChangeFlag(isEnabled: Swift.Bool) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func getUserCompanyList() -> RxSwift.Observable<Swift.Array<NppSDKModule.UserCompany>>
+  func getCompanyInfo(companyId: Swift.Int) -> RxSwift.Observable<NppSDKModule.CompanyData>
+  func addCompany(inn: Swift.String, kpp: Swift.String) -> RxSwift.Observable<NppSDKModule.SetVerifiedCompanyResponse>
+  func twoFactorCreate() -> RxSwift.Observable<NppSDKModule.CreateOperationContainerResponse>
+  func twoFactorSend(id: Swift.String, senderType: Swift.String) -> RxSwift.Observable<NppSDKModule.ConfirmOperationSendResponse>
+  func twoFactorVerify(id: Swift.String, code: Swift.String) -> RxSwift.Observable<AbSDKMain.VoidCodable>
+  func getActiveProfile() -> any NppSDKModule.Profile
+  func setActiveProfile(_ id: Swift.String)
+  func getAllProfile() -> [any NppSDKModule.Profile]
+  func findProfileByPhoneNumber(phoneNumber: Swift.String) -> RxSwift.Observable<NppSDKModule.FindUserModel?>
+  func searchCompany(inn: Swift.String, kpp: Swift.String) -> RxSwift.Observable<NppSDKModule.SearchCompanyList>
+}
+public struct CreateCertificateEkycRequest : Swift.Codable {
+  public let certificateGuid: Swift.String
+  public let ekycSessionId: Swift.String
+  public func getParams() -> Alamofire.Parameters
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FindUserProfileResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FindUserProfileItemResponse : Swift.Codable {
+  public let userGuid: Swift.String
+  public let name: Swift.String?
+  public let isVerified: Swift.Bool
+  public let phoneNumber: Swift.String
+  public let surnameFirstChar: Swift.String?
+  public let email: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RecipientListResponse : Swift.Codable {
+  public let recipientList: Swift.Array<NppSDKModule.RecipientResponse>
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RecipientResponse : Swift.Codable {
+  public let recipientId: Swift.Int
+  public let userGuid: Swift.String?
+  public let companyId: Swift.Int?
+  public let companyNameWithShortOpf: Swift.String?
+  public let inn: Swift.String?
+  public let kpp: Swift.String?
+  public let recipientType: Swift.Int?
+  public let recipientStatus: Swift.Int?
+  public let fullName: Swift.String?
+  public let phone: Swift.String?
+  public let email: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SigningPartyWithOrder : Swift.Codable {
+  public let signingPartyId: Swift.Int
+  public var order: Swift.Int
+  public init(signingPartyId: Swift.Int, order: Swift.Int)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CompanyData {
+  public let id: Swift.Int
+  public let inn: Swift.String?
+  public let kpp: Swift.String?
+  public let ogrn: Swift.String?
+  public let shortName: Swift.String?
+  public let fullName: Swift.String?
+  public let okved: Swift.String?
+  public let opf: Swift.String?
+  public let address: Swift.String?
+  public let ogrnDate: Swift.String?
+  public let status: Swift.Int
+  public let isVerified: Swift.Bool
+  public let isHub: Swift.Bool
+  public let isCreatedByHub: Swift.Bool
+  public let companyCheckDataId: Swift.Int?
+}
+public struct CompanyHeadList {
+  public init(response: NppSDKModule.CompanyHeadListResponse?)
+}
+public protocol SentryInteractor {
+  func sendLog(message: Swift.String, level: Sentry.SentryLevel, optionalArgs: [Swift.String : Any]?)
+  func sendLog(message: Swift.String, optionalArgs: [Swift.String : Any]?)
+}
+public protocol IntegrationInteractor {
+  func getCompanySuggestList(suggestInfo: Swift.String) -> RxSwift.Observable<NppSDKModule.CompanySuggestInfoList>
+  func getCompanyList() -> RxSwift.Observable<[NppSDKModule.DataCompanyModel]>
+}
+@_hasMissingDesignatedInitializers public class FindUserModel : Swift.Codable {
+  public var isVerified: Swift.Bool
+  public var phoneNumber: Swift.String
+  public var surnameFirstChar: Swift.String?
+  public var email: Swift.String
+  public var name: Swift.String?
+  public var userGuid: Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public struct DocumentCountInfoListResponse : Swift.Codable {
+  public let documentCountInfoList: Swift.Array<NppSDKModule.DocumentCountInfoResponse>
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension NppSDKModule.Gender : Swift.Equatable {}
+extension NppSDKModule.Gender : Swift.Hashable {}
+extension NppSDKModule.Gender : Swift.RawRepresentable {}
+extension NppSDKModule.RecipientType : Swift.Equatable {}
+extension NppSDKModule.RecipientType : Swift.Hashable {}
+extension NppSDKModule.RecipientType : Swift.RawRepresentable {}
+extension NppSDKModule.SigningProviderType : Swift.Equatable {}
+extension NppSDKModule.SigningProviderType : Swift.Hashable {}
+extension NppSDKModule.SigningProviderType : Swift.RawRepresentable {}
+extension NppSDKModule.Certificate.CertificateProviderStatus : Swift.Equatable {}
+extension NppSDKModule.Certificate.CertificateProviderStatus : Swift.Hashable {}
+extension NppSDKModule.Certificate.CertificateProviderStatus : Swift.RawRepresentable {}
+extension NppSDKModule.PCCertificateStatus : Swift.Equatable {}
+extension NppSDKModule.PCCertificateStatus : Swift.Hashable {}
+extension NppSDKModule.PCCertificateStatus : Swift.RawRepresentable {}
+extension NppSDKModule.PayControlCertificateIssuingType : Swift.Equatable {}
+extension NppSDKModule.PayControlCertificateIssuingType : Swift.Hashable {}
+extension NppSDKModule.PayControlCertificateIssuingType : Swift.RawRepresentable {}
+extension NppSDKModule.PCAcceptingAcceptanceActType : Swift.Equatable {}
+extension NppSDKModule.PCAcceptingAcceptanceActType : Swift.Hashable {}
+extension NppSDKModule.PCAcceptingAcceptanceActType : Swift.RawRepresentable {}
+extension NppSDKModule.EmployeePermission : Swift.Equatable {}
+extension NppSDKModule.EmployeePermission : Swift.Hashable {}
+extension NppSDKModule.EmployeePermission : Swift.RawRepresentable {}
+extension NppSDKModule.DocumentStatus : Swift.Equatable {}
+extension NppSDKModule.DocumentStatus : Swift.Hashable {}
+extension NppSDKModule.DocumentStatus : Swift.RawRepresentable {}
+extension NppSDKModule.CsrStatus : Swift.Equatable {}
+extension NppSDKModule.CsrStatus : Swift.Hashable {}
+extension NppSDKModule.CsrStatus : Swift.RawRepresentable {}
+extension NppSDKModule.ActionType : Swift.Equatable {}
+extension NppSDKModule.ActionType : Swift.Hashable {}
+extension NppSDKModule.ActionType : Swift.RawRepresentable {}
+extension NppSDKModule.DocumentStatusType : Swift.Equatable {}
+extension NppSDKModule.DocumentStatusType : Swift.Hashable {}
+extension NppSDKModule.DocumentStatusType : Swift.RawRepresentable {}
+extension NppSDKModule.DocumentFileType : Swift.Equatable {}
+extension NppSDKModule.DocumentFileType : Swift.Hashable {}
+extension NppSDKModule.DocumentFileType : Swift.RawRepresentable {}
+extension NppSDKModule.PrintFormStatus : Swift.Equatable {}
+extension NppSDKModule.PrintFormStatus : Swift.Hashable {}
+extension NppSDKModule.PrintFormStatus : Swift.RawRepresentable {}
+extension NppSDKModule.ItmContainerStatus : Swift.Equatable {}
+extension NppSDKModule.ItmContainerStatus : Swift.Hashable {}
+extension NppSDKModule.ItmContainerStatus : Swift.RawRepresentable {}
+extension NppSDKModule.SigningPartyStatus : Swift.Equatable {}
+extension NppSDKModule.SigningPartyStatus : Swift.Hashable {}
+extension NppSDKModule.SigningPartyStatus : Swift.RawRepresentable {}
+extension NppSDKModule.SignType : Swift.Equatable {}
+extension NppSDKModule.SignType : Swift.Hashable {}
+extension NppSDKModule.SignType : Swift.RawRepresentable {}
+extension NppSDKModule.QueueType : Swift.Equatable {}
+extension NppSDKModule.QueueType : Swift.Hashable {}
+extension NppSDKModule.QueueType : Swift.RawRepresentable {}
+extension NppSDKModule.CompanyInfoStatus : Swift.Equatable {}
+extension NppSDKModule.CompanyInfoStatus : Swift.Hashable {}
+extension NppSDKModule.CompanyInfoStatus : Swift.RawRepresentable {}
+extension NppSDKModule.SigningContainerStatus : Swift.Equatable {}
+extension NppSDKModule.SigningContainerStatus : Swift.Hashable {}
+extension NppSDKModule.SigningContainerStatus : Swift.RawRepresentable {}

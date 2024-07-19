@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DocumentPreviewCell" rowHeight="129" id="yB9-1v-gs9" customClass="DocumentPreviewCell" customModule="myDSSSDK">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yB9-1v-gs9" id="Pjg-89-uup">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHk-sG-Ljw" userLabel="Preview Background" customClass="CustomView" customModule="myDSSSDK">
+                        <rect key="frame" x="16" y="6" width="382" height="117"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="5ow-ES-zey">
+                                <rect key="frame" x="181" y="48.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="fv0-CJ-z5T">
+                                <rect key="frame" x="12" y="12" width="358" height="93"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ2-pU-1cZ" userLabel="Checkbox" customClass="CustomButton" customModule="myDSSSDK">
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="G0c-gB-OFA"/>
+                                            <constraint firstAttribute="height" constant="24" id="Wdb-nV-Fbx"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="checkbox_unchecked"/>
+                                        <state key="selected" image="checkbox_checked"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="buttonStyle" value="checkbox"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="toggleCheckbox:" destination="yB9-1v-gs9" eventType="touchUpInside" id="bf4-hj-iL3"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ccm-R8-Lug">
+                                        <rect key="frame" x="36" y="0.0" width="322" height="93"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6FN-JE-tqz">
+                                                <rect key="frame" x="0.0" y="0.0" width="322" height="41"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DSr-xq-oEq">
+                                                <rect key="frame" x="0.0" y="49" width="322" height="44"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0x5-er-RBa" userLabel="Details" customClass="CustomButton" customModule="myDSSSDK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="168" height="44"/>
+                                                        <inset key="contentEdgeInsets" minX="24" minY="10" maxX="24" maxY="12"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Подробнее"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="buttonStyle" value="documentCellDetails"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="showDetails:" destination="yB9-1v-gs9" eventType="touchUpInside" id="NJc-fW-BS6"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YB-tF-f0D">
+                                                        <rect key="frame" x="168" y="0.0" width="154" height="44"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kv-3G-tOk" customClass="CustomButton" customModule="myDSSSDK">
+                                <rect key="frame" x="342" y="8" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="srO-mS-lo0"/>
+                                    <constraint firstAttribute="height" constant="32" id="wng-ND-aKG"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="button_more"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="buttonStyle" value="documentCellMore"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showOptions:" destination="yB9-1v-gs9" eventType="touchUpInside" id="Vu1-GH-P3j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5ow-ES-zey" firstAttribute="centerX" secondItem="cHk-sG-Ljw" secondAttribute="centerX" id="095-fa-yyo"/>
+                            <constraint firstAttribute="bottom" secondItem="fv0-CJ-z5T" secondAttribute="bottom" constant="12" id="0cS-J5-Glc"/>
+                            <constraint firstItem="8kv-3G-tOk" firstAttribute="top" secondItem="cHk-sG-Ljw" secondAttribute="top" constant="8" id="CE8-rj-NSw"/>
+                            <constraint firstItem="5ow-ES-zey" firstAttribute="centerY" secondItem="cHk-sG-Ljw" secondAttribute="centerY" id="Za1-7o-SwN"/>
+                            <constraint firstItem="fv0-CJ-z5T" firstAttribute="top" secondItem="cHk-sG-Ljw" secondAttribute="top" constant="12" id="cTg-QZ-x3Y"/>
+                            <constraint firstItem="fv0-CJ-z5T" firstAttribute="leading" secondItem="cHk-sG-Ljw" secondAttribute="leading" constant="12" id="lhu-n8-7dN"/>
+                            <constraint firstAttribute="trailing" secondItem="fv0-CJ-z5T" secondAttribute="trailing" constant="12" id="uee-ak-YpH"/>
+                            <constraint firstAttribute="trailing" secondItem="8kv-3G-tOk" secondAttribute="trailing" constant="8" id="zzH-HD-5yU"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="style" value="documentPreview"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cHk-sG-Ljw" firstAttribute="width" secondItem="Pjg-89-uup" secondAttribute="width" constant="-32" id="5fJ-Df-lJR"/>
+                    <constraint firstAttribute="height" secondItem="cHk-sG-Ljw" secondAttribute="height" constant="12" id="KNA-br-d9U"/>
+                    <constraint firstItem="cHk-sG-Ljw" firstAttribute="centerX" secondItem="Pjg-89-uup" secondAttribute="centerX" id="aiV-PI-Tf4"/>
+                    <constraint firstItem="cHk-sG-Ljw" firstAttribute="centerY" secondItem="Pjg-89-uup" secondAttribute="centerY" id="sHM-YC-D09"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkboxButton" destination="qJ2-pU-1cZ" id="Yhz-fM-KKE"/>
+                <outlet property="detailsButton" destination="0x5-er-RBa" id="P7e-eQ-E8Y"/>
+                <outlet property="detailsButtonContainer" destination="DSr-xq-oEq" id="plY-Pl-8MW"/>
+                <outlet property="documentPreviewImageView" destination="6FN-JE-tqz" id="2fs-Ll-1Sr"/>
+                <outlet property="loadingActivityIndicatorView" destination="5ow-ES-zey" id="Fqt-q2-Kd9"/>
+                <outlet property="moreButton" destination="8kv-3G-tOk" id="t0Z-6k-ngz"/>
+            </connections>
+            <point key="canvasLocation" x="73.913043478260875" y="78.013392857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="button_more" width="20" height="4"/>
+        <image name="checkbox_checked" width="20" height="20"/>
+        <image name="checkbox_unchecked" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

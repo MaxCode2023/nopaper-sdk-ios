@@ -1,0 +1,1126 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name myDSSSDK
+import AVFoundation
+import CommonCrypto
+import CoreData
+import CoreMotion
+import Foundation
+import LocalAuthentication
+import PDFKit
+import Security
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import os.log
+import os
+public struct DSSOperationInfo : Swift.Codable, Swift.Equatable {
+  public let id: Swift.String
+  public let type: Swift.String
+  public let description: Swift.String
+  public let state: myDSSSDK.DSSOperationInfo.State
+  public let createdAt: Foundation.TimeInterval?
+  public let confirmedAt: Foundation.TimeInterval?
+  public let completedAt: Foundation.TimeInterval?
+  public let externalId: Swift.String?
+  public let actions: [myDSSSDK.DSSOperationInfo.Action]
+  public enum State : Swift.String, Swift.Codable {
+    case created
+    case challenged
+    case processing
+    case running
+    case cancelled
+    case declined
+    case confirmed
+    case completed
+    case error
+    case expired
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public struct Action : Swift.Codable, Swift.Equatable {
+    public let id: Swift.String
+    public let documentId: Swift.String?
+    public let originalDocumentId: Swift.String?
+    public let status: myDSSSDK.DSSOperationInfo.Action.Status
+    public let state: myDSSSDK.DSSOperationInfo.Action.State
+    public let resultValue: Swift.String?
+    public let error: Swift.String?
+    public let errorDescription: Swift.String?
+    public enum Status : Swift.String, Swift.Codable {
+      case considering
+      case approved
+      case declined
+      case postponed
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public enum State : Swift.String, Swift.Codable {
+      case pending
+      case executing
+      case executed
+      case error
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public static func == (a: myDSSSDK.DSSOperationInfo.Action, b: myDSSSDK.DSSOperationInfo.Action) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public static func == (a: myDSSSDK.DSSOperationInfo, b: myDSSSDK.DSSOperationInfo) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct DSSQRCodeNewDevice : myDSSSDK.DSSQRCode {
+  public static var associatedType: Swift.String {
+    get
+  }
+  public let myDSSKeyId: Swift.String
+  public let content: [(title: Swift.String, value: Swift.String)]
+  public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers final public class DSSKeysManagerNonQual {
+  public static func listKeys(for user: myDSSSDK.DSSUser) -> [myDSSSDK.DSSKeyInfo]
+  public static func createKeyPair(for user: myDSSSDK.DSSUser, pin: Swift.String? = nil, isExportable: Swift.Bool = false) throws -> myDSSSDK.DSSKeyInfo
+  public static func deleteKeyPair(keyInfo: myDSSSDK.DSSKeyInfo) throws
+  public static func createBackup(keyInfo: myDSSSDK.DSSKeyInfo, pin: Swift.String? = nil, recoveryPassword: Swift.String) throws -> Foundation.Data
+  public static func restoreFromBackup(backupData: Foundation.Data, pin: Swift.String? = nil, recoveryPassword: Swift.String) throws -> myDSSSDK.DSSKeyInfo
+  @objc deinit
+}
+extension myDSSSDK.DSSAppearance {
+  public struct Images {
+    public var passedInputImage: UIKit.UIImage?
+    public var faceIDSuggestionImage: UIKit.UIImage?
+    public var touchIDSuggestionImage: UIKit.UIImage?
+    public var backButton: UIKit.UIImage?
+    public var operationInfoIcon: UIKit.UIImage?
+    public var downloadDocument: UIKit.UIImage?
+    public var documentCellMore: UIKit.UIImage?
+    public var panIndicator: UIKit.UIImage?
+    public var num0Button: UIKit.UIImage?
+    public var num1Button: UIKit.UIImage?
+    public var num2Button: UIKit.UIImage?
+    public var num3Button: UIKit.UIImage?
+    public var num4Button: UIKit.UIImage?
+    public var num5Button: UIKit.UIImage?
+    public var num6Button: UIKit.UIImage?
+    public var num7Button: UIKit.UIImage?
+    public var num8Button: UIKit.UIImage?
+    public var num9Button: UIKit.UIImage?
+    public var deleteButton: UIKit.UIImage?
+    public var faceIdButton: UIKit.UIImage?
+    public var touchIdButton: UIKit.UIImage?
+    public var checkedCheckboxImage: UIKit.UIImage?
+    public var uncheckedCheckboxImage: UIKit.UIImage?
+    public var dot: UIKit.UIImage?
+    public var dotInactive: UIKit.UIImage?
+    public var cameraSource: UIKit.UIImage?
+    public var library: UIKit.UIImage?
+    public var faceIdBarButton: UIKit.UIImage?
+    public var touchIdBarButton: UIKit.UIImage?
+    public init(passedInputImage: UIKit.UIImage?, faceIDSuggestionImage: UIKit.UIImage?, touchIDSuggestionImage: UIKit.UIImage?, backButton: UIKit.UIImage?, operationInfoIcon: UIKit.UIImage?, downloadDocument: UIKit.UIImage?, documentCellMore: UIKit.UIImage?, panIndicator: UIKit.UIImage?, num0Button: UIKit.UIImage?, num1Button: UIKit.UIImage?, num2Button: UIKit.UIImage?, num3Button: UIKit.UIImage?, num4Button: UIKit.UIImage?, num5Button: UIKit.UIImage?, num6Button: UIKit.UIImage?, num7Button: UIKit.UIImage?, num8Button: UIKit.UIImage?, num9Button: UIKit.UIImage?, deleteButton: UIKit.UIImage?, faceIdButton: UIKit.UIImage?, touchIdButton: UIKit.UIImage?, checkedCheckboxImage: UIKit.UIImage?, uncheckedCheckboxImage: UIKit.UIImage?, dot: UIKit.UIImage?, dotInactive: UIKit.UIImage?, cameraSource: UIKit.UIImage?, library: UIKit.UIImage?, faceIdBarButton: UIKit.UIImage?, touchIdBarButton: UIKit.UIImage?)
+  }
+}
+public struct DSSParams : Swift.Decodable {
+  public var selfRegistrationEnabled: Swift.Bool
+  public var externalLoginRequired: Swift.Bool
+  public var keyActivationRequired: Swift.Bool
+  public var activationCodeLength: Swift.Int
+  public var protectionFlag: myDSSSDK.ProtectionFlags
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ProtectionFlags : Swift.Decodable {
+  public var fingerprintRequired: Swift.Bool
+  public var collectEvents: Swift.Bool
+  public var collectDeviceInfo: Swift.Bool
+  public var collectSimInfo: Swift.Bool
+  public var collectLocation: Swift.Bool
+  public var passwordPolicy: myDSSSDK.DSSPasswordPolicy
+  public var denyOSProtection: Swift.Bool
+  public var scoringEnabled: Swift.Bool
+  public var strongKeyProtectionType: Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+extension myDSSSDK.DSSAppearance {
+  public struct LabelAppearance {
+    public var color: UIKit.UIColor?
+    public var font: UIKit.UIFont?
+    public init(color: UIKit.UIColor? = nil, font: UIKit.UIFont? = nil)
+  }
+  public struct Labels {
+    public var h1: myDSSSDK.DSSAppearance.LabelAppearance
+    public var h2: myDSSSDK.DSSAppearance.LabelAppearance
+    public var subtitle: myDSSSDK.DSSAppearance.LabelAppearance
+    public var value: myDSSSDK.DSSAppearance.LabelAppearance
+    public var scannerMessage: myDSSSDK.DSSAppearance.LabelAppearance
+    public var selectedDocuments: myDSSSDK.DSSAppearance.LabelAppearance
+    public var passwordError: myDSSSDK.DSSAppearance.LabelAppearance
+    public init(h1: myDSSSDK.DSSAppearance.LabelAppearance, h2: myDSSSDK.DSSAppearance.LabelAppearance, subtitle: myDSSSDK.DSSAppearance.LabelAppearance, value: myDSSSDK.DSSAppearance.LabelAppearance, scannerMessage: myDSSSDK.DSSAppearance.LabelAppearance, selectedDocuments: myDSSSDK.DSSAppearance.LabelAppearance, passwordError: myDSSSDK.DSSAppearance.LabelAppearance)
+  }
+}
+public struct PushNotificationsData {
+  public var deviceToken: Swift.String
+  public var deviceType: Swift.Int
+  public var mfmData: myDSSSDK.MFMData?
+  public init(deviceToken: Swift.String, deviceType: Swift.Int = 1, mfmData: myDSSSDK.MFMData? = nil)
+}
+public struct MFMData {
+  public let userSecurityHash: Swift.String
+  public let deviceUid: Swift.String
+  public let providerUid: Swift.String
+  public init(userSecurityHash: Swift.String, deviceUid: Swift.String, providerUid: Swift.String)
+}
+@available(*, deprecated, renamed: "DSSServerError")
+public typealias DSSNetworkError = myDSSSDK.DSSServerError
+public struct DSSServerError : Foundation.LocalizedError, Swift.Codable {
+  public enum ErrorType : Swift.String, Swift.Codable {
+    case wrongOperation
+    case userNotFound
+    case userBlocked
+    case requestedUserNotFound
+    case notUniqueLogin
+    case notUniqueDeviceFingerprint
+    case keyNotFound
+    case keyExpiredOrNotYetValid
+    case keyAlreadyConfirmed
+    case invalidLogin
+    case invalidLicense
+    case invalidKeyId
+    case invalidInput
+    case invalidKinit
+    case invalidIdentifier
+    case invalidHmac
+    case invalidGrant
+    case invalidDeviceParams
+    case invalidDeviceFingerprint
+    case invalidAuthenticationScheme
+    case invalidCertificate
+    case internalError
+    case existingDeviceFingerprint
+    case deviceBlocked
+    case assertionReplay
+    case operationExpired
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var httpCode: Swift.Int
+  public var type: myDSSSDK.DSSServerError.ErrorType
+  public var response: Swift.String?
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers final public class DSSUsersManagerNonQual {
+  public static func createDSSUserWithInitQR(qrCode: myDSSSDK.DSSQRCodeKinit, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  public static func createDSSUser(serviceURL: Foundation.URL, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  public static func acceptAccountChanges(user: myDSSSDK.DSSUser, verificationQRCode: myDSSSDK.DSSQRCodeVerification?, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  public static func createDSSUserWithApproval(serviceURL: Foundation.URL, uid: Swift.String, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  public static func checkApprovalStatus(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  public static func store(user: myDSSSDK.DSSUser, name: Swift.String, password: Swift.String, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  public static func submitPassword(user: myDSSSDK.DSSUser, password: Swift.String) throws
+  public static func changePassword(user: myDSSSDK.DSSUser, newPassword: Swift.String) throws
+  public static func revoke(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func createBackup(user: myDSSSDK.DSSUser, recoveryPassword: Swift.String) throws -> Foundation.Data
+  public static func restoreFromBackup(backupData: Foundation.Data, recoveryPassword: Swift.String) throws -> myDSSSDK.DSSUser
+  public static func restoreFromBackup(backupData: Foundation.Data, recoveryPassword: Swift.String, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  public static func renew(user: myDSSSDK.DSSUser, deviceName: Swift.String, pushNotificationsData: myDSSSDK.PushNotificationsData, password: Swift.String, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+public struct DSSDocument : Swift.Decodable, Swift.Equatable {
+  public let id: Swift.String
+  public let documentInfo: Swift.String
+  public let documentHash: Swift.String
+  public let snippet: Swift.String
+  public let snippetHash: Swift.String
+  public let fileSize: Swift.Int
+  public let pageCount: Swift.Int
+  public let isSnippetViewAvailable: Swift.Bool
+  public let isPrintableViewAvailable: Swift.Bool
+  public let isRawViewAvailable: Swift.Bool
+  public let documentPreSignedHash: Swift.String?
+  public let xmlEncryptedKey: Swift.String?
+  public let documentPreDataId: Swift.String?
+  public let agreeKeyPublicKey: Swift.String?
+  public let agreeKeyUkm: Swift.String?
+  public let agreeKeyVkoAlgId: Swift.String?
+  public static func == (a: myDSSSDK.DSSDocument, b: myDSSSDK.DSSDocument) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum RootCertificateType {
+  case production
+  case development
+  public static func == (a: myDSSSDK.RootCertificateType, b: myDSSSDK.RootCertificateType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class myDSS {
+  public static var version: Swift.String
+  public static var appearance: myDSSSDK.DSSAppearance
+  public static var handlesBackgroundTimeout: Foundation.TimeInterval {
+    get
+    set
+  }
+  public static var requestsTimeoutInterval: Swift.Double
+  public static func setLogLevel(_ level: myDSSSDK.LogLevel)
+  public static func setLogger(_ logger: myDSSSDK.DSSLoggerProtocol, level: myDSSSDK.LogLevel = .debug)
+  public static func initialize(debugMode: Swift.Bool = false) throws
+  @available(*, deprecated, message: "Используйте альтернативный метод `initialize(debugMode:)`")
+  public static func initialize(rootCertificateType: myDSSSDK.RootCertificateType) throws
+  @inlinable internal static func getDocumensDirectoryURL() -> Foundation.URL? {
+        try? FileManager.default.url(
+            for: .documentDirectory,
+            in: .userDomainMask,
+            appropriateFor: nil,
+            create: true
+        )
+    }
+  public static func analyzeQR(_ source: Swift.String) throws -> myDSSSDK.DSSQRCode
+  public static func analyzeQR<T>(_ source: Swift.String) throws -> T where T : myDSSSDK.DSSQRCode
+  public static func activate(qrCodeKinit: myDSSSDK.DSSQRCodeKinit, code: Swift.String) throws -> myDSSSDK.DSSQRCodeKinit
+  public static func clearCache()
+  public static func getAvailableAPIVersions(serviceURL: Foundation.URL, endpoint: myDSSSDK.DSSEndpoint, callback: @escaping (_ result: Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)
+  public static func initRNG()
+  public static func reset()
+  public static func showCPROCSPPane(on vc: UIKit.UIViewController)
+  @objc deinit
+}
+extension myDSSSDK.DSSAppearance {
+  public struct ViewAppearance {
+    public var backgroundColor: UIKit.UIColor?
+    public var borderColor: UIKit.UIColor?
+    public var borderWidth: CoreGraphics.CGFloat
+    public var cornerRadius: CoreGraphics.CGFloat
+    public init(backgroundColor: UIKit.UIColor? = nil, borderColor: UIKit.UIColor? = nil, borderWidth: CoreGraphics.CGFloat = 0, cornerRadius: CoreGraphics.CGFloat = 0)
+  }
+  public struct Views {
+    public var main: myDSSSDK.DSSAppearance.ViewAppearance
+    public var overlay: myDSSSDK.DSSAppearance.ViewAppearance
+    public var dimmingView: myDSSSDK.DSSAppearance.ViewAppearance
+    public var modal: myDSSSDK.DSSAppearance.ViewAppearance
+    public var documentPreview: myDSSSDK.DSSAppearance.ViewAppearance
+    public var pdfDocument: myDSSSDK.DSSAppearance.ViewAppearance
+    public var pdfPage: myDSSSDK.DSSAppearance.ViewAppearance
+    public var scannerOverlay: myDSSSDK.DSSAppearance.ViewAppearance
+    public var slideUpView: myDSSSDK.DSSAppearance.ViewAppearance
+    public var pinDotInactive: myDSSSDK.DSSAppearance.ViewAppearance
+    public var pinDotActive: myDSSSDK.DSSAppearance.ViewAppearance
+    public var selectedDocumentsBadge: myDSSSDK.DSSAppearance.ViewAppearance
+    public init(main: myDSSSDK.DSSAppearance.ViewAppearance, overlay: myDSSSDK.DSSAppearance.ViewAppearance, dimmingView: myDSSSDK.DSSAppearance.ViewAppearance, modal: myDSSSDK.DSSAppearance.ViewAppearance, documentPreview: myDSSSDK.DSSAppearance.ViewAppearance, pdfDocument: myDSSSDK.DSSAppearance.ViewAppearance, pdfPage: myDSSSDK.DSSAppearance.ViewAppearance, scannerOverlay: myDSSSDK.DSSAppearance.ViewAppearance, slideUpView: myDSSSDK.DSSAppearance.ViewAppearance, pinDotInactive: myDSSSDK.DSSAppearance.ViewAppearance, pinDotActive: myDSSSDK.DSSAppearance.ViewAppearance, selectedDocumentsBadge: myDSSSDK.DSSAppearance.ViewAppearance)
+  }
+}
+public enum DSSSignMode {
+  case online
+  case offline
+  public static func == (a: myDSSSDK.DSSSignMode, b: myDSSSDK.DSSSignMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct DSSRawPDFData {
+  public let totalPageCount: Swift.Int
+  public let data: Foundation.Data
+}
+public struct DSSSignParams : Swift.Codable, Swift.Equatable {
+  public let signTemplateId: Swift.String?
+  public let certId: Swift.String?
+  public let agreeKey: Swift.String?
+  public let autoSignApproved: Swift.Bool?
+  public let pinCode: Swift.String?
+  public init(signTemplateId: Swift.String? = nil, certId: Swift.String? = nil, pinCode: Swift.String? = nil, agreeKey: Swift.String? = nil, autoSignApproved: Swift.Bool? = nil)
+  public static func == (a: myDSSSDK.DSSSignParams, b: myDSSSDK.DSSSignParams) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum CPROCSPError : Swift.Int32, Swift.Error {
+  case functionSucceded
+  case functionFailed
+  case invalidParameter
+  case noMemory
+  case moreDataNeeded
+  case invalidBlobHeader
+  case invalidPassword
+  case functionNotImplemented
+  case hasMoreData
+  case noMoreData
+  case containerExists
+  case wrongPIN
+  case keyDoesNotExist
+  case certificateIsMissing
+  case dataIsCorrupted
+  case canceled
+  case badKey
+  case failed
+  case initializationFailed
+  case keyStateNotValidForUse
+  case invalidParameter2
+  case undefined
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class DSSCertificatesManager {
+  public static func createCertificate(user: myDSSSDK.DSSUser, dn: [Swift.String : Swift.String], templateId: Swift.String, caId: Swift.Int, isClient: Swift.Bool = false, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSCertificate, Swift.Error>) -> Swift.Void)
+  public static func listCertificates(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSCertificate], Swift.Error>) -> Swift.Void)
+  public static func deleteCertificate(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String?, dssRequestId: Swift.String?, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func setCertificate(user: myDSSSDK.DSSUser, content: Foundation.Data, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func setCertificateFriendlyName(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String, friendlyName: Swift.String, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func setDefaultCertificate(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func revokeCertificate(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String, revokeAt timestamp: Foundation.TimeInterval? = nil, reason: myDSSSDK.CertificateRevokingReason = .unspecified, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func suspendCertificate(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String, from fromTimestamp: Foundation.TimeInterval? = nil, to toTimestamp: Foundation.TimeInterval, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func unSuspendCertificate(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+extension myDSSSDK.DSSAppearance {
+  public struct NavigationControllerAppearance {
+    public var shadowImage: UIKit.UIImage?
+    public var backgroundImage: UIKit.UIImage?
+    public var barTintColor: UIKit.UIColor?
+    public var tintColor: UIKit.UIColor?
+    public init(shadowImage: UIKit.UIImage? = nil, backgroundImage: UIKit.UIImage? = nil, barTintColor: UIKit.UIColor? = nil, tintColor: UIKit.UIColor? = nil)
+  }
+  public struct NavigationControllers {
+    public var main: myDSSSDK.DSSAppearance.NavigationControllerAppearance
+    public var camera: myDSSSDK.DSSAppearance.NavigationControllerAppearance
+    public init(main: myDSSSDK.DSSAppearance.NavigationControllerAppearance, camera: myDSSSDK.DSSAppearance.NavigationControllerAppearance)
+  }
+}
+public struct DSSAppearance {
+  public var images: myDSSSDK.DSSAppearance.Images {
+    mutating get
+    set
+  }
+  public var views: myDSSSDK.DSSAppearance.Views {
+    mutating get
+    set
+  }
+  public var buttons: myDSSSDK.DSSAppearance.Buttons {
+    mutating get
+    set
+  }
+  public var labels: myDSSSDK.DSSAppearance.Labels {
+    mutating get
+    set
+  }
+  public var navigationControllers: myDSSSDK.DSSAppearance.NavigationControllers {
+    mutating get
+    set
+  }
+}
+public struct DSSSignServerParams : Swift.Decodable {
+  public let caPolicies: [myDSSSDK.CaPolicy]
+  public let processingTemplates: [myDSSSDK.ProccessingTemplate]
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct CaPolicy : Swift.Decodable {
+  public let id: Swift.Int
+  public let name: Swift.String
+  public let active: Swift.Bool
+  public let snChangesEnable: Swift.Bool
+  public let allowUserMode: Swift.Bool
+  public let namePolicy: [myDSSSDK.CaPolicy.SubjectNameComponent]
+  public let caType: myDSSSDK.CaPolicy.CaType
+  public let ekuTemplates: [Swift.String : [Swift.String]]
+  public let templatesInfos: [myDSSSDK.CaPolicy.TemplateInfo]
+  public init(from decoder: Swift.Decoder) throws
+  public struct TemplateInfo : Swift.Decodable {
+    public let name: Swift.String
+    public let descriptionUri: Foundation.URL
+    public let templates: [Swift.String]
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct SubjectNameComponent : Swift.Decodable {
+    public let isRequired: Swift.Bool
+    public let order: Swift.Int
+    public let oid: Swift.String
+    public let name: Swift.String
+    public let value: Swift.String?
+    public let stringIdentifier: Swift.String
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public enum CaType : Swift.String, Swift.Decodable {
+    case CryptoProCA15Enroll
+    case CryptoProCA20Enroll
+    case DSSOutOfBandEnroll
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+public struct ProccessingTemplate : Swift.Decodable {
+  public let id: Swift.Int
+  public let description: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct DSSLoggingCategory : Swift.Equatable, Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public static let unmanaged: myDSSSDK.DSSLoggingCategory
+  public static let common: myDSSSDK.DSSLoggingCategory
+  public static let storage: myDSSSDK.DSSLoggingCategory
+  public static let security: myDSSSDK.DSSLoggingCategory
+  public static let network: myDSSSDK.DSSLoggingCategory
+  public static let keychain: myDSSSDK.DSSLoggingCategory
+  public static let users: myDSSSDK.DSSLoggingCategory
+  public static let backups: myDSSSDK.DSSLoggingCategory
+  public static let cprocsp: myDSSSDK.DSSLoggingCategory
+  public static func == (a: myDSSSDK.DSSLoggingCategory, b: myDSSSDK.DSSLoggingCategory) -> Swift.Bool
+}
+public enum DSSEndpoint : Swift.String, Swift.CaseIterable {
+  case certificates
+  case data
+  case devices
+  case history
+  case operations
+  case policy
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [myDSSSDK.DSSEndpoint]
+  public typealias RawValue = Swift.String
+  public static var allCases: [myDSSSDK.DSSEndpoint] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct DSSSignResult : Swift.Decodable, Swift.Equatable {
+  public let refId: Swift.String?
+  public let originalRefId: Swift.String?
+  public let status: myDSSSDK.DSSSignResult.OperationStatus
+  public let error: Swift.String?
+  public let errorDescription: Swift.String?
+  public enum OperationStatus : Swift.String, Swift.Decodable, Swift.Equatable {
+    case completed
+    case inProgress
+    case waiting
+    case error
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public static func == (a: myDSSSDK.DSSSignResult, b: myDSSSDK.DSSSignResult) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct DSSQRCodeVerification : myDSSSDK.DSSQRCode {
+  public static var associatedType: Swift.String {
+    get
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct DSSUser : Swift.Equatable {
+  public let dssUserId: Swift.String
+  public let myDSSKeyId: Swift.String
+  public let notBefore: Foundation.TimeInterval
+  public let notAfter: Foundation.TimeInterval
+  public let codeExpirationInterval: Foundation.TimeInterval
+  public let serviceURL: Foundation.URL
+  public let state: myDSSSDK.DSSDevice.State
+  public var keyFlags: myDSSSDK.DSSUser.KeyFlags {
+    get
+  }
+  public let externalId: Swift.String?
+  public let alias: Swift.String?
+  public var name: Swift.String?
+  public var userName: Swift.String?
+  public var profile: Swift.String?
+  public var verification: myDSSSDK.DSSUser.VerificationType
+  public let qrCode: Foundation.Data?
+  public let qrCodeContent: Swift.String?
+  public let registeredDeviceToken: Swift.String?
+  public let deviceName: Swift.String?
+  public var passwordPolicy: myDSSSDK.DSSPasswordPolicy
+  public var isReadyToSign: Swift.Bool {
+    get
+  }
+  public func reset()
+  public static func == (a: myDSSSDK.DSSUser, b: myDSSSDK.DSSUser) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers final public class DSSDevicesManager {
+  public static func listDevices(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSDevice], Swift.Error>) -> Swift.Void)
+  public static func revoke(device: myDSSSDK.DSSDevice, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func processAwaitingDevice(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSApprovingResult, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+public struct DSSApproveRequest : Swift.Encodable, Swift.Equatable {
+  public let approvedOperation: myDSSSDK.DSSApproveRequest.ApprovedOperation
+  public let hmac: Swift.String
+  public let user: myDSSSDK.DSSUser
+  public struct ApprovedOperation : Swift.Codable, Swift.Equatable {
+    public let id: Swift.String?
+    public let type: Swift.String?
+    public let caption: Swift.String?
+    public let parameters: myDSSSDK.DSSSignParams?
+    public let confirmedDocuments: [myDSSSDK.DSSApproveRequest.ProcessedDocument]?
+    public let declinedDocuments: [myDSSSDK.DSSApproveRequest.ProcessedDocument]?
+    public let timeStamp: Swift.Int
+    public static func == (a: myDSSSDK.DSSApproveRequest.ApprovedOperation, b: myDSSSDK.DSSApproveRequest.ApprovedOperation) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct ProcessedDocument : Swift.Codable, Swift.Equatable {
+    public let id: Swift.String
+    public let documentHash: Swift.String
+    public let snippetHash: Swift.String
+    public let reason: Swift.String?
+    public let signedHash: Swift.String?
+    public let signedDocId: Swift.String?
+    public let decryptedDocId: Swift.String?
+    public static func == (a: myDSSSDK.DSSApproveRequest.ProcessedDocument, b: myDSSSDK.DSSApproveRequest.ProcessedDocument) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public static func == (a: myDSSSDK.DSSApproveRequest, b: myDSSSDK.DSSApproveRequest) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct DSSDevice : Swift.Codable, Swift.Equatable {
+  public let myDSSKeyId: Swift.String
+  public let dssUserId: Swift.String
+  public let notBefore: Foundation.TimeInterval
+  public let notAfter: Foundation.TimeInterval
+  public let state: myDSSSDK.DSSDevice.State
+  public let deviceName: Swift.String?
+  public let userName: Swift.String?
+  public let profile: Swift.String?
+  public let alias: Swift.String?
+  public let passwordPolicy: myDSSSDK.DSSPasswordPolicy?
+  public enum State : Swift.String, Swift.Codable, Swift.Equatable {
+    case created
+    case installed
+    case notVerified
+    case active
+    case expired
+    case inactive
+    case approveRequired
+    case rejected
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public static func == (a: myDSSSDK.DSSDevice, b: myDSSSDK.DSSDevice) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers final public class DSSPolicyManager {
+  public static func getDSSParams(serviceURL: Foundation.URL, _ callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSParams, Swift.Error>) -> Swift.Void)
+  public static func getDSSParams(user: myDSSSDK.DSSUser, _ callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSParams, Swift.Error>) -> Swift.Void)
+  public static func getDSSSignServerParams(user: myDSSSDK.DSSUser, extended: Swift.Bool = false, _ callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSSignServerParams, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+public struct DSSQRCodeKinit : myDSSSDK.DSSQRCode {
+  public static var associatedType: Swift.String {
+    get
+  }
+  public var isActivated: Swift.Bool {
+    get
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers final public class DSSCertificatesManagerNonQual {
+  public static func sign(certificateRequest: myDSSSDK.DSSCertificate, user: myDSSSDK.DSSUser, keyInfo: myDSSSDK.DSSKeyInfo, pin: Swift.String, completion: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func sign(certificateRequest: myDSSSDK.DSSCertificate, user: myDSSSDK.DSSUser, isExportable: Swift.Bool = false, completion: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func install(certificate: myDSSSDK.DSSCertificate, user: myDSSSDK.DSSUser, keyInfo: myDSSSDK.DSSKeyInfo, pin: Swift.String) throws
+  public static func install(certificate: myDSSSDK.DSSCertificate, user: myDSSSDK.DSSUser) throws
+  public static func checkIfInstalled(certificate: myDSSSDK.DSSCertificate, for user: myDSSSDK.DSSUser) -> Swift.Bool
+  public static func checkIfAccessibleOnThisDevice(certificate: myDSSSDK.DSSCertificate, for user: myDSSSDK.DSSUser) -> Swift.Bool
+  public static func exportPfx(user: myDSSSDK.DSSUser, certificate: myDSSSDK.DSSCertificate, pin: Swift.String?, pfxPin: Swift.String?, completion: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func importPfx(user: myDSSSDK.DSSUser, certificate: myDSSSDK.DSSCertificate, pin: Swift.String?, pfxPin: Swift.String?, completion: @escaping (_ result: Swift.Result<myDSSSDK.DSSKeyInfo, Swift.Error>) -> Swift.Void)
+  public static func removePfx(user: myDSSSDK.DSSUser, certificate: myDSSSDK.DSSCertificate, completion: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class DSSUsersManager {
+  public static var users: [myDSSSDK.DSSUser] {
+    get
+  }
+  public static func rename(user: myDSSSDK.DSSUser, newName: Swift.String)
+  public static func delete(user: myDSSSDK.DSSUser)
+  public static func updateStatus(user: myDSSSDK.DSSUser, _ callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  public static func createDSSUserWithInitQR(name: Swift.String, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, requirePassword: Swift.Bool, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  public static func createDSSUser(serviceURL: Foundation.URL, name: Swift.String, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, requirePassword: Swift.Bool, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  public static func createDSSUserWithApproval(serviceURL: Foundation.URL, uid: Swift.String, name: Swift.String, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, requirePassword: Swift.Bool, statusCheckingInterval: Foundation.TimeInterval? = nil, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  public static func acceptAccountChanges(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  public static func checkApprovalStatus(unapprovedUser: myDSSSDK.DSSUser, checkOnly: Swift.Bool = false, statusCheckingInterval: Foundation.TimeInterval? = nil, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  public static func submitPassword(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func changePassword(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func revoke(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func getOperationsHistory(user: myDSSSDK.DSSUser, count: Swift.Int = 1, bookmark: Swift.Int?, operationsCodes: [Swift.Int] = [], callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSOperationsHistory, Swift.Error>) -> Swift.Void)
+  public static func updateDeviceInfo(pushNotificationsData: myDSSSDK.PushNotificationsData?, deviceName: Swift.String?, user: myDSSSDK.DSSUser, callback: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func renew(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+public struct DSSCertificate : Swift.Codable {
+  public enum `Type` : Swift.String, Swift.Codable {
+    case certificate
+    case request
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum State : Swift.String, Swift.Codable {
+    case registration
+    case pending
+    case accepted
+    case rejected
+    case active
+    case outOfOrder
+    case null
+    case hold
+    case revoked
+    case notValid
+    case signWait
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public let type: myDSSSDK.DSSCertificate.`Type`
+  public let dssCertificateId: Swift.String?
+  public let dssRequestId: Swift.String?
+  public let caID: Swift.Int
+  public let content: Foundation.Data
+  public let friendlyName: Swift.String?
+  public let state: myDSSSDK.DSSCertificate.State
+  public let dn: [Swift.String : Swift.String]
+  public let notBefore: Foundation.TimeInterval
+  public let notAfter: Foundation.TimeInterval
+  public let isDefault: Swift.Bool
+  public let isClient: Swift.Bool
+  public let isArchived: Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public protocol DSSQRCode : Swift.Decodable {
+  static var associatedType: Swift.String { get }
+}
+public enum DSSError : Swift.Error {
+  case internalError
+  case missingRequiredData
+  case localKeypairIsMissing
+  case storageNotInitialized
+  case installingCertificatesError(details: Swift.String)
+  case secureEnclaveError(details: Swift.String)
+  case devicePropertiesNotSet
+  case selfRegistrationIsForbidden
+  case qrTypeInvalid
+  case activationRequired
+  case deviceNotFound
+  case verificationQRValueRequired
+  case verificationDeclined
+  case userExists
+  case userDoesNotExist
+  case storingError
+  case userIsCreated
+  case userIsInstalled
+  case userIsNotVerified
+  case userIsActive
+  case userIsExpired
+  case userIsInactive
+  case approveRequired
+  case userIsRejected
+  case keyStatusInvalid
+  case keyFlagsCorrupted
+  case wrongPassword
+  case userIsNotActivated
+  case handleInvalid
+  case pinRetrievingError(Swift.String)
+  case encryptionError
+  case decryptionError
+  case unsupportedCertificate
+  case wrongCertificateRequest
+  case clientSideKeypairDoesNotExist
+  case keyActivationTypesAreMissing
+  case networkError(code: Swift.Int, message: Swift.String? = nil)
+  case confirmationError(approveRequest: myDSSSDK.DSSApproveRequest, error: Swift.Error)
+  case signingError(approveRequest: myDSSSDK.DSSApproveRequest, error: Swift.Error)
+  case operationNotFound
+  case invalidDocument(details: Swift.String? = nil)
+  case snippetIsMissing
+  case downloadingError(details: Swift.String? = nil)
+  case canceled
+  case forgotPIN
+  case wrongQR(value: Swift.String)
+}
+extension myDSSSDK.DSSError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public struct UserFlags : Swift.OptionSet {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public var passPolicy: myDSSSDK.DSSPasswordPolicy {
+    get
+  }
+  public var fingerprintIsRequired: Swift.Bool {
+    get
+  }
+  public var denyStoreWithOSProtection: Swift.Bool {
+    get
+  }
+  public var weakness: Swift.Bool {
+    get
+  }
+  public typealias ArrayLiteralElement = myDSSSDK.UserFlags
+  public typealias Element = myDSSSDK.UserFlags
+  public typealias RawValue = Swift.Int
+}
+public enum DSSSignType {
+  case remote
+  case local(keyInfo: myDSSSDK.DSSKeyInfo, pin: Swift.String)
+}
+public enum DSSPasswordPolicy : Swift.Int, Swift.Codable {
+  case noPolicy
+  case weak
+  case medium
+  case strong
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class DSSOperationsManager {
+  public static func getOperationsList(user: myDSSSDK.DSSUser, operationType: Swift.String? = nil, operationId: Swift.String? = nil, clientId: Swift.String? = nil, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSOperation], Swift.Error>) -> Swift.Void)
+  public static func confirmOperation(operation: myDSSSDK.DSSOperation, user: myDSSSDK.DSSUser, signMode: myDSSSDK.DSSSignMode, skipSnippet: Swift.Bool = false, isSelectionEnabled: Swift.Bool = false, checkCertificate: Swift.Bool = false, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSApproveRequest, Swift.Error>) -> Swift.Void)
+  public static func confirmOperation(approveRequest: myDSSSDK.DSSApproveRequest, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func getOperationsInfo(user: myDSSSDK.DSSUser, interval: Foundation.TimeInterval? = nil, operationId: Swift.String? = nil, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSOperationInfo], Swift.Error>) -> Swift.Void)
+  public static func getDocumentDescription(documentId: Swift.String, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSDocument, Swift.Error>) -> Swift.Void)
+  public static func uploadDocument(documentContent: Foundation.Data, title: Swift.String, snippetTemplate: Swift.String?, previewTemplate: Swift.String?, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)
+  public static func signDocuments(documentsIDs: [Swift.String], user: myDSSSDK.DSSUser, signParams: myDSSSDK.DSSSignParams, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSSignResult], Swift.Error>) -> Swift.Void)
+  public static func signDocumentsOffline(documentsIDs: [Swift.String], user: myDSSSDK.DSSUser, signParams: myDSSSDK.DSSSignParams, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSApproveRequest, Swift.Error>) -> Swift.Void)
+  public static func signDocuments(approveRequest: myDSSSDK.DSSApproveRequest, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSSignResult], Swift.Error>) -> Swift.Void)
+  public static func getDocumentBinaryData(documentId: Swift.String, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Foundation.URL, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+public enum DSSApprovingResult {
+  case approved
+  case declined
+  public static func == (a: myDSSSDK.DSSApprovingResult, b: myDSSSDK.DSSApprovingResult) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CertificateRevokingReason : Swift.Int, Swift.Codable {
+  case unspecified
+  case keyCompromise
+  case caCompromise
+  case affiliationChanged
+  case superseded
+  case cessationOfOperation
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct DSSOperation : Swift.Decodable {
+  public let description: myDSSSDK.DSSOperation.Description
+  public let expiresAt: Foundation.TimeInterval
+  public let documentCount: Swift.Int
+  public let transactionId: Swift.String
+  public let parameters: [Swift.String : Swift.String]
+  public let documents: [myDSSSDK.DSSDocument]
+  public let isClientSide: Swift.Bool
+  public let isFullDocRequired: Swift.Bool
+  public let certificateId: Swift.String
+  public let autoSignState: myDSSSDK.DSSOperation.AutoSignState
+  public let appSystemInfo: myDSSSDK.DSSOperation.AppSystemDescription?
+  public enum AutoSignState : Swift.String, Swift.Decodable {
+    case aware
+    case enabled
+    case disabled
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public struct AppSystemDescription : Swift.Decodable {
+    public let clientId: Swift.String
+    public let title: Swift.String?
+    public let description: Swift.String?
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct Description : Swift.Decodable {
+    public let type: Swift.String
+    public let caption: Swift.String
+    public let description: Swift.String?
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
+extension myDSSSDK.DSSOperation {
+  public enum SignatureType : Swift.String {
+    case GOST3410, CMS, CAdES
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum EncryptionType : Swift.String {
+    case CMS, XML
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var isDetached: Swift.Bool {
+    get
+  }
+  public var signatureType: myDSSSDK.DSSOperation.SignatureType? {
+    get
+  }
+  public var encryptionType: myDSSSDK.DSSOperation.EncryptionType? {
+    get
+  }
+  public var useFssScenario: Swift.Bool {
+    get
+  }
+}
+extension Swift.String {
+  @inlinable internal func getLocalizedString(bundle: Foundation.Bundle, tableName: Swift.String) -> Swift.String {
+        NSLocalizedString(self, tableName: tableName, bundle: bundle, value: "\(self)", comment: "")
+    }
+}
+extension myDSSSDK.DSSUser {
+  public struct KeyFlags : Swift.OptionSet, Swift.Hashable {
+    public let rawValue: Swift.Int32
+    public init(rawValue: Swift.Int32)
+    public var passPolicy: myDSSSDK.DSSPasswordPolicy {
+      get
+    }
+    public var fingerprintIsRequired: Swift.Bool {
+      get
+    }
+    public var denyStoreWithOSProtection: Swift.Bool {
+      get
+    }
+    public var weakness: Swift.Bool {
+      get
+    }
+    public typealias ArrayLiteralElement = myDSSSDK.DSSUser.KeyFlags
+    public typealias Element = myDSSSDK.DSSUser.KeyFlags
+    public typealias RawValue = Swift.Int32
+  }
+  public enum VerificationType : Swift.String, Swift.Codable {
+    case notRequired
+    case required
+    case qrRequired
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension myDSSSDK.DSSAppearance {
+  public struct ButtonAppearance {
+    public var titleFont: UIKit.UIFont?
+    public var titleColor: UIKit.UIColor?
+    public var titleColorPressed: UIKit.UIColor?
+    public var titleColorDisabled: UIKit.UIColor?
+    public var backgroundColor: UIKit.UIColor?
+    public var backgroundColorPressed: UIKit.UIColor?
+    public var backgroundColorDisabled: UIKit.UIColor?
+    public var cornerRadius: CoreGraphics.CGFloat
+    public var tintColor: UIKit.UIColor?
+    public init(titleFont: UIKit.UIFont? = nil, titleColor: UIKit.UIColor? = nil, titleColorPressed: UIKit.UIColor? = nil, titleColorDisabled: UIKit.UIColor? = nil, backgroundColor: UIKit.UIColor? = nil, backgroundColorPressed: UIKit.UIColor? = nil, backgroundColorDisabled: UIKit.UIColor? = nil, cornerRadius: CoreGraphics.CGFloat = 0, tintColor: UIKit.UIColor? = nil)
+  }
+  public struct Buttons {
+    public var primary: myDSSSDK.DSSAppearance.ButtonAppearance
+    public var secondary: myDSSSDK.DSSAppearance.ButtonAppearance
+    public var overlay: myDSSSDK.DSSAppearance.ButtonAppearance
+    public var documentCellMore: myDSSSDK.DSSAppearance.ButtonAppearance
+    public var documentCellDetails: myDSSSDK.DSSAppearance.ButtonAppearance
+    public var operationInfo: myDSSSDK.DSSAppearance.ButtonAppearance
+    public var forgotPIN: myDSSSDK.DSSAppearance.ButtonAppearance
+    public init(primary: myDSSSDK.DSSAppearance.ButtonAppearance, secondary: myDSSSDK.DSSAppearance.ButtonAppearance, overlay: myDSSSDK.DSSAppearance.ButtonAppearance, documentCellMore: myDSSSDK.DSSAppearance.ButtonAppearance, documentCellDetails: myDSSSDK.DSSAppearance.ButtonAppearance, operationInfo: myDSSSDK.DSSAppearance.ButtonAppearance, forgotPIN: myDSSSDK.DSSAppearance.ButtonAppearance)
+  }
+}
+public struct DSSKeyInfo : Swift.Equatable, Swift.Hashable, Swift.Codable {
+  public enum ProviderType : Swift.Int32, Swift.Codable {
+    case type256
+    case type512
+    public init?(rawValue: Swift.Int32)
+    public typealias RawValue = Swift.Int32
+    public var rawValue: Swift.Int32 {
+      get
+    }
+  }
+  public let providerName: Swift.String
+  public let providerType: myDSSSDK.DSSKeyInfo.ProviderType
+  public let containerName: Swift.String
+  public let certificateId: Swift.String?
+  public let requestId: Swift.String?
+  public let userId: Swift.String
+  public let isExportable: Swift.Bool
+  public static func == (a: myDSSSDK.DSSKeyInfo, b: myDSSSDK.DSSKeyInfo) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
+extension myDSSSDK.DSSKeyInfo {
+  public var isInstalled: Swift.Bool {
+    get
+  }
+}
+public protocol DSSLoggerProtocol {
+  func debug(_ message: Swift.String, category: myDSSSDK.DSSLoggingCategory)
+  func error(_ message: Swift.String, category: myDSSSDK.DSSLoggingCategory)
+  func sensitive(_ message: Swift.String, category: myDSSSDK.DSSLoggingCategory)
+}
+extension Foundation.Data {
+  @usableFromInline
+  internal var utf8String: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class DSSOperationsManagerNonQual {
+  @available(*, deprecated, message: "\n\nИспользуйте асинхронный метод:\n\npublic static func confirmOperation(\noperation: DSSOperation,\nconfirmedDocuments: [DSSDocument],\ndeclinedDocuments: [DSSDocument],\nuser: DSSUser,\ncompletion: @escaping (_ result: Result<DSSApproveRequest, Error>) -> Void\n)")
+  public static func confirmOperation(operation: myDSSSDK.DSSOperation, confirmedDocuments: [myDSSSDK.DSSDocument], declinedDocuments: [myDSSSDK.DSSDocument], user: myDSSSDK.DSSUser) throws -> myDSSSDK.DSSApproveRequest
+  public static func confirmOperation(operation: myDSSSDK.DSSOperation, confirmedDocuments: [myDSSSDK.DSSDocument], declinedDocuments: [myDSSSDK.DSSDocument], user: myDSSSDK.DSSUser, signParams: myDSSSDK.DSSSignParams? = nil, completion: @escaping (_ result: Swift.Result<myDSSSDK.DSSApproveRequest, Swift.Error>) -> Swift.Void)
+  public static func confirmOperation(approveRequest: myDSSSDK.DSSApproveRequest, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func getDocumentPreview(documentId: Swift.String, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
+  public static func getDocumentRawPDF(documentId: Swift.String, pageOffset: Swift.Int?, pageCount: Swift.Int?, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSRawPDFData, Swift.Error>) -> Swift.Void)
+  public static func signDocuments(confirmedDocuments: [myDSSSDK.DSSDocument], declinedDocuments: [myDSSSDK.DSSDocument], user: myDSSSDK.DSSUser, signParams: myDSSSDK.DSSSignParams, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSSignResult], Swift.Error>) -> Swift.Void)
+  public static func signDocuments(approveRequest: myDSSSDK.DSSApproveRequest, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSSignResult], Swift.Error>) -> Swift.Void)
+  public static func signDocumentsOffline(confirmedDocuments: [myDSSSDK.DSSDocument], declinedDocuments: [myDSSSDK.DSSDocument], user: myDSSSDK.DSSUser, signParams: myDSSSDK.DSSSignParams) throws -> myDSSSDK.DSSApproveRequest
+  @objc deinit
+}
+public struct DSSOperationsHistory : Swift.Decodable {
+  public let records: [myDSSSDK.DSSOperationsHistory.AuditRecord]
+  public let totalCount: Swift.Int
+  public let bookmark: Swift.Int
+  public struct AuditRecord : Swift.Decodable {
+    public let id: Swift.Int
+    public let operationCode: Swift.Int
+    public let text: Swift.String
+    public let date: Foundation.TimeInterval
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct LogLevel : Swift.OptionSet {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public static let debug: myDSSSDK.LogLevel
+  public static let sensitive: myDSSSDK.LogLevel
+  @available(*, deprecated, message: "Переименован в sensitive")
+  public static let keys: myDSSSDK.LogLevel
+  public typealias ArrayLiteralElement = myDSSSDK.LogLevel
+  public typealias Element = myDSSSDK.LogLevel
+  public typealias RawValue = Swift.Int
+}
+public struct ConnectionError : Foundation.LocalizedError {
+  public var errorCode: Swift.UInt32 {
+    get
+  }
+  public let errorDescription: Swift.String?
+}
+extension myDSSSDK.ConnectionError : Swift.Equatable {
+  public static func == (lhs: myDSSSDK.ConnectionError, rhs: myDSSSDK.ConnectionError) -> Swift.Bool
+  public static func ~= (pattern: myDSSSDK.ConnectionError, value: Swift.Error) -> Swift.Bool
+}
+extension myDSSSDK.ConnectionError {
+  public static let couldntConnect: myDSSSDK.ConnectionError
+  public static let couldntResolveHost: myDSSSDK.ConnectionError
+  public static let sslConnectError: myDSSSDK.ConnectionError
+  public static let connectionTimeout: myDSSSDK.ConnectionError
+  public static let tooManyRedirects: myDSSSDK.ConnectionError
+  public static let sslCertProblem: myDSSSDK.ConnectionError
+  public static let sslCaCertBadFile: myDSSSDK.ConnectionError
+  public static let sshUnspecifiedError: myDSSSDK.ConnectionError
+  public static let sslCrlBadFile: myDSSSDK.ConnectionError
+}
+extension myDSSSDK.DSSOperationInfo.State : Swift.Equatable {}
+extension myDSSSDK.DSSOperationInfo.State : Swift.Hashable {}
+extension myDSSSDK.DSSOperationInfo.State : Swift.RawRepresentable {}
+extension myDSSSDK.DSSOperationInfo.Action.Status : Swift.Equatable {}
+extension myDSSSDK.DSSOperationInfo.Action.Status : Swift.Hashable {}
+extension myDSSSDK.DSSOperationInfo.Action.Status : Swift.RawRepresentable {}
+extension myDSSSDK.DSSOperationInfo.Action.State : Swift.Equatable {}
+extension myDSSSDK.DSSOperationInfo.Action.State : Swift.Hashable {}
+extension myDSSSDK.DSSOperationInfo.Action.State : Swift.RawRepresentable {}
+extension myDSSSDK.DSSServerError.ErrorType : Swift.Equatable {}
+extension myDSSSDK.DSSServerError.ErrorType : Swift.Hashable {}
+extension myDSSSDK.DSSServerError.ErrorType : Swift.RawRepresentable {}
+extension myDSSSDK.RootCertificateType : Swift.Equatable {}
+extension myDSSSDK.RootCertificateType : Swift.Hashable {}
+extension myDSSSDK.DSSSignMode : Swift.Equatable {}
+extension myDSSSDK.DSSSignMode : Swift.Hashable {}
+extension myDSSSDK.CPROCSPError : Swift.Equatable {}
+extension myDSSSDK.CPROCSPError : Swift.Hashable {}
+extension myDSSSDK.CPROCSPError : Swift.RawRepresentable {}
+extension myDSSSDK.CaPolicy.CaType : Swift.Equatable {}
+extension myDSSSDK.CaPolicy.CaType : Swift.Hashable {}
+extension myDSSSDK.CaPolicy.CaType : Swift.RawRepresentable {}
+extension myDSSSDK.DSSEndpoint : Swift.Equatable {}
+extension myDSSSDK.DSSEndpoint : Swift.Hashable {}
+extension myDSSSDK.DSSEndpoint : Swift.RawRepresentable {}
+extension myDSSSDK.DSSSignResult.OperationStatus : Swift.Hashable {}
+extension myDSSSDK.DSSSignResult.OperationStatus : Swift.RawRepresentable {}
+extension myDSSSDK.DSSDevice.State : Swift.Hashable {}
+extension myDSSSDK.DSSDevice.State : Swift.RawRepresentable {}
+extension myDSSSDK.DSSCertificate.`Type` : Swift.Equatable {}
+extension myDSSSDK.DSSCertificate.`Type` : Swift.Hashable {}
+extension myDSSSDK.DSSCertificate.`Type` : Swift.RawRepresentable {}
+extension myDSSSDK.DSSCertificate.State : Swift.Equatable {}
+extension myDSSSDK.DSSCertificate.State : Swift.Hashable {}
+extension myDSSSDK.DSSCertificate.State : Swift.RawRepresentable {}
+extension myDSSSDK.DSSPasswordPolicy : Swift.Equatable {}
+extension myDSSSDK.DSSPasswordPolicy : Swift.Hashable {}
+extension myDSSSDK.DSSPasswordPolicy : Swift.RawRepresentable {}
+extension myDSSSDK.DSSApprovingResult : Swift.Equatable {}
+extension myDSSSDK.DSSApprovingResult : Swift.Hashable {}
+extension myDSSSDK.CertificateRevokingReason : Swift.Equatable {}
+extension myDSSSDK.CertificateRevokingReason : Swift.Hashable {}
+extension myDSSSDK.CertificateRevokingReason : Swift.RawRepresentable {}
+extension myDSSSDK.DSSOperation.AutoSignState : Swift.Equatable {}
+extension myDSSSDK.DSSOperation.AutoSignState : Swift.Hashable {}
+extension myDSSSDK.DSSOperation.AutoSignState : Swift.RawRepresentable {}
+extension myDSSSDK.DSSOperation.SignatureType : Swift.Equatable {}
+extension myDSSSDK.DSSOperation.SignatureType : Swift.Hashable {}
+extension myDSSSDK.DSSOperation.SignatureType : Swift.RawRepresentable {}
+extension myDSSSDK.DSSOperation.EncryptionType : Swift.Equatable {}
+extension myDSSSDK.DSSOperation.EncryptionType : Swift.Hashable {}
+extension myDSSSDK.DSSOperation.EncryptionType : Swift.RawRepresentable {}
+extension myDSSSDK.DSSUser.VerificationType : Swift.Equatable {}
+extension myDSSSDK.DSSUser.VerificationType : Swift.Hashable {}
+extension myDSSSDK.DSSUser.VerificationType : Swift.RawRepresentable {}
+extension myDSSSDK.DSSKeyInfo.ProviderType : Swift.Equatable {}
+extension myDSSSDK.DSSKeyInfo.ProviderType : Swift.Hashable {}
+extension myDSSSDK.DSSKeyInfo.ProviderType : Swift.RawRepresentable {}

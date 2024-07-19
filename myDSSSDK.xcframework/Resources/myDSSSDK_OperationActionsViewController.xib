@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OperationActionsViewController" customModule="myDSSSDK">
+            <connections>
+                <outlet property="buttonsContainerTopConstraint" destination="Lps-0D-ica" id="ZYz-pZ-PTp"/>
+                <outlet property="buttonsContainerView" destination="DS6-UX-hRD" id="c5F-xm-64F"/>
+                <outlet property="primaryButton" destination="vIl-f6-dMN" id="FSG-yD-CMO"/>
+                <outlet property="secondaryButton" destination="e4O-iS-JRo" id="692-cs-UBu"/>
+                <outlet property="selectedDocumentsContainer" destination="kzv-k7-3k0" id="lvy-iE-psS"/>
+                <outlet property="selectedDocumentsLabel" destination="fFC-0R-yGx" id="dcV-Ba-4v2"/>
+                <outlet property="view" destination="o8u-lH-P8G" id="06X-l5-tla"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="o8u-lH-P8G" customClass="PassthroughView" customModule="myDSSSDK">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DS6-UX-hRD" userLabel="Buttons Container View">
+                    <rect key="frame" x="0.0" y="722" width="414" height="174"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tma-9i-lx6" customClass="CustomGradientView" customModule="myDSSSDK">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="174"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                                    <real key="value" value="90"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IXB-23-Eqo">
+                            <rect key="frame" x="16" y="16" width="382" height="150"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzv-k7-3k0" userLabel="Selected Documents Container">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlR-Mw-eVB" userLabel="Badge" customClass="CustomView" customModule="myDSSSDK">
+                                            <rect key="frame" x="158.5" y="3" width="65.5" height="28.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFC-0R-yGx" customClass="CustomLabel" customModule="myDSSSDK">
+                                                    <rect key="frame" x="12" y="4" width="41.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="style" value="selectedDocuments"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="fFC-0R-yGx" secondAttribute="width" constant="24" id="ZNi-WC-aO6"/>
+                                                <constraint firstItem="fFC-0R-yGx" firstAttribute="centerX" secondItem="zlR-Mw-eVB" secondAttribute="centerX" id="fZe-hB-bnP"/>
+                                                <constraint firstAttribute="height" secondItem="fFC-0R-yGx" secondAttribute="height" constant="8" id="geF-Nu-YIV"/>
+                                                <constraint firstItem="fFC-0R-yGx" firstAttribute="centerY" secondItem="zlR-Mw-eVB" secondAttribute="centerY" id="q7i-sf-qCV"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="style" value="selectedDocumentsBadge"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="zlR-Mw-eVB" firstAttribute="width" relation="lessThanOrEqual" secondItem="kzv-k7-3k0" secondAttribute="width" priority="250" id="0GC-QD-Mux"/>
+                                        <constraint firstAttribute="height" constant="34" id="Dui-nD-kpd"/>
+                                        <constraint firstItem="zlR-Mw-eVB" firstAttribute="height" relation="lessThanOrEqual" secondItem="kzv-k7-3k0" secondAttribute="height" priority="250" id="bKf-Vf-kag"/>
+                                        <constraint firstItem="zlR-Mw-eVB" firstAttribute="centerY" secondItem="kzv-k7-3k0" secondAttribute="centerY" id="nAL-oE-uVU"/>
+                                        <constraint firstItem="zlR-Mw-eVB" firstAttribute="centerX" secondItem="kzv-k7-3k0" secondAttribute="centerX" id="nSV-39-mbT"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIl-f6-dMN" customClass="CustomButton" customModule="myDSSSDK">
+                                    <rect key="frame" x="0.0" y="42" width="382" height="50"/>
+                                    <color key="backgroundColor" name="button_confirm"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="G7b-QV-9hq"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Confirm">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="buttonStyle" value="primary"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="primaryAction:" destination="-1" eventType="touchUpInside" id="Kjn-vK-h0b"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4O-iS-JRo" customClass="CustomButton" customModule="myDSSSDK">
+                                    <rect key="frame" x="0.0" y="100" width="382" height="50"/>
+                                    <color key="backgroundColor" name="button_decline"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="uR9-Vk-iNs"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Decline">
+                                        <color key="titleColor" name="button_confirm"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="buttonStyle" value="secondary"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="secondaryAction:" destination="-1" eventType="touchUpInside" id="4N2-98-TtL"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="IXB-23-Eqo" firstAttribute="centerX" secondItem="DS6-UX-hRD" secondAttribute="centerX" id="Aah-jo-Id8"/>
+                        <constraint firstAttribute="trailing" secondItem="tma-9i-lx6" secondAttribute="trailing" id="Gb4-g9-lZZ"/>
+                        <constraint firstItem="tma-9i-lx6" firstAttribute="top" secondItem="DS6-UX-hRD" secondAttribute="top" id="Rjg-gf-cWx"/>
+                        <constraint firstItem="IXB-23-Eqo" firstAttribute="width" secondItem="DS6-UX-hRD" secondAttribute="width" constant="-32" id="kXK-xN-LUV"/>
+                        <constraint firstAttribute="bottom" secondItem="tma-9i-lx6" secondAttribute="bottom" id="v8Y-ts-lXc"/>
+                        <constraint firstItem="tma-9i-lx6" firstAttribute="leading" secondItem="DS6-UX-hRD" secondAttribute="leading" id="wCh-Kr-3BV"/>
+                        <constraint firstItem="IXB-23-Eqo" firstAttribute="top" secondItem="DS6-UX-hRD" secondAttribute="top" constant="16" id="zIC-KY-Izt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="guk-Kb-Ptn"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="DS6-UX-hRD" firstAttribute="bottom" secondItem="o8u-lH-P8G" secondAttribute="bottom" priority="750" id="G8D-zo-mZw"/>
+                <constraint firstItem="DS6-UX-hRD" firstAttribute="top" secondItem="o8u-lH-P8G" secondAttribute="bottom" id="Lps-0D-ica"/>
+                <constraint firstItem="IXB-23-Eqo" firstAttribute="bottom" secondItem="guk-Kb-Ptn" secondAttribute="bottom" priority="750" constant="-8" id="cOV-38-f0k"/>
+                <constraint firstItem="DS6-UX-hRD" firstAttribute="trailing" secondItem="guk-Kb-Ptn" secondAttribute="trailing" id="itc-8Z-M3Y"/>
+                <constraint firstItem="DS6-UX-hRD" firstAttribute="leading" secondItem="guk-Kb-Ptn" secondAttribute="leading" id="rwE-79-kcE"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Lps-0D-ica"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="4" y="-482"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="button_confirm">
+            <color red="0.12941176470588237" green="0.4823529411764706" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="button_decline">
+            <color red="0.94117647058823528" green="0.95686274509803926" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

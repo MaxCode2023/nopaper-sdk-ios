@@ -1,0 +1,233 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AbSDKMain
+@_exported import AbSDKMain
+import Alamofire
+import ContactsUI
+import Foundation
+import RxSwift
+import Swift
+import SwiftKeychainWrapper
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers final public class NameInitialConverter {
+  public static func getNameInitial(fullName: Swift.String) -> Swift.String
+  @objc deinit
+}
+extension Swift.String {
+  public var isValidURL: Swift.Bool {
+    get
+  }
+  public var localized: Swift.String {
+    get
+  }
+  public func digitsOnly() -> Swift.String
+  public func hasConsecutiveChars(consecutiveCount: Swift.Int) -> Swift.Bool
+  public func getShortName() -> Swift.String
+}
+extension Swift.Error {
+  public var isNoInternet: Swift.Bool {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class LogManager {
+  public static var logLevel: AbSDKMain.AbLogLevel
+  public static func printLog(_ printItem: Any)
+  @objc deinit
+}
+public let accessTokenTag: Swift.String
+public let refreshTokenTag: Swift.String
+open class SessionManager {
+  public var baseUrl: Swift.String
+  final public let session: Alamofire.Session
+  public init(baseURL: Swift.String)
+  public class BaseInterceptor : Alamofire.RequestInterceptor {
+    public init(baseUrl: Swift.String)
+    public func adapt(_ urlRequest: Foundation.URLRequest, for session: Alamofire.Session, completion: @escaping (Swift.Result<Foundation.URLRequest, any Swift.Error>) -> Swift.Void)
+    public func retry(_ request: Alamofire.Request, for session: Alamofire.Session, dueTo error: any Swift.Error, completion: @escaping (Alamofire.RetryResult) -> Swift.Void)
+    @objc deinit
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class Validation {
+  public static func validateInn(inn: Swift.String) -> Swift.Bool
+  public static func validateSNILS(snils: Swift.String) -> Swift.Bool
+  public static func validateEmail(email: Swift.String) -> Swift.Bool
+  public static func validateString(string: Swift.String) -> Swift.Bool
+  @objc deinit
+}
+public enum AbLogLevel {
+  case abNoLogging
+  case abLogDebug
+  public static func == (a: AbSDKMain.AbLogLevel, b: AbSDKMain.AbLogLevel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+final public class AbObservable<Value> {
+  final public var value: Value {
+    get
+    set
+  }
+  public init(_ value: Value)
+  final public func observe(on observer: Swift.AnyObject, observerBlock: @escaping (Value) -> Swift.Void)
+  final public func remove(observer: Swift.AnyObject)
+  @objc deinit
+}
+public enum ApiResult<Value> {
+  case Success(value: Value)
+  case Failure(error: Foundation.NSError)
+  public func unwrap() throws -> Value
+}
+public struct APIError : AbSDKMain.DecodableError {
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension Alamofire.DataRequest {
+  @discardableResult
+  public func responseDecodableErr<T, S>(queue: Dispatch.DispatchQueue = DispatchQueue.global(qos: .userInitiated), of t: T.Type, error: S.Type, errorCode: Swift.Int, completionHandler: @escaping (AbSDKMain.ApiResult<T>) -> Swift.Void) -> Self where T : Swift.Decodable, S : AbSDKMain.DecodableError
+  @discardableResult
+  public func responseDecodableRx<T, S>(queue: Dispatch.DispatchQueue = DispatchQueue.global(qos: .userInitiated), of t: T.Type, error: S.Type, errorCode: Swift.Int) -> RxSwift.Observable<T> where T : Swift.Decodable, S : AbSDKMain.DecodableError
+}
+public struct VoidCodable : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol DecodableError : Swift.Decodable, Swift.Error {
+}
+public class Task<T> : ObjectiveC.NSObject {
+  public init(owner: any AbSDKMain.TaskOwner)
+  @objc deinit
+  public func observe(onRunning: ((AbSDKMain.TaskEvent<T>.Running) -> Swift.Void)?, onSuccess: ((AbSDKMain.TaskEvent<T>.Success) -> Swift.Void)?, onError: ((AbSDKMain.TaskEvent<T>.Error) -> Swift.Void)?)
+  public func pushEvent(event: AbSDKMain.Event<T>, isTaskEnd: Swift.Bool = false, parent: any AbSDKMain.TaskOwner) throws
+  public func canceled(cancel: @escaping (() -> Swift.Void))
+  public func stopTask()
+}
+public protocol TaskOwner : AnyObject {
+}
+extension Foundation.DateFormatter {
+  public static var defaultDateFormatter: Foundation.DateFormatter
+  public func getFormattedDate(inputDate: Swift.String, outputFormat: Swift.String = "d MMMM yyyy") -> Swift.String
+}
+@_hasMissingDesignatedInitializers public class DateComparator {
+  public static func getDifferenceInDays(fromDate: Foundation.Date, toDate: Foundation.Date) -> Swift.Int?
+  public static func getDifference(fromDate: Foundation.Date, toDate: Foundation.Date, format: Foundation.Calendar.Component) -> Swift.Int?
+  @objc deinit
+}
+public struct AuthResponse : Swift.Codable {
+  public let access_token: Swift.String
+  public let expires_in: Swift.Int
+  public let token_type: Swift.String?
+  public let refresh_token: Swift.String
+  public let scope: Swift.String?
+  public let loginResponse: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AuthTwoFactorResponse : Swift.Codable {
+  public let id_token: Swift.String
+  public let access_token: Swift.Int
+  public let expires_in: Swift.Int
+  public let token_Type: Swift.String?
+  public let refresh_token: Swift.String
+  public let scope: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class PhoneContacts {
+  public static func getContacts() -> [Contacts.CNContact]
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Event<T> {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class TaskEvent<T> : AbSDKMain.Event<T> {
+  public var codeStatus: AbSDKMain.TaskStatus
+  public var data: T?
+  public var throwable: (any Swift.Error)?
+  public var className: AbSDKMain.TaskEvent<T>.ClassName
+  public init(codeStatus: AbSDKMain.TaskStatus, className: AbSDKMain.TaskEvent<T>.ClassName)
+  public init(codeStatus: AbSDKMain.TaskStatus, className: AbSDKMain.TaskEvent<T>.ClassName, data: T?)
+  public init(codeStatus: AbSDKMain.TaskStatus, className: AbSDKMain.TaskEvent<T>.ClassName, throwable: (any Swift.Error)?)
+  public init(codeStatus: AbSDKMain.TaskStatus, className: AbSDKMain.TaskEvent<T>.ClassName, data: T?, throwable: (any Swift.Error)?)
+  public enum ClassName {
+    case RUNNING
+    case SUCCESS
+    case ERROR
+    public static func == (a: AbSDKMain.TaskEvent<T>.ClassName, b: AbSDKMain.TaskEvent<T>.ClassName) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public class Running : AbSDKMain.TaskEvent<T> {
+    public init()
+    public init(data: T?)
+    public init(codeStatus: AbSDKMain.TaskStatus)
+    @objc deinit
+  }
+  public class Success : AbSDKMain.TaskEvent<T> {
+    public init()
+    public init(data: T?)
+    public init(codeStatus: AbSDKMain.TaskStatus)
+    public init(data: T?, codeStatus: AbSDKMain.TaskStatus)
+    @objc deinit
+  }
+  public class Error : AbSDKMain.TaskEvent<T> {
+    public init(throwable: any Swift.Error)
+    public init(throwable: any Swift.Error, codeStatus: AbSDKMain.TaskStatus)
+    public init(throwable: any Swift.Error, codeStatus: AbSDKMain.TaskStatus, data: T?)
+    @objc deinit
+  }
+  @objc deinit
+}
+public enum NoPermissionsException : Swift.Error {
+  case noPermission
+  public static func == (a: AbSDKMain.NoPermissionsException, b: AbSDKMain.NoPermissionsException) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AbSDKMain.NoPermissionsException {
+  public var errorDescription: Swift.String {
+    get
+  }
+}
+public enum TaskStatus : Swift.Int {
+  case UPDATE
+  case SUCCESS
+  case SUCCESS_KEY
+  case UPDATE_STEP_DOC
+  case USER_VERIFICATION
+  case ERR_NOT_KEY
+  case ERR_ACCEPTANCE_NEEDED
+  case ERR_EXTERNAL_ACCEPTANCE_NEEDED
+  case ERR_ONLY_EXTERNAL_KEY
+  case ERROR
+  case TWO_FACTOR_NEEDED
+  case TWO_FACTOR_ATTEMPTS
+  case ERR_CERTIFICATE_EXPIRED
+  case STARTED_SMS_SIGN
+  case ERR_VERIFY_SMS_SIGN_CODE
+  case SUCCESS_VERIFY_SMS_SIGN_CODE
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class StringFormatter {
+  public static func secondsToMinutesSeconds(_ seconds: Swift.Double) -> Swift.String
+  @objc deinit
+}
+extension AbSDKMain.AbLogLevel : Swift.Equatable {}
+extension AbSDKMain.AbLogLevel : Swift.Hashable {}
+extension AbSDKMain.TaskEvent.ClassName : Swift.Equatable {}
+extension AbSDKMain.TaskEvent.ClassName : Swift.Hashable {}
+extension AbSDKMain.NoPermissionsException : Swift.Equatable {}
+extension AbSDKMain.NoPermissionsException : Swift.Hashable {}
+extension AbSDKMain.TaskStatus : Swift.Equatable {}
+extension AbSDKMain.TaskStatus : Swift.Hashable {}
+extension AbSDKMain.TaskStatus : Swift.RawRepresentable {}

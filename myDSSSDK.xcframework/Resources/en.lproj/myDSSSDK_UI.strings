@@ -1,0 +1,112 @@
+/* Password And Activation */
+
+"activation_enter_code_title" = "Enter activation code";
+
+"password_enter_title" = "Enter PIN";
+"password_length" = "6 symbols";
+
+"password_action_forgot" = "Forgot PIN?";
+"password_action_close" = "Close";
+
+"password_enter_new_title" = "Enter new PIN";
+"password_repeat_new_title" = "Repeat new PIN";
+
+"password_biometry_reason" = "Gaining access to the PIN";
+
+"password_invalid" = "Invalid PIN. You have %d attempts left \nWait %d and then try again";
+
+"password_error_pass_do_not_match" = "Passwords do not match!";
+"password_error_weak_pins" = "Your PIN is too easy to guess, try set a different one";
+"password_error_wrong_pins" = "Invalid PIN. \nRemaining attempts: %d";
+"password_error_repeat_pins" = "Invalid PIN. \nNext try in ";
+"password_label_repeat_pin" = "Repeat new PIN";
+
+"password_action_forgot_pass" = "Forgot password?";
+"password_error_wrong_pass" = "Invalid password. \nRemaining attempts: %d";
+"password_error_repeat_pass" = "Invalid password. \nNext try in ";
+"password_label_pass_instructions" = "The password must contain at least 8 characters, an uppercase letter and a number";
+"password_label_enter_pass" = "Enter password";
+"password_label_repeat_pass" = "Repeat new password";
+"password_error_must_meet_policy" = "Password don't meet password policy";
+"password_next_button" = "Continue";
+
+"password_label_set_pass" = "Set new password";
+"password_title_setting_pass" = "Setting a password";
+
+
+/* Suggesting Biometry */
+
+"suggesting_biometry_title_faceid" = "Use Face ID to sign?";
+"suggesting_biometry_title_touchid" = "Use Touch ID to sign?";
+
+"suggesting_biometry_action_primary" = "Yes";
+"suggesting_biometry_action_secondary" = "Not now";
+
+/* Operations And Documents */
+
+"documents_action_sign" = "Sign";
+
+"operation_action_primary" = "Confirm";
+"operation_action_secondary" = "Decline";
+"operation_action_details" = "Details";
+"operation_action_close" = "Close";
+
+"operation_list_title" = "Preview";
+"operation_document_preview_title" = "Preview";
+
+"operation_preview_options_print" = "Print version";
+"operation_preview_options_raw" = "Raw document";
+"operation_preview_options_cancel" = "Cancel";
+
+"operation_info_title" = "Operation details";
+"operation_info_action_close" = "Close";
+
+"operation_no_certificate_title" = "You don't have an active certificate to sign";
+"operation_no_certificate_message" = "The document can be only rejected";
+
+"operation_decline_warning_message" = "Do you really want to deny selected documents?";
+"operation_decline_warning_action" = "Deny";
+"operation_decline_warning_cancel" = "Cancel";
+
+"operation_error_alert_close" = "Close";
+"operation_pdf_preview_close" = "Close";
+
+"operation_documents_selected" = "Selected: %d of %d";
+
+/* Accept Account Changes */
+
+"accept_account_changes_title" = "Confirm using this device to sign documents";
+
+"accept_account_changes_action_primary" = "Confirm";
+"accept_account_changes_action_secondary" = "Decline";
+"accept_account_changes_action_close" = "Close";
+
+/* Process Awaiting Device */
+
+"process_device_approve_title" = "Confirm adding the device";
+
+"process_device_action_primary" = "Confirm";
+"process_device_action_secondary" = "Deny";
+"process_device_action_close"  = "Close";
+
+/* Approving with QR */
+
+"approving_qr_title" = "Scan QR code on the first device";
+
+"approving_qr_action_primary" = "Done";
+"approving_qr_action_secondary" = "Later";
+"approving_qr_action_close" = "Close";
+
+// Camera
+
+"camera_action_close" = "Close";
+"camera_action_cancel" = "Cancel";
+"camera_action_settings" = "Settings";
+"camera_status_show_qr" = "Focus your camera on the QR-code";
+"camera_status_not_available"  = "Camera is not available";
+"camera_status_not_found" = "Camera is not found";
+"camera_status_configuration_error" = "Camera configuration error";
+"camera_status_wrong_qr" = "QR code is wrong";
+
+"camera_authorization_title" = "Allow access to a camera";
+"camera_authorization_description" = "To scan a QR-code, you’ll need a camera access. Please, turn on your camera in Settings";
