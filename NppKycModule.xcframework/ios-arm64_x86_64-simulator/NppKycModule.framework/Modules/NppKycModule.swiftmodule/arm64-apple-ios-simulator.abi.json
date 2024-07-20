@@ -2260,35 +2260,35 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppKycModule\/domain\/EkycInteractorImpl.swift",
+      "filePath": "\/Users\/albert\/nopaper-framework\/nopaper-framework\/NppKycModule\/domain\/EkycInteractorImpl.swift",
       "kind": "Array",
       "offset": 885,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppKycModule\/domain\/EkycInteractorImpl.swift",
+      "filePath": "\/Users\/albert\/nopaper-framework\/nopaper-framework\/NppKycModule\/domain\/EkycInteractorImpl.swift",
       "kind": "StringLiteral",
       "offset": 1076,
       "length": 11,
       "value": "\"kycUserId\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppKycModule\/domain\/EkycInteractorImpl.swift",
+      "filePath": "\/Users\/albert\/nopaper-framework\/nopaper-framework\/NppKycModule\/domain\/EkycInteractorImpl.swift",
       "kind": "FloatLiteral",
       "offset": 1125,
       "length": 4,
       "value": "10.0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppKycModule\/domain\/EkycInteractorImpl.swift",
+      "filePath": "\/Users\/albert\/nopaper-framework\/nopaper-framework\/NppKycModule\/domain\/EkycInteractorImpl.swift",
       "kind": "Array",
       "offset": 1295,
       "length": 26,
       "value": "[\"FNS\", \"ASTRAL_PLATFORM\"]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppKycModule\/domain\/EkycInteractorImpl.swift",
+      "filePath": "\/Users\/albert\/nopaper-framework\/nopaper-framework\/NppKycModule\/domain\/EkycInteractorImpl.swift",
       "kind": "StringLiteral",
       "offset": 280,
       "length": 18,

@@ -304,234 +304,6 @@
 		<data>
 		W+IwTOy9K8zFfa3auLcP7knUbMo=
 		</data>
-		<key>Frameworks/NppKycModule.framework/Info.plist</key>
-		<data>
-		xRM6v0ExwAHQSrXcxiB9D/KPnK0=
-		</data>
-		<key>Frameworks/NppKycModule.framework/NppKycModule</key>
-		<data>
-		FKCYYLPE6EQgbR8u3pqMQ1+IpDs=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKOnDeviceResources.bundle/Info.plist</key>
-		<data>
-		iUF0xedW6Wjl1AFHcJVoMsrygHU=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKOnDeviceResources.bundle/alita_4t3_ios_v7.tflite.enc</key>
-		<data>
-		s9AXByxoe0NzAAPts171iK2kZmc=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKOnDeviceResources.bundle/steve_0006.tflite.enc</key>
-		<data>
-		iuzarXKCGJWVTNsiofW+WUGD2lM=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/Base.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oPwvxcnYF0HzZG/O7SiSfCkbs4k=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/Info.plist</key>
-		<data>
-		Bmg/ZhCOhzOj7SFLRm3kql8g/v4=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/OZJournalList.momd/JournalCoreData.mom</key>
-		<data>
-		muCRLNsTmA82iGsvdSiwYglIDmQ=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/OZJournalList.momd/VersionInfo.plist</key>
-		<data>
-		gSWT0fjpiZYYjsNghlJgkr2WlUc=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/accessories.json</key>
-		<data>
-		uBcMjpqrb8VwnsN3GUGtpE1WwOE=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/arrow-down.json</key>
-		<data>
-		OaS6T0Sk62IkYlnPRCgeeE1NX3w=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/arrow-left.json</key>
-		<data>
-		hATPbzjo+Mg44vKStYWcIb713Qw=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/arrow-right.json</key>
-		<data>
-		KdDu+wHBqcyvni13csE4hCyHd+Q=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/arrow-up.json</key>
-		<data>
-		bsetDMWoDvxOEic8N11Eu04fHKo=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/close-eye.json</key>
-		<data>
-		jHTL+iqHvdVi3lEfDCKvhPbNYaM=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			eIAfdoe720wUImShit3pIeRz7NE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/es.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			w+ausLzvqX1oiVIIcUqWnniGSUo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/fade-down.json</key>
-		<data>
-		zTePCC949M2KHypubEjrEqrl9HE=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/fade-left.json</key>
-		<data>
-		Rb/OjeExpnPC2i2/qNdTu7T15a4=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/fade-right.json</key>
-		<data>
-		eTpiYxOBeqvVytpDviZcCA7drzw=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/fade-up.json</key>
-		<data>
-		zrHTM9w4xKjVLkJtReeRFcHWK6g=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/from-smile.json</key>
-		<data>
-		U/gPYK7hnMUWbnmhhSoK+lPzNm8=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/hy.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XM+Uy58tT2I+xWIORVp+EKx0WYI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/kk.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YhVchp63zZZ5EBeY2gGxDtJI5ac=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/ky.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			F+DaChy33Wo452X8D6IQFKb0C+0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/light-off.json</key>
-		<data>
-		UuT0GUV6vUdCoE+0HFpoQszqF7Q=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/light-on.json</key>
-		<data>
-		q54PEVGEo6mvtRt+NAWGM+rMxug=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/open-eye-wide.json</key>
-		<data>
-		/vBv7n7rxr4vgSsDNdYB49lb/cg=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/open-eye.json</key>
-		<data>
-		a6zP/t66RgtLX++dN8Y9j5lqqgU=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/podium_0112.tflite.enc</key>
-		<data>
-		5bZMc+hGPCikNtxNgUgyNo/zsw0=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/podium_0112.tflite.json</key>
-		<data>
-		lZpPSah4DS8Kgqy5fxJJ8XvMy6A=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/podium_rules.zip</key>
-		<data>
-		rhGDSQKzqXLv6lBAIcrUVBBrdNg=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/ru.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			G99GapQzMp5x+LH/6yGY+u7YtUE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/to-smile.json</key>
-		<data>
-		lOPsBw4igZcuoVJ741AKwjwGJpY=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/tr.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			An26O17qXd2lFMWbnhAH/HT4TcE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/zoom-in.json</key>
-		<data>
-		70nR2l1QorCGtn7zjSam3Y1XOQI=
-		</data>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/zoom-out.json</key>
-		<data>
-		agmD2hht3bazOZRYzHXnD0rRtIM=
-		</data>
-		<key>Frameworks/NppKycModule.framework/_CodeSignature/CodeResources</key>
-		<data>
-		A7CWiSg8Lm36Y0yIfrzZCwtOVnE=
-		</data>
-		<key>Frameworks/NppMyDSSModule.framework/Frameworks/NppSDKModule.framework/Info.plist</key>
-		<data>
-		QxZ35IFOiNxeOXqjOdZsL9I3T+4=
-		</data>
-		<key>Frameworks/NppMyDSSModule.framework/Frameworks/NppSDKModule.framework/NppSDKModule</key>
-		<data>
-		EvVV35rFkId8DAtWxLMzKpeLfR0=
-		</data>
-		<key>Frameworks/NppMyDSSModule.framework/Frameworks/NppSDKModule.framework/_CodeSignature/CodeResources</key>
-		<data>
-		3AcZF/OSbjT1Dyef4YeXXQicEEQ=
-		</data>
-		<key>Frameworks/NppMyDSSModule.framework/Info.plist</key>
-		<data>
-		snYaDgap29npQP4+Rsus0QhBtOc=
-		</data>
-		<key>Frameworks/NppMyDSSModule.framework/NppMyDSSModule</key>
-		<data>
-		Ib981frTrbXvG/4HCVXOTK4pyt8=
-		</data>
-		<key>Frameworks/NppMyDSSModule.framework/_CodeSignature/CodeResources</key>
-		<data>
-		u/BAi/M2ebYgpOGWODWG9ct+2CU=
-		</data>
-		<key>Frameworks/NppSDKModule.framework/Info.plist</key>
-		<data>
-		QxZ35IFOiNxeOXqjOdZsL9I3T+4=
-		</data>
-		<key>Frameworks/NppSDKModule.framework/NppSDKModule</key>
-		<data>
-		EvVV35rFkId8DAtWxLMzKpeLfR0=
-		</data>
-		<key>Frameworks/NppSDKModule.framework/_CodeSignature/CodeResources</key>
-		<data>
-		3AcZF/OSbjT1Dyef4YeXXQicEEQ=
-		</data>
 		<key>Headers/NppUIModule-Swift.h</key>
 		<data>
 		cXE6MQBLKuh78+/gR6yGrmdkU3U=
@@ -554,7 +326,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4Xqcbxw5qiyJDq/B61gEVX+Omsc=
+		g2T++m7+YObDSDOfGES/yQW0LZ8=
 		</data>
 		<key>InfoSigning.storyboardc/Info.plist</key>
 		<data>
@@ -654,7 +426,7 @@
 		</data>
 		<key>Modules/NppUIModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		V1x5S0+F3yVqJVweFiQIgq4ozok=
+		1++oVBOyKwyKMnme/uhd8UsPxv0=
 		</data>
 		<key>Modules/NppUIModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -670,11 +442,11 @@
 		</data>
 		<key>Modules/NppUIModule.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Im52qh6kUIY2VVRn+pLwGWL4tBc=
+		QcVDTfxjxVJF4mIR/DAmtqr4n/E=
 		</data>
 		<key>Modules/NppUIModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		V1x5S0+F3yVqJVweFiQIgq4ozok=
+		1++oVBOyKwyKMnme/uhd8UsPxv0=
 		</data>
 		<key>Modules/NppUIModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -690,7 +462,7 @@
 		</data>
 		<key>Modules/NppUIModule.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mDWMGIPIjUJOIBb/eQR25e+ppDk=
+		VnmF+sJh3y10XElhuanCIHnEa5o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1700,351 +1472,6 @@
 			yXFXyd7H2Mje/5yfFhZswIa/vxhfI0IApp9uNGhC3bw=
 			</data>
 		</dict>
-		<key>Frameworks/NppKycModule.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			j9v3vD0qtKFZv4rbXm6ydF13rHZVy4j4SRPBnqQvUEg=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/NppKycModule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			s24SeDQPbLnVn8T4esLyuoiFuoMxqmfdZAyTHk7hv5Q=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKOnDeviceResources.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			kgo8EhYqIeoHDriiDjqFhd+aC7UwCANt5mrK7/UKDt8=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKOnDeviceResources.bundle/alita_4t3_ios_v7.tflite.enc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			k8qm7DRHFrghActfeTwNccgABM1Q2HErOMIWlFjULPE=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKOnDeviceResources.bundle/steve_0006.tflite.enc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			z0SOcxpx6+3PlG0inJgU5qXbPddjjXtFNvAYrJ8XvRs=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/Base.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			a28T6KM2bLfTmceYctKnQHueeEQ8webw8rsfcqZuugg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			d+P/RhLLeJJjJrozoA0R0TWJ46VF+weuwGQlzvwyYCI=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/OZJournalList.momd/JournalCoreData.mom</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YA1SAPjdpc7FTFjd3DYsFAXEVHWdwqDSIZniL5vL8hM=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/OZJournalList.momd/VersionInfo.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xeuYbYAebp1K6XQwkrly21cySfu+/VbCMFsiRaMIRQ4=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/accessories.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Agulv525EYe/UucHL+1SH3oPou191fGZZZ2n2HveXPk=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/arrow-down.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			x9URdyTFIcIZ1Zb+2lsCtF3iPNUIyVtr3rgFxwIxEY4=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/arrow-left.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			BRQKFFDJiJtAVfvgDQY3hLAGNbZy9kXy93RiW8NjaZs=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/arrow-right.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hYW9CBA5uwwq50Bfw5ZnZdly30yQOibIFe28x2rJZ8U=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/arrow-up.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sacUR8CIt+YM5G17RKCQaAJJAZsd0prJ8MWF6XSXrIw=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/close-eye.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			loNcFm5eKDEInOw47pMXW56ujb+Ikdq8E3DKBD1W9n4=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QCETERHg0VLx7ZJffbAu7D++MctRNXhI/5IZBoN8pcs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/es.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			WTT/NI5osLBwqXwdF8At3Bqc1jlAo07Ub614jPToYeg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/fade-down.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			weagpbWWRa8KimCUBGd3KkWsVeAJiG8hulM158FTfG0=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/fade-left.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			g43JJvWhWXRp/r0m4bp0ciezZ9ZfxevBEROf74pRTzs=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/fade-right.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4jY+wKojwCfI6NSyrGnpWboXKfVSmMhiFg/7G695DvI=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/fade-up.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Qs2yvGa7gIzT8kmjLV8fkWVA0apW9u8sXoEcT8ubC/s=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/from-smile.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0UbH01KfF/m1ZigIp4qBSkW2mWxWPNUi7P6+RDEU7cE=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/hy.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			G7GhyXq506Go86leMacnL2IgAo7mLSim2JDstEDXqvA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/kk.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			cFPEQmBDJeiHi9F2SpfOGfYdvb6M8NbTzJaGQyPrHtA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/ky.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VGarhTL3lJSEOLkZYtWxhyGySO6X/pg7znpFOnPkrN4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/light-off.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			kNlydRVtL0ORO22cR1N/giGdNczZASc2EFRr6yCUjhY=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/light-on.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			wwWMDKzpWGqbdKI659u2LPnmihXR7VPwKY5VnL9ioxw=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/open-eye-wide.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XOgn36B/sXOsZNlkX5CpY1STIFjBROTmBufIPte2H7A=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/open-eye.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jz5WYmFZo2dPINgDFsT1EQ1aGbdqaYyOtGbpNybvHMI=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/podium_0112.tflite.enc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			koL/TGAcgbTEAqsVLOadma+lodkklYJFulmrwMh5JRc=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/podium_0112.tflite.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			e4eDa1nvaKgi84EVdk8qQk45lGgxw5Y4B3975WMrgBg=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/podium_rules.zip</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			i6QXwwTivS1HNu7fQhsRc74sRFczDDfUygFCvwZPayQ=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/ru.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			R1fUPXADR0y7SmA/kqD5lOXFxMKvV5P2i8MzBxCH/gY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/to-smile.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			IK1ubfs9UFbVft+0QxZZNsJCIeBB9VOoIyJrbPsp3Pc=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/tr.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			JleKRCEsI2Bmk8er6pkXogiqbyLD3IHS428INNx5R2Y=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/zoom-in.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Xp6t/xouCLN3h1WE5tBNtcZ6cCdFg5S+ZfXlaGwP/Xo=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/OZLivenessSDKResources.bundle/zoom-out.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2dceOscPXeAESvIR1xwCBaemwlnHWh3iwzNM3uPggk0=
-			</data>
-		</dict>
-		<key>Frameworks/NppKycModule.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZWJVcsp3ty3+wnAVldfItMScBjWLQ9H3Y+FlVzKciBw=
-			</data>
-		</dict>
-		<key>Frameworks/NppMyDSSModule.framework/Frameworks/NppSDKModule.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FMoO07m+TnjS0PvX3i6iIuT+yz9foey1qvG+0+k0sxk=
-			</data>
-		</dict>
-		<key>Frameworks/NppMyDSSModule.framework/Frameworks/NppSDKModule.framework/NppSDKModule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ihTIf2bnvT0UCXo/U1w1Tm4zhNuQH0GNTCHr3lfDIdk=
-			</data>
-		</dict>
-		<key>Frameworks/NppMyDSSModule.framework/Frameworks/NppSDKModule.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			J7ufGmfCV8ypR7bvBeuhVZyn5SkWhvejVPAOe9ksaRc=
-			</data>
-		</dict>
-		<key>Frameworks/NppMyDSSModule.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UbIL66Uy2GIWf/fzkfXVctgy6BO1lGqjWvn4xKuZAPM=
-			</data>
-		</dict>
-		<key>Frameworks/NppMyDSSModule.framework/NppMyDSSModule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			bH9sOc98StJdnyiNvvstxKA2w5CBC9QxS7UKhPDvFs0=
-			</data>
-		</dict>
-		<key>Frameworks/NppMyDSSModule.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			RybSp+efVo5vqDodT3rbdM5mAJZ/Qb7yNLViprHlDFY=
-			</data>
-		</dict>
-		<key>Frameworks/NppSDKModule.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FMoO07m+TnjS0PvX3i6iIuT+yz9foey1qvG+0+k0sxk=
-			</data>
-		</dict>
-		<key>Frameworks/NppSDKModule.framework/NppSDKModule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ihTIf2bnvT0UCXo/U1w1Tm4zhNuQH0GNTCHr3lfDIdk=
-			</data>
-		</dict>
-		<key>Frameworks/NppSDKModule.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			J7ufGmfCV8ypR7bvBeuhVZyn5SkWhvejVPAOe9ksaRc=
-			</data>
-		</dict>
 		<key>Headers/NppUIModule-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -2252,7 +1679,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VjvS4E+6tOdgTBTYmCLIQiQipzK6za6KpnRgt6r4Sjs=
+			sdhuPzaQhlZcDH86eaNb61xgI1pcyjxxffD/bB5/4OA=
 			</data>
 		</dict>
 		<key>Modules/NppUIModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -2280,14 +1707,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GDKeq+CaG1VXRbBJ2pEtgiJmtPjwbatFbV724iFcT8E=
+			9hJiLIh4SJIYFzUojR7BoPt9qebDvKzLLlf5cGlUKU4=
 			</data>
 		</dict>
 		<key>Modules/NppUIModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VjvS4E+6tOdgTBTYmCLIQiQipzK6za6KpnRgt6r4Sjs=
+			sdhuPzaQhlZcDH86eaNb61xgI1pcyjxxffD/bB5/4OA=
 			</data>
 		</dict>
 		<key>Modules/NppUIModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -2315,7 +1742,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B/mjcY/mupkEberBH+e6ErNzqNwGeSHgYT8LjwRynxQ=
+			S5ig0aPjaaSiZ2nIfR2c93900Xn5aVMlORizVyAglZE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
