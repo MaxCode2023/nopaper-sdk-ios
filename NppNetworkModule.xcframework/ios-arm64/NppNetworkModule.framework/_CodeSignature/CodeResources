@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/NppNetworkModule-Swift.h</key>
 		<data>
-		G33wzCrURliVd2bE9SpsrH0G+xg=
+		Kno61eVVDlpxqGrpRbah43gwB4Q=
 		</data>
 		<key>Headers/network_framework.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hqrICslRwx1DoPcqk2v27gGa2ns=
+		zMkY2OXG8I1BbMMz1c6dceFZ6qM=
 		</data>
 		<key>Modules/NppNetworkModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Wvbdb5s7JdsFJb5v1s8pZsorDtg=
+		0ZVE3qmnwK85unz1RrXk83avq/U=
 		</data>
 		<key>Modules/NppNetworkModule.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		qPVQ7nW45NgSHISG40x4WXC0dmw=
+		+cHg2/iHHj45ZWvM3uklpjSo+14=
 		</data>
 		<key>Modules/NppNetworkModule.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		k7wcYBNCWWoV4OzcuUGA97ecNqs=
+		cXeWbekKURxuK6ZbDHwef6zZSv8=
 		</data>
 		<key>Modules/NppNetworkModule.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		qPVQ7nW45NgSHISG40x4WXC0dmw=
+		+cHg2/iHHj45ZWvM3uklpjSo+14=
 		</data>
 		<key>Modules/NppNetworkModule.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		DcHYXBNK9Z4wyXybiVW1Gjx9YPk=
+		A09Ng13dTic1XIrww/oBy0oeKX4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P8luJcEQevNsgDOIb0mq5Ceo4pPhC/GrJlUKoy6SCjc=
+			fN9aZ2+tIDir3qWVMs5loLzUuISnqCkJeuUBUarx9iE=
 			</data>
 		</dict>
 		<key>Headers/network_framework.h</key>
@@ -61,35 +61,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PT8Fb5hhCCRFj6GerWYXVVw1/EhzThbeszxXcx9DgjU=
+			AzfTLTICwhr2bUag6QRpY4haUhlcGBaipiq5CyBHH20=
 			</data>
 		</dict>
 		<key>Modules/NppNetworkModule.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			35hfJQGaOTeDDnA3Roge0ZHTqCaijGqVoK1x74nk/bc=
+			PtE9UuPgmTJisGJvIrWZL0jwty92gdi9PUzEvWeBtB4=
 			</data>
 		</dict>
 		<key>Modules/NppNetworkModule.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YNRVcaEQQxhz4C4ctC+5s2jBFUhHJRoe9eh1MVpGBnQ=
+			dXQfJfGWDWd4cnqVMLPLL7i+VVlnZ65VrdNSLzQMzGk=
 			</data>
 		</dict>
 		<key>Modules/NppNetworkModule.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			35hfJQGaOTeDDnA3Roge0ZHTqCaijGqVoK1x74nk/bc=
+			PtE9UuPgmTJisGJvIrWZL0jwty92gdi9PUzEvWeBtB4=
 			</data>
 		</dict>
 		<key>Modules/NppNetworkModule.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			stkCwEdYmx0hFU1b4LIQsyBO5E7UCwFCBz4A7V0Jb+8=
+			9Vr9aGLU2W6whma/2KSIsiKoTn4gtzjXglfHyuHGauY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

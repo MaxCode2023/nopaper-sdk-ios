@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "NppMyDSSModule",
+    "printedName": "NppMyDSSModule",
     "children": [
       {
         "kind": "Import",
@@ -304,7 +304,23 @@
           "Final",
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -726,7 +742,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -922,6 +954,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1730,6 +1776,22 @@
         "moduleName": "NppMyDSSModule",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       }
     ],
@@ -1737,21 +1799,21 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/albert\/nopaper-framework\/nopaper-framework\/NppMyDSSModule\/MyDSSStorage.swift",
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppMyDSSModule\/MyDSSStorage.swift",
       "kind": "StringLiteral",
       "offset": 190,
       "length": 13,
       "value": "\"mydssCertId\""
     },
     {
-      "filePath": "\/Users\/albert\/nopaper-framework\/nopaper-framework\/NppMyDSSModule\/MyDSSStorage.swift",
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppMyDSSModule\/MyDSSStorage.swift",
       "kind": "StringLiteral",
       "offset": 232,
       "length": 13,
       "value": "\"myDssUserUd\""
     },
     {
-      "filePath": "\/Users\/albert\/nopaper-framework\/nopaper-framework\/NppMyDSSModule\/MyDSSStorage.swift",
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppMyDSSModule\/MyDSSStorage.swift",
       "kind": "StringLiteral",
       "offset": 273,
       "length": 12,

@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AbSDKUI
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 @_exported import AbSDKUI
 import Foundation
 import LocalAuthentication
@@ -12,8 +13,8 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 extension UIKit.UICollectionView {
-  @_Concurrency.MainActor(unsafe) public func register<T>(_: T.Type) where T : UIKit.UICollectionViewCell, T : AbSDKUI.ReuseIdentifying
-  @_Concurrency.MainActor(unsafe) public func dequeueReusableCell<T>(indexPath: Foundation.IndexPath) -> T where T : UIKit.UICollectionViewCell, T : AbSDKUI.ReuseIdentifying
+  @_Concurrency.MainActor @preconcurrency public func register<T>(_: T.Type) where T : UIKit.UICollectionViewCell, T : AbSDKUI.ReuseIdentifying
+  @_Concurrency.MainActor @preconcurrency public func dequeueReusableCell<T>(indexPath: Foundation.IndexPath) -> T where T : UIKit.UICollectionViewCell, T : AbSDKUI.ReuseIdentifying
 }
 extension UIKit.UIColor {
   public static var abAttentionBg: UIKit.UIColor {
@@ -95,46 +96,46 @@ extension UIKit.UIColor {
   public static var sdkViewCornerRadius: CoreFoundation.CGFloat
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ButtonPrimary : UIKit.UIButton {
-  @_Concurrency.MainActor(unsafe) public static var backgroundColor: CoreGraphics.CGColor
-  @_Concurrency.MainActor(unsafe) public static var border: AbSDKUI.BorderStyle
-  @_Concurrency.MainActor(unsafe) public static var textColor: UIKit.UIColor
-  @_Concurrency.MainActor(unsafe) public static var textSize: CoreFoundation.CGFloat
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForInterfaceBuilder()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func setTitle(_ title: Swift.String?, for state: UIKit.UIControl.State)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func showLoader(isPrimary: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func hideLoader()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func blockedButton()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func unblockedButton()
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ButtonPrimary : UIKit.UIButton {
+  @_Concurrency.MainActor @preconcurrency public static var backgroundColor: CoreGraphics.CGColor
+  @_Concurrency.MainActor @preconcurrency public static var border: AbSDKUI.BorderStyle
+  @_Concurrency.MainActor @preconcurrency public static var textColor: UIKit.UIColor
+  @_Concurrency.MainActor @preconcurrency public static var textSize: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForInterfaceBuilder()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setTitle(_ title: Swift.String?, for state: UIKit.UIControl.State)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func showLoader(isPrimary: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func hideLoader()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func blockedButton()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func unblockedButton()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ButtonSecondary : UIKit.UIButton {
-  @_Concurrency.MainActor(unsafe) public static var backgroundColor: CoreGraphics.CGColor
-  @_Concurrency.MainActor(unsafe) public static var border: AbSDKUI.BorderStyle
-  @_Concurrency.MainActor(unsafe) public static var textColor: UIKit.UIColor
-  @_Concurrency.MainActor(unsafe) public static var textSize: CoreFoundation.CGFloat
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForInterfaceBuilder()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func setTitle(_ title: Swift.String?, for state: UIKit.UIControl.State)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func showLoader(isPrimary: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func hideLoader()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func blockedButton()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func unblockedButton()
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ButtonSecondary : UIKit.UIButton {
+  @_Concurrency.MainActor @preconcurrency public static var backgroundColor: CoreGraphics.CGColor
+  @_Concurrency.MainActor @preconcurrency public static var border: AbSDKUI.BorderStyle
+  @_Concurrency.MainActor @preconcurrency public static var textColor: UIKit.UIColor
+  @_Concurrency.MainActor @preconcurrency public static var textSize: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForInterfaceBuilder()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setTitle(_ title: Swift.String?, for state: UIKit.UIControl.State)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func showLoader(isPrimary: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func hideLoader()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func blockedButton()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func unblockedButton()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ButtonMenu : UIKit.UIButton {
-  @_Concurrency.MainActor(unsafe) public static var backgroundColor: CoreGraphics.CGColor
-  @_Concurrency.MainActor(unsafe) public static var border: AbSDKUI.BorderStyle
-  @_Concurrency.MainActor(unsafe) public static var textColor: UIKit.UIColor
-  @_Concurrency.MainActor(unsafe) public static var textSize: CoreFoundation.CGFloat
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForInterfaceBuilder()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func setTitle(_ title: Swift.String?, for state: UIKit.UIControl.State)
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ButtonMenu : UIKit.UIButton {
+  @_Concurrency.MainActor @preconcurrency public static var backgroundColor: CoreGraphics.CGColor
+  @_Concurrency.MainActor @preconcurrency public static var border: AbSDKUI.BorderStyle
+  @_Concurrency.MainActor @preconcurrency public static var textColor: UIKit.UIColor
+  @_Concurrency.MainActor @preconcurrency public static var textSize: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForInterfaceBuilder()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setTitle(_ title: Swift.String?, for state: UIKit.UIControl.State)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ImageButton : UIKit.UIButton {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ImageButton : UIKit.UIButton {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Fonts {
@@ -144,70 +145,70 @@ extension UIKit.UIColor {
   public static var bold: Swift.String
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class TextView : UIKit.UITextView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForInterfaceBuilder()
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class TextView : UIKit.UITextView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForInterfaceBuilder()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class LabelHeader1 : UIKit.UILabel {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForInterfaceBuilder()
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class LabelHeader1 : UIKit.UILabel {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForInterfaceBuilder()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class LabelHeader2 : UIKit.UILabel {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForInterfaceBuilder()
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class LabelHeader2 : UIKit.UILabel {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForInterfaceBuilder()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class LabelHeader3 : UIKit.UILabel {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForInterfaceBuilder()
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class LabelHeader3 : UIKit.UILabel {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForInterfaceBuilder()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class LabelHeader4 : UIKit.UILabel {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForInterfaceBuilder()
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class LabelHeader4 : UIKit.UILabel {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForInterfaceBuilder()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class LabelParagraph1 : UIKit.UILabel {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForInterfaceBuilder()
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class LabelParagraph1 : UIKit.UILabel {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForInterfaceBuilder()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class LabelParagraph2 : UIKit.UILabel {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForInterfaceBuilder()
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class LabelParagraph2 : UIKit.UILabel {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForInterfaceBuilder()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class LabelParagraph3 : UIKit.UILabel {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForInterfaceBuilder()
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class LabelParagraph3 : UIKit.UILabel {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForInterfaceBuilder()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class Toolbar : UIKit.UINavigationItem {
-  @_Concurrency.MainActor(unsafe) public static var backgroundColor: UIKit.UIColor
-  @_Concurrency.MainActor(unsafe) public static var titleColor: UIKit.UIColor
-  @_Concurrency.MainActor(unsafe) public static var titleSize: CoreFoundation.CGFloat
-  @_Concurrency.MainActor(unsafe) public static var titleFont: UIKit.UIFont
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(title: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class Toolbar : UIKit.UINavigationItem {
+  @_Concurrency.MainActor @preconcurrency public static var backgroundColor: UIKit.UIColor
+  @_Concurrency.MainActor @preconcurrency public static var titleColor: UIKit.UIColor
+  @_Concurrency.MainActor @preconcurrency public static var titleSize: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public static var titleFont: UIKit.UIFont
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(title: Swift.String)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 public struct BorderStyle {
   public init(borderWidth: CoreFoundation.CGFloat?, borderColors: CoreGraphics.CGColor?, cornerRadius: CoreFoundation.CGFloat?)
 }
 extension UIKit.UITableView {
-  @_Concurrency.MainActor(unsafe) public func scrollToBottom(isAnimated: Swift.Bool = true)
-  @_Concurrency.MainActor(unsafe) public func hasRowAtIndexPath(indexPath: Foundation.IndexPath) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) public func register<T>(_: T.Type) where T : UIKit.UITableViewCell, T : AbSDKUI.ReuseIdentifying
-  @_Concurrency.MainActor(unsafe) public func dequeueReusableCell<T>() -> T where T : UIKit.UITableViewCell, T : AbSDKUI.ReuseIdentifying
-  @_Concurrency.MainActor(unsafe) public func disableScrollIfContentSizeFull()
+  @_Concurrency.MainActor @preconcurrency public func scrollToBottom(isAnimated: Swift.Bool = true)
+  @_Concurrency.MainActor @preconcurrency public func hasRowAtIndexPath(indexPath: Foundation.IndexPath) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func register<T>(_: T.Type) where T : UIKit.UITableViewCell, T : AbSDKUI.ReuseIdentifying
+  @_Concurrency.MainActor @preconcurrency public func dequeueReusableCell<T>() -> T where T : UIKit.UITableViewCell, T : AbSDKUI.ReuseIdentifying
+  @_Concurrency.MainActor @preconcurrency public func disableScrollIfContentSizeFull()
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ViewControllerWithKeyboard : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) public func setScrollView(scrollView: UIKit.UIScrollView)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class ViewControllerWithKeyboard : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func setScrollView(scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 public protocol ReuseIdentifying {
@@ -224,24 +225,24 @@ extension AbSDKUI.ReuseIdentifying where Self : UIKit.UICollectionViewCell {
   }
 }
 extension UIKit.UILabel {
-  @_Concurrency.MainActor(unsafe) public func setLineHeight(_ lineHeight: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor @preconcurrency public func setLineHeight(_ lineHeight: CoreFoundation.CGFloat)
 }
 extension UIKit.UIImage {
   public func resizedImage(size sizeImage: CoreFoundation.CGSize) -> UIKit.UIImage?
 }
 extension UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public func hideKeyboardWhenTappedAround(completion: (() -> Swift.Void)? = nil)
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func dismissKeyboard()
+  @_Concurrency.MainActor @preconcurrency public func hideKeyboardWhenTappedAround(completion: (() -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func dismissKeyboard()
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AbCheckboxView : UIKit.UIButton {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
-  @_Concurrency.MainActor(unsafe) public var isChecked: Swift.Bool {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class AbCheckboxView : UIKit.UIButton {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency public var isChecked: Swift.Bool {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func blockedButton()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func unblockedButton()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func blockedButton()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func unblockedButton()
   @objc deinit
 }
 public enum AbAlertType {
@@ -266,39 +267,39 @@ extension AbSDKUI.StoryboardInstantiable where Self : UIKit.UIViewController {
   }
   public static func instantiateViewController(_ bundle: Foundation.Bundle? = Bundle(identifier: "Acommerce."), storyboardName: Swift.String? = "") -> Self
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ContentCenteringScrollView : UIKit.UIScrollView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var bounds: CoreFoundation.CGRect {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class ContentCenteringScrollView : UIKit.UIScrollView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var bounds: CoreFoundation.CGRect {
     @objc get
     @objc set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var contentSize: CoreFoundation.CGSize {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var contentSize: CoreFoundation.CGSize {
     @objc get
     @objc set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AbAlertView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public func configure(type: AbSDKUI.AbAlertType, title: Swift.String?, description: Swift.String, buttonLeft: AbSDKUI.AbButtonModel?, buttonRight: AbSDKUI.AbButtonModel?, buttonClose: AbSDKUI.AbCloseButtonModel?)
-  @_Concurrency.MainActor(unsafe) public func hideAbAlert()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class AbAlertView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public func configure(type: AbSDKUI.AbAlertType, title: Swift.String?, description: Swift.String, buttonLeft: AbSDKUI.AbButtonModel?, buttonRight: AbSDKUI.AbButtonModel?, buttonClose: AbSDKUI.AbCloseButtonModel?)
+  @_Concurrency.MainActor @preconcurrency public func hideAbAlert()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SpinningCircleView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) public func configure(width: Swift.Int, height: Swift.Int, backgroundVisible: Swift.Bool, lineWidth: CoreFoundation.CGFloat, backgroundCircleColor: CoreGraphics.CGColor = UIColor.abBorderLine.cgColor, circleColor: CoreGraphics.CGColor = UIColor.abPrimary.cgColor)
-  @_Concurrency.MainActor(unsafe) public func configureForButton(isPrimaryButton: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) public func animate()
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class SpinningCircleView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency public func configure(width: Swift.Int, height: Swift.Int, backgroundVisible: Swift.Bool, lineWidth: CoreFoundation.CGFloat, backgroundCircleColor: CoreGraphics.CGColor = UIColor.abBorderLine.cgColor, circleColor: CoreGraphics.CGColor = UIColor.abPrimary.cgColor)
+  @_Concurrency.MainActor @preconcurrency public func configureForButton(isPrimaryButton: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func animate()
   @objc deinit
 }
 extension UIKit.UITextView {
-  @_Concurrency.MainActor(unsafe) public var numberOfLines: Swift.Int {
+  @_Concurrency.MainActor @preconcurrency public var numberOfLines: Swift.Int {
     get
   }
-  @_Concurrency.MainActor(unsafe) public func centerVertically()
-  @_Concurrency.MainActor(unsafe) public func setLineHeight(_ lineHeight: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor @preconcurrency public func centerVertically()
+  @_Concurrency.MainActor @preconcurrency public func setLineHeight(_ lineHeight: CoreFoundation.CGFloat)
 }
 public class SDKCustomizationImpl : AbSDKUI.SDKCustomization {
   public init()
@@ -313,8 +314,8 @@ public struct AbCloseButtonModel {
   public init(buttonAction: (() -> Swift.Void)? = nil)
 }
 extension UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public func setError(baseColor: CoreGraphics.CGColor, numberOfShakes shakes: Swift.Float, revert: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) public func removeError(baseColor: CoreGraphics.CGColor)
+  @_Concurrency.MainActor @preconcurrency public func setError(baseColor: CoreGraphics.CGColor, numberOfShakes shakes: Swift.Float, revert: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func removeError(baseColor: CoreGraphics.CGColor)
 }
 public protocol SDKCustomization {
   func setButtonPrimaryStyle(backgroundColor: CoreGraphics.CGColor?, border: AbSDKUI.BorderStyle?, textColor: UIKit.UIColor?, textSize: CoreFoundation.CGFloat?)
@@ -323,29 +324,29 @@ public protocol SDKCustomization {
   func setToolbarStyle(backgoundColor: UIKit.UIColor?, titleColor: UIKit.UIColor?, backButtonImageString: Swift.String?, titleSize: CoreFoundation.CGFloat?)
 }
 extension UIKit.UIButton {
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func blockedButton()
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func unblockedButton()
-  @_Concurrency.MainActor(unsafe) public func setButtonTextLabelStyle()
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func showLoader(isPrimary: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func hideLoader()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func blockedButton()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func unblockedButton()
+  @_Concurrency.MainActor @preconcurrency public func setButtonTextLabelStyle()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func showLoader(isPrimary: Swift.Bool)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func hideLoader()
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AbSDK_PinCodeViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class AbSDK_PinCodeViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 extension UIKit.UITextField {
-  @_Concurrency.MainActor(unsafe) public func setInteractionEnabled(_ enabled: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) public func setIcon(icon: UIKit.UIImage)
-  @_Concurrency.MainActor(unsafe) public func setError()
-  @_Concurrency.MainActor(unsafe) public func removeError()
+  @_Concurrency.MainActor @preconcurrency public func setInteractionEnabled(_ enabled: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func setIcon(icon: UIKit.UIImage)
+  @_Concurrency.MainActor @preconcurrency public func setError()
+  @_Concurrency.MainActor @preconcurrency public func removeError()
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AbTextFieldView : UIKit.UITextField {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func becomeFirstResponder() -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func resignFirstResponder() -> Swift.Bool
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class AbTextFieldView : UIKit.UITextField {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func becomeFirstResponder() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func resignFirstResponder() -> Swift.Bool
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class CustomTextFormatter {
@@ -357,11 +358,11 @@ extension UIKit.UITextField {
   public static func getClearPhoneNumber(number: Swift.String) -> Swift.String
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AbAlertBannerView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public func configure(type: AbSDKUI.AbAlertType, title: Swift.String, image: UIKit.UIImage, description: Swift.String?, buttonConfig: AbSDKUI.AbButtonModel?, buttonClose: AbSDKUI.AbCloseButtonModel?, widthImage: CoreFoundation.CGFloat = 88, heightImage: CoreFoundation.CGFloat = 88)
-  @_Concurrency.MainActor(unsafe) public func hideAbAlert()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class AbAlertBannerView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public func configure(type: AbSDKUI.AbAlertType, title: Swift.String, image: UIKit.UIImage, description: Swift.String?, buttonConfig: AbSDKUI.AbButtonModel?, buttonClose: AbSDKUI.AbCloseButtonModel?, widthImage: CoreFoundation.CGFloat = 88, heightImage: CoreFoundation.CGFloat = 88)
+  @_Concurrency.MainActor @preconcurrency public func hideAbAlert()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class CustomSearchBar {
@@ -380,17 +381,17 @@ public struct AbButtonModel {
   public func loadImageFromDiskWith(fileName: Swift.String) -> UIKit.UIImage?
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AbNavigationBarView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public func configure(navController: UIKit.UINavigationController, title: Swift.String? = "", buttonAction: (() -> Swift.Void)? = nil)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class AbNavigationBarView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public func configure(navController: UIKit.UINavigationController, title: Swift.String? = "", buttonAction: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AbTopAlertView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public func configure(type: AbSDKUI.AbAlertType?, title: Swift.String, buttonClose: AbSDKUI.AbCloseButtonModel?, buttonConfig: AbSDKUI.AbButtonModel?)
-  @_Concurrency.MainActor(unsafe) public func hideAbTopAlert()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class AbTopAlertView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public func configure(type: AbSDKUI.AbAlertType?, title: Swift.String, buttonClose: AbSDKUI.AbCloseButtonModel?, buttonConfig: AbSDKUI.AbButtonModel?)
+  @_Concurrency.MainActor @preconcurrency public func hideAbTopAlert()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 extension RxSwift.Reactive where Base : UIKit.UIViewController {
@@ -399,19 +400,19 @@ extension RxSwift.Reactive where Base : UIKit.UIViewController {
   }
 }
 extension UIKit.UIButton {
-  @_Concurrency.MainActor(unsafe) public func setAttributedTitle(title: Swift.String, font: UIKit.UIFont)
+  @_Concurrency.MainActor @preconcurrency public func setAttributedTitle(title: Swift.String, font: UIKit.UIFont)
 }
 extension UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public func setTextLabelStyle()
+  @_Concurrency.MainActor @preconcurrency public func setTextLabelStyle()
 }
 extension UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public func showAlertWithOkButton(title: Swift.String, message: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func showAlertWithOkButton(title: Swift.String, message: Swift.String, onCompletion: @escaping () -> Swift.Void)
-  @_Concurrency.MainActor(unsafe) public func shareFile(data: Swift.String, fileNameWithExt: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func presentDropdown(viewControllerToPresent: any UIKit.UIViewController & PanModal.PanModalPresentable)
+  @_Concurrency.MainActor @preconcurrency public func showAlertWithOkButton(title: Swift.String, message: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func showAlertWithOkButton(title: Swift.String, message: Swift.String, onCompletion: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func shareFile(data: Swift.String, fileNameWithExt: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func presentDropdown(viewControllerToPresent: any UIKit.UIViewController & PanModal.PanModalPresentable)
 }
 extension UIKit.UINavigationController {
-  @_Concurrency.MainActor(unsafe) public func popToViewController(ofClass: Swift.AnyClass, animated: Swift.Bool = true)
+  @_Concurrency.MainActor @preconcurrency public func popToViewController(ofClass: Swift.AnyClass, animated: Swift.Bool = true)
 }
 extension AbSDKUI.AbAlertType : Swift.Equatable {}
 extension AbSDKUI.AbAlertType : Swift.Hashable {}

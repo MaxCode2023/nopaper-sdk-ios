@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "NppSignalRModule",
+    "printedName": "NppSignalRModule",
     "children": [
       {
         "kind": "Import",
@@ -227,6 +227,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -472,6 +488,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -705,6 +737,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1540,6 +1586,22 @@
         "moduleName": "NppSignalRModule",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -2650,6 +2712,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2718,6 +2794,13 @@
             ],
             "usr": "s:7RxSwift18ReactiveCompatibleP",
             "mangledName": "$s7RxSwift18ReactiveCompatibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -2912,6 +2995,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3154,6 +3251,22 @@
         "moduleName": "NppSignalRModule",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3504,6 +3617,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3608,6 +3735,22 @@
         "moduleName": "NppSignalRModule",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3959,6 +4102,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "HubMessage",
             "printedName": "HubMessage",
             "usr": "s:16NppSignalRModule10HubMessageP",
@@ -4148,6 +4305,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "HubMessage",
@@ -4399,6 +4570,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "HubMessage",
@@ -4787,6 +4972,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "HubMessage",
             "printedName": "HubMessage",
             "usr": "s:16NppSignalRModule10HubMessageP",
@@ -5141,6 +5340,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "HubMessage",
             "printedName": "HubMessage",
             "usr": "s:16NppSignalRModule10HubMessageP",
@@ -5294,6 +5507,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "HubMessage",
             "printedName": "HubMessage",
             "usr": "s:16NppSignalRModule10HubMessageP",
@@ -5397,6 +5624,20 @@
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "HubMessage",
@@ -5566,6 +5807,20 @@
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "HubMessage",
@@ -5885,6 +6140,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -6175,6 +6446,20 @@
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Transport",
@@ -6530,6 +6815,22 @@
         "moduleName": "NppSignalRModule",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -6929,6 +7230,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -6962,7 +7279,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -7364,6 +7697,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Connection",
             "printedName": "Connection",
             "usr": "s:16NppSignalRModule10ConnectionP",
@@ -7466,6 +7813,20 @@
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "TransportDelegate",
@@ -7582,6 +7943,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -7864,6 +8241,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7964,6 +8355,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -8051,6 +8458,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Logger",
@@ -8145,6 +8566,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Logger",
@@ -8444,6 +8879,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Transport",
             "printedName": "Transport",
             "usr": "s:16NppSignalRModule9TransportP",
@@ -8660,6 +9109,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -8793,6 +9256,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Assembly",
@@ -9861,6 +10338,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -10167,6 +10660,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "HubProtocol",
@@ -10962,6 +11469,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
@@ -11261,6 +11782,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "OptionSet",
             "printedName": "OptionSet",
             "children": [
@@ -11527,6 +12062,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -11885,6 +12434,22 @@
         "moduleName": "NppSignalRModule",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -11952,6 +12517,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -12112,6 +12693,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -12158,6 +12755,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -12239,6 +12852,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "ReconnectPolicy",
@@ -12488,6 +13115,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -16972,6 +17615,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -17046,7 +17705,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -17336,6 +18011,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -17907,6 +18598,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -17975,6 +18680,13 @@
             ],
             "usr": "s:7RxSwift18ReactiveCompatibleP",
             "mangledName": "$s7RxSwift18ReactiveCompatibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -18075,13 +18787,6 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/EventSource\/EventSource.swift",
-      "kind": "StringLiteral",
-      "offset": 2978,
-      "length": 11,
-      "value": "\"NppSignalRModule.EventSource\""
-    },
-    {
       "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 154,
@@ -18094,132 +18799,6 @@
       "offset": 165,
       "length": 6,
       "value": "2"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 154,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 165,
-      "length": 6,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 154,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 165,
-      "length": 6,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 480,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 504,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 528,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 558,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 588,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 606,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 625,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 480,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 504,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 528,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 558,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 588,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 606,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
-      "kind": "IntegerLiteral",
-      "offset": 625,
-      "length": 1,
-      "value": "7"
     },
     {
       "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
@@ -18335,94 +18914,10 @@
     },
     {
       "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnection.swift",
-      "kind": "StringLiteral",
-      "offset": 817,
-      "length": 9,
-      "value": "\"initial\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnection.swift",
-      "kind": "StringLiteral",
-      "offset": 853,
-      "length": 12,
-      "value": "\"connecting\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnection.swift",
-      "kind": "StringLiteral",
-      "offset": 891,
-      "length": 11,
-      "value": "\"connected\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnection.swift",
-      "kind": "StringLiteral",
-      "offset": 926,
-      "length": 9,
-      "value": "\"stopped\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnection.swift",
       "kind": "BooleanLiteral",
       "offset": 8347,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 184,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 205,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 223,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 242,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 184,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 205,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 223,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 242,
-      "length": 1,
-      "value": "4"
     },
     {
       "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/Logger.swift",
@@ -18493,13 +18988,6 @@
       "offset": 706,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/SignalR.swift",
-      "kind": "StringLiteral",
-      "offset": 163,
-      "length": 7,
-      "value": "\"NppSignalRModule.SignalR\""
     },
     {
       "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/SignalRInteractorImpl.swift",
@@ -18628,20 +19116,6 @@
       "value": "\"Binary\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransferFormat.swift",
-      "kind": "StringLiteral",
-      "offset": 162,
-      "length": 6,
-      "value": "\"Text\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransferFormat.swift",
-      "kind": "StringLiteral",
-      "offset": 187,
-      "length": 8,
-      "value": "\"Binary\""
-    },
-    {
       "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectPolicy.swift",
       "kind": "IntegerLiteral",
       "offset": 1761,
@@ -18705,13 +19179,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/WebsocketsTransport.swift",
-      "kind": "StringLiteral",
-      "offset": 186,
-      "length": 19,
-      "value": "\"NppSignalRModule.WebsocketsTransport\""
-    },
-    {
       "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/EventSource\/EventStreamParser.swift",
       "kind": "Array",
       "offset": 482,
@@ -18731,41 +19198,6 @@
       "offset": 623,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
-      "kind": "StringLiteral",
-      "offset": 737,
-      "length": 14,
-      "value": "\"disconnected\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
-      "kind": "StringLiteral",
-      "offset": 776,
-      "length": 10,
-      "value": "\"starting\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
-      "kind": "StringLiteral",
-      "offset": 815,
-      "length": 14,
-      "value": "\"reconnecting\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
-      "kind": "StringLiteral",
-      "offset": 853,
-      "length": 9,
-      "value": "\"running\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
-      "kind": "StringLiteral",
-      "offset": 887,
-      "length": 10,
-      "value": "\"stopping\""
     },
     {
       "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",

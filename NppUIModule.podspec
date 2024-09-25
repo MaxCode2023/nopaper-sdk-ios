@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name = 'NppUIModule'
-  s.version = '2.1.70'
+  s.version = '2.1.71'
   s.license = 'MIT'
   s.summary = 'Nopaper iOS framework'
   s.homepage = 'https://github.com/MaxCode2023/nopaper-sdk-ios'
   s.authors = { 'artsofte' => 'artsofte.ru' }
   
-  s.source = { :git => 'https://github.com/MaxCode2023/nopaper-sdk-ios.git', :branch => '2.1.70'}
+  s.source = { :git => 'https://github.com/MaxCode2023/nopaper-sdk-ios.git', :branch => '2.1.71'}
   
   s.ios.vendored_frameworks = 'NppSDKModule.xcframework', 'NppCoreModule.xcframework', 'NppNetworkModule.xcframework', 'PCSDKModule.xcframework', 'PCKYCModule.xcframework', 'NppKycModule.xcframework', 'NppUIModule.xcframework', 'NppMyDSSModule.xcframework', 'NppSignalRModule.xcframework', 'myDSSSDK.xcframework', 'AbSDKUI.xcframework', 'AbSDKMain.xcframework'
   
@@ -31,6 +31,6 @@ Pod::Spec.new do |s|
   s.dependency 'SwiftKeychainWrapper'
   s.dependency 'PromiseKit', '8.1.1'
   s.dependency 'PanModal'
-  s.dependency 'Sentry', '7.7.0'
+  s.dependency 'Sentry', '8.36.0'
   
 end

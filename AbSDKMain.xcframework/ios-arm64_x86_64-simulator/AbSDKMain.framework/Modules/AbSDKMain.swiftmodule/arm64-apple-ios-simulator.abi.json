@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "AbSDKMain",
+    "printedName": "AbSDKMain",
     "children": [
       {
         "kind": "Import",
@@ -57,7 +57,23 @@
           "Final",
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -210,7 +226,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -662,6 +694,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "RequestInterceptor",
                 "printedName": "RequestInterceptor",
                 "usr": "s:9Alamofire18RequestInterceptorP",
@@ -691,6 +737,22 @@
         "isOpen": true,
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -833,7 +895,23 @@
           "Final",
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -1020,6 +1098,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1267,6 +1359,22 @@
         "declAttributes": [
           "Final",
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -1457,6 +1565,22 @@
         "sugared_genericSig": "<Value>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -1499,6 +1623,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "DecodableError",
@@ -1620,6 +1758,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -1648,6 +1800,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -1985,6 +2151,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2068,6 +2248,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -2176,7 +2372,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -2567,6 +2779,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -2944,6 +3170,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -3020,7 +3260,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -3045,7 +3301,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -3916,6 +4188,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -4239,6 +4525,22 @@
             "superclassNames": [
               "AbSDKMain.TaskEvent<τ_0_0>",
               "AbSDKMain.Event<τ_0_0>"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -4592,6 +4894,22 @@
             "superclassNames": [
               "AbSDKMain.TaskEvent<τ_0_0>",
               "AbSDKMain.Event<τ_0_0>"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -4927,6 +5245,22 @@
             "superclassNames": [
               "AbSDKMain.TaskEvent<τ_0_0>",
               "AbSDKMain.Event<τ_0_0>"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           }
         ],
@@ -4943,6 +5277,22 @@
         "hasMissingDesignatedInitializers": true,
         "superclassNames": [
           "AbSDKMain.Event<τ_0_0>"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -5131,6 +5481,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -5873,6 +6237,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5952,7 +6330,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -6111,6 +6505,20 @@
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -6632,6 +7040,35 @@
           },
           {
             "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
+          },
+          {
+            "kind": "Conformance",
             "name": "URLConvertible",
             "printedName": "URLConvertible",
             "usr": "s:9Alamofire14URLConvertibleP",
@@ -6694,6 +7131,20 @@
         "sugared_genericSig": "<Self : Swift.Sendable>",
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "Sendable",
@@ -6873,6 +7324,20 @@
           "Alamofire.Request"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7069,6 +7534,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7201,333 +7680,11 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/Task.swift",
-      "kind": "StringLiteral",
-      "offset": 114,
-      "length": 4,
-      "value": "\"AbSDKMain.Task\""
-    },
-    {
       "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Date\/DateFormatter.swift",
       "kind": "StringLiteral",
       "offset": 401,
       "length": 13,
       "value": "\"d MMMM yyyy\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 1236,
-      "length": 7,
-      "value": "\"AbSDKMain.Running\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 1236,
-      "length": 7,
-      "value": "\"AbSDKMain.Running\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 1236,
-      "length": 7,
-      "value": "\"AbSDKMain.Running\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 1236,
-      "length": 7,
-      "value": "\"AbSDKMain.Running\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 1903,
-      "length": 7,
-      "value": "\"AbSDKMain.Success\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 1903,
-      "length": 7,
-      "value": "\"AbSDKMain.Success\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 1903,
-      "length": 7,
-      "value": "\"AbSDKMain.Success\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 1903,
-      "length": 7,
-      "value": "\"AbSDKMain.Success\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 2820,
-      "length": 5,
-      "value": "\"AbSDKMain.Error\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 2820,
-      "length": 5,
-      "value": "\"AbSDKMain.Error\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 2820,
-      "length": 5,
-      "value": "\"AbSDKMain.Error\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 2820,
-      "length": 5,
-      "value": "\"AbSDKMain.Error\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 146,
-      "length": 9,
-      "value": "\"AbSDKMain.TaskEvent\""
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4122,
-      "length": 4,
-      "value": "1009"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4225,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4332,
-      "length": 4,
-      "value": "1001"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4418,
-      "length": 4,
-      "value": "1002"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4527,
-      "length": 4,
-      "value": "1010"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4652,
-      "length": 4,
-      "value": "1101"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4778,
-      "length": 4,
-      "value": "1102"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4930,
-      "length": 4,
-      "value": "1103"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5130,
-      "length": 4,
-      "value": "1104"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5204,
-      "length": 4,
-      "value": "1100"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5243,
-      "length": 4,
-      "value": "1500"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5284,
-      "length": 4,
-      "value": "1501"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5329,
-      "length": 4,
-      "value": "1601"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5367,
-      "length": 4,
-      "value": "1700"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5413,
-      "length": 4,
-      "value": "1701"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5463,
-      "length": 4,
-      "value": "1702"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4122,
-      "length": 4,
-      "value": "1009"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4225,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4332,
-      "length": 4,
-      "value": "1001"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4418,
-      "length": 4,
-      "value": "1002"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4527,
-      "length": 4,
-      "value": "1010"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4652,
-      "length": 4,
-      "value": "1101"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4778,
-      "length": 4,
-      "value": "1102"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4930,
-      "length": 4,
-      "value": "1103"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5130,
-      "length": 4,
-      "value": "1104"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5204,
-      "length": 4,
-      "value": "1100"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5243,
-      "length": 4,
-      "value": "1500"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5284,
-      "length": 4,
-      "value": "1501"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5329,
-      "length": 4,
-      "value": "1601"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5367,
-      "length": 4,
-      "value": "1700"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5413,
-      "length": 4,
-      "value": "1701"
-    },
-    {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5463,
-      "length": 4,
-      "value": "1702"
     },
     {
       "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
