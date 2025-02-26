@@ -726,6 +726,13 @@
                 "printedName": "RequestRetrier",
                 "usr": "s:9Alamofire14RequestRetrierP",
                 "mangledName": "$s9Alamofire14RequestRetrierP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           }
@@ -7326,6 +7333,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -7624,175 +7638,175 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Network\/BaseRepository.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Network\/BaseRepository.swift",
       "kind": "StringLiteral",
       "offset": 199,
       "length": 14,
       "value": "\"access_token\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Network\/BaseRepository.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Network\/BaseRepository.swift",
       "kind": "StringLiteral",
       "offset": 243,
       "length": 15,
       "value": "\"refresh_token\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Network\/BaseRepository.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Network\/BaseRepository.swift",
       "kind": "StringLiteral",
       "offset": 318,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Network\/BaseRepository.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Network\/BaseRepository.swift",
       "kind": "IntegerLiteral",
       "offset": 847,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Network\/BaseRepository.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Network\/BaseRepository.swift",
       "kind": "BooleanLiteral",
       "offset": 874,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Network\/BaseRepository.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Network\/BaseRepository.swift",
       "kind": "IntegerLiteral",
       "offset": 919,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Date\/DateData.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Date\/DateData.swift",
       "kind": "Array",
       "offset": 160,
       "length": 6549,
       "value": "[\"yyyy-MM-dd HH:mm:ss\", \"yyyy-MM-dd'T'HH:mm:ss'Z'\", \"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'\", \"yyyy-MM-dd'T'HH:mm:ss.SSSSSS'Z'\", \"yyyy-MM-dd'T'HH:mm:ss.SSSSSSS'Z'\", \"yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSS'Z'\", \"yyyy.MM.dd HH:mm:ss\", \"yyyy.MM.dd\", \"yyyy\/MM\/dd HH:mm\", \"yyyy\/MM\/dd HH:mm:ss\", \"yyyy\/MM\/dd HH:mm:ss.SSS\", \"yyyy\/MM\/dd\", \"yyyy-MM-dd\", \"yyyyMMdd\", \"yyyyMMdd'T'HHmmss'Z'\", \"yyyyMMdd'T'HHmmss.SSS'Z'\", \"yyyyMMdd'T'HHmmss.SSSSSS'Z'\", \"yyyyMMdd'T'HHmmss.SSSSSSSSS'Z'\", \"yyyyMMdd'T'HHmmssZ\", \"yyyyMMddHHmmss\", \"yyyyMMddTHHmmssZ\", \"yyyy-MM-dd'T'HH:mm:ss\", \"yyyy-MM-dd'T'HH:mm:ss'Z'\", \"yyyy-MM-dd'T'HH:mm:ss.S\", \"yyyy-MM-dd'T'HH:mm:ss.SS\", \"yyyy-MM-dd'T'HH:mm:ss.SSS\", \"yyyy-MM-dd'T'HH:mm:ss.SSSS\", \"yyyy-MM-dd'T'HH:mm:ss.SSSSS\", \"yyyy-MM-dd'T'HH:mm:ss.SSSSSS\", \"yyyy-MM-dd'T'HH:mm:ss.SSSSSS'Z'\", \"yyyy-MM-dd'T'HH:mm:ss.SSSSSSX\", \"yyyy-MM-dd'T'HH:mm:ss.SSSSSSXXX\", \"yyyy-MM-dd'T'HH:mm:ss.SSSSSX\", \"yyyy-MM-dd'T'HH:mm:ss.SSSSX\", \"yyyy-MM-dd'T'HH:mm:ss.SSSX\", \"yyyy-MM-dd'T'HH:mm:ss.SSX\", \"yyyy-MM-dd'T'HH:mm:ssX\", \"yyyy-MM-ddTHH:mm:ss.SSSZ\", \"yyyy-MM-ddTHH:mm:ssZ\", \"yyyy.MM.dd HH:mm\", \"yyyy.MM.dd HH:mm:ss\", \"yyyy.MM.dd zzz\", \"yyyy.MM.dd\", \"yyyy\/MM\/dd HH:mm\", \"yyyy\/MM\/dd HH:mm:ss\", \"yyyy\/MM\/dd zzz\", \"yyyy\/MM\/dd\", \"yyyyMMdd HH:mm\", \"yyyyMMdd HH:mm:ss\", \"yyyyMMdd zzz\", \"yyyyMMdd\", \"yyyyMMdd'T'HHmmss.SSS\", \"yyyyMMdd'T'HHmmss.SSSS\", \"yyyyMMdd'T'HHmmss.SSSSSS\", \"yyyyMMdd'T'HHmmssZ\", \"yyyyMMddHHmmss.SSS\", \"yyyyMMddHHmmss.SSSS\", \"yyyyMMddHHmmss.SSSSSS\", \"yyyyMMddHHmmssZ\", \"HH:mm MM\/dd\/yy\", \"HH:mm MM\/dd\/yyyy\", \"HH:mm dd-MM-yy\", \"HH:mm dd-MM-yyyy\", \"HH:mm dd.MM.yy\", \"HH:mm dd.MM.yyyy\", \"HH:mm dd\/MM\/yy\", \"HH:mm dd\/MM\/yyyy\", \"HH:mm yy\/MM\/dd\", \"HH:mm yyyy\/MM\/dd\", \"HH:mm:ss MM\/dd\/yy\", \"HH:mm:ss MM\/dd\/yyyy\", \"HH:mm:ss MMM dd, yyyy\", \"HH:mm:ss MMMM dd, yyyy\", \"HH:mm:ss dd MMM yyyy\", \"HH:mm:ss dd MMMM yyyy\", \"HH:mm:ss dd-MM-yy\", \"HH:mm:ss dd-MM-yyyy\", \"HH:mm:ss dd.MM.yy\", \"HH:mm:ss dd.MM.yyyy\", \"HH:mm:ss dd\/MM\/yy\", \"HH:mm:ss dd\/MM\/yyyy\", \"HH:mm:ss yy\/MM\/dd\", \"HH:mm:ss yyyy\/MM\/dd\", \"HH:mm:ss\", \"MM-dd-yy HH:mm:ss\", \"MM-dd-yyyy HH:mm:ss\", \"MM\/dd\/yy HH:mm\", \"MM\/dd\/yy HH:mm:ss\", \"MM\/dd\/yy\", \"MM\/dd\/yyyy HH:mm\", \"MM\/dd\/yyyy HH:mm:ss\", \"MM\/dd\/yyyy HH:mm:ss.SSS\", \"MM\/dd\/yyyy\", \"MMM dd, yy\", \"MMM dd, yyyy HH:mm:ss\", \"MMM dd, yyyy\", \"MMMM dd, yy\", \"MMMM dd, yyyy HH:mm:ss\", \"MMMM dd, yyyy\", \"dd MMM yy\", \"dd MMM yyyy HH:mm:ss\", \"dd MMM yyyy\", \"dd MMMM yy\", \"dd MMMM yyyy HH:mm:ss\", \"dd MMMM yyyy\", \"dd-MM-yy HH:mm\", \"dd-MM-yy HH:mm:ss\", \"dd-MM-yy\", \"dd-MM-yyyy HH:mm\", \"dd-MM-yyyy HH:mm:ss\", \"dd-MM-yyyy\", \"dd-MMM-yy\", \"dd-MMM-yyyy\", \"dd-MMMM-yy\", \"dd-MMMM-yyyy\", \"dd.MM.yy HH:mm\", \"dd.MM.yy HH:mm:ss\", \"dd.MM.yy\", \"dd.MM.yyyy HH:mm\", \"dd.MM.yyyy HH:mm:ss\", \"dd.MM.yyyy HH:mm:ss.SSS\", \"dd.MM.yyyy\", \"dd\/MM\/yy HH:mm\", \"dd\/MM\/yy HH:mm:ss\", \"dd\/MM\/yy\", \"dd\/MM\/yyyy HH:mm\", \"dd\/MM\/yyyy HH:mm:ss\", \"dd\/MM\/yyyy HH:mm:ss.SSS\", \"dd\/MM\/yyyy\", \"dd\/MMM\/yy\", \"dd\/MMM\/yyyy\", \"dd\/MMMM\/yy\", \"dd\/MMMM\/yyyy\", \"yy-MM-dd HH:mm:ss\", \"yy-MM-dd'T'HH:mm:ss'Z'\", \"yy-MM-dd'T'HH:mm:ss.SSS'Z'\", \"yy-MM-dd'T'HH:mm:ss.SSSSSS'Z'\", \"yy-MM-dd'T'HH:mm:ss.SSSSSSSSS'Z'\", \"yy.MM.dd HH:mm:ss\", \"yy\/MM\/dd HH:mm\", \"yy\/MM\/dd HH:mm:ss\", \"yyMMdd'T'HHmmss'Z'\", \"yyMMdd'T'HHmmss.SSS'Z'\", \"yyMMdd'T'HHmmss.SSSSSS'Z'\", \"yyMMdd'T'HHmmss.SSSSSSSSS'Z'\", \"yyMMdd'T'HHmmssZ\", \"yyMMddHHmmss\", \"yyMMddTHHmmssZ\", \"H:mm:ss MM\/dd\/yy z\", \"H:mm:ss MM\/dd\/yy\", \"H:mm:ss MM\/dd\/yyyy z\", \"H:mm:ss MM\/dd\/yyyy\", \"H:mm:ss dd.MM.yy z\", \"H:mm:ss dd.MM.yy\", \"H:mm:ss dd.MM.yyyy z\", \"H:mm:ss dd.MM.yyyy\", \"H:mm:ss dd\/MM\/yy z\", \"H:mm:ss dd\/MM\/yy\", \"H:mm:ss dd\/MM\/yyyy z\", \"H:mm:ss dd\/MM\/yyyy\", \"H:mm:ss yy\/MM\/dd z\", \"H:mm:ss yy\/MM\/dd\", \"H:mm:ss yyyy\/MM\/dd z\", \"H:mm:ss yyyy\/MM\/dd\", \"HHmmss MM\/dd\/yy z\", \"HHmmss MM\/dd\/yy\", \"HHmmss MM\/dd\/yyyy z\", \"HHmmss MM\/dd\/yyyy\", \"HHmmss dd-MM-yy z\", \"HHmmss dd-MM-yy\", \"HHmmss dd-MM-yyyy z\", \"HHmmss dd-MM-yyyy\", \"HHmmss dd.MM.yy z\", \"HHmmss dd.MM.yy\", \"HHmmss dd.MM.yyyy z\", \"HHmmss dd.MM.yyyy\", \"HHmmss dd\/MM\/yy z\", \"HHmmss dd\/MM\/yy\", \"HHmmss dd\/MM\/yyyy z\", \"HHmmss dd\/MM\/yyyy\", \"HHmmss yy\/MM\/dd z\", \"HHmmss yy\/MM\/dd\", \"HHmmss yyyy\/MM\/dd z\", \"HHmmss yyyy\/MM\/dd\", \"MM-dd-yy HH:mm\", \"MM-dd-yy HH:mm:ss\", \"MM-dd-yy\", \"MM-dd-yyyy HH:mm\", \"MM-dd-yyyy HH:mm:ss\", \"MM-dd-yyyy\", \"MM\/dd\/yy HH:mm\", \"MM\/dd\/yy HH:mm:ss\", \"MM\/dd\/yy\", \"MM\/dd\/yyyy HH:mm\", \"MM\/dd\/yyyy HH:mm:ss\", \"MM\/dd\/yyyy\", \"MMM d, yy HH:mm\", \"MMM d, yy HH:mm:ss\", \"MMM d, yyyy HH:mm:ss\", \"MMM d, yyyy\", \"MMM dd, yyyy HH:mm\", \"MMM dd, yyyy HH:mm:ss\", \"MMMM d, yyyy HH:mm\", \"MMMM d, yyyy HH:mm:ss\", \"MMMM d, yyyy\", \"MMMM dd, yyyy HH:mm\", \"MMMM dd, yyyy HH:mm:ss\", \"yy.MM.dd HH:mm\", \"yy.MM.dd HH:mm:ss\", \"yy.MM.dd zzz\", \"yy.MM.dd\", \"yy\/MM\/dd HH:mm\", \"yy\/MM\/dd HH:mm:ss\", \"yy\/MM\/dd zzz\", \"yy\/MM\/dd\", \"yyMMdd HH:mm\", \"yyMMdd HH:mm:ss\", \"yyMMdd zzz\", \"yyMMdd\", \"yyMMdd'T'HHmmss'Z'\", \"yyMMdd'T'HHmmss.SSS'Z'\", \"yyMMdd'T'HHmmssZ\", \"yy\/MM\/dd\", \"yyMMdd\"]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/Task.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Task\/Task.swift",
       "kind": "BooleanLiteral",
       "offset": 1972,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Date\/DateFormatter.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Date\/DateFormatter.swift",
       "kind": "StringLiteral",
       "offset": 401,
       "length": 13,
       "value": "\"d MMMM yyyy\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 4122,
       "length": 4,
       "value": "1009"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 4225,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 4332,
       "length": 4,
       "value": "1001"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 4418,
       "length": 4,
       "value": "1002"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 4527,
       "length": 4,
       "value": "1010"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 4652,
       "length": 4,
       "value": "1101"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 4778,
       "length": 4,
       "value": "1102"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 4930,
       "length": 4,
       "value": "1103"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 5130,
       "length": 4,
       "value": "1104"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 5204,
       "length": 4,
       "value": "1100"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 5243,
       "length": 4,
       "value": "1500"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 5284,
       "length": 4,
       "value": "1501"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 5329,
       "length": 4,
       "value": "1601"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 5367,
       "length": 4,
       "value": "1700"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 5413,
       "length": 4,
       "value": "1701"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKMain\/Task\/TaskEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 5463,
       "length": 4,

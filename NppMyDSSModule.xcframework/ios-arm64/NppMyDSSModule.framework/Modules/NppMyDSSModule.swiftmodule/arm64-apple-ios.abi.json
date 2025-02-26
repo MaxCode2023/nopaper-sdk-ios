@@ -1799,21 +1799,21 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppMyDSSModule\/MyDSSStorage.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppMyDSSModule\/MyDSSStorage.swift",
       "kind": "StringLiteral",
       "offset": 190,
       "length": 13,
       "value": "\"mydssCertId\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppMyDSSModule\/MyDSSStorage.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppMyDSSModule\/MyDSSStorage.swift",
       "kind": "StringLiteral",
       "offset": 232,
       "length": 13,
       "value": "\"myDssUserUd\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppMyDSSModule\/MyDSSStorage.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppMyDSSModule\/MyDSSStorage.swift",
       "kind": "StringLiteral",
       "offset": 273,
       "length": 12,

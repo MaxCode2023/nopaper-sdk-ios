@@ -4865,7 +4865,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
+                "printedName": "[Swift.String : any Swift.Sendable]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -4875,16 +4875,17 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
+                    "name": "Sendable",
+                    "printedName": "any Swift.Sendable",
+                    "usr": "s:s8SendableP"
                   }
                 ],
                 "usr": "s:SD"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12NppSDKModule22CertificateInfoRequestV9getParamsSDySSypGyF",
-            "mangledName": "$s12NppSDKModule22CertificateInfoRequestV9getParamsSDySSypGyF",
+            "usr": "s:12NppSDKModule22CertificateInfoRequestV9getParamsSDySSs8Sendable_pGyF",
+            "mangledName": "$s12NppSDKModule22CertificateInfoRequestV9getParamsSDySSs8Sendable_pGyF",
             "moduleName": "NppSDKModule",
             "declAttributes": [
               "AccessControl"
@@ -20901,7 +20902,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
+                "printedName": "[Swift.String : any Swift.Sendable]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -20911,16 +20912,17 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
+                    "name": "Sendable",
+                    "printedName": "any Swift.Sendable",
+                    "usr": "s:s8SendableP"
                   }
                 ],
                 "usr": "s:SD"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12NppSDKModule19PCCreateUserRequestV9getParamsSDySSypGyF",
-            "mangledName": "$s12NppSDKModule19PCCreateUserRequestV9getParamsSDySSypGyF",
+            "usr": "s:12NppSDKModule19PCCreateUserRequestV9getParamsSDySSs8Sendable_pGyF",
+            "mangledName": "$s12NppSDKModule19PCCreateUserRequestV9getParamsSDySSs8Sendable_pGyF",
             "moduleName": "NppSDKModule",
             "declAttributes": [
               "AccessControl"
@@ -59180,7 +59182,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
+                "printedName": "[Swift.String : any Swift.Sendable]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -59190,16 +59192,17 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
+                    "name": "Sendable",
+                    "printedName": "any Swift.Sendable",
+                    "usr": "s:s8SendableP"
                   }
                 ],
                 "usr": "s:SD"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12NppSDKModule28CreateCertificateEkycRequestV9getParamsSDySSypGyF",
-            "mangledName": "$s12NppSDKModule28CreateCertificateEkycRequestV9getParamsSDySSypGyF",
+            "usr": "s:12NppSDKModule28CreateCertificateEkycRequestV9getParamsSDySSs8Sendable_pGyF",
+            "mangledName": "$s12NppSDKModule28CreateCertificateEkycRequestV9getParamsSDySSs8Sendable_pGyF",
             "moduleName": "NppSDKModule",
             "declAttributes": [
               "AccessControl"
@@ -63066,1295 +63069,1295 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/model\/ProfileFlModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/model\/ProfileFlModel.swift",
       "kind": "IntegerLiteral",
       "offset": 811,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/model\/ProfileFlModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/model\/ProfileFlModel.swift",
       "kind": "IntegerLiteral",
       "offset": 829,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/model\/ProfileFlModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/model\/ProfileFlModel.swift",
       "kind": "IntegerLiteral",
       "offset": 849,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/domain\/CertificateInteractorImpl.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/domain\/CertificateInteractorImpl.swift",
       "kind": "StringLiteral",
       "offset": 732,
       "length": 22,
       "value": "\"nopaperKeyAcceptance\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Recipient.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Recipient.swift",
       "kind": "IntegerLiteral",
       "offset": 1132,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Recipient.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Recipient.swift",
       "kind": "IntegerLiteral",
       "offset": 1148,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Recipient.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Recipient.swift",
       "kind": "IntegerLiteral",
       "offset": 1164,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
       "kind": "StringLiteral",
       "offset": 1677,
       "length": 25,
       "value": "\"pay-control-issuer-name\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
       "kind": "StringLiteral",
       "offset": 1740,
       "length": 26,
       "value": "\"pay-control-issuing-type\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2101,
       "length": 2,
       "value": "-2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2129,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2165,
       "length": 2,
       "value": "-3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2187,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2211,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2240,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2270,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2297,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2322,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2344,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2371,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2391,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/impl\/data\/models\/CertificateResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2413,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/sdk\/NppSDKInteractorImpl.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/sdk\/NppSDKInteractorImpl.swift",
       "kind": "StringLiteral",
       "offset": 1142,
       "length": 13,
       "value": "\"twoFactorId\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/sdk\/NppSDKInteractorImpl.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/sdk\/NppSDKInteractorImpl.swift",
       "kind": "StringLiteral",
       "offset": 1197,
       "length": 21,
       "value": "\"twoFactorSenderType\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/data\/ProfileStorageRepositoryImpl.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/data\/ProfileStorageRepositoryImpl.swift",
       "kind": "StringLiteral",
       "offset": 258,
       "length": 14,
       "value": "\"PROFILE_LIST\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/data\/ProfileStorageRepositoryImpl.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/data\/ProfileStorageRepositoryImpl.swift",
       "kind": "StringLiteral",
       "offset": 304,
       "length": 15,
       "value": "\"PROFILEID_TAG\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/data\/ProfileStorageRepositoryImpl.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/data\/ProfileStorageRepositoryImpl.swift",
       "kind": "StringLiteral",
       "offset": 353,
       "length": 17,
       "value": "\"PROFILEGUID_TAG\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/data\/ProfileStorageRepositoryImpl.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/data\/ProfileStorageRepositoryImpl.swift",
       "kind": "StringLiteral",
       "offset": 404,
       "length": 17,
       "value": "\"EXTERNAL_STATUS\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/data\/ProfileStorageRepositoryImpl.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/data\/ProfileStorageRepositoryImpl.swift",
       "kind": "StringLiteral",
       "offset": 460,
       "length": 18,
       "value": "\"twoFactorEnabled\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 5064,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 5226,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 5382,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 5488,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 5569,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 5669,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 5759,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 5801,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 5882,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 5993,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 6128,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 6259,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 6489,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 6582,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 6652,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 6712,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 6873,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 6994,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/certificate\/api\/domain\/entities\/Certificate.swift",
       "kind": "IntegerLiteral",
       "offset": 7189,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2209,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2229,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2286,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2310,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2363,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2393,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2438,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2466,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2566,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2666,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2811,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2898,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3005,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3229,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3380,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3461,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3481,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3502,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3530,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/Utild\/WaitStatus.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/Utild\/WaitStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 192,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/Utild\/WaitStatus.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/Utild\/WaitStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 264,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/Utild\/WaitStatus.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/Utild\/WaitStatus.swift",
       "kind": "BooleanLiteral",
       "offset": 433,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/sentry\/domain\/SentryInteractorImpl.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/sentry\/domain\/SentryInteractorImpl.swift",
       "kind": "BooleanLiteral",
       "offset": 374,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/profile\/impl\/data\/models\/UserCompanyResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/profile\/impl\/data\/models\/UserCompanyResponse.swift",
       "kind": "StringLiteral",
       "offset": 1346,
       "length": 17,
       "value": "\"CanReadDocument\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/profile\/impl\/data\/models\/UserCompanyResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/profile\/impl\/data\/models\/UserCompanyResponse.swift",
       "kind": "StringLiteral",
       "offset": 1390,
       "length": 16,
       "value": "\"CanAddEmployee\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/profile\/impl\/data\/models\/UserCompanyResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/profile\/impl\/data\/models\/UserCompanyResponse.swift",
       "kind": "StringLiteral",
       "offset": 1436,
       "length": 19,
       "value": "\"CanDeleteEmployee\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Document.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Document.swift",
       "kind": "IntegerLiteral",
       "offset": 3147,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Document.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Document.swift",
       "kind": "IntegerLiteral",
       "offset": 3171,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Document.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Document.swift",
       "kind": "IntegerLiteral",
       "offset": 3193,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Document.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Document.swift",
       "kind": "IntegerLiteral",
       "offset": 3213,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Document.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Document.swift",
       "kind": "IntegerLiteral",
       "offset": 3232,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Document.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/Document.swift",
       "kind": "IntegerLiteral",
       "offset": 3254,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 968,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 993,
       "length": 4,
       "value": "1010"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1030,
       "length": 4,
       "value": "2010"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1072,
       "length": 4,
       "value": "2020"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1111,
       "length": 4,
       "value": "2030"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1138,
       "length": 4,
       "value": "2033"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1169,
       "length": 4,
       "value": "2035"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1206,
       "length": 4,
       "value": "2037"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1242,
       "length": 4,
       "value": "2040"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1289,
       "length": 4,
       "value": "2050"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1320,
       "length": 4,
       "value": "2060"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1351,
       "length": 4,
       "value": "2070"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1389,
       "length": 4,
       "value": "3010"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1419,
       "length": 4,
       "value": "3020"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1476,
       "length": 4,
       "value": "3025"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1514,
       "length": 4,
       "value": "3030"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1538,
       "length": 4,
       "value": "3040"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1565,
       "length": 4,
       "value": "3050"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1588,
       "length": 4,
       "value": "3060"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/GetItmCertificate.swift",
       "kind": "IntegerLiteral",
       "offset": 1614,
       "length": 4,
       "value": "3070"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2205,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2276,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2329,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2378,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2424,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2472,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2544,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2602,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2672,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/SigningPartyInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2740,
       "length": 2,
       "value": "-2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "Array",
       "offset": 427,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 3613,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 3659,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 3709,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 3784,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 3828,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 3870,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 3918,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 3978,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 4002,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 4031,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 4064,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 4093,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 4118,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 4152,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 4189,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 4210,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 4269,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 4287,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 4306,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 4328,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/DocumentDetails.swift",
       "kind": "IntegerLiteral",
       "offset": 4351,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 286,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 303,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 335,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 357,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 387,
       "length": 2,
       "value": "40"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 409,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 433,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 460,
       "length": 2,
       "value": "70"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 481,
       "length": 2,
       "value": "80"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/itm\/api\/domain\/entities\/ItmContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 501,
       "length": 2,
       "value": "90"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 3950,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 4032,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 4094,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 4155,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 4172,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 4189,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 4206,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 4520,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningPartyInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 4579,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/model\/Profile.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/storage\/model\/Profile.swift",
       "kind": "BooleanLiteral",
       "offset": 467,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/api\/domain\/entities\/PCSmsSigningStatus.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/api\/domain\/entities\/PCSmsSigningStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 168,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/api\/domain\/entities\/PCSmsSigningStatus.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/api\/domain\/entities\/PCSmsSigningStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 185,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/api\/domain\/entities\/PCSmsSigningStatus.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/api\/domain\/entities\/PCSmsSigningStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 219,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/api\/domain\/entities\/PCSmsSigningStatus.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/api\/domain\/entities\/PCSmsSigningStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 256,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/api\/domain\/entities\/PCSmsSigningStatus.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/api\/domain\/entities\/PCSmsSigningStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 283,
       "length": 2,
       "value": "40"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/api\/domain\/entities\/PCSmsSigningStatus.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/api\/domain\/entities\/PCSmsSigningStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 320,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/api\/domain\/entities\/PCSmsSigningStatus.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/api\/domain\/entities\/PCSmsSigningStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 342,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/api\/domain\/entities\/PCSmsSigningStatus.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/api\/domain\/entities\/PCSmsSigningStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 363,
       "length": 2,
       "value": "70"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/domain\/PCUserInteractorImpl.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/domain\/PCUserInteractorImpl.swift",
       "kind": "BooleanLiteral",
       "offset": 882,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/integration\/api\/domain\/entities\/CompanySuggestInfo.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/integration\/api\/domain\/entities\/CompanySuggestInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 1029,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/integration\/api\/domain\/entities\/CompanySuggestInfo.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/integration\/api\/domain\/entities\/CompanySuggestInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 1049,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/integration\/api\/domain\/entities\/CompanySuggestInfo.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/integration\/api\/domain\/entities\/CompanySuggestInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 1074,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/integration\/api\/domain\/entities\/CompanySuggestInfo.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/integration\/api\/domain\/entities\/CompanySuggestInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 1098,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/integration\/api\/domain\/entities\/CompanySuggestInfo.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/integration\/api\/domain\/entities\/CompanySuggestInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 1124,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/integration\/api\/domain\/entities\/CompanySuggestInfo.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/integration\/api\/domain\/entities\/CompanySuggestInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 1146,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 893,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 991,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 1122,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 1224,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 1299,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 1349,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 1478,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 1576,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 1906,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 2002,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 2084,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 2135,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 2265,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 2362,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/api\/domain\/entities\/SigningContainer.swift",
       "kind": "IntegerLiteral",
       "offset": 2412,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/GetDocumentsRequest.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/models\/GetDocumentsRequest.swift",
       "kind": "Array",
       "offset": 251,
       "length": 845,
       "value": "[\"new\", \"nopaperSenderSign\", \"nopaperError\", \"nopaperErrorEnd\", \"nopaperPrepareFiles\", \"nopaperSenderCancel\", \"nopaperSenderCancelEnd\", \"nopaperEnd\", \"nopaperEndRead\", \"nopaperProcessSign\", \"nopaperReceiverSign\", \"nopaperSignRefused\", \"nopaperSignRefusedEnd\", \"nopaperSignRefusedRead\", \"nopaperPreview\", \"nopaperWaitingAcceptInvite\", \"nopaperOfertaReceiverPreview\", \"nopaperOfertaReceiverSign\", \"nopaperOfertaSenderPreview\", \"nopaperOfertaSenderSign\", \"nopaperPreviewBeforeOferta\", \"nopaperReceiverPreviewBeforeOferta\", \"nopaperReceiverPreview\", \"nopaperReceiverSigning\", \"nopaperSenderSignRefused\", \"nopaperSenderSignRefusedRead\"]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/verification\/ftf_impl\/domain\/FtfIntercatorImpl.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/verification\/ftf_impl\/domain\/FtfIntercatorImpl.swift",
       "kind": "StringLiteral",
       "offset": 635,
       "length": 10,
       "value": "\"00000000\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/verification\/ftf_impl\/domain\/FtfIntercatorImpl.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/verification\/ftf_impl\/domain\/FtfIntercatorImpl.swift",
       "kind": "BooleanLiteral",
       "offset": 685,
       "length": 5,

@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/AbSDKUI-Swift.h</key>
 		<data>
-		dK6rxtf5kS/xvz6EXNGhTJiEBec=
+		opGjXOh/kkSuwsR0B9hfkOxVR9g=
 		</data>
 		<key>Headers/AbSDKUI.h</key>
 		<data>
@@ -42,27 +42,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VXXX2u+GqInJ8hEELzym+2GEQDI=
+		WXe27YJkZZuxbcBmch0Sb4TOu9Y=
 		</data>
 		<key>Modules/AbSDKUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		iZv1XMurb/Rbj0z/g482jjIOVVg=
+		WrcQKBD7Ow34Sc5T709Kser9F9Q=
 		</data>
 		<key>Modules/AbSDKUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		7yV3vKFBYb6lh7V2+NiwTg1Y4xg=
+		auWeAlIYRzRwGUkrLnxseV05qO8=
 		</data>
 		<key>Modules/AbSDKUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		zsr8U8gcWeAg+TNfA4f5WaAie/U=
+		efnsNuLeCD25SoVUOM8VTr3Og2s=
 		</data>
 		<key>Modules/AbSDKUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		7yV3vKFBYb6lh7V2+NiwTg1Y4xg=
+		auWeAlIYRzRwGUkrLnxseV05qO8=
 		</data>
 		<key>Modules/AbSDKUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		iRwXVJCFrzFg3gWcQBzOMm1i8pM=
+		jnw9jQibB/95pC63n0Gl6pWKA4I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -140,7 +140,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dXw1nn0Flqy5kMKrWCpXE4QuT8FFkYN55wVk+rnWrDo=
+			CHhRy1IbO7gev6dC0KmzJzZXrOw6nOqorGxfAi1Fsy8=
 			</data>
 		</dict>
 		<key>Headers/AbSDKUI.h</key>
@@ -154,35 +154,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b3JTVDjrKZyko9JOJBA8450QbjqGl2e5WOd60cUyC9M=
+			vYc/gnmpiLqrr1308S4BivDNYprJRDxBtG/y8Lk4IY8=
 			</data>
 		</dict>
 		<key>Modules/AbSDKUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mX6Ln0OfGy7PXMDwEpvwCRDZJrhFbka/yxTnAgHo9Bo=
+			HBsDJg3hllcrsRBiGGa0TNxy49jqoKxiHwlvmj6mUDA=
 			</data>
 		</dict>
 		<key>Modules/AbSDKUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ufg4lVXoLwaFEm49GQtlCnvQwPz4AIDrFXfFPE48W9Y=
+			hGFyNnAcytgEVEtSs5DVRimCK4NKGqnNMPBNU+CCSjA=
 			</data>
 		</dict>
 		<key>Modules/AbSDKUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mX6Ln0OfGy7PXMDwEpvwCRDZJrhFbka/yxTnAgHo9Bo=
+			HBsDJg3hllcrsRBiGGa0TNxy49jqoKxiHwlvmj6mUDA=
 			</data>
 		</dict>
 		<key>Modules/AbSDKUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gPsr2FpYY+W/ma3cgzvKocaEfaqIk7q65ER18T52mvA=
+			fS94HtgtFA56sDWIwUk/WcNkYrTWs3CBHkivpdFO2Ig=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

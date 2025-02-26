@@ -6855,203 +6855,203 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "StringLiteral",
       "offset": 1378,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "StringLiteral",
       "offset": 1420,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "StringLiteral",
       "offset": 1466,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "StringLiteral",
       "offset": 1505,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "StringLiteral",
       "offset": 1543,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "StringLiteral",
       "offset": 1584,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "StringLiteral",
       "offset": 1621,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "StringLiteral",
       "offset": 1667,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "StringLiteral",
       "offset": 1701,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "StringLiteral",
       "offset": 1742,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 1774,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 1812,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "StringLiteral",
       "offset": 1845,
       "length": 10,
       "value": "\"00000000\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 1884,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 1919,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "StringLiteral",
       "offset": 1954,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 1980,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 2020,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "StringLiteral",
       "offset": 2058,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "StringLiteral",
       "offset": 2092,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "Array",
       "offset": 2158,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 2204,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 2234,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 2290,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 2345,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 2394,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "IntegerLiteral",
       "offset": 2433,
       "length": 4,
       "value": "1200"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "IntegerLiteral",
       "offset": 2470,
       "length": 3,
       "value": "600"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppCoreModule\/utils\/ConstSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 2508,
       "length": 5,

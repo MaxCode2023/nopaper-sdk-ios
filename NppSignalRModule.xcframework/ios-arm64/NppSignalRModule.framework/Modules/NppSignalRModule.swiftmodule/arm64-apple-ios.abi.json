@@ -18752,483 +18752,483 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubConnectionOptions.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubConnectionOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 324,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/EventSource\/EventSource.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/EventSource\/EventSource.swift",
       "kind": "IntegerLiteral",
       "offset": 3081,
       "length": 4,
       "value": "3000"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/EventSource\/EventSource.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/EventSource\/EventSource.swift",
       "kind": "Dictionary",
       "offset": 3708,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/EventSource\/EventSource.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/EventSource\/EventSource.swift",
       "kind": "Dictionary",
       "offset": 3973,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/EventSource\/EventSource.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/EventSource\/EventSource.swift",
       "kind": "Dictionary",
       "offset": 4285,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 154,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 165,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 480,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 504,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 528,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 558,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 588,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 606,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 625,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/LongPollingTransport.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/LongPollingTransport.swift",
       "kind": "StringLiteral",
       "offset": 297,
       "length": 32,
       "value": "\"LongPollingTransportCloseQueue\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/LongPollingTransport.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/LongPollingTransport.swift",
       "kind": "BooleanLiteral",
       "offset": 361,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/LongPollingTransport.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/LongPollingTransport.swift",
       "kind": "BooleanLiteral",
       "offset": 392,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/LongPollingTransport.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/LongPollingTransport.swift",
       "kind": "BooleanLiteral",
       "offset": 428,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/LongPollingTransport.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/LongPollingTransport.swift",
       "kind": "BooleanLiteral",
       "offset": 579,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnection.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnection.swift",
       "kind": "StringLiteral",
       "offset": 817,
       "length": 9,
       "value": "\"initial\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnection.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnection.swift",
       "kind": "StringLiteral",
       "offset": 853,
       "length": 12,
       "value": "\"connecting\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnection.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnection.swift",
       "kind": "StringLiteral",
       "offset": 891,
       "length": 11,
       "value": "\"connected\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnection.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnection.swift",
       "kind": "StringLiteral",
       "offset": 926,
       "length": 9,
       "value": "\"stopped\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnection.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnection.swift",
       "kind": "BooleanLiteral",
       "offset": 8347,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/Logger.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/Logger.swift",
       "kind": "IntegerLiteral",
       "offset": 184,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/Logger.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/Logger.swift",
       "kind": "IntegerLiteral",
       "offset": 205,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/Logger.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/Logger.swift",
       "kind": "IntegerLiteral",
       "offset": 223,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/Logger.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/Logger.swift",
       "kind": "IntegerLiteral",
       "offset": 242,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ServerSentEventsTransport.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ServerSentEventsTransport.swift",
       "kind": "StringLiteral",
       "offset": 301,
       "length": 32,
       "value": "\"LongPollingTransportCloseQueue\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ServerSentEventsTransport.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ServerSentEventsTransport.swift",
       "kind": "BooleanLiteral",
       "offset": 365,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ServerSentEventsTransport.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ServerSentEventsTransport.swift",
       "kind": "BooleanLiteral",
       "offset": 396,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ServerSentEventsTransport.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ServerSentEventsTransport.swift",
       "kind": "BooleanLiteral",
       "offset": 432,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ServerSentEventsTransport.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ServerSentEventsTransport.swift",
       "kind": "StringLiteral",
       "offset": 595,
       "length": 48,
       "value": "\"com.autosoftdms.SignalR-Swift.serverSentEvents\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ServerSentEventsTransport.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ServerSentEventsTransport.swift",
       "kind": "BooleanLiteral",
       "offset": 706,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/SignalRInteractorImpl.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/SignalRInteractorImpl.swift",
       "kind": "Dictionary",
       "offset": 313,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnectionOptions.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnectionOptions.swift",
       "kind": "Dictionary",
       "offset": 367,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnectionOptions.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnectionOptions.swift",
       "kind": "BooleanLiteral",
       "offset": 1503,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnectionOptions.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnectionOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1631,
       "length": 3,
       "value": "120"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnectionOptions.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HttpConnectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 1975,
       "length": 34,
       "value": "\"SignalR.connection.callbackQueue\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/JSONHubProtocol.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/JSONHubProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 201,
       "length": 4,
       "value": "0x1e"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/JSONHubProtocol.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/JSONHubProtocol.swift",
       "kind": "StringLiteral",
       "offset": 334,
       "length": 6,
       "value": "\"json\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/JSONHubProtocol.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/JSONHubProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 366,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/JSONHubProtocol.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/JSONHubProtocol.swift",
       "kind": "StringLiteral",
       "offset": 2812,
       "length": 38,
       "value": "\"Getting messageType failed: \""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/JSONHubProtocol.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/JSONHubProtocol.swift",
       "kind": "StringLiteral",
       "offset": 2849,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransportType.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransportType.swift",
       "kind": "IntegerLiteral",
       "offset": 312,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransportType.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransportType.swift",
       "kind": "IntegerLiteral",
       "offset": 317,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransportType.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransportType.swift",
       "kind": "IntegerLiteral",
       "offset": 385,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransportType.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransportType.swift",
       "kind": "IntegerLiteral",
       "offset": 390,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransportType.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransportType.swift",
       "kind": "IntegerLiteral",
       "offset": 452,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransportType.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransportType.swift",
       "kind": "IntegerLiteral",
       "offset": 457,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransferFormat.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransferFormat.swift",
       "kind": "StringLiteral",
       "offset": 162,
       "length": 6,
       "value": "\"Text\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransferFormat.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/TransferFormat.swift",
       "kind": "StringLiteral",
       "offset": 187,
       "length": 8,
       "value": "\"Binary\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectPolicy.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectPolicy.swift",
       "kind": "IntegerLiteral",
       "offset": 1761,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectPolicy.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectPolicy.swift",
       "kind": "IntegerLiteral",
       "offset": 1774,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectPolicy.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectPolicy.swift",
       "kind": "IntegerLiteral",
       "offset": 1787,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectPolicy.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectPolicy.swift",
       "kind": "IntegerLiteral",
       "offset": 1801,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubConnection.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 485,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubConnection.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/HubConnection.swift",
       "kind": "BooleanLiteral",
       "offset": 745,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/WebsocketsTransport.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/WebsocketsTransport.swift",
       "kind": "StringLiteral",
       "offset": 342,
       "length": 34,
       "value": "\"SignalR.webSocketTransport.queue\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/WebsocketsTransport.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/WebsocketsTransport.swift",
       "kind": "BooleanLiteral",
       "offset": 729,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/WebsocketsTransport.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/WebsocketsTransport.swift",
       "kind": "BooleanLiteral",
       "offset": 815,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/EventSource\/EventStreamParser.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/EventSource\/EventStreamParser.swift",
       "kind": "Array",
       "offset": 482,
       "length": 20,
       "value": "[\"\r\n\", \"\n\", \"\r\"]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
       "kind": "StringLiteral",
       "offset": 226,
       "length": 28,
       "value": "\"SignalR.reconnection.queue\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
       "kind": "IntegerLiteral",
       "offset": 623,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
       "kind": "StringLiteral",
       "offset": 737,
       "length": 14,
       "value": "\"disconnected\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
       "kind": "StringLiteral",
       "offset": 776,
       "length": 10,
       "value": "\"starting\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
       "kind": "StringLiteral",
       "offset": 815,
       "length": 14,
       "value": "\"reconnecting\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
       "kind": "StringLiteral",
       "offset": 853,
       "length": 9,
       "value": "\"running\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppSignalRModule\/signalRClient\/ReconnectableConnection.swift",
       "kind": "StringLiteral",
       "offset": 887,
       "length": 10,

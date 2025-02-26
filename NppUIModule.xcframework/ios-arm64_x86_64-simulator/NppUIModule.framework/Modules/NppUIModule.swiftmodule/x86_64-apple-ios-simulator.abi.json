@@ -28680,1568 +28680,1568 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/DropdownMenu\/Form1\/MyDSSDropdownMenuForm1.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/DropdownMenu\/Form1\/MyDSSDropdownMenuForm1.swift",
       "kind": "StringLiteral",
       "offset": 392,
       "length": 23,
       "value": "\"Acommerce.NppUIModule\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/TableViewControllers\/RecipientsTableViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/TableViewControllers\/RecipientsTableViewController.swift",
       "kind": "FloatLiteral",
       "offset": 493,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/TableViewControllers\/RecipientsTableViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/TableViewControllers\/RecipientsTableViewController.swift",
       "kind": "Array",
       "offset": 525,
       "length": 74,
       "value": "[\"Последние отправления\", \"Ваши контакты\"]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/TableViewControllers\/RecipientsTableViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/TableViewControllers\/RecipientsTableViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 786,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/DropdownMenu\/DropdownViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/DropdownMenu\/DropdownViewController.swift",
       "kind": "FloatLiteral",
       "offset": 234,
       "length": 5,
       "value": "100.0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/DropdownMenu\/DropdownViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/DropdownMenu\/DropdownViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 614,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/DropdownMenu\/DropdownViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/DropdownMenu\/DropdownViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 651,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/DocumentsListTableView\/DocumentListItemCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/DocumentsListTableView\/DocumentListItemCell.swift",
       "kind": "IntegerLiteral",
       "offset": 266,
       "length": 3,
       "value": "130"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Company\/AddCompanyViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Company\/AddCompanyViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 690,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/DropdownMenu\/ChoosePlace\/MyDSSPartnerPointCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/DropdownMenu\/ChoosePlace\/MyDSSPartnerPointCell.swift",
       "kind": "StringLiteral",
       "offset": 194,
       "length": 18,
       "value": "\"partnerPointCell\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/ViewModel\/MyDSSViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/ViewModel\/MyDSSViewModel.swift",
       "kind": "StringLiteral",
       "offset": 2900,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/ViewModel\/MyDSSViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/ViewModel\/MyDSSViewModel.swift",
       "kind": "Array",
       "offset": 3037,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/ViewModel\/MyDSSViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/ViewModel\/MyDSSViewModel.swift",
       "kind": "Array",
       "offset": 3158,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/View\/DropdownMenu\/DropdownMenuDocumentInfo.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/View\/DropdownMenu\/DropdownMenuDocumentInfo.swift",
       "kind": "BooleanLiteral",
       "offset": 1097,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/DropdownMenu\/DropdownMenuLoadFilesViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/DropdownMenu\/DropdownMenuLoadFilesViewController.swift",
       "kind": "StringLiteral",
       "offset": 673,
       "length": 23,
       "value": "\"Acommerce.NppUIModule\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/RecipientsViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/RecipientsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1112,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Kyc\/View\/KycStartViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Kyc\/View\/KycStartViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1453,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuTableViewCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuTableViewCell.swift",
       "kind": "StringLiteral",
       "offset": 191,
       "length": 15,
       "value": "\"MenuTableCell\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuTableViewCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuTableViewCell.swift",
       "kind": "BooleanLiteral",
       "offset": 337,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuTableViewCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuTableViewCell.swift",
       "kind": "BooleanLiteral",
       "offset": 411,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuTableViewCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuTableViewCell.swift",
       "kind": "BooleanLiteral",
       "offset": 604,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuTableViewCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuTableViewCell.swift",
       "kind": "StringLiteral",
       "offset": 631,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuTableViewCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuTableViewCell.swift",
       "kind": "StringLiteral",
       "offset": 709,
       "length": 20,
       "value": "\"Montserrat-Regular\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuTableViewCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuTableViewCell.swift",
       "kind": "IntegerLiteral",
       "offset": 737,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/View\/DocumentDetailsInfoTableViews\/Cells\/DocumentsItemCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/View\/DocumentDetailsInfoTableViews\/Cells\/DocumentsItemCell.swift",
       "kind": "IntegerLiteral",
       "offset": 361,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 241,
       "length": 3,
       "value": "\"a\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 247,
       "length": 3,
       "value": "\"c\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 252,
       "length": 4,
       "value": "\"а\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 259,
       "length": 4,
       "value": "\"г\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 292,
       "length": 3,
       "value": "\"d\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 298,
       "length": 3,
       "value": "\"g\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 303,
       "length": 4,
       "value": "\"д\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 310,
       "length": 4,
       "value": "\"ж\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 349,
       "length": 3,
       "value": "\"h\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 355,
       "length": 3,
       "value": "\"k\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 360,
       "length": 4,
       "value": "\"з\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 367,
       "length": 4,
       "value": "\"к\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 406,
       "length": 3,
       "value": "\"l\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 412,
       "length": 3,
       "value": "\"o\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 417,
       "length": 4,
       "value": "\"л\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 424,
       "length": 4,
       "value": "\"о\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 463,
       "length": 3,
       "value": "\"p\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 469,
       "length": 3,
       "value": "\"s\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 474,
       "length": 4,
       "value": "\"п\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 481,
       "length": 4,
       "value": "\"т\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 520,
       "length": 3,
       "value": "\"t\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 526,
       "length": 3,
       "value": "\"w\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 531,
       "length": 4,
       "value": "\"у\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 538,
       "length": 4,
       "value": "\"ц\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 577,
       "length": 3,
       "value": "\"x\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 583,
       "length": 3,
       "value": "\"z\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 588,
       "length": 4,
       "value": "\"ч\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsBackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 595,
       "length": 4,
       "value": "\"я\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/AgreementList\/AgreementListViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/AgreementList\/AgreementListViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1017,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Kyc\/ViewModel\/KycViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Kyc\/ViewModel\/KycViewModel.swift",
       "kind": "StringLiteral",
       "offset": 1211,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Kyc\/ViewModel\/KycViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Kyc\/ViewModel\/KycViewModel.swift",
       "kind": "Array",
       "offset": 1349,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Kyc\/ViewModel\/KycViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Kyc\/ViewModel\/KycViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 1622,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/TableViewControllers\/Cells\/EditRouteTableViewCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/TableViewControllers\/Cells\/EditRouteTableViewCell.swift",
       "kind": "IntegerLiteral",
       "offset": 839,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/TableViewControllers\/Cells\/EditRouteTableViewCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/TableViewControllers\/Cells\/EditRouteTableViewCell.swift",
       "kind": "IntegerLiteral",
       "offset": 870,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/TableViewControllers\/Cells\/EditRouteTableViewCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/TableViewControllers\/Cells\/EditRouteTableViewCell.swift",
       "kind": "IntegerLiteral",
       "offset": 957,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/DropdownMenu\/DropdownMenuTableViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/DropdownMenu\/DropdownMenuTableViewController.swift",
       "kind": "StringLiteral",
       "offset": 510,
       "length": 31,
       "value": "\"Физическое лицо\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/DropdownMenu\/DropdownMenuTableViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/DropdownMenu\/DropdownMenuTableViewController.swift",
       "kind": "StringLiteral",
       "offset": 595,
       "length": 33,
       "value": "\"Юридическое лицо\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/DropdownMenu\/DropdownMenuTableViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/DropdownMenu\/DropdownMenuTableViewController.swift",
       "kind": "StringLiteral",
       "offset": 682,
       "length": 29,
       "value": "\"Мои сотрудники\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/DropdownMenu\/DropdownMenuTableViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/DropdownMenu\/DropdownMenuTableViewController.swift",
       "kind": "StringLiteral",
       "offset": 765,
       "length": 29,
       "value": "\"Из фотогалереи\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/DropdownMenu\/DropdownMenuTableViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/DropdownMenu\/DropdownMenuTableViewController.swift",
       "kind": "StringLiteral",
       "offset": 854,
       "length": 39,
       "value": "\"Из файлов в телефоне\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/DropdownMenu\/DropdownMenuTableViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/DropdownMenu\/DropdownMenuTableViewController.swift",
       "kind": "StringLiteral",
       "offset": 947,
       "length": 28,
       "value": "\"Отсканировать\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/DropdownMenu\/DropdownMenuTableViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/DropdownMenu\/DropdownMenuTableViewController.swift",
       "kind": "Array",
       "offset": 1029,
       "length": 59,
       "value": "[\"УЧАСТНИКА МАРШРУТА\", \"ДОКУМЕНТ\"]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/SmsApprove\/View\/SmsApproveViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/SmsApprove\/View\/SmsApproveViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1206,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/SmsApprove\/View\/SmsApproveViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/SmsApprove\/View\/SmsApproveViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1281,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/SmsApprove\/View\/SmsApproveViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/SmsApprove\/View\/SmsApproveViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1321,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Loader\/DocumentLoaderViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Loader\/DocumentLoaderViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 462,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 570,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 672,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 787,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 2113,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 2190,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 2290,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 2399,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 3803,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 3907,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 4019,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 5362,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 5474,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "StringLiteral",
       "offset": 6829,
       "length": 20,
       "value": "\"Montserrat-Regular\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "StringLiteral",
       "offset": 6893,
       "length": 19,
       "value": "\"Montserrat-Medium\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "StringLiteral",
       "offset": 6954,
       "length": 21,
       "value": "\"Montserrat-SemiBold\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "StringLiteral",
       "offset": 7013,
       "length": 17,
       "value": "\"Montserrat-Bold\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 7141,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 7168,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 7656,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 7683,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 8307,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 8334,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 8949,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 8976,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 9591,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 9618,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 10241,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 10268,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 10914,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 10941,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 11589,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 11616,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 12316,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/CustomizationSDK\/NppStyles.swift",
       "kind": "IntegerLiteral",
       "offset": 12433,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/TableViewControllers\/Cells\/RecipientsItemCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/TableViewControllers\/Cells\/RecipientsItemCell.swift",
       "kind": "StringLiteral",
       "offset": 211,
       "length": 26,
       "value": "\"LatestRecipientsItemCell\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/DropdownMenu\/DropdownMenuActionTypeViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/DropdownMenu\/DropdownMenuActionTypeViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 702,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/AgreementList\/Cell\/AgreementListCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/AgreementList\/Cell\/AgreementListCell.swift",
       "kind": "StringLiteral",
       "offset": 224,
       "length": 15,
       "value": "\"agreementCell\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 3192,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 3235,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 3278,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 3325,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 3373,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 3421,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 3471,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 3522,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 27441,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 27460,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/MyDSSFormViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 27488,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/ResultScreen\/Dropdown\/DropdownTableAlertAfterDocActionVC.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/ResultScreen\/Dropdown\/DropdownTableAlertAfterDocActionVC.swift",
       "kind": "BooleanLiteral",
       "offset": 1331,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Company\/AddCompanyViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Company\/AddCompanyViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 677,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/StoryboardInstantiable.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/StoryboardInstantiable.swift",
       "kind": "StringLiteral",
       "offset": 628,
       "length": 23,
       "value": "\"Acommerce.NppUIModule\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/StoryboardInstantiable.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/StoryboardInstantiable.swift",
       "kind": "StringLiteral",
       "offset": 680,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Certificate\/View\/CertificateListViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Certificate\/View\/CertificateListViewController.swift",
       "kind": "StringLiteral",
       "offset": 434,
       "length": 17,
       "value": "\"CertificateCell\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/View\/DocumentDetailsInfoTableViews\/Cells\/RouterItemCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/View\/DocumentDetailsInfoTableViews\/Cells\/RouterItemCell.swift",
       "kind": "IntegerLiteral",
       "offset": 269,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/ViewModel\/LoadFilesViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/ViewModel\/LoadFilesViewModel.swift",
       "kind": "Array",
       "offset": 1153,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/ViewModel\/LoadFilesViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/ViewModel\/LoadFilesViewModel.swift",
       "kind": "Array",
       "offset": 1208,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/ViewModel\/LoadFilesViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/ViewModel\/LoadFilesViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 1328,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/ViewModel\/LoadFilesViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/ViewModel\/LoadFilesViewModel.swift",
       "kind": "Array",
       "offset": 1455,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/ViewModel\/LoadFilesViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/ViewModel\/LoadFilesViewModel.swift",
       "kind": "Array",
       "offset": 1585,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/ViewModel\/LoadFilesViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/ViewModel\/LoadFilesViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 1773,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/ViewModel\/LoadFilesViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/ViewModel\/LoadFilesViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 1823,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 2042,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 2085,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 2127,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
       "kind": "Array",
       "offset": 2264,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
       "kind": "Array",
       "offset": 2477,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
       "kind": "Array",
       "offset": 2689,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
       "kind": "Array",
       "offset": 2824,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
       "kind": "Array",
       "offset": 2870,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
       "kind": "Array",
       "offset": 2932,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 3008,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Recipients\/ViewModels\/RecipientViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 3043,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/TableViewControllers\/Cells\/LoadFilesTableViewCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/TableViewControllers\/Cells\/LoadFilesTableViewCell.swift",
       "kind": "StringLiteral",
       "offset": 198,
       "length": 26,
       "value": "\"AddDocumentTableViewCell\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/TableViewControllers\/Cells\/LoadFilesTableViewCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/TableViewControllers\/Cells\/LoadFilesTableViewCell.swift",
       "kind": "IntegerLiteral",
       "offset": 257,
       "length": 2,
       "value": "72"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/AddDocuments\/TableViewController\/Cells\/AddDocumentsTableViewCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/AddDocuments\/TableViewController\/Cells\/AddDocumentsTableViewCell.swift",
       "kind": "StringLiteral",
       "offset": 448,
       "length": 24,
       "value": "\"LoadFilesTableViewCell\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/AddDocuments\/TableViewController\/Cells\/AddDocumentsTableViewCell.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/AddDocuments\/TableViewController\/Cells\/AddDocumentsTableViewCell.swift",
       "kind": "IntegerLiteral",
       "offset": 505,
       "length": 2,
       "value": "72"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/NavigationViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/NavigationViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 528,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/NavigationViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/NavigationViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 641,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/BaseViewControllers\/ViewControllerWithKeyboard.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/BaseViewControllers\/ViewControllerWithKeyboard.swift",
       "kind": "BooleanLiteral",
       "offset": 200,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/StepScale\/popUp\/PopUpStepScale.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/StepScale\/popUp\/PopUpStepScale.swift",
       "kind": "StringLiteral",
       "offset": 246,
       "length": 47,
       "value": "\"Программно сделаный popover\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/PDFPreviewer\/PreviewScanFilesViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/PDFPreviewer\/PreviewScanFilesViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 916,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Agreement\/VIew\/AgreementViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Agreement\/VIew\/AgreementViewController.swift",
       "kind": "StringLiteral",
       "offset": 350,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/ViewModels\/EditRouteViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/ViewModels\/EditRouteViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 1520,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/ViewModels\/EditRouteViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/ViewModels\/EditRouteViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 1686,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/ViewModels\/EditRouteViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/ViewModels\/EditRouteViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 1749,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/ViewModels\/EditRouteViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/ViewModels\/EditRouteViewModel.swift",
       "kind": "IntegerLiteral",
       "offset": 1807,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/ViewModels\/EditRouteViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/ViewModels\/EditRouteViewModel.swift",
       "kind": "Array",
       "offset": 1889,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/ViewModels\/EditRouteViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/ViewModels\/EditRouteViewModel.swift",
       "kind": "IntegerLiteral",
       "offset": 2610,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/AddDocuments\/TableViewController\/AddDocumentsTableViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/AddDocuments\/TableViewController\/AddDocumentsTableViewController.swift",
       "kind": "FloatLiteral",
       "offset": 305,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewModel.swift",
       "kind": "Array",
       "offset": 580,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 679,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/ReissuingSignature\/Data\/ReissueStatus.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/ReissuingSignature\/Data\/ReissueStatus.swift",
       "kind": "StringLiteral",
       "offset": 151,
       "length": 37,
       "value": "\"Начало перевыпуска\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/ReissuingSignature\/Data\/ReissueStatus.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/ReissuingSignature\/Data\/ReissueStatus.swift",
       "kind": "StringLiteral",
       "offset": 214,
       "length": 44,
       "value": "\"Необходимо принять акт\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/View\/DocumentDetailsInfoTableViews\/DocumentsTableViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/View\/DocumentDetailsInfoTableViews\/DocumentsTableViewController.swift",
       "kind": "FloatLiteral",
       "offset": 406,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/TableViewControllers\/EditRouteTableViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/Route\/TableViewControllers\/EditRouteTableViewController.swift",
       "kind": "FloatLiteral",
       "offset": 416,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/BaseViewControllers\/BaseLoaderViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/BaseViewControllers\/BaseLoaderViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 706,
       "length": 2,
       "value": "80"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/View\/DocumentDetailsInfoTableViews\/RouterTableViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/View\/DocumentDetailsInfoTableViews\/RouterTableViewController.swift",
       "kind": "FloatLiteral",
       "offset": 288,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/DropdownMenu\/ChoosePlace\/MyDSSDropdownMenuChoosePlace.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/DropdownMenu\/ChoosePlace\/MyDSSDropdownMenuChoosePlace.swift",
       "kind": "StringLiteral",
       "offset": 502,
       "length": 23,
       "value": "\"Acommerce.NppUIModule\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Kyc\/View\/KycKeyViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Kyc\/View\/KycKeyViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 395,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/LoadFileViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/LoadFileViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1001,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/DropdownMenu\/Form1\/MyDSSDropdownForm1Table.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/DropdownMenu\/Form1\/MyDSSDropdownForm1Table.swift",
       "kind": "BooleanLiteral",
       "offset": 466,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/CabinetViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/CabinetViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2104,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/CabinetViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/View\/CabinetViewController.swift",
       "kind": "StringLiteral",
       "offset": 2164,
       "length": 23,
       "value": "\"Acommerce.NppUIModule\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/TableViewControllers\/LoadFilesListTableViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/CreateDocument\/LoadFiles\/TableViewControllers\/LoadFilesListTableViewController.swift",
       "kind": "FloatLiteral",
       "offset": 310,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/ViewModel\/DocumentDetailsViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/ViewModel\/DocumentDetailsViewModel.swift",
       "kind": "Array",
       "offset": 1716,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/ViewModel\/DocumentDetailsViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/ViewModel\/DocumentDetailsViewModel.swift",
       "kind": "Array",
       "offset": 1804,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/ViewModel\/DocumentDetailsViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/ViewModel\/DocumentDetailsViewModel.swift",
       "kind": "IntegerLiteral",
       "offset": 2611,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsView.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsView.swift",
       "kind": "IntegerLiteral",
       "offset": 465,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsView.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsView.swift",
       "kind": "IntegerLiteral",
       "offset": 497,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsView.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Initials\/InitialsView.swift",
       "kind": "IntegerLiteral",
       "offset": 529,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/DropdownMenu\/ChoosePlace\/MyDSSDropdownChoosePlaceTable.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/DropdownMenu\/ChoosePlace\/MyDSSDropdownChoosePlaceTable.swift",
       "kind": "BooleanLiteral",
       "offset": 429,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuModel.swift",
       "kind": "StringLiteral",
       "offset": 279,
       "length": 39,
       "value": "\"Подтверждение входа\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuModel.swift",
       "kind": "StringLiteral",
       "offset": 338,
       "length": 16,
       "value": "\"Профиль\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuModel.swift",
       "kind": "StringLiteral",
       "offset": 377,
       "length": 35,
       "value": "\"Добавить компанию\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuModel.swift",
       "kind": "StringLiteral",
       "offset": 437,
       "length": 46,
       "value": "\"Мои электронные подписи\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/BurgerMenu\/View\/MenuModel.swift",
       "kind": "StringLiteral",
       "offset": 502,
       "length": 12,
       "value": "\"Выйти\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/ViewModel\/CabinetViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/ViewModel\/CabinetViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 1186,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/ViewModel\/CabinetViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/ViewModel\/CabinetViewModel.swift",
       "kind": "Array",
       "offset": 1381,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/ViewModel\/CabinetViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Cabinet\/ViewModel\/CabinetViewModel.swift",
       "kind": "Array",
       "offset": 1727,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/View\/DocumentDetailsViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/View\/DocumentDetailsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1081,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/View\/DocumentDetailsViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/View\/DocumentDetailsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1105,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/View\/DocumentDetailsViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Document\/View\/DocumentDetailsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1129,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Extensions\/NavigationControllerExtension.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Utils\/Extensions\/NavigationControllerExtension.swift",
       "kind": "BooleanLiteral",
       "offset": 244,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/ReissuingSignature\/Data\/ReissueStorage.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/ReissuingSignature\/Data\/ReissueStorage.swift",
       "kind": "StringLiteral",
       "offset": 275,
       "length": 12,
       "value": "\"reissueTag\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/ReissuingSignature\/Data\/ReissueStorage.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/ReissuingSignature\/Data\/ReissueStorage.swift",
       "kind": "StringLiteral",
       "offset": 316,
       "length": 18,
       "value": "\"reissueStatusTag\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/ReissuingSignature\/Data\/ReissueStorage.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/ReissuingSignature\/Data\/ReissueStorage.swift",
       "kind": "StringLiteral",
       "offset": 376,
       "length": 24,
       "value": "\"reissuedCertificateTag\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
       "kind": "StringLiteral",
       "offset": 182,
       "length": 11,
       "value": "\"mydssPage\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
       "kind": "StringLiteral",
       "offset": 831,
       "length": 33,
       "value": "\"Заполните анкету\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
       "kind": "StringLiteral",
       "offset": 889,
       "length": 54,
       "value": "\"Заполните паспортные данные\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
       "kind": "StringLiteral",
       "offset": 963,
       "length": 79,
       "value": "\"Оплатите счёт и продолжите выпуск подписи\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
       "kind": "StringLiteral",
       "offset": 1066,
       "length": 44,
       "value": "\"Выберите место встречи\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
       "kind": "StringLiteral",
       "offset": 1137,
       "length": 45,
       "value": "\"Пройдите идентификацию\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
       "kind": "StringLiteral",
       "offset": 1211,
       "length": 41,
       "value": "\"Выпустите сертификат\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
       "kind": "StringLiteral",
       "offset": 1283,
       "length": 43,
       "value": "\"Установите сертификат\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
       "kind": "StringLiteral",
       "offset": 1347,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/Data\/PageMyDssStorage.swift",
       "kind": "StringLiteral",
       "offset": 1367,
       "length": 3,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
       "kind": "FloatLiteral",
       "offset": 2304,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 2431,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2876,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 2952,
       "length": 2,
       "value": "70"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 3717,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
       "kind": "FloatLiteral",
       "offset": 4283,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
       "kind": "FloatLiteral",
       "offset": 4331,
       "length": 3,
       "value": "1.2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 4475,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
       "kind": "FloatLiteral",
       "offset": 5244,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Profile\/ProfileViewController.swift",
       "kind": "FloatLiteral",
       "offset": 5283,
       "length": 3,
       "value": "1.1"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Certificate\/Models\/StatusKeyModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Certificate\/Models\/StatusKeyModel.swift",
       "kind": "StringLiteral",
       "offset": 254,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Certificate\/Models\/StatusKeyModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/Certificate\/Models\/StatusKeyModel.swift",
       "kind": "StringLiteral",
       "offset": 380,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/DropdownMenu\/Form2\/MyDSSDropdownMenuForm2.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/MyDSS\/View\/DropdownMenu\/Form2\/MyDSSDropdownMenuForm2.swift",
       "kind": "StringLiteral",
       "offset": 343,
       "length": 23,
       "value": "\"Acommerce.NppUIModule\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/AgreementList\/ViewModel\/AgreementListViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/AgreementList\/ViewModel\/AgreementListViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 855,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/AgreementList\/ViewModel\/AgreementListViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/AgreementList\/ViewModel\/AgreementListViewModel.swift",
       "kind": "StringLiteral",
       "offset": 939,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/AgreementList\/ViewModel\/AgreementListViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/AgreementList\/ViewModel\/AgreementListViewModel.swift",
       "kind": "Array",
       "offset": 997,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/AgreementList\/ViewModel\/AgreementListViewModel.swift",
+      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppUIModule\/Presentation\/AgreementList\/ViewModel\/AgreementListViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 1037,
       "length": 4,

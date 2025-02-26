@@ -14974,420 +14974,420 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 291,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 346,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 800,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 912,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 3547,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 3753,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 3859,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 6433,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 6542,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "StringLiteral",
       "offset": 8131,
       "length": 20,
       "value": "\"Montserrat-Regular\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "StringLiteral",
       "offset": 8195,
       "length": 19,
       "value": "\"Montserrat-Medium\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "StringLiteral",
       "offset": 8256,
       "length": 21,
       "value": "\"Montserrat-SemiBold\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "StringLiteral",
       "offset": 8315,
       "length": 17,
       "value": "\"Montserrat-Bold\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 8444,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 8471,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 9034,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 9061,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 9710,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 9737,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 10382,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 10409,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 11049,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 11076,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 11724,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 11751,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 12397,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 12424,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 13072,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 13099,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 13827,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Customization\/Styles.swift",
       "kind": "IntegerLiteral",
       "offset": 13941,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Extensions\/UITableView.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Extensions\/UITableView.swift",
       "kind": "BooleanLiteral",
       "offset": 167,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/BaseViewControllers\/ViewControllerWithKeyboard.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/BaseViewControllers\/ViewControllerWithKeyboard.swift",
       "kind": "BooleanLiteral",
       "offset": 218,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
       "kind": "StringLiteral",
       "offset": 494,
       "length": 9,
       "value": "\"pincode\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
       "kind": "IntegerLiteral",
       "offset": 579,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
       "kind": "IntegerLiteral",
       "offset": 615,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
       "kind": "IntegerLiteral",
       "offset": 647,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
       "kind": "IntegerLiteral",
       "offset": 691,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
       "kind": "IntegerLiteral",
       "offset": 701,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
       "kind": "IntegerLiteral",
       "offset": 713,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
       "kind": "IntegerLiteral",
       "offset": 724,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
       "kind": "IntegerLiteral",
       "offset": 5326,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeCollectionVC.swift",
       "kind": "IntegerLiteral",
       "offset": 5359,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/CustomViews\/AbCheckboxView.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/CustomViews\/AbCheckboxView.swift",
       "kind": "BooleanLiteral",
       "offset": 1121,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/CustomViews\/AbCheckboxView.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/CustomViews\/AbCheckboxView.swift",
       "kind": "BooleanLiteral",
       "offset": 1068,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/StoryboardInstantiable\/StoryboardInstantiable.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/StoryboardInstantiable\/StoryboardInstantiable.swift",
       "kind": "StringLiteral",
       "offset": 616,
       "length": 12,
       "value": "\"Acommerce.\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/StoryboardInstantiable\/StoryboardInstantiable.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/StoryboardInstantiable\/StoryboardInstantiable.swift",
       "kind": "StringLiteral",
       "offset": 657,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/LoadingView\/SpinningCircleView.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/LoadingView\/SpinningCircleView.swift",
       "kind": "BooleanLiteral",
       "offset": 284,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Extensions\/UIButton.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Extensions\/UIButton.swift",
       "kind": "IntegerLiteral",
       "offset": 168,
       "length": 4,
       "value": "0206"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Screens\/PinCode\/AbSDK_PinCodeViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 492,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/CustomTextFormatter\/CustomTextFormatter.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/CustomTextFormatter\/CustomTextFormatter.swift",
       "kind": "Array",
       "offset": 209,
       "length": 50,
       "value": "[\"0\", \"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\"]"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/CustomViews\/AbAlertBannerView.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/CustomViews\/AbAlertBannerView.swift",
       "kind": "IntegerLiteral",
       "offset": 689,
       "length": 2,
       "value": "88"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/CustomViews\/AbAlertBannerView.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/CustomViews\/AbAlertBannerView.swift",
       "kind": "IntegerLiteral",
       "offset": 731,
       "length": 2,
       "value": "88"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/CustomViews\/AbAlertBannerView.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/CustomViews\/AbAlertBannerView.swift",
       "kind": "IntegerLiteral",
       "offset": 1079,
       "length": 2,
       "value": "88"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/CustomViews\/AbAlertBannerView.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/CustomViews\/AbAlertBannerView.swift",
       "kind": "IntegerLiteral",
       "offset": 1132,
       "length": 2,
       "value": "88"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/DropdownMenu\/DropdownViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/DropdownMenu\/DropdownViewController.swift",
       "kind": "FloatLiteral",
       "offset": 237,
       "length": 5,
       "value": "100.0"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/DropdownMenu\/DropdownViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/DropdownMenu\/DropdownViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 617,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/DropdownMenu\/DropdownViewController.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/DropdownMenu\/DropdownViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 654,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/CustomViews\/AbNavigationBarView.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/CustomViews\/AbNavigationBarView.swift",
       "kind": "StringLiteral",
       "offset": 419,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nelantsev\/ab-sdk-ios\/AbSDKUI\/Extensions\/UINavigationController.swift",
+      "filePath": "\/Users\/nikitaelancev\/ab-sdk-ios\/AbSDKUI\/Extensions\/UINavigationController.swift",
       "kind": "BooleanLiteral",
       "offset": 219,
       "length": 4,

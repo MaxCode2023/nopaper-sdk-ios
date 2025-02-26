@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'NppUIModule'
-  s.version = '2.1.72'
+  s.version = '2.1.73'
   s.license = 'MIT'
   s.summary = 'Nopaper iOS framework'
   s.homepage = 'https://github.com/MaxCode2023/nopaper-sdk-ios'
@@ -24,9 +24,9 @@ Pod::Spec.new do |s|
   s.static_framework = true
 
   s.dependency 'Swinject', '2.8.2'
-  s.dependency 'Alamofire', '5.9.1'
-  s.dependency 'RxSwift', '6.5.0'
-  s.dependency 'RxCocoa', '6.5.0'
+  s.dependency 'Alamofire', '5.10.2'
+  s.dependency 'RxSwift', '6.9.0'
+  s.dependency 'RxCocoa', '6.9.0'
   s.dependency 'RxAlamofire', '6.1.1'
   s.dependency 'SwiftKeychainWrapper'
   s.dependency 'PromiseKit', '8.1.1'
