@@ -31,6 +31,6 @@ Pod::Spec.new do |s|
   s.dependency 'SwiftKeychainWrapper'
   s.dependency 'PromiseKit', '8.1.1'
   s.dependency 'PanModal'
-  s.dependency 'Sentry', '8.46.0'
+  s.dependency 'Sentry', '8.36.0'
   
 end
