@@ -3999,49 +3999,49 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/network\/BaseRepository.swift",
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/network\/BaseRepository.swift",
       "kind": "StringLiteral",
       "offset": 268,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/network\/BaseRepository.swift",
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/network\/BaseRepository.swift",
       "kind": "IntegerLiteral",
       "offset": 953,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/network\/BaseRepository.swift",
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/network\/BaseRepository.swift",
       "kind": "BooleanLiteral",
       "offset": 980,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/network\/BaseRepository.swift",
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/network\/BaseRepository.swift",
       "kind": "IntegerLiteral",
       "offset": 1025,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/auth\/data\/AuthRepositoryImpl.swift",
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/auth\/data\/AuthRepositoryImpl.swift",
       "kind": "StringLiteral",
       "offset": 244,
       "length": 14,
       "value": "\"access_token\""
     },
     {
-      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/auth\/data\/AuthRepositoryImpl.swift",
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/auth\/data\/AuthRepositoryImpl.swift",
       "kind": "StringLiteral",
       "offset": 290,
       "length": 15,
       "value": "\"refresh_token\""
     },
     {
-      "filePath": "\/Users\/nikitaelancev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/auth\/data\/AuthRepositoryImpl.swift",
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppNetworkModule\/auth\/data\/AuthRepositoryImpl.swift",
       "kind": "IntegerLiteral",
       "offset": 456,
       "length": 1,

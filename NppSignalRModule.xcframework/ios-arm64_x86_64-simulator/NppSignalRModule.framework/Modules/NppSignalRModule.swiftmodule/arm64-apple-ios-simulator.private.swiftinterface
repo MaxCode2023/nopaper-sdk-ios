@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NppSignalRModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NppSignalRModule
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import AbSDKMain
 import Alamofire
 import Foundation
@@ -49,10 +49,10 @@ public protocol EventSourceProtocol {
   func connect(lastEventId: Swift.String?, params: [Swift.String : Swift.String]?)
   func disconnect()
   func events() -> [Swift.String]
-  func onOpen(_ onOpenCallback: @escaping (() -> Swift.Void))
-  func onComplete(_ onComplete: @escaping ((Swift.Int?, Swift.Bool?, Foundation.NSError?) -> Swift.Void))
-  func onMessage(_ onMessageCallback: @escaping ((_ id: Swift.String?, _ event: Swift.String?, _ data: Swift.String?) -> Swift.Void))
-  func addEventListener(_ event: Swift.String, handler: @escaping ((_ id: Swift.String?, _ event: Swift.String?, _ data: Swift.String?) -> Swift.Void))
+  func onOpen(_ onOpenCallback: @escaping () -> Swift.Void)
+  func onComplete(_ onComplete: @escaping (Swift.Int?, Swift.Bool?, Foundation.NSError?) -> Swift.Void)
+  func onMessage(_ onMessageCallback: @escaping (_ id: Swift.String?, _ event: Swift.String?, _ data: Swift.String?) -> Swift.Void)
+  func addEventListener(_ event: Swift.String, handler: @escaping (_ id: Swift.String?, _ event: Swift.String?, _ data: Swift.String?) -> Swift.Void)
   func removeEventListener(_ event: Swift.String)
 }
 @objc open class EventSource : ObjectiveC.NSObject, NppSignalRModule.EventSourceProtocol, Foundation.URLSessionDataDelegate {
@@ -75,10 +75,10 @@ public protocol EventSourceProtocol {
   public init(url: Foundation.URL, headers: [Swift.String : Swift.String] = [:])
   public func connect(lastEventId: Swift.String?, params: [Swift.String : Swift.String]? = [:])
   public func disconnect()
-  public func onOpen(_ onOpenCallback: @escaping (() -> Swift.Void))
-  public func onComplete(_ onComplete: @escaping ((Swift.Int?, Swift.Bool?, Foundation.NSError?) -> Swift.Void))
-  public func onMessage(_ onMessageCallback: @escaping ((_ id: Swift.String?, _ event: Swift.String?, _ data: Swift.String?) -> Swift.Void))
-  public func addEventListener(_ event: Swift.String, handler: @escaping ((_ id: Swift.String?, _ event: Swift.String?, _ data: Swift.String?) -> Swift.Void))
+  public func onOpen(_ onOpenCallback: @escaping () -> Swift.Void)
+  public func onComplete(_ onComplete: @escaping (Swift.Int?, Swift.Bool?, Foundation.NSError?) -> Swift.Void)
+  public func onMessage(_ onMessageCallback: @escaping (_ id: Swift.String?, _ event: Swift.String?, _ data: Swift.String?) -> Swift.Void)
+  public func addEventListener(_ event: Swift.String, handler: @escaping (_ id: Swift.String?, _ event: Swift.String?, _ data: Swift.String?) -> Swift.Void)
   public func removeEventListener(_ event: Swift.String)
   public func events() -> [Swift.String]
   @objc open func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)

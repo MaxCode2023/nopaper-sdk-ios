@@ -6,31 +6,31 @@
 	<dict>
 		<key>Headers/NppSignalRModule-Swift.h</key>
 		<data>
-		vLQLFh7uXLgwpC+Lfa2gCqjXM+M=
+		mAuzCv96hDPcw2oiZSZuUeoWGOY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DosfEHu4rvEJi6YIJ/AM2gsWIY4=
+		RCFMnXe65fg0lnolj9i4Zf/Y2Us=
 		</data>
 		<key>Modules/NppSignalRModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		dNbYsr8zp7DOWgbn+bKEOivGMqg=
+		37flTUd2biHJt1QwAEIZ6oY7KDI=
 		</data>
 		<key>Modules/NppSignalRModule.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ePqC4tI84kGMRTakjxl3fc37PmU=
+		P5jEFTSK8PW3Ji5pnuSvPzpyuoE=
 		</data>
 		<key>Modules/NppSignalRModule.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		0DmCBXfUedpv0iBWZyx+WKR3lIY=
+		F3Pk6EhPyymMxiZvn9o0HgeTevg=
 		</data>
 		<key>Modules/NppSignalRModule.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ePqC4tI84kGMRTakjxl3fc37PmU=
+		P5jEFTSK8PW3Ji5pnuSvPzpyuoE=
 		</data>
 		<key>Modules/NppSignalRModule.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		kwTm+fVmlw73hVBm2ZSpOEeJ9wQ=
+		E8wa/uZjGbniczYd2i+r7bv8Unk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,42 +43,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZFOIqRzrV/HawuRQ5NEf/O0WGy5+woOXS5OHZnnVZ7E=
+			R8dpEdhsrPN5TFDvemBgfaxPmK5SNrLsWEcgedP0O0E=
 			</data>
 		</dict>
 		<key>Modules/NppSignalRModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E4tuG4xBm9Jsr5VJGmFyy1xB5eumpKN0p4q+cITcfQM=
+			Sp3EYhesTIy0/dat2KhdPH+8QIiDdhzRWgZ17lbpo1w=
 			</data>
 		</dict>
 		<key>Modules/NppSignalRModule.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bIPiUPh/TaFx1OArZFbQCayoh3BNF7Aod54sNC0aOf4=
+			o7PUtSgjGBHvHRJGpQR8mtpLOjBefjXaznG1Na7zqf0=
 			</data>
 		</dict>
 		<key>Modules/NppSignalRModule.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			20Kea1/X/2KjlPrl4Xb3A/t0UgwQ2ej8af0nLxMWsZM=
+			SJbPyX9xLQzCvdNx4v4wjLQRwRXy5HyUSX7mSTcxxRI=
 			</data>
 		</dict>
 		<key>Modules/NppSignalRModule.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bIPiUPh/TaFx1OArZFbQCayoh3BNF7Aod54sNC0aOf4=
+			o7PUtSgjGBHvHRJGpQR8mtpLOjBefjXaznG1Na7zqf0=
 			</data>
 		</dict>
 		<key>Modules/NppSignalRModule.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FbCvSmsBH0sa7HYDs9RSaKF+QS4/w9edBLOKOsDzR3k=
+			QkYlmsgrvhyX6RUPjVv/0CrXsLlmilzQ2+W4osnvHH8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

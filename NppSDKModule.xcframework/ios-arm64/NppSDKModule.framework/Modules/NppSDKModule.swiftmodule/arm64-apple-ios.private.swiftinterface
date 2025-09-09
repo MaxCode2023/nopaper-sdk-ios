@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NppSDKModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NppSDKModule
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import AbSDKMain
 import Alamofire
 import Foundation
@@ -783,8 +783,8 @@ public struct UploadFileResponse : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct UserProfileResponse : Swift.Codable {
-  public let isVerified: Swift.Bool
-  public let phoneNumber: Swift.String
+  public let isVerified: Swift.Bool?
+  public let phoneNumber: Swift.String?
   public let surnameFirstChar: Swift.String?
   public let email: Swift.String?
   public let birthDate: Swift.String?
@@ -795,9 +795,9 @@ public struct UserProfileResponse : Swift.Codable {
   public let inn: Swift.String?
   public let gender: Swift.Int?
   public let isEmailConfirmed: Swift.Bool?
-  public let isPasswordTemporary: Swift.Bool
-  public let isPhoneConfirmed: Swift.Bool
-  public let isTwoFactorEnabled: Swift.Bool
+  public let isPasswordTemporary: Swift.Bool?
+  public let isPhoneConfirmed: Swift.Bool?
+  public let isTwoFactorEnabled: Swift.Bool?
   public let partnerIdentifier: Swift.String?
   public let passportRusInfo: NppSDKModule.PassportRusInfoResponse?
   public func encode(to encoder: any Swift.Encoder) throws
