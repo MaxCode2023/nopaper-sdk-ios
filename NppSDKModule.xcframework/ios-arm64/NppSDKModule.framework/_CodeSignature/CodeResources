@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/NppSDKModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		i3fi9t+aAwBhu3B5ATmD/2J7YDA=
+		5OTV/jTAfmaTHpwpcekzZ/h7LDM=
 		</data>
 		<key>Modules/NppSDKModule.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/NppSDKModule.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		0r4ARENDomdjeup2NZWgmmu6XUc=
+		gfURo6IAr0mZvuCte3mWzYaBM7U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,7 +61,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Rys1tIzd4sT62POm9RTErr8StWN+Fo17F3Wscn89Zc=
+			g+Wjw7UXljou6exqBEagVsSkuD5qSq7so1pWAtKqxO8=
 			</data>
 		</dict>
 		<key>Modules/NppSDKModule.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -89,7 +89,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u6U4kAi/438MIXW4KFaAITlawpMfVQFH86D0XJ5nPWY=
+			p0PBLV1EhcOH5xFB75S4tzmHeEJe5lIrlyeUIQo5B6Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

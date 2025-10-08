@@ -63485,6 +63485,13 @@
       "value": "2"
     },
     {
+      "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/documents\/impl\/data\/DocumentsRepositoryImpl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14108,
+      "length": 1,
+      "value": "1"
+    },
+    {
       "filePath": "\/Users\/nelantsev\/nopaper-framework\/nopaper-framework\/NppSDKModule\/sdk\/paycontrol\/impl\/data\/models\/PcSigningCertificateInfoResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2209,
