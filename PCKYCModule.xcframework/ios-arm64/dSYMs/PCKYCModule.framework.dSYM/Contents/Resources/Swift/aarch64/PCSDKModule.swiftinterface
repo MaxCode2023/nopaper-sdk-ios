@@ -227,7 +227,9 @@ public enum TransactionType : Swift.String, Swift.Decodable {
     get
   }
 }
-public struct PCUserOptions : Swift.Equatable {
+public struct PCUserOptions : Swift.OptionSet, Swift.Equatable {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
   public var passwordPolicy: PCSDKModule.PCPasswordPolicy {
     get
   }
@@ -264,7 +266,15 @@ public struct PCUserOptions : Swift.Equatable {
   public var isRemoteUpdateEnabled: Swift.Bool {
     get
   }
-  public static func == (a: PCSDKModule.PCUserOptions, b: PCSDKModule.PCUserOptions) -> Swift.Bool
+  public var isTelegramEnabled: Swift.Bool {
+    get
+  }
+  public var hasOnlineCredentials: Swift.Bool {
+    get
+  }
+  public typealias ArrayLiteralElement = PCSDKModule.PCUserOptions
+  public typealias Element = PCSDKModule.PCUserOptions
+  public typealias RawValue = Swift.Int
 }
 final public class PCKeysManager {
   public init(applicationTag: Swift.String)
@@ -399,7 +409,9 @@ extension Security.SecKey {
     get
   }
   public static func importUser(from string: Swift.String) throws -> PCSDKModule.PCUser
+  @available(*, deprecated, message: "Use 'activate(user:using:completion:)' method instead")
   public static func activate(user: PCSDKModule.PCUser, using code: Swift.String) throws
+  public static func activate(user: PCSDKModule.PCUser, using code: Swift.String, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
   public static func submit(password: Swift.String, for user: PCSDKModule.PCUser) throws
   public static func register(user: PCSDKModule.PCUser, deviceToken: Swift.String?, pushNotificationsService: PCSDKModule.PushNotificationsService = .apns, keysProcessor: PCSDKModule.KeysProcessor? = nil, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<PCSDKModule.RegistrationResult, Swift.Error>) -> Swift.Void)
   public static func registerExtAuthTemplate(_ template: PCSDKModule.PCExtendedAuthTemplate, user: PCSDKModule.PCUser, targetQueue: Dispatch.DispatchQueue = .main, completion: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
@@ -429,139 +441,145 @@ public struct PCExtendedAuthTemplate : Swift.Codable {
 public struct RenewKeyChallenge : Swift.Decodable {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum PCServerError : Swift.Int, Foundation.LocalizedError {
-  case undefined
-  case serverDoesNotRespond
-  case javaInternalError
-  case systemPropertyError
-  case systemIdIsNull
-  case systemIdIsWrong
-  case systemNotFound
-  case systemIsDeleted
-  case systemNameIsNull
-  case userIdIsNull
-  case userIdPrefIsNull
-  case userNotFound
-  case userIsDeleted
-  case dsVerifyError
-  case dsStructError
-  case storeTypeIsWrong
-  case keyContainerAliasIsNull
-  case keyContainerNotExists
-  case transactionDataUidError
-  case transactionDataError
-  case transactionDataIsNull
-  case reportTplIsNull
-  case requestError
-  case systemIdNotUnique
-  case requestSignatureNotValid
-  case systemNotValid
-  case transactionIsNull
-  case transactionChecked
-  case errorParseRegisterSystemInfo
-  case incorrectUserType
-  case collectionIsEmpty
-  case noResult
-  case pinIsEmpty
-  case fprintIsEmpty
-  case otpIsNotValid
-  case validDateExpired
-  case systemTypeIsWrong
-  case spartLengthIsWrong
-  case dataTypeIsWrong
-  case invalidHmac
-  case keyInfoNotFound
-  case wrongSystemType
-  case fprintIsNotEmpty
-  case wrongAuthCode
-  case confirmTypeIsNull
-  case storeTypeIsNull
-  case deviceTypeIsNull
-  case transactionDataTypeIsNull
-  case userIdPrefTooLong
-  case confirmCodeLengthIsWrong
-  case confirmCodeIsNull
-  case transactionIdIsNull
-  case statusListIsEmpty
-  case deviceIdIsNull
-  case deviceTypeIsIncorrect
-  case invalidOtp
-  case invalidKdf
-  case pinLengthIsWrong
-  case pushIdIsNull
-  case transactionStatusInvalid
-  case authCodeIsNull
-  case statusListIsIncorrect
-  case declineReasonIsNull
-  case transactionIsNotUnique
-  case billDateCorrupted
-  case userBillDateCorrupted
-  case transactionIsDeleted
-  case billRequestAlreadyProcessed
-  case pubkeyIsEmpty
-  case pubkeyIsNotEmpty
-  case signatureIsInvalid
-  case signatureIsNull
-  case signatureAndConfirmCodeAreNull
-  case transactionExpired
-  case jsonSchemeNotSupported
-  case jsonRequestIncorrect
-  case licenseUpdateError
-  case licenseExpired
-  case licenseUserCountExceeded
-  case billingTypeCorrupted
-  case httpAuthCodeInvalid
-  case notSupported
-  case extAuthTemplateNotFound
-  case extAuthFailed
-  case extAuthTypeNotSupported
-  case extAuthNeeded
-  case userIsBlocked
-  case keyExpired
-  case licenseNotFound
-  case pushNotFound
-  case scoringSettingsIsNull
-  case autosingSignatureIsInvalid
-  case serverScoringSettingsIncorrect
-  case scoringFailed
-  case highScoringRiskLevel
-  case autosignFailed
-  case autosignNotAllowed
-  case attemptIdIsNull
-  case flexibleLicenseError
-  case unsupportedBillingType
-  case licenseError
-  case operationNotExists
-  case transactionIsNotInOperation
-  case operationStatusInvalid
-  case createOperationError
-  case remoteUpdateError
-  case remoteUpdateErrorBlock
-  case remoteUpdateDisabled
-  case operationExpired
-  case dnIsNull
-  case certRequestParamsIsNull
-  case certIssueError
-  case noCertRequest
-  case noCert
-  case noPkiSettingsDefined
-  case canNotUseCertificateChain
-  case certStatusInvalid
-  case certRevokeError
-  case keyIndexObsoleted
-  case keyIndexWrong
-  case deviceFingerprintMismatch
-  public var errorCode: Swift.Int {
-    get
-  }
+public struct PCServerError : Swift.Codable {
+  public let errorCode: Swift.Int
+  public let errorMessage: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension PCSDKModule.PCServerError : Swift.Equatable {
+  public static func == (lhs: PCSDKModule.PCServerError, rhs: PCSDKModule.PCServerError) -> Swift.Bool
+  public static func ~= (pattern: PCSDKModule.PCServerError, value: Swift.Error) -> Swift.Bool
+}
+extension PCSDKModule.PCServerError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
+}
+extension PCSDKModule.PCServerError {
+  public static let undefined: PCSDKModule.PCServerError
+  public static let javaInternalError: PCSDKModule.PCServerError
+  public static let systemPropertyError: PCSDKModule.PCServerError
+  public static let systemIdIsNull: PCSDKModule.PCServerError
+  public static let systemIdIsWrong: PCSDKModule.PCServerError
+  public static let systemNotFound: PCSDKModule.PCServerError
+  public static let systemIsDeleted: PCSDKModule.PCServerError
+  public static let systemNameIsNull: PCSDKModule.PCServerError
+  public static let userIdIsNull: PCSDKModule.PCServerError
+  public static let userIdPrefIsNull: PCSDKModule.PCServerError
+  public static let userNotFound: PCSDKModule.PCServerError
+  public static let userIsDeleted: PCSDKModule.PCServerError
+  public static let dsVerifyError: PCSDKModule.PCServerError
+  public static let dsStructError: PCSDKModule.PCServerError
+  public static let storeTypeIsWrong: PCSDKModule.PCServerError
+  public static let keyContainerAliasIsNull: PCSDKModule.PCServerError
+  public static let keyContainerNotExists: PCSDKModule.PCServerError
+  public static let transactionDataUidError: PCSDKModule.PCServerError
+  public static let transactionDataError: PCSDKModule.PCServerError
+  public static let transactionDataIsNull: PCSDKModule.PCServerError
+  public static let reportTplIsNull: PCSDKModule.PCServerError
+  public static let requestError: PCSDKModule.PCServerError
+  public static let systemIdNotUnique: PCSDKModule.PCServerError
+  public static let requestSignatureNotValid: PCSDKModule.PCServerError
+  public static let systemNotValid: PCSDKModule.PCServerError
+  public static let transactionIsNull: PCSDKModule.PCServerError
+  public static let transactionChecked: PCSDKModule.PCServerError
+  public static let errorParseRegisterSystemInfo: PCSDKModule.PCServerError
+  public static let incorrectUserType: PCSDKModule.PCServerError
+  public static let collectionIsEmpty: PCSDKModule.PCServerError
+  public static let noResult: PCSDKModule.PCServerError
+  public static let pinIsEmpty: PCSDKModule.PCServerError
+  public static let fprintIsEmpty: PCSDKModule.PCServerError
+  public static let otpIsNotValid: PCSDKModule.PCServerError
+  public static let validDateExpired: PCSDKModule.PCServerError
+  public static let systemTypeIsWrong: PCSDKModule.PCServerError
+  public static let spartLengthIsWrong: PCSDKModule.PCServerError
+  public static let dataTypeIsWrong: PCSDKModule.PCServerError
+  public static let invalidHmac: PCSDKModule.PCServerError
+  public static let keyInfoNotFound: PCSDKModule.PCServerError
+  public static let wrongSystemType: PCSDKModule.PCServerError
+  public static let fprintIsNotEmpty: PCSDKModule.PCServerError
+  public static let wrongAuthCode: PCSDKModule.PCServerError
+  public static let confirmTypeIsNull: PCSDKModule.PCServerError
+  public static let storeTypeIsNull: PCSDKModule.PCServerError
+  public static let deviceTypeIsNull: PCSDKModule.PCServerError
+  public static let transactionDataTypeIsNull: PCSDKModule.PCServerError
+  public static let userIdPrefTooLong: PCSDKModule.PCServerError
+  public static let confirmCodeLengthIsWrong: PCSDKModule.PCServerError
+  public static let confirmCodeIsNull: PCSDKModule.PCServerError
+  public static let transactionIdIsNull: PCSDKModule.PCServerError
+  public static let statusListIsEmpty: PCSDKModule.PCServerError
+  public static let deviceIdIsNull: PCSDKModule.PCServerError
+  public static let deviceTypeIsIncorrect: PCSDKModule.PCServerError
+  public static let invalidOtp: PCSDKModule.PCServerError
+  public static let invalidKdf: PCSDKModule.PCServerError
+  public static let pinLengthIsWrong: PCSDKModule.PCServerError
+  public static let pushIdIsNull: PCSDKModule.PCServerError
+  public static let transactionStatusInvalid: PCSDKModule.PCServerError
+  public static let authCodeIsNull: PCSDKModule.PCServerError
+  public static let statusListIsIncorrect: PCSDKModule.PCServerError
+  public static let declineReasonIsNull: PCSDKModule.PCServerError
+  public static let transactionIsNotUnique: PCSDKModule.PCServerError
+  public static let billDateCorrupted: PCSDKModule.PCServerError
+  public static let userBillDateCorrupted: PCSDKModule.PCServerError
+  public static let transactionIsDeleted: PCSDKModule.PCServerError
+  public static let billRequestAlreadyProcessed: PCSDKModule.PCServerError
+  public static let pubkeyIsEmpty: PCSDKModule.PCServerError
+  public static let pubkeyIsNotEmpty: PCSDKModule.PCServerError
+  public static let signatureIsInvalid: PCSDKModule.PCServerError
+  public static let signatureIsNull: PCSDKModule.PCServerError
+  public static let signatureAndConfirmCodeAreNull: PCSDKModule.PCServerError
+  public static let transactionExpired: PCSDKModule.PCServerError
+  public static let jsonSchemeNotSupported: PCSDKModule.PCServerError
+  public static let jsonRequestIncorrect: PCSDKModule.PCServerError
+  public static let licenseUpdateError: PCSDKModule.PCServerError
+  public static let licenseExpired: PCSDKModule.PCServerError
+  public static let licenseUserCountExceeded: PCSDKModule.PCServerError
+  public static let billingTypeCorrupted: PCSDKModule.PCServerError
+  public static let httpAuthCodeInvalid: PCSDKModule.PCServerError
+  public static let notSupported: PCSDKModule.PCServerError
+  public static let extAuthTemplateNotFound: PCSDKModule.PCServerError
+  public static let extAuthFailed: PCSDKModule.PCServerError
+  public static let extAuthTypeNotSupported: PCSDKModule.PCServerError
+  public static let extAuthNeeded: PCSDKModule.PCServerError
+  public static let userIsBlocked: PCSDKModule.PCServerError
+  public static let keyExpired: PCSDKModule.PCServerError
+  public static let licenseNotFound: PCSDKModule.PCServerError
+  public static let pushNotFound: PCSDKModule.PCServerError
+  public static let scoringSettingsIsNull: PCSDKModule.PCServerError
+  public static let autosingSignatureIsInvalid: PCSDKModule.PCServerError
+  public static let serverScoringSettingsIncorrect: PCSDKModule.PCServerError
+  public static let scoringFailed: PCSDKModule.PCServerError
+  public static let highScoringRiskLevel: PCSDKModule.PCServerError
+  public static let autosignFailed: PCSDKModule.PCServerError
+  public static let autosignNotAllowed: PCSDKModule.PCServerError
+  public static let attemptIdIsNull: PCSDKModule.PCServerError
+  public static let flexibleLicenseError: PCSDKModule.PCServerError
+  public static let unsupportedBillingType: PCSDKModule.PCServerError
+  public static let licenseError: PCSDKModule.PCServerError
+  public static let operationNotExists: PCSDKModule.PCServerError
+  public static let transactionIsNotInOperation: PCSDKModule.PCServerError
+  public static let operationStatusInvalid: PCSDKModule.PCServerError
+  public static let createOperationError: PCSDKModule.PCServerError
+  public static let remoteUpdateError: PCSDKModule.PCServerError
+  public static let remoteUpdateErrorBlock: PCSDKModule.PCServerError
+  public static let remoteUpdateDisabled: PCSDKModule.PCServerError
+  public static let operationExpired: PCSDKModule.PCServerError
+  public static let dnIsNull: PCSDKModule.PCServerError
+  public static let certRequestParamsIsNull: PCSDKModule.PCServerError
+  public static let certIssueError: PCSDKModule.PCServerError
+  public static let noCertRequest: PCSDKModule.PCServerError
+  public static let noCert: PCSDKModule.PCServerError
+  public static let noPkiSettingsDefined: PCSDKModule.PCServerError
+  public static let canNotUseCertificateChain: PCSDKModule.PCServerError
+  public static let certStatusInvalid: PCSDKModule.PCServerError
+  public static let certRevokeError: PCSDKModule.PCServerError
+  public static let keyIndexObsoleted: PCSDKModule.PCServerError
+  public static let keyIndexWrong: PCSDKModule.PCServerError
+  public static let deviceFingerprintMismatch: PCSDKModule.PCServerError
+  public static let keyNotActivated: PCSDKModule.PCServerError
+  public static let activationAttemptsExceeded: PCSDKModule.PCServerError
+  public static let activationCodeIncorrect: PCSDKModule.PCServerError
 }
 extension PCSDKModule.Request {
   public func perform<T>(sensitive: Swift.Bool = false, decoder: Foundation.JSONDecoder = JSONDecoder(), customErrorHandler: (([Swift.String : Any]) -> Swift.Error)? = nil, completion: @escaping (_ result: Swift.Result<T, Swift.Error>) -> Swift.Void) where T : Swift.Decodable
@@ -755,8 +773,5 @@ extension PCSDKModule.PCConfirmationType : Swift.RawRepresentable {}
 extension PCSDKModule.PCExtendedAuthType : Swift.Equatable {}
 extension PCSDKModule.PCExtendedAuthType : Swift.Hashable {}
 extension PCSDKModule.PCExtendedAuthType : Swift.RawRepresentable {}
-extension PCSDKModule.PCServerError : Swift.Equatable {}
-extension PCSDKModule.PCServerError : Swift.Hashable {}
-extension PCSDKModule.PCServerError : Swift.RawRepresentable {}
 extension PCSDKModule.PCPasswordPolicy : Swift.Equatable {}
 extension PCSDKModule.PCPasswordPolicy : Swift.Hashable {}

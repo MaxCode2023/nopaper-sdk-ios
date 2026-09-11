@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NppCoreModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NppCoreModule
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import Foundation
 import Swift
 import Swinject
@@ -50,6 +50,8 @@ public struct Settings : Swift.Codable {
   public let signalR: NppCoreModule.SignalRConfig
   public let sentryLogOptions: NppCoreModule.SentryLogOptions
   public let monitoring: NppCoreModule.Monitoring
+  public let verificationApi: NppCoreModule.VerificationApi?
+  public let sadoApi: NppCoreModule.SadoApi?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -147,6 +149,20 @@ public struct Monitoring : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct VerificationApi : Swift.Codable {
+  public let endpoint: Swift.String?
+  public let allowedBankHosts: [Swift.String]?
+  public init(endpoint: Swift.String? = nil, allowedBankHosts: [Swift.String]? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SadoApi : Swift.Codable {
+  public let endpoint: Swift.String?
+  public let allowedCabinetHosts: [Swift.String]?
+  public init(endpoint: Swift.String? = nil, allowedCabinetHosts: [Swift.String]? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct UISettings {
   public let isProfileSelectionEnabled: Swift.Bool
   public let availableSignatureType: NppCoreModule.AvailableSignatureType
@@ -192,7 +208,25 @@ public protocol ConstSDK {
   var SESSION_TIME_LIFE: Swift.Int { get }
   var SESSION_MIN_TIME: Swift.Int { get }
   var IS_LOGOUT_ENABLED: Swift.Bool { get }
+  var VERIFICATION_BASE_URL: Swift.String { get }
+  var SADO_BASE_URL: Swift.String { get }
+  var ALLOWED_BANK_HOSTS: [Swift.String]? { get }
+  var ALLOWED_CABINET_HOSTS: [Swift.String]? { get }
   func getUISettings() -> NppCoreModule.UISettings
+}
+extension NppCoreModule.ConstSDK {
+  public var VERIFICATION_BASE_URL: Swift.String {
+    get
+  }
+  public var SADO_BASE_URL: Swift.String {
+    get
+  }
+  public var ALLOWED_BANK_HOSTS: [Swift.String]? {
+    get
+  }
+  public var ALLOWED_CABINET_HOSTS: [Swift.String]? {
+    get
+  }
 }
 extension Foundation.UserDefaults {
   public func clearData()

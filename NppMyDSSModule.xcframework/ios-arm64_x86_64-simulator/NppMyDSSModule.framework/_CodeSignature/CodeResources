@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/NppMyDSSModule-Swift.h</key>
 		<data>
-		LnlUmJNtcgq4KEVZdyR84da23jA=
+		7lUc+EFgawI5vZxEnrFCMj5e7nY=
 		</data>
 		<key>Headers/NppMyDSSModule.h</key>
 		<data>
@@ -14,51 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		BnO9ShFNEs7kMi9eYx4xmyHgaZA=
+		X8AsIo+njcob7KOORHfMW+bxs04=
 		</data>
 		<key>Modules/NppMyDSSModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		TXVFbQSkxFd4CDZMJB4BXr5uEMA=
+		oPesBuGsJnXYM0/yAPb3dt7DFMQ=
 		</data>
 		<key>Modules/NppMyDSSModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		yVutUS4gn0yDtIGsjdP+w/NZSU4=
+		m3CmDiNuse9YEhUAFM5O8yDJU70=
 		</data>
 		<key>Modules/NppMyDSSModule.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		//5EpZvZPkaschErgKUmWHNLv6I=
+		kUSjX/WvtWaEUVQYWHYvZ9QKijI=
 		</data>
 		<key>Modules/NppMyDSSModule.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		yVutUS4gn0yDtIGsjdP+w/NZSU4=
+		m3CmDiNuse9YEhUAFM5O8yDJU70=
 		</data>
 		<key>Modules/NppMyDSSModule.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AD4iXDFcwL0Eq9VzMPEEC6jdSxA=
+		sg6BrBTRfvzpKHUcchMvm36nl2w=
 		</data>
 		<key>Modules/NppMyDSSModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		TXVFbQSkxFd4CDZMJB4BXr5uEMA=
+		oPesBuGsJnXYM0/yAPb3dt7DFMQ=
 		</data>
 		<key>Modules/NppMyDSSModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ao0kG7mc9BKW7Hyae7rIw1D6zLk=
+		q4lrvMMU/WkEQXBxz/EgePzp4lI=
 		</data>
 		<key>Modules/NppMyDSSModule.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		JqQ19s3MrbK8sqW3BoUYzNds218=
+		VqIuDMsPW9PXnw+W61Tq+ZkVvR0=
 		</data>
 		<key>Modules/NppMyDSSModule.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ao0kG7mc9BKW7Hyae7rIw1D6zLk=
+		q4lrvMMU/WkEQXBxz/EgePzp4lI=
 		</data>
 		<key>Modules/NppMyDSSModule.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7fkHF+HUapv2kcaVZQ+VKQWoSlE=
+		7tbscB7iaNG4G5atiIitalPvRz0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		PxERD3xLk2+9KxicsoyqRtVZ6yc=
+		BF+O2OylCBTxpt1uoYPT03ROfc8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t5WLFATJLg6CDJ8q1eHRL7ZncW3QkRNiPTjwgQN8RgE=
+			cM2ABRCY8PPEmksA+ymRXLyEJCVfADSojWLxdL1B2tM=
 			</data>
 		</dict>
 		<key>Headers/NppMyDSSModule.h</key>
@@ -81,77 +81,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5qVXTFRxVwBet2W550f1yAbYLgNKRFH97xbXCwAnS3Q=
+			vbKJwgXzXe63rem19xUv3rM6/FGR+LQWWxqdO8d0ZYg=
 			</data>
 		</dict>
 		<key>Modules/NppMyDSSModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0ZQOG9d/GG8IClwYumXLHKJOji/7jJSzLs3LMtlV5w4=
+			Kpsll6o15jRQDXZMZlv09MD/IBA+r5fvTMyGwiALvvU=
 			</data>
 		</dict>
 		<key>Modules/NppMyDSSModule.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2w1I/Al2YUMPwLv0pTq/OQ/v5DWklueEDMpGSi1pZUI=
+			zp7WrhPk2X0btKDgY6R6LUmXjKJc7AF5gZ1q16m2p/Y=
 			</data>
 		</dict>
 		<key>Modules/NppMyDSSModule.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0ZQOG9d/GG8IClwYumXLHKJOji/7jJSzLs3LMtlV5w4=
+			Kpsll6o15jRQDXZMZlv09MD/IBA+r5fvTMyGwiALvvU=
 			</data>
 		</dict>
 		<key>Modules/NppMyDSSModule.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U6/1vCGyuY6dkRnH9ah/Ba2A7qIj0jw6/SiiGQXaMIU=
+			EIcdAu12xvPc6VG4um7L5bHMk+v+JYuo2+LnqcWz4bc=
 			</data>
 		</dict>
 		<key>Modules/NppMyDSSModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5qVXTFRxVwBet2W550f1yAbYLgNKRFH97xbXCwAnS3Q=
+			vbKJwgXzXe63rem19xUv3rM6/FGR+LQWWxqdO8d0ZYg=
 			</data>
 		</dict>
 		<key>Modules/NppMyDSSModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			unTQaS7BCPM+y1QLtNwuyNJKJYWr6cFl2JVxGwRO+Nk=
+			5mpXmWiSLh7lJfzLEGzLG1YhO8zj1SgCY3I7SRsqwOc=
 			</data>
 		</dict>
 		<key>Modules/NppMyDSSModule.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yjDVTSbOEk6t1r+8NwMcQNydpTF7ajn9Q+4GJJveAoY=
+			OxtEkWdeuxypb4WbzOZ8DHk9Y8PdjuUDty8UqlFtoIw=
 			</data>
 		</dict>
 		<key>Modules/NppMyDSSModule.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			unTQaS7BCPM+y1QLtNwuyNJKJYWr6cFl2JVxGwRO+Nk=
+			5mpXmWiSLh7lJfzLEGzLG1YhO8zj1SgCY3I7SRsqwOc=
 			</data>
 		</dict>
 		<key>Modules/NppMyDSSModule.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MJv7IhG1YDX5AIOmeg7+xai+xxzPSv6TI8tBgALUtUw=
+			hZ+RVtR8Cm5ftkC2SDCzpg5wTMzAmxxB44ngEdPt+V0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lGrwdsjRHQHPxXtX5Y2eCWMhhS1mcrLKMkySAEYs0/8=
+			gVyv4emYvDFwCa4AEB743Vxhxh059Hbu5F66O8rb6t4=
 			</data>
 		</dict>
 	</dict>

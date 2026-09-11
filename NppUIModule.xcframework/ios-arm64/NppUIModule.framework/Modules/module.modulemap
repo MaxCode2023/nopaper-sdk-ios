@@ -7,5 +7,4 @@ framework module NppUIModule {
 
 module NppUIModule.Swift {
   header "NppUIModule-Swift.h"
-  requires objc
 }

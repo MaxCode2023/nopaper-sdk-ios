@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/NppSDKModule-Swift.h</key>
 		<data>
-		gRYKOlYMmbHY3woJZq2IPkTFwCo=
+		OOc/nDwcCwvRAaNhU39Skgu6S3w=
 		</data>
 		<key>Headers/nopaper_framework.h</key>
 		<data>
@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XoGfN9M8LZBviiJSBWjW8xn0+9g=
+		9VpbvJp4PFjip0mKz0bDXdvmc54=
 		</data>
 		<key>Modules/NppSDKModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		fYqr61DfZoQX7mDbNpc6Fs+u7oo=
+		gkig7WuLN3XhFIU787pZ7RMg8xg=
 		</data>
 		<key>Modules/NppSDKModule.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		i2HmyN2iTKx79dqPDEOBVF1Apg8=
+		FOZ9pgkuExKMOFyqlZUzp+D9PqQ=
 		</data>
 		<key>Modules/NppSDKModule.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		wIyMhl5S7lLz8A+/G/1tlVqvI2g=
+		96aEpAXuIPHKhMfcWH5XGnOEzBQ=
 		</data>
 		<key>Modules/NppSDKModule.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		i2HmyN2iTKx79dqPDEOBVF1Apg8=
+		FOZ9pgkuExKMOFyqlZUzp+D9PqQ=
 		</data>
 		<key>Modules/NppSDKModule.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		gfURo6IAr0mZvuCte3mWzYaBM7U=
+		JTabD/VSrUUqmMj606M6xNyjALU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		teOoQE21S+uGBsaioFvk073ox4o=
+		XH6pykX/UhaQT5QxlsGuyxyatGA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P/llOx8f6r2ZbDiWNfrwHP1VySaUk1J9bK6tiiGYg6U=
+			raxD4iPVf8Wyf2OsrPSE26BEDKNr/tvu/0cMGwAAs3k=
 			</data>
 		</dict>
 		<key>Headers/nopaper_framework.h</key>
@@ -61,42 +61,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kdr+FUwByFUW0J2x3Ioc0U3kaHBlYlyQvUsJWmYaVro=
+			3HBRTScL7CtMK9z5/xsgtU/bQcVv/Wl1Gojj/i9lpAs=
 			</data>
 		</dict>
 		<key>Modules/NppSDKModule.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B1X5WL3i8oimJr3SULKw8XUgAwdNHpa7wKTym8rt6Gc=
+			bCF4CQiEOIUkfWdyC1818EycsQouKfmN/wKfZnU8XGg=
 			</data>
 		</dict>
 		<key>Modules/NppSDKModule.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3SGwSawWvdayQ1ZPv80kuexhjNvKRZtc79q2lKXyof4=
+			+NoqwMQY/cPd7CJvqgJw5xQFhlHNl1GT1VAPkvBb+D4=
 			</data>
 		</dict>
 		<key>Modules/NppSDKModule.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B1X5WL3i8oimJr3SULKw8XUgAwdNHpa7wKTym8rt6Gc=
+			bCF4CQiEOIUkfWdyC1818EycsQouKfmN/wKfZnU8XGg=
 			</data>
 		</dict>
 		<key>Modules/NppSDKModule.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p0PBLV1EhcOH5xFB75S4tzmHeEJe5lIrlyeUIQo5B6Q=
+			xNxOgu2oTMdZ4pDU7w8NAvbR+ErH1wjPQrQHG7XQ9VU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mxUuUyi/RDIc4eyq2LRP2rx5LUu50HoMiZvVU8gwXQI=
+			dYV4yGUzFQz5Y2udVEhlYXdnbj0dm8FbPc01urer6ZQ=
 			</data>
 		</dict>
 	</dict>

@@ -7,5 +7,4 @@ framework module NppMyDSSModule {
 
 module NppMyDSSModule.Swift {
   header "NppMyDSSModule-Swift.h"
-  requires objc
 }

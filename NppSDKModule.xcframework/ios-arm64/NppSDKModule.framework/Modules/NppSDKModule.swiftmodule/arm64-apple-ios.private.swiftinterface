@@ -1,9 +1,10 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NppSDKModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NppSDKModule
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import AbSDKMain
 import Alamofire
+import CryptoKit
 import Foundation
 import NppCoreModule
 import NppNetworkModule
@@ -12,10 +13,12 @@ import PCSDKModule
 import PromiseKit
 import RxAlamofire
 import RxSwift
+import Security
 import Sentry
 import Swift
 import SwiftUI
 import Swinject
+import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -305,6 +308,12 @@ extension NppSDKModule.NppSDKInteractorImpl {
   public func verifySmsSignCode(code: Swift.String) -> AbSDKMain.Task<Swift.Int>
   public func startSignWithPaycontrolSms(signingPartyId: Swift.Int) -> AbSDKMain.Task<AbSDKMain.VoidCodable>
   public func revokeAndDeleteAllCertificates() -> AbSDKMain.Task<Swift.Void>
+  public func checkKeyForIssuance() -> AbSDKMain.Task<NppSDKModule.IssuanceKeyCheck>
+  public func getActiveVerificationBanner() -> AbSDKMain.Task<NppSDKModule.VerificationBanner?>
+  public func resolveNocodeVerification() -> AbSDKMain.Task<NppSDKModule.NocodeVerification>
+  public func openNocodePage(verification: NppSDKModule.NocodeVerification) -> AbSDKMain.Task<NppSDKModule.NocodePage>
+  public func awaitVerificationResult(verificationId: Swift.String) -> AbSDKMain.Task<Swift.Void>
+  public func installKeyForVerification(verificationId: Swift.String) -> AbSDKMain.Task<NppSDKModule.Certificate>
 }
 public protocol ItmInteractor {
   func createCertificate() -> RxSwift.Observable<NppSDKModule.ITMCreateCertificate>
@@ -345,6 +354,7 @@ public struct Certificate : Swift.Hashable, Swift.Equatable {
   public let createdUtc: Swift.String?
   public let properties: NppSDKModule.Properties?
   public let selfReissuable: Swift.Bool
+  public init(certificateId: Swift.String, isAvailableForSigning: Swift.Bool = false, issuedDateTimeUtc: Swift.String? = nil, ownerGuid: Swift.String? = nil, ownerName: Swift.String? = nil, pcProviderData: NppSDKModule.PCProvider? = nil, providerStatus: Swift.Int = 0, providerStatusString: Swift.String = "", providerType: NppSDKModule.SigningProviderType = .unknown, providerTypeString: Swift.String = "", signingLevel: Swift.Int? = nil, signingLevelString: Swift.String = "", validUntilDateTimeUtc: Swift.String? = nil, createdUtc: Swift.String? = nil, properties: NppSDKModule.Properties? = nil, selfReissuable: Swift.Bool = false)
   public var isExpired: Swift.Bool {
     get
   }
@@ -394,6 +404,8 @@ public struct Properties : Swift.Codable {
   public let payControlIssuerName: Swift.String?
   public let payControlIssuingType: Swift.String?
   public let parent: Swift.String?
+  public let verificationId: Swift.String?
+  public init(payControlIssuerName: Swift.String? = nil, payControlIssuingType: Swift.String? = nil, parent: Swift.String? = nil, verificationId: Swift.String? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -420,6 +432,7 @@ public enum PayControlCertificateIssuingType : Swift.Int, Swift.Codable {
   case Ekyc
   case External
   case Anonimous
+  case Nocode
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -1162,6 +1175,7 @@ public struct PcSigningCertificateInfo {
   public let acceptingAcceptanceActType: NppSDKModule.PCAcceptingAcceptanceActType
   public let reissuingId: Swift.Int?
   public let parentCertificateId: Swift.String?
+  public init(certificateId: Swift.String? = nil, status: NppSDKModule.PCCertificateStatus = .Unknown, statusString: Swift.String? = nil, pcUserId: Swift.String? = nil, signingCertificateId: Swift.String? = nil, userGuid: Swift.String? = nil, sessionId: Swift.String? = nil, providerType: NppSDKModule.SigningProviderType = .payControl, providerTypeString: Swift.String? = nil, payControlIssuingType: NppSDKModule.PayControlCertificateIssuingType = .Unknown, payControlIssuingTypeString: Swift.String? = nil, issuerName: Swift.String? = nil, issuedDateTimeUtc: Swift.String? = nil, keyExpirationTime: Swift.String? = nil, publicKey: Swift.String? = nil, deviceFingerprint: Swift.String? = nil, mobileAccept: Swift.Bool? = nil, acceptanceActFileId: Swift.String? = nil, acceptingAcceptanceActTimeUtc: Swift.String? = nil, acceptingAcceptanceActType: NppSDKModule.PCAcceptingAcceptanceActType = .Unknown, reissuingId: Swift.Int? = nil, parentCertificateId: Swift.String? = nil)
 }
 public struct ClientUlResponse : Swift.Codable {
   public let id: Swift.Int
@@ -1252,6 +1266,12 @@ public protocol NppSDKInteractor {
   func setKeyForReissuedCertificate(reissuedCertificateId: Swift.String) -> AbSDKMain.Task<Swift.Void>
   func signReissuedKeyAcceptanceAct(reissuedCertificateId: Swift.String) -> AbSDKMain.Task<Swift.Void>
   func revokeAndDeleteAllCertificates() -> AbSDKMain.Task<Swift.Void>
+  func checkKeyForIssuance() -> AbSDKMain.Task<NppSDKModule.IssuanceKeyCheck>
+  func getActiveVerificationBanner() -> AbSDKMain.Task<NppSDKModule.VerificationBanner?>
+  func resolveNocodeVerification() -> AbSDKMain.Task<NppSDKModule.NocodeVerification>
+  func openNocodePage(verification: NppSDKModule.NocodeVerification) -> AbSDKMain.Task<NppSDKModule.NocodePage>
+  func awaitVerificationResult(verificationId: Swift.String) -> AbSDKMain.Task<Swift.Void>
+  func installKeyForVerification(verificationId: Swift.String) -> AbSDKMain.Task<NppSDKModule.Certificate>
 }
 public struct GetCompanyInfoResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
@@ -1556,6 +1576,459 @@ public struct DocumentCountInfoListResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public enum UrlNotBuiltReason : Swift.Equatable {
+  case noPhone
+  case invalidUrl
+  public static func == (a: NppSDKModule.UrlNotBuiltReason, b: NppSDKModule.UrlNotBuiltReason) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum NocodeError : Foundation.LocalizedError, Swift.Equatable {
+  case urlNotBuilt(NppSDKModule.UrlNotBuiltReason)
+  case cabinetNotFound
+  case authorizeFailed
+  case cabinetUrlRejected
+  case resultNotFinished(status: Swift.Int?)
+  case pollFailed
+  case certificateNotFound
+  case installFailed
+  case keyCheckFailed
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public static func == (a: NppSDKModule.NocodeError, b: NppSDKModule.NocodeError) -> Swift.Bool
+}
+public enum CabinetUrlPolicy {
+  public static func validate(_ tenantClientUrl: Swift.String, allowedHosts: [Swift.String]?) -> Swift.Result<Foundation.URL, NppSDKModule.NocodeError>
+  public static func normalizeHost(_ host: Swift.String) -> Swift.String
+}
+public enum IssuanceKeyCheck : Swift.Equatable {
+  case keyValid(certificateId: Swift.String)
+  case actNeeded(certificateId: Swift.String)
+  case noKey
+  public static func == (a: NppSDKModule.IssuanceKeyCheck, b: NppSDKModule.IssuanceKeyCheck) -> Swift.Bool
+}
+public struct NocodeVerification : Swift.Equatable {
+  public let verificationId: Swift.String
+  public let nocodeDocumentId: Swift.String
+  public let cabinetAlias: Swift.String
+  public let cabinetUserId: Swift.String
+  public let status: Swift.Int
+  public var verificationStatus: NppSDKModule.VerificationStatus {
+    get
+  }
+  public init(verificationId: Swift.String, nocodeDocumentId: Swift.String, cabinetAlias: Swift.String, cabinetUserId: Swift.String, status: Swift.Int)
+  public init(verificationId: Swift.String, nocodeDocumentId: Swift.String, cabinetAlias: Swift.String, cabinetUserId: Swift.String, status: NppSDKModule.VerificationStatus)
+  public static func == (a: NppSDKModule.NocodeVerification, b: NppSDKModule.NocodeVerification) -> Swift.Bool
+}
+public struct VerificationBanner : Swift.Equatable {
+  public let title: Swift.String
+  public let message: Swift.String
+  public let verification: NppSDKModule.NocodeVerification
+  public init(title: Swift.String, message: Swift.String, verification: NppSDKModule.NocodeVerification)
+  public static func == (a: NppSDKModule.VerificationBanner, b: NppSDKModule.VerificationBanner) -> Swift.Bool
+}
+public enum VerificationStatus : Swift.Int, Swift.Codable, Swift.Equatable {
+  case unknown
+  case inProgress
+  case verified
+  case failed
+  case finished
+  case finishedByV1
+  public init(from decoder: any Swift.Decoder) throws
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum IssuanceRules {
+  public static func keyedCertificates(_ certificates: [NppSDKModule.Certificate], keyNames: [Swift.String]) -> [NppSDKModule.Certificate]
+  public static func parseDate(_ string: Swift.String?) -> Foundation.Date?
+  public static func newestByCreatedUtc(_ certificates: [NppSDKModule.Certificate]) -> NppSDKModule.Certificate?
+  public static func selectKeyedCertificate(_ keyed: [NppSDKModule.Certificate]) -> NppSDKModule.Certificate?
+  public static func checkKeyForIssuance(_ keyed: [NppSDKModule.Certificate], pcDetailProvider: ((Swift.String) -> NppSDKModule.PcSigningCertificateInfo?)? = nil) -> NppSDKModule.IssuanceKeyCheck
+  public static func checkKeyForIssuance(_ keyed: [NppSDKModule.Certificate], pcDetails: [Swift.String : NppSDKModule.PcSigningCertificateInfo]) -> NppSDKModule.IssuanceKeyCheck
+  public static func pickByVerificationId(_ certificates: [NppSDKModule.Certificate], verificationId: Swift.String) -> NppSDKModule.Certificate?
+  public static func pickNewestInternalTemplate(_ certificates: [NppSDKModule.Certificate]) -> NppSDKModule.Certificate?
+  public static func isActiveBanner(_ banner: NppSDKModule.VerificationBanner?, certificates: [NppSDKModule.Certificate]) -> Swift.Bool
+  public static func isActiveBanner(status: Swift.Int, certificates: [NppSDKModule.Certificate]) -> Swift.Bool
+  public static func isActiveBanner(status: NppSDKModule.VerificationStatus, certificates: [NppSDKModule.Certificate]) -> Swift.Bool
+}
+final public class PayControlKeyInstaller {
+  public typealias ActivationWait = (_ certificateId: Swift.String, _ pcUserInteractor: any NppSDKModule.PCUserInteractor, _ disposeBag: RxSwift.DisposeBag) -> PromiseKit.Promise<NppSDKModule.PcSigningCertificateInfo>
+  public init(pcUserInteractor: any NppSDKModule.PCUserInteractor, monitoringInteractor: any NppSDKModule.MonitoringInteractor, sentryInteractor: any NppSDKModule.SentryInteractor, const: any NppCoreModule.ConstSDK, activationWait: NppSDKModule.PayControlKeyInstaller.ActivationWait? = nil)
+  final public func install(certificate: NppSDKModule.Certificate) -> PromiseKit.Promise<NppSDKModule.PcSigningCertificateInfo>
+  @objc deinit
+}
+public struct VerificationResponse : Swift.Codable, Swift.Equatable {
+  public let verificationId: Swift.String
+  public let nocodeDocumentId: Swift.String
+  public let cabinetAlias: Swift.String
+  public let cabinetUserId: Swift.String
+  public let verificationType: Swift.Int?
+  public let verificationStatus: Swift.Int?
+  public init(verificationId: Swift.String, nocodeDocumentId: Swift.String, cabinetAlias: Swift.String, cabinetUserId: Swift.String, verificationType: Swift.Int? = nil, verificationStatus: Swift.Int? = nil)
+  public static func == (a: NppSDKModule.VerificationResponse, b: NppSDKModule.VerificationResponse) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct VerificationInfoResponse : Swift.Codable, Swift.Equatable {
+  public let verificationId: Swift.String
+  public let userGuid: Swift.String?
+  public let type: Swift.String?
+  public let typeString: Swift.String?
+  public let status: Swift.Int
+  public let statusString: Swift.String?
+  public let message: Swift.String?
+  public init(verificationId: Swift.String, userGuid: Swift.String? = nil, type: Swift.String? = nil, typeString: Swift.String? = nil, status: Swift.Int, statusString: Swift.String? = nil, message: Swift.String? = nil)
+  public init(from decoder: any Swift.Decoder) throws
+  public static func == (a: NppSDKModule.VerificationInfoResponse, b: NppSDKModule.VerificationInfoResponse) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct BannerListResponse : Swift.Codable, Swift.Equatable {
+  public let bannerList: [NppSDKModule.VerificationBannerResponse]?
+  public init(bannerList: [NppSDKModule.VerificationBannerResponse]?)
+  public static func == (a: NppSDKModule.BannerListResponse, b: NppSDKModule.BannerListResponse) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct VerificationBannerResponse : Swift.Codable, Swift.Equatable {
+  public let title: Swift.String?
+  public let message: Swift.String?
+  public let verificationInfo: NppSDKModule.VerificationResponse
+  public init(title: Swift.String?, message: Swift.String?, verificationInfo: NppSDKModule.VerificationResponse)
+  public static func == (a: NppSDKModule.VerificationBannerResponse, b: NppSDKModule.VerificationBannerResponse) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CabinetUserListResponse : Swift.Codable, Swift.Equatable {
+  public let cabinetUserList: [NppSDKModule.CabinetUserResponse]?
+  public init(cabinetUserList: [NppSDKModule.CabinetUserResponse]?)
+  public static func == (a: NppSDKModule.CabinetUserListResponse, b: NppSDKModule.CabinetUserListResponse) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CabinetUserResponse : Swift.Codable, Swift.Equatable {
+  public let cabinetUserId: Swift.String
+  public let tenantAlias: Swift.String?
+  public let tenantClientUrl: Swift.String?
+  public let cabinetName: Swift.String?
+  public let nppCompanyId: Swift.Int?
+  public let cabinetType: Swift.Int?
+  public init(cabinetUserId: Swift.String, tenantAlias: Swift.String? = nil, tenantClientUrl: Swift.String? = nil, cabinetName: Swift.String? = nil, nppCompanyId: Swift.Int? = nil, cabinetType: Swift.Int? = nil)
+  public static func == (a: NppSDKModule.CabinetUserResponse, b: NppSDKModule.CabinetUserResponse) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AuthorizeResponse : Swift.Codable, Swift.Equatable {
+  public let authCode: Swift.String?
+  public init(authCode: Swift.String?)
+  public static func == (a: NppSDKModule.AuthorizeResponse, b: NppSDKModule.AuthorizeResponse) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol VerificationApiRepository {
+  func initNocode(actionTitleList: [Swift.String]) -> RxSwift.Observable<NppSDKModule.VerificationResponse>
+  func getVerification(id: Swift.String) -> RxSwift.Observable<NppSDKModule.VerificationInfoResponse>
+  func getBannerList(limit: Swift.Int, offset: Swift.Int) -> RxSwift.Observable<NppSDKModule.BannerListResponse>
+}
+@_inheritsConvenienceInitializers public class VerificationApiRepositoryImpl : NppNetworkModule.SessionManager, NppSDKModule.VerificationApiRepository {
+  override public init(const: any NppCoreModule.ConstSDK)
+  public func initNocode(actionTitleList: [Swift.String]) -> RxSwift.Observable<NppSDKModule.VerificationResponse>
+  public func getVerification(id: Swift.String) -> RxSwift.Observable<NppSDKModule.VerificationInfoResponse>
+  public func getBannerList(limit: Swift.Int, offset: Swift.Int) -> RxSwift.Observable<NppSDKModule.BannerListResponse>
+  @objc deinit
+}
+public protocol SadoApiRepository {
+  func getCabinetUserList() -> RxSwift.Observable<NppSDKModule.CabinetUserListResponse>
+  func authorize(alias: Swift.String, cabinetUserId: Swift.String) -> RxSwift.Observable<NppSDKModule.AuthorizeResponse>
+}
+@_inheritsConvenienceInitializers public class SadoApiRepositoryImpl : NppNetworkModule.SessionManager, NppSDKModule.SadoApiRepository {
+  override public init(const: any NppCoreModule.ConstSDK)
+  public func getCabinetUserList() -> RxSwift.Observable<NppSDKModule.CabinetUserListResponse>
+  public func authorize(alias: Swift.String, cabinetUserId: Swift.String) -> RxSwift.Observable<NppSDKModule.AuthorizeResponse>
+  @objc deinit
+}
+public struct NocodePage : Swift.CustomStringConvertible, Swift.Equatable {
+  public let url: Foundation.URL
+  public let origin: Swift.String
+  public let allowedBankHosts: [Swift.String]?
+  public var description: Swift.String {
+    get
+  }
+  public init(url: Foundation.URL, origin: Swift.String, allowedBankHosts: [Swift.String]? = nil)
+  public static func == (a: NppSDKModule.NocodePage, b: NppSDKModule.NocodePage) -> Swift.Bool
+}
+public enum Origin {
+  public static func make(scheme: Swift.String?, host: Swift.String?, port: Swift.Int? = nil) -> Swift.String?
+  public static func of(_ url: Foundation.URL?) -> Swift.String?
+  public static func of(_ securityOrigin: WebKit.WKSecurityOrigin?) -> Swift.String?
+}
+public enum NocodeUrlBuilder {
+  public static let hideconfig: Swift.String
+  public static func build(tenantClientUrl: Swift.String, authCode: Swift.String, phone: Swift.String, documentId: Swift.String) -> Foundation.URL?
+}
+public enum NocodeLogPayload {
+  public static func bannerLoaded(_ banner: NppSDKModule.VerificationBanner?) -> [Swift.String : Swift.String]
+  public static func verificationResolved(_ verification: NppSDKModule.NocodeVerification) -> [Swift.String : Swift.String]
+  public static func pageOpened(host: Swift.String) -> [Swift.String : Swift.String]
+  public static func resultReceived(verificationId: Swift.String, status: Swift.Int? = nil) -> [Swift.String : Swift.String]
+  public static func keyInstalled(verificationId: Swift.String, certificateId: Swift.String) -> [Swift.String : Swift.String]
+  public static func error(operation: Swift.String, error: any Swift.Error) -> [Swift.String : Swift.String]
+}
+final public class ResultPoller {
+  final public let attempts: Swift.Int
+  final public let interval: Foundation.TimeInterval
+  final public let sleep: (Foundation.TimeInterval, @escaping () -> Swift.Void) -> Swift.Void
+  public init(attempts: Swift.Int = 60, interval: Foundation.TimeInterval = 1.0, sleep: @escaping (Foundation.TimeInterval, @escaping () -> Swift.Void) -> Swift.Void)
+  public static func production(sleep: @escaping (Foundation.TimeInterval, @escaping () -> Swift.Void) -> Swift.Void = { delay, block in
+            DispatchQueue.global().asyncAfter(deadline: .now() + delay, execute: block)
+        }) -> NppSDKModule.ResultPoller
+  final public func poll(verificationId: Swift.String, repository: any NppSDKModule.VerificationApiRepository) -> RxSwift.Observable<Swift.Void>
+  @objc deinit
+}
+public protocol NocodeVerificationInteractor {
+  func checkKeyForIssuance() -> RxSwift.Observable<NppSDKModule.IssuanceKeyCheck>
+  func getActiveVerificationBanner() -> RxSwift.Observable<NppSDKModule.VerificationBanner?>
+  func resolveNocodeVerification() -> RxSwift.Observable<NppSDKModule.NocodeVerification>
+  func openNocodePage(verification: NppSDKModule.NocodeVerification) -> RxSwift.Observable<NppSDKModule.NocodePage>
+  func awaitVerificationResult(verificationId: Swift.String) -> RxSwift.Observable<Swift.Void>
+  func installKeyForVerification(verificationId: Swift.String) -> RxSwift.Observable<NppSDKModule.Certificate>
+}
+public class NocodeVerificationInteractorImpl : NppSDKModule.NocodeVerificationInteractor {
+  public init(verificationApiRepository: any NppSDKModule.VerificationApiRepository, sadoApiRepository: any NppSDKModule.SadoApiRepository, certificateInteractor: any NppSDKModule.CertificateInteractor, pcUserInteractor: any NppSDKModule.PCUserInteractor, profileInteractor: any NppSDKModule.ProfileInteractor, keyInstaller: NppSDKModule.PayControlKeyInstaller, const: any NppCoreModule.ConstSDK, poller: NppSDKModule.ResultPoller = .production(), keyStorageLookup: (([NppSDKModule.Certificate]) throws -> [NppSDKModule.Certificate])? = nil)
+  public func checkKeyForIssuance() -> RxSwift.Observable<NppSDKModule.IssuanceKeyCheck>
+  public func getActiveVerificationBanner() -> RxSwift.Observable<NppSDKModule.VerificationBanner?>
+  public func resolveNocodeVerification() -> RxSwift.Observable<NppSDKModule.NocodeVerification>
+  public func openNocodePage(verification: NppSDKModule.NocodeVerification) -> RxSwift.Observable<NppSDKModule.NocodePage>
+  public func awaitVerificationResult(verificationId: Swift.String) -> RxSwift.Observable<Swift.Void>
+  public func installKeyForVerification(verificationId: Swift.String) -> RxSwift.Observable<NppSDKModule.Certificate>
+  @objc deinit
+}
+public class NocodeAssembly : Swinject.Assembly {
+  public init()
+  public func assemble(container: Swinject.Container)
+  @objc deinit
+}
+public struct NocodeMessage : Swift.Equatable {
+  public static let fieldDocumentId: Swift.String
+  public static let issuanceDocumentId: Swift.String
+  public static let nameNavigateToDocument: Swift.String
+  public static let nameError: Swift.String
+  public static let nameLogout: Swift.String
+  public static let nameUnauthorize: Swift.String
+  public let name: Swift.String
+  public let value: Any?
+  public init(name: Swift.String, value: Any? = nil)
+  public func documentId() -> Swift.String?
+  public static func == (lhs: NppSDKModule.NocodeMessage, rhs: NppSDKModule.NocodeMessage) -> Swift.Bool
+}
+public enum NocodeMessageParser {
+  public static let maxMessageLength: Swift.Int
+  public static func parse(_ message: Swift.String?) -> NppSDKModule.NocodeMessage?
+}
+public enum BridgeAdmissionDecision : Swift.Equatable {
+  case accepted(body: Swift.String)
+  case dropped(reason: Swift.String)
+  public static func == (a: NppSDKModule.BridgeAdmissionDecision, b: NppSDKModule.BridgeAdmissionDecision) -> Swift.Bool
+}
+public enum BridgeAdmission {
+  public static let maxBodyLength: Swift.Int
+  public static func decide(isMainFrame: Swift.Bool, isMainWebView: Swift.Bool, origin: Swift.String?, allowedOrigin: Swift.String?, body: Any?) -> NppSDKModule.BridgeAdmissionDecision
+  public static func sanitizeMessageName(_ name: Swift.String) -> Swift.String
+}
+public enum TrustDecision : Swift.Equatable {
+  case accept(leaf: Swift.String, anchor: Swift.String)
+  case refuse(reason: Swift.String, leaf: Swift.String?, anchor: Swift.String?)
+  public static func == (a: NppSDKModule.TrustDecision, b: NppSDKModule.TrustDecision) -> Swift.Bool
+}
+public enum ServerTrustPolicy {
+  public static func decide(trust: Security.SecTrust, host: Swift.String, mainFrameOnCabinet: Swift.Bool, allowedBankHosts: [Swift.String]?) -> NppSDKModule.TrustDecision
+  public static func formatLogLine(decision: NppSDKModule.TrustDecision, host: Swift.String) -> Swift.String
+  public static func fingerprint(of certificate: Security.SecCertificate) -> Swift.String
+}
+final public class BackNavigationRule {
+  public init()
+  final public func recordStartUrl(_ url: Foundation.URL)
+  final public func recordStartUrl(_ urlString: Swift.String)
+  final public func isStartUrl(_ url: Foundation.URL) -> Swift.Bool
+  final public func isStartUrl(_ urlString: Swift.String) -> Swift.Bool
+  final public func isStartUrl(hash: Swift.String) -> Swift.Bool
+  public static func hash(_ url: Foundation.URL) -> Swift.String
+  public static func hash(_ string: Swift.String) -> Swift.String
+  @objc deinit
+}
+public enum NavigationDecision : Swift.Equatable {
+  case allow
+  case openExternally
+  case drop
+  case finishRun
+  public static func == (a: NppSDKModule.NavigationDecision, b: NppSDKModule.NavigationDecision) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum NavigationErrorClassification : Swift.Equatable {
+  case ignore
+  case connectivity
+  case tls
+  case other
+  public static func == (a: NppSDKModule.NavigationErrorClassification, b: NppSDKModule.NavigationErrorClassification) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum NavigationPolicy {
+  public static func classify(url: Foundation.URL?, navigationType: WebKit.WKNavigationType, isStartUrl: Swift.Bool) -> NppSDKModule.NavigationDecision
+  public static func classifyError(domain: Swift.String, code: Swift.Int) -> NppSDKModule.NavigationErrorClassification
+}
+public enum EkycOutcome : Swift.Equatable {
+  case keyInstalled
+  case error(text: Swift.String)
+  case exit
+  public static func == (a: NppSDKModule.EkycOutcome, b: NppSDKModule.EkycOutcome) -> Swift.Bool
+}
+final public class RunOutcomeState {
+  public init()
+  final public func noteActNotified() -> Swift.Bool
+  final public func finish(_ outcome: NppSDKModule.EkycOutcome) -> NppSDKModule.EkycOutcome?
+  @objc deinit
+}
+final public class EkycRunGuard {
+  public static let pendingTimeoutSeconds: Swift.Double
+  public static let shared: NppSDKModule.EkycRunGuard
+  public init()
+  final public func tryStart(now: Foundation.TimeInterval = Date().timeIntervalSince1970) -> Swift.Bool
+  final public func setAlive()
+  final public func release()
+  final public func onHostGone()
+  final public func canStart(now: Foundation.TimeInterval = Date().timeIntervalSince1970) -> Swift.Bool
+  final public var canStart: Swift.Bool {
+    get
+  }
+  public static var canStart: Swift.Bool {
+    get
+  }
+  final public func reset()
+  public static func tryStart(now: Foundation.TimeInterval = Date().timeIntervalSince1970) -> Swift.Bool
+  public static func setAlive()
+  public static func release()
+  public static func onHostGone()
+  public static func reset()
+  @objc deinit
+}
+public enum NocodeTexts {
+  public static let unexpectedError: Swift.String
+  public static let certificateNotFound: Swift.String
+  public static let noConnectionTitle: Swift.String
+  public static let noConnectionRetry: Swift.String
+}
+public enum MainFrameErrorKind : Swift.Equatable {
+  case connectivity
+  case tls
+  case other
+  public static func == (a: NppSDKModule.MainFrameErrorKind, b: NppSDKModule.MainFrameErrorKind) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum NocodeScreenState : Swift.Equatable {
+  case preparing(verification: NppSDKModule.NocodeVerification? = nil)
+  case loading(verification: NppSDKModule.NocodeVerification, page: NppSDKModule.NocodePage, hasPopup: Swift.Bool = false)
+  case page(verification: NppSDKModule.NocodeVerification, page: NppSDKModule.NocodePage, hasPopup: Swift.Bool = false)
+  case noConnection(verification: NppSDKModule.NocodeVerification, page: NppSDKModule.NocodePage, retrying: Swift.Bool)
+  case polling(verification: NppSDKModule.NocodeVerification)
+  case installing(verification: NppSDKModule.NocodeVerification)
+  case finished
+  public static func == (a: NppSDKModule.NocodeScreenState, b: NppSDKModule.NocodeScreenState) -> Swift.Bool
+}
+public enum NocodeScreenEvent : Swift.Equatable {
+  case keyCheck(NppSDKModule.IssuanceKeyCheck)
+  case verificationResolved(NppSDKModule.NocodeVerification)
+  case pageOpened(NppSDKModule.NocodePage)
+  case pageCommitted
+  case mainFrameFailed(kind: NppSDKModule.MainFrameErrorKind)
+  case contentProcessTerminated
+  case popupOpened
+  case popupFailed
+  case popupClosed
+  case connectionLost
+  case connectivityCheck(isConnected: Swift.Bool)
+  case connectionAvailable
+  case retryTapped
+  case reauthorizeFailed
+  case message(NppSDKModule.NocodeMessage)
+  case pollResult(success: Swift.Bool)
+  case installResult(certificateId: Swift.String?)
+  case backNavigationToStart
+  case closeTapped
+  case sdkError
+  public static func == (a: NppSDKModule.NocodeScreenEvent, b: NppSDKModule.NocodeScreenEvent) -> Swift.Bool
+}
+public enum NocodeEffect : Swift.Equatable {
+  case showLoader
+  case loadUrl(url: Foundation.URL, isStart: Swift.Bool)
+  case showOverlay
+  case hideOverlay
+  case reauthorize
+  case stopPage
+  case poll(verificationId: Swift.String)
+  case cancelPoll
+  case install(verificationId: Swift.String)
+  case scheduleConnectivityCheck(delay: Foundation.TimeInterval)
+  case notifyActNeeded(certificateId: Swift.String)
+  case openAct(certificateId: Swift.String)
+  case closePopup
+  case finish(outcome: NppSDKModule.EkycOutcome)
+  public static func == (a: NppSDKModule.NocodeEffect, b: NppSDKModule.NocodeEffect) -> Swift.Bool
+}
+public struct NocodeTransition : Swift.Equatable {
+  public let state: NppSDKModule.NocodeScreenState
+  public let effects: [NppSDKModule.NocodeEffect]
+  public init(state: NppSDKModule.NocodeScreenState, effects: [NppSDKModule.NocodeEffect])
+  public static func == (a: NppSDKModule.NocodeTransition, b: NppSDKModule.NocodeTransition) -> Swift.Bool
+}
+public enum NocodeScreenReducer {
+  public static func initial() -> NppSDKModule.NocodeTransition
+  public static func reduce(state: NppSDKModule.NocodeScreenState, event: NppSDKModule.NocodeScreenEvent) -> NppSDKModule.NocodeTransition
+}
+public class StatusKeyModel : Swift.Equatable {
+  public var status: AbSDKMain.TaskStatus?
+  public var description: Swift.String?
+  public var keyId: Swift.String?
+  public init(status: AbSDKMain.TaskStatus?, keyId: Swift.String? = nil, description: Swift.String? = "")
+  public static func == (lhs: NppSDKModule.StatusKeyModel, rhs: NppSDKModule.StatusKeyModel) -> Swift.Bool
+  @objc deinit
+}
+public struct IssuanceCardsInput : Swift.Equatable {
+  public let statusKey: NppSDKModule.StatusKeyModel?
+  public let certificate: NppSDKModule.Certificate?
+  public let certificateArrived: Swift.Bool
+  public let banner: NppSDKModule.VerificationBanner?
+  public let bannerArrived: Swift.Bool
+  public init(statusKey: NppSDKModule.StatusKeyModel?, certificate: NppSDKModule.Certificate?, certificateArrived: Swift.Bool, banner: NppSDKModule.VerificationBanner?, bannerArrived: Swift.Bool)
+  public static func == (a: NppSDKModule.IssuanceCardsInput, b: NppSDKModule.IssuanceCardsInput) -> Swift.Bool
+}
+public enum IssuanceCard : Swift.Equatable {
+  case none
+  case acceptAct
+  case waitingActivation
+  case `continue`(title: Swift.String, message: Swift.String)
+  case reissue(days: Swift.Int)
+  case expired
+  case getSign
+  public static func == (a: NppSDKModule.IssuanceCard, b: NppSDKModule.IssuanceCard) -> Swift.Bool
+}
+public enum CabinetCardResolver {
+  public static func resolveRegression(input: NppSDKModule.IssuanceCardsInput, daysProvider: ((NppSDKModule.Certificate) -> Swift.Int?)? = nil) -> NppSDKModule.IssuanceCard
+  public static func resolve(input: NppSDKModule.IssuanceCardsInput, daysProvider: ((NppSDKModule.Certificate) -> Swift.Int?)? = nil) -> NppSDKModule.IssuanceCard
+}
 extension NppSDKModule.Gender : Swift.Equatable {}
 extension NppSDKModule.Gender : Swift.Hashable {}
 extension NppSDKModule.Gender : Swift.RawRepresentable {}
@@ -1616,3 +2089,9 @@ extension NppSDKModule.CompanyInfoStatus : Swift.RawRepresentable {}
 extension NppSDKModule.SigningContainerStatus : Swift.Equatable {}
 extension NppSDKModule.SigningContainerStatus : Swift.Hashable {}
 extension NppSDKModule.SigningContainerStatus : Swift.RawRepresentable {}
+extension NppSDKModule.UrlNotBuiltReason : Swift.Hashable {}
+extension NppSDKModule.VerificationStatus : Swift.Hashable {}
+extension NppSDKModule.VerificationStatus : Swift.RawRepresentable {}
+extension NppSDKModule.NavigationDecision : Swift.Hashable {}
+extension NppSDKModule.NavigationErrorClassification : Swift.Hashable {}
+extension NppSDKModule.MainFrameErrorKind : Swift.Hashable {}

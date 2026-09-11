@@ -1,4 +1,3 @@
 framework module NppCoreModule {
   header "NppCoreModule-Swift.h"
-  requires objc
 }

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NppUIModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NppUIModule
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import AbSDKMain
 import AbSDKUI
 import Alamofire
@@ -9,11 +9,9 @@ import Foundation
 import LocalAuthentication
 import MobileCoreServices
 import NppCoreModule
-import NppKycModule
 import NppMyDSSModule
 import NppSDKModule
 @_exported import NppUIModule
-import PCKYCModule
 import PanModal
 import Photos
 import PromiseKit
@@ -118,17 +116,18 @@ public protocol CreateDocumentViewModel {
 public struct DocumentsItemViewModel : Swift.Equatable {
   public static func == (a: NppUIModule.DocumentsItemViewModel, b: NppUIModule.DocumentsItemViewModel) -> Swift.Bool
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class KycStartViewController : UIKit.UIViewController, NppUIModule.StoryboardInstantiable, UIKit.UITextViewDelegate {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class KycStartViewController : UIKit.UIViewController, UIKit.UITextViewDelegate {
+  @_Concurrency.MainActor @preconcurrency public var isDummy: Swift.Bool
+  @available(*, deprecated)
+  @_Concurrency.MainActor @preconcurrency public static var screenDelegate: (any NppUIModule.NppEkycScreenDelegate)?
   @_Concurrency.MainActor @preconcurrency public static func create(state: NppUIModule.KycStartVCState, screenDelegate: (any NppUIModule.NppEkycScreenDelegate)? = nil) -> NppUIModule.KycStartViewController
+  @available(*, deprecated, message: "Оставлено для обратной совместимости")
   @_Concurrency.MainActor @preconcurrency public static func configPassportDescTextViewWithLink(_ textView: UIKit.UITextView, delegate: any UIKit.UITextViewDelegate)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
-  @_Concurrency.MainActor @preconcurrency @objc public func textView(_ textView: UIKit.UITextView, shouldInteractWith URL: Foundation.URL, in characterRange: Foundation.NSRange, interaction: UIKit.UITextItemInteraction) -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @objc deinit
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  public typealias T = NppUIModule.KycStartViewController
-  @objc deinit
 }
 public struct PhoneContact {
   public let fullName: Swift.String
@@ -144,25 +143,6 @@ public enum TypeFileForLoad {
   public var hashValue: Swift.Int {
     get
   }
-}
-public protocol KycViewModelInput {
-  func verificate(viewController: UIKit.UIViewController, isNew: Swift.Bool)
-  func getRequiredSources()
-  func createMedia(mediaType: PCKYCModule.PCKYCMediaType, viewController: UIKit.UIViewController)
-  func getOCRResults()
-  func approveOCRResults(isApproved: Swift.Bool)
-  func deleteSession()
-}
-public protocol KycViewModelOutput {
-  var status: RxSwift.PublishSubject<PCKYCModule.PCKYCSessionStatus.Status?> { get }
-  var statusDescription: Swift.String { get }
-  var requiredSources: RxSwift.PublishSubject<Swift.Set<PCKYCModule.PCKYCMediaType>> { get }
-  var requiredSourcesSet: Swift.Set<PCKYCModule.PCKYCMediaType> { get }
-  var ocrResults: RxSwift.PublishSubject<NppKycModule.OCRResults?> { get }
-  var isLoading: RxSwift.PublishSubject<Swift.Bool> { get }
-  var mainTextStatus: RxSwift.PublishSubject<Swift.String> { get }
-}
-public protocol KycViewModel : NppUIModule.KycViewModelInput, NppUIModule.KycViewModelOutput {
 }
 public struct RouterItemViewModel : Swift.Equatable {
   public static func == (a: NppUIModule.RouterItemViewModel, b: NppUIModule.RouterItemViewModel) -> Swift.Bool
@@ -557,6 +537,7 @@ public protocol CabinetViewModelInput {
   func checkExternalDssCertificate()
   func getCertificate(certificateId: Swift.String?, onCompletion: @escaping (NppSDKModule.Certificate) -> Swift.Void)
   func verificate()
+  func refreshIssuanceCards()
 }
 public protocol CabinetViewModelOutput {
   var items: RxRelay.BehaviorRelay<[NppUIModule.DocumentsListItemViewModel]> { get }
@@ -565,7 +546,9 @@ public protocol CabinetViewModelOutput {
   var isDssCertificateOnDevice: RxSwift.PublishSubject<Swift.Bool?> { get set }
   var dssCertificate: RxSwift.PublishSubject<NppSDKModule.Certificate?> { get set }
   var loading: RxSwift.PublishSubject<Swift.Bool> { get set }
-  var statusKey: RxSwift.PublishSubject<NppUIModule.StatusKeyModel> { get set }
+  var statusKey: RxSwift.PublishSubject<NppSDKModule.StatusKeyModel> { get set }
+  var issuanceCard: RxSwift.PublishSubject<NppSDKModule.IssuanceCard> { get set }
+  var lastStatusKey: NppSDKModule.StatusKeyModel? { get set }
 }
 public protocol CabinetViewModel : NppUIModule.CabinetViewModelInput, NppUIModule.CabinetViewModelOutput {
 }
@@ -578,7 +561,9 @@ public protocol CabinetViewModel : NppUIModule.CabinetViewModelInput, NppUIModul
   }
   final public var isDssCertificateOnDevice: RxSwift.PublishSubject<Swift.Bool?>
   final public var dssCertificate: RxSwift.PublishSubject<NppSDKModule.Certificate?>
-  final public var statusKey: RxSwift.PublishSubject<NppUIModule.StatusKeyModel>
+  final public var statusKey: RxSwift.PublishSubject<NppSDKModule.StatusKeyModel>
+  final public var issuanceCard: RxSwift.PublishSubject<NppSDKModule.IssuanceCard>
+  final public var lastStatusKey: NppSDKModule.StatusKeyModel?
   @objc deinit
 }
 extension NppUIModule.DefaultCabinetViewModel {
@@ -587,6 +572,7 @@ extension NppUIModule.DefaultCabinetViewModel {
   final public func checkCertificateOnDevice()
   final public func checkExternalDssCertificate()
   final public func getCertificate(certificateId: Swift.String?, onCompletion: @escaping (NppSDKModule.Certificate) -> Swift.Void)
+  final public func refreshIssuanceCards()
   final public func verificate()
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class SettingsViewController : UIKit.UIViewController, NppUIModule.StoryboardInstantiable {
@@ -640,13 +626,6 @@ extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func addingZoomOnTap(duration: Foundation.TimeInterval = 0.1, destinationScaleFactor: CoreFoundation.CGFloat = 1.1) -> some SwiftUICore.View
   
 }
-public class StatusKeyModel {
-  public var status: AbSDKMain.TaskStatus?
-  public var description: Swift.String?
-  public var keyId: Swift.String?
-  public init(status: AbSDKMain.TaskStatus?, keyId: Swift.String? = nil, description: Swift.String? = "")
-  @objc deinit
-}
 public struct DocumentsListItemViewModel : Swift.Equatable {
   public static func == (a: NppUIModule.DocumentsListItemViewModel, b: NppUIModule.DocumentsListItemViewModel) -> Swift.Bool
 }
@@ -673,6 +652,81 @@ public protocol AgreementListViewModel : NppUIModule.AgreementListViewModelInput
   public func getActiveProfile() -> any NppSDKModule.Profile
   @objc deinit
 }
+@_hasMissingDesignatedInitializers final public class EkycRunContext {
+  public static func start(delegate: (any NppUIModule.NppEkycScreenDelegate)?, host: UIKit.UIViewController?)
+  public static func noteActNotified(certificateId: Swift.String)
+  public static func finish(_ outcome: NppSDKModule.EkycOutcome, from viewController: UIKit.UIViewController? = nil)
+  public static func onDeinit()
+  @objc deinit
+}
+@objc @_Concurrency.MainActor @preconcurrency final public class NocodeBridgeHandler : ObjectiveC.NSObject, WebKit.WKScriptMessageHandler {
+  @_Concurrency.MainActor @preconcurrency public static let handlerName: Swift.String
+  @_Concurrency.MainActor @preconcurrency public static let userScript: WebKit.WKUserScript
+  @_Concurrency.MainActor @preconcurrency weak final public var mainWebView: WebKit.WKWebView?
+  @_Concurrency.MainActor @preconcurrency final public let allowedOrigin: Swift.String
+  @_Concurrency.MainActor @preconcurrency final public let onMessage: (NppSDKModule.NocodeMessage) -> Swift.Void
+  @_Concurrency.MainActor @preconcurrency public init(mainWebView: WebKit.WKWebView?, allowedOrigin: Swift.String, onMessage: @escaping (NppSDKModule.NocodeMessage) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc final public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @_Concurrency.MainActor @preconcurrency final public func cleanup(from userContentController: WebKit.WKUserContentController)
+  @objc deinit
+}
+@objc @_Concurrency.MainActor @preconcurrency final public class NocodeNavigationDelegate : ObjectiveC.NSObject, WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor @preconcurrency final public let allowedOrigin: Swift.String
+  @_Concurrency.MainActor @preconcurrency final public let allowedBankHosts: [Swift.String]?
+  @_Concurrency.MainActor @preconcurrency final public let backRule: NppSDKModule.BackNavigationRule?
+  @_Concurrency.MainActor @preconcurrency final public var mainFrameOnCabinet: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency final public var refusedTls: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency final public var onPageCommitted: ((Foundation.URL?) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency final public var onMainFrameFailed: ((NppSDKModule.NavigationErrorClassification) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency final public var onFinishRun: ((NppSDKModule.EkycOutcome) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency final public var onProcessTerminated: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency final public var onTlsRefused: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public init(allowedOrigin: Swift.String, allowedBankHosts: [Swift.String]?, backRule: NppSDKModule.BackNavigationRule? = nil, initialMainFrameOnCabinet: Swift.Bool = true)
+  @_Concurrency.MainActor @preconcurrency @objc final public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc final public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc final public func webView(_ webView: WebKit.WKWebView, didCommit navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor @preconcurrency @objc final public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc final public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc final public func webViewWebContentProcessDidTerminate(_ webView: WebKit.WKWebView)
+  @objc deinit
+}
+@objc @_Concurrency.MainActor @preconcurrency final public class NocodeUIDelegate : ObjectiveC.NSObject, WebKit.WKUIDelegate {
+  @_Concurrency.MainActor @preconcurrency final public let isPopup: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency final public var onCreateWebView: ((WebKit.WKWebViewConfiguration, WebKit.WKNavigationAction, WebKit.WKWindowFeatures) -> WebKit.WKWebView?)?
+  @_Concurrency.MainActor @preconcurrency final public var onWebViewDidClose: ((WebKit.WKWebView) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public init(hostViewController: UIKit.UIViewController?, isPopup: Swift.Bool = false)
+  @_Concurrency.MainActor @preconcurrency @objc final public func webView(_ webView: WebKit.WKWebView, runJavaScriptAlertPanelWithMessage message: Swift.String, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc final public func webView(_ webView: WebKit.WKWebView, runJavaScriptConfirmPanelWithMessage message: Swift.String, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc final public func webView(_ webView: WebKit.WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: Swift.String, defaultText: Swift.String?, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping (Swift.String?) -> Swift.Void)
+  @available(iOS 15.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc final public func webView(_ webView: WebKit.WKWebView, requestMediaCapturePermissionFor origin: WebKit.WKSecurityOrigin, initiatedByFrame frame: WebKit.WKFrameInfo, type: WebKit.WKMediaCaptureType, decisionHandler: @escaping (WebKit.WKPermissionDecision) -> Swift.Void)
+  @available(iOS 15.0, *)
+  @_Concurrency.MainActor @preconcurrency final public func webView(_ webView: WebKit.WKWebView, requestGeolocationPermissionFor origin: WebKit.WKSecurityOrigin, initiatedByFrame frame: WebKit.WKFrameInfo, decisionHandler: @escaping (WebKit.WKPermissionDecision) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc final public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @_Concurrency.MainActor @preconcurrency @objc final public func webViewDidClose(_ webView: WebKit.WKWebView)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class NoConnectionOverlayView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency final public var onRetryTapped: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class PopupWebViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency final public let webView: WebKit.WKWebView
+  @_Concurrency.MainActor @preconcurrency final public var onDismissed: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public init(configuration: WebKit.WKWebViewConfiguration, allowedOrigin: Swift.String, allowedBankHosts: [Swift.String]?, initialUrl: Foundation.URL? = nil)
+  @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency final public func dismissSilently()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class ContinueIssuanceCardView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency final public func configure(title: Swift.String, message: Swift.String)
+  @objc deinit
+}
 extension NppUIModule.KycStartVCState : Swift.Equatable {}
 extension NppUIModule.KycStartVCState : Swift.Hashable {}
 extension NppUIModule.TypeFileForLoad : Swift.Equatable {}
@@ -685,3 +739,6 @@ extension NppUIModule.FormDssType : Swift.RawRepresentable {}
 extension NppUIModule.MyDssPage : Swift.Equatable {}
 extension NppUIModule.MyDssPage : Swift.Hashable {}
 extension NppUIModule.MyDssPage : Swift.RawRepresentable {}
+extension NppUIModule.NocodeBridgeHandler : Swift.Sendable {}
+extension NppUIModule.NocodeNavigationDelegate : Swift.Sendable {}
+extension NppUIModule.NocodeUIDelegate : Swift.Sendable {}
