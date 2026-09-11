@@ -6,130 +6,163 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		+sTfi4iIk2zs2h+MbDgzeBDArQ8=
+		dGZGgVUnNPErvU8Y9+6ve8pvgqc=
+		</data>
+		<key>Modules/myDSSSDK.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		3ENZhb4FUY/E+s8DjuMcO7YABHI=
+		</data>
+		<key>Modules/myDSSSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		Jp0zfm+/CoLdp62nBBF9OmpQJ3M=
 		</data>
 		<key>Modules/myDSSSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		DGnqsCZozmVfPwE9wUj768fuPr4=
+		IJNXBMnytzGKhIZkoSek9myvx7g=
 		</data>
 		<key>Modules/myDSSSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		g1RCtjis/4Wl9gnlnQDTmDDYavs=
+		Jp0zfm+/CoLdp62nBBF9OmpQJ3M=
 		</data>
 		<key>Modules/myDSSSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		GXYAk1yzX4DqcALp7u5y7vGlaT4=
+		K+/ysVGsNFSKCS/QZeJ2ThASyc8=
 		</data>
 		<key>myDSSModel.momd/VersionInfo.plist</key>
 		<data>
-		jOqVNU84Ntrdxi2YUUn82NfHsSI=
+		0mLGh8FaBzOV/2oqlmoOvKgWYPY=
 		</data>
 		<key>myDSSModel.momd/myDSSModel 2.mom</key>
 		<data>
-		7sRgjG702PBBa0h53sHBVk4febM=
+		OMqDRrX0Mz6Vk65wZL0UHHLXoBo=
 		</data>
 		<key>myDSSModel.momd/myDSSModel 3.mom</key>
 		<data>
-		8pPRwV6+7QcMJJtEXAHtmlyzX7o=
+		ncATeNy9KmIJyEg6FX/PNgvRm9k=
 		</data>
 		<key>myDSSModel.momd/myDSSModel 4.mom</key>
 		<data>
-		gvSiUITT5vnFMdj8TjwtKt1UoLQ=
+		l5HI1Xrtk51AHogZd9jlEGpbppw=
 		</data>
 		<key>myDSSModel.momd/myDSSModel 5.mom</key>
 		<data>
-		YJUauGJPPr4bdFXZ26fJwFXinjg=
+		2SqA8gzH0vECLv2fLEQuAVjzSmU=
 		</data>
 		<key>myDSSModel.momd/myDSSModel 6.mom</key>
 		<data>
-		y06kC2c89mPJ6KExFkl8fhImIME=
+		EibEts2eyaQfWGlHT8x64qwz/ew=
 		</data>
-		<key>myDSSModel.momd/myDSSModel 6.omo</key>
+		<key>myDSSModel.momd/myDSSModel 7.mom</key>
 		<data>
-		i2msq6lUm8AZuPpyR5RGY1gFO4U=
+		YKgNfmbxfGOgBxZeUm293w4gJcA=
+		</data>
+		<key>myDSSModel.momd/myDSSModel 7.omo</key>
+		<data>
+		12oqpVXJcGp6EM461KTpe76lJ1Q=
 		</data>
 		<key>myDSSModel.momd/myDSSModel.mom</key>
 		<data>
-		eUQMZKuc6Tk+BZwsVwk+PvItsNU=
+		QufDZW0w10+G71nA/ZMtuymUWBI=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Modules/myDSSSDK.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3vAQgtZZ9GsWyhD+Nxwn3Too3ssuLlSG9Pz1QmT5rUM=
+			</data>
+		</dict>
+		<key>Modules/myDSSSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cVeAkreBrUYHBopHVpYUPOmmHE2t/TNaCLNgBUFRvfI=
+			</data>
+		</dict>
 		<key>Modules/myDSSSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			179knJVSs9mvL3uGjELBxCtEJrfCPCxqdiiKzc/zLu8=
+			G+7PU8gUFjSpXT2l/6ufIBd0AS5MhTiwHIlxdGpjoVw=
 			</data>
 		</dict>
 		<key>Modules/myDSSSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mUeT6GbE0Z40ab9cuCO9cX4Pe9+C/HF4kBv7adlZk48=
+			cVeAkreBrUYHBopHVpYUPOmmHE2t/TNaCLNgBUFRvfI=
 			</data>
 		</dict>
 		<key>Modules/myDSSSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zc/8fSPbgmHiMR4uJvk31TWP96KF2GLszJ7ciTsoocs=
+			E78LyfZDMP4waTlH8nbN4mkvvMoKkp/DCU30gLefQp0=
 			</data>
 		</dict>
 		<key>myDSSModel.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+GJ0B09w3NtIJFAnZeGteSWQ+riZLefZQeEvonjjghQ=
+			GLdhLSv9xMwigPB2V5MoPhyd6AY/v0myk5p9bt9YV8Q=
 			</data>
 		</dict>
 		<key>myDSSModel.momd/myDSSModel 2.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qHwg2XuxS4N3v0r76tkJh9J0UGudoZ8QlDehVq8Dh+M=
+			4jbFe8kPkr9Z++LyXmT1c4rFQIJMlWRhgQgC1LJ7LUQ=
 			</data>
 		</dict>
 		<key>myDSSModel.momd/myDSSModel 3.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CHR0eaBjyhOGgmkaVCaF6NIVQ/6Rilzs/L8gyhA255o=
+			3A6/ZzsfGk1gVOA4tpVOsv9NBfsHj7jxyRAUbCn1X5s=
 			</data>
 		</dict>
 		<key>myDSSModel.momd/myDSSModel 4.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lc7gg6npjufyLWNK6Ng5zMSIY6HqeOR0VFbBOQdqOL0=
+			ngcxxBiJ9k3vB5iHTgELVUafT8/mdlmjr86mkMt4ft4=
 			</data>
 		</dict>
 		<key>myDSSModel.momd/myDSSModel 5.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9i/kGFqyfGYvfcNAnSDMcRkeXQ0RGYYrpHFeHGfkl8s=
+			99WSFX00MG+y8xRDqkpgYam888LAex3gC2J+nwJcQ1Y=
 			</data>
 		</dict>
 		<key>myDSSModel.momd/myDSSModel 6.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EJ6E0xqQgYuCNtK8t7E6YAFL3bQ9TFsRKCtdYS3+RLg=
+			zxyDE372OpfkFEokCz7TEtOAZ6HTr/Tzlv5CGDWBFQU=
 			</data>
 		</dict>
-		<key>myDSSModel.momd/myDSSModel 6.omo</key>
+		<key>myDSSModel.momd/myDSSModel 7.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wz8gNZMY/rNLHeDZGeWW+VgVybum00gkl4MSIBMRWsQ=
+			1ZfxLXsv2Z5wsWT+cqENnaO8+fwdD+3PeEPAOBbKGU4=
+			</data>
+		</dict>
+		<key>myDSSModel.momd/myDSSModel 7.omo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mXgs6A72g8DmEdO+3xL7IolHJBCswrWKFCmcXVUE4WM=
 			</data>
 		</dict>
 		<key>myDSSModel.momd/myDSSModel.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CSEsfswE61Ezl81nEUAQWTpQGc3v/bqhXeNgCFpvQoU=
+			b6vLDoT/KR4sqyPqaXPFGoauA4i0uBp7CW+2MbFLGeE=
 			</data>
 		</dict>
 	</dict>

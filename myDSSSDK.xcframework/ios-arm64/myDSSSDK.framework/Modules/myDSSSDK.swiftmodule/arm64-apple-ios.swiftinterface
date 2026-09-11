@@ -1,10 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name myDSSSDK
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name myDSSSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import CommonCrypto
 import CoreData
 import CoreMotion
+import CoreNFC
 import Foundation
 import LocalAuthentication
 import PDFKit
@@ -13,6 +15,7 @@ import Swift
 import UIKit
 import WebKit
 import _Concurrency
+import _StringProcessing
 import os.log
 import os
 public struct DSSOperationInfo : Swift.Codable, Swift.Equatable {
@@ -74,12 +77,12 @@ public struct DSSOperationInfo : Swift.Codable, Swift.Equatable {
       }
     }
     public static func == (a: myDSSSDK.DSSOperationInfo.Action, b: myDSSSDK.DSSOperationInfo.Action) -> Swift.Bool
-    public func encode(to encoder: Swift.Encoder) throws
-    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
   public static func == (a: myDSSSDK.DSSOperationInfo, b: myDSSSDK.DSSOperationInfo) -> Swift.Bool
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct DSSQRCodeNewDevice : myDSSSDK.DSSQRCode {
   public static var associatedType: Swift.String {
@@ -87,11 +90,11 @@ public struct DSSQRCodeNewDevice : myDSSSDK.DSSQRCode {
   }
   public let myDSSKeyId: Swift.String
   public let content: [(title: Swift.String, value: Swift.String)]
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers final public class DSSKeysManagerNonQual {
   public static func listKeys(for user: myDSSSDK.DSSUser) -> [myDSSSDK.DSSKeyInfo]
-  public static func createKeyPair(for user: myDSSSDK.DSSUser, pin: Swift.String? = nil, isExportable: Swift.Bool = false) throws -> myDSSSDK.DSSKeyInfo
+  public static func createKeyPair(for user: myDSSSDK.DSSUser, isExportable: Swift.Bool = false, keysSource: any myDSSSDK.KeysSource = LocalGenericKeysSource()) throws -> myDSSSDK.DSSKeyInfo
   public static func deleteKeyPair(keyInfo: myDSSSDK.DSSKeyInfo) throws
   public static func createBackup(keyInfo: myDSSSDK.DSSKeyInfo, pin: Swift.String? = nil, recoveryPassword: Swift.String) throws -> Foundation.Data
   public static func restoreFromBackup(backupData: Foundation.Data, pin: Swift.String? = nil, recoveryPassword: Swift.String) throws -> myDSSSDK.DSSKeyInfo
@@ -137,7 +140,7 @@ public struct DSSParams : Swift.Decodable {
   public var keyActivationRequired: Swift.Bool
   public var activationCodeLength: Swift.Int
   public var protectionFlag: myDSSSDK.ProtectionFlags
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct ProtectionFlags : Swift.Decodable {
   public var fingerprintRequired: Swift.Bool
@@ -149,7 +152,7 @@ public struct ProtectionFlags : Swift.Decodable {
   public var denyOSProtection: Swift.Bool
   public var scoringEnabled: Swift.Bool
   public var strongKeyProtectionType: Swift.Bool
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension myDSSSDK.DSSAppearance {
   public struct LabelAppearance {
@@ -222,23 +225,23 @@ public struct DSSServerError : Foundation.LocalizedError, Swift.Codable {
   public var errorDescription: Swift.String? {
     get
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers final public class DSSUsersManagerNonQual {
-  public static func createDSSUserWithInitQR(qrCode: myDSSSDK.DSSQRCodeKinit, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
-  public static func createDSSUser(serviceURL: Foundation.URL, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
-  public static func acceptAccountChanges(user: myDSSSDK.DSSUser, verificationQRCode: myDSSSDK.DSSQRCodeVerification?, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
-  public static func createDSSUserWithApproval(serviceURL: Foundation.URL, uid: Swift.String, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
-  public static func checkApprovalStatus(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
-  public static func store(user: myDSSSDK.DSSUser, name: Swift.String, password: Swift.String, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  public static func createDSSUserWithInitQR(qrCode: myDSSSDK.DSSQRCodeKinit, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, any Swift.Error>) -> Swift.Void)
+  public static func createDSSUser(serviceURL: Foundation.URL, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, any Swift.Error>) -> Swift.Void)
+  public static func acceptAccountChanges(user: myDSSSDK.DSSUser, verificationQRCode: myDSSSDK.DSSQRCodeVerification?, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, any Swift.Error>) -> Swift.Void)
+  public static func createDSSUserWithApproval(serviceURL: Foundation.URL, uid: Swift.String, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, any Swift.Error>) -> Swift.Void)
+  public static func checkApprovalStatus(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, any Swift.Error>) -> Swift.Void)
+  public static func store(user: myDSSSDK.DSSUser, name: Swift.String, password: Swift.String, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, any Swift.Error>) -> Swift.Void)
   public static func submitPassword(user: myDSSSDK.DSSUser, password: Swift.String) throws
   public static func changePassword(user: myDSSSDK.DSSUser, newPassword: Swift.String) throws
-  public static func revoke(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func revoke(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
   public static func createBackup(user: myDSSSDK.DSSUser, recoveryPassword: Swift.String) throws -> Foundation.Data
   public static func restoreFromBackup(backupData: Foundation.Data, recoveryPassword: Swift.String) throws -> myDSSSDK.DSSUser
-  public static func restoreFromBackup(backupData: Foundation.Data, recoveryPassword: Swift.String, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
-  public static func renew(user: myDSSSDK.DSSUser, deviceName: Swift.String, pushNotificationsData: myDSSSDK.PushNotificationsData, password: Swift.String, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  public static func restoreFromBackup(backupData: Foundation.Data, recoveryPassword: Swift.String, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, any Swift.Error>) -> Swift.Void)
+  public static func renew(user: myDSSSDK.DSSUser, deviceName: Swift.String, pushNotificationsData: myDSSSDK.PushNotificationsData, password: Swift.String, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, any Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 public struct DSSDocument : Swift.Decodable, Swift.Equatable {
@@ -259,7 +262,7 @@ public struct DSSDocument : Swift.Decodable, Swift.Equatable {
   public let agreeKeyUkm: Swift.String?
   public let agreeKeyVkoAlgId: Swift.String?
   public static func == (a: myDSSSDK.DSSDocument, b: myDSSSDK.DSSDocument) -> Swift.Bool
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum RootCertificateType {
   case production
@@ -279,7 +282,7 @@ public enum RootCertificateType {
   }
   public static var requestsTimeoutInterval: Swift.Double
   public static func setLogLevel(_ level: myDSSSDK.LogLevel)
-  public static func setLogger(_ logger: myDSSSDK.DSSLoggerProtocol, level: myDSSSDK.LogLevel = .debug)
+  public static func setLogger(_ logger: any myDSSSDK.DSSLoggerProtocol, level: myDSSSDK.LogLevel = .debug)
   public static func initialize(debugMode: Swift.Bool = false) throws
   @available(*, deprecated, message: "Используйте альтернативный метод `initialize(debugMode:)`")
   public static func initialize(rootCertificateType: myDSSSDK.RootCertificateType) throws
@@ -291,11 +294,11 @@ public enum RootCertificateType {
             create: true
         )
     }
-  public static func analyzeQR(_ source: Swift.String) throws -> myDSSSDK.DSSQRCode
+  public static func analyzeQR(_ source: Swift.String) throws -> any myDSSSDK.DSSQRCode
   public static func analyzeQR<T>(_ source: Swift.String) throws -> T where T : myDSSSDK.DSSQRCode
   public static func activate(qrCodeKinit: myDSSSDK.DSSQRCodeKinit, code: Swift.String) throws -> myDSSSDK.DSSQRCodeKinit
   public static func clearCache()
-  public static func getAvailableAPIVersions(serviceURL: Foundation.URL, endpoint: myDSSSDK.DSSEndpoint, callback: @escaping (_ result: Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)
+  public static func getAvailableAPIVersions(serviceURL: Foundation.URL, endpoint: myDSSSDK.DSSEndpoint, callback: @escaping (_ result: Swift.Result<[Swift.String], any Swift.Error>) -> Swift.Void)
   public static func initRNG()
   public static func reset()
   public static func showCPROCSPPane(on vc: UIKit.UIViewController)
@@ -305,9 +308,9 @@ extension myDSSSDK.DSSAppearance {
   public struct ViewAppearance {
     public var backgroundColor: UIKit.UIColor?
     public var borderColor: UIKit.UIColor?
-    public var borderWidth: CoreGraphics.CGFloat
-    public var cornerRadius: CoreGraphics.CGFloat
-    public init(backgroundColor: UIKit.UIColor? = nil, borderColor: UIKit.UIColor? = nil, borderWidth: CoreGraphics.CGFloat = 0, cornerRadius: CoreGraphics.CGFloat = 0)
+    public var borderWidth: CoreFoundation.CGFloat
+    public var cornerRadius: CoreFoundation.CGFloat
+    public init(backgroundColor: UIKit.UIColor? = nil, borderColor: UIKit.UIColor? = nil, borderWidth: CoreFoundation.CGFloat = 0, cornerRadius: CoreFoundation.CGFloat = 0)
   }
   public struct Views {
     public var main: myDSSSDK.DSSAppearance.ViewAppearance
@@ -346,48 +349,56 @@ public struct DSSSignParams : Swift.Codable, Swift.Equatable {
   public let pinCode: Swift.String?
   public init(signTemplateId: Swift.String? = nil, certId: Swift.String? = nil, pinCode: Swift.String? = nil, agreeKey: Swift.String? = nil, autoSignApproved: Swift.Bool? = nil)
   public static func == (a: myDSSSDK.DSSSignParams, b: myDSSSDK.DSSSignParams) -> Swift.Bool
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-public enum CPROCSPError : Swift.Int32, Swift.Error {
-  case functionSucceded
-  case functionFailed
-  case invalidParameter
-  case noMemory
-  case moreDataNeeded
-  case invalidBlobHeader
-  case invalidPassword
-  case functionNotImplemented
-  case hasMoreData
-  case noMoreData
-  case containerExists
-  case wrongPIN
-  case keyDoesNotExist
-  case certificateIsMissing
-  case dataIsCorrupted
-  case canceled
-  case badKey
-  case failed
-  case initializationFailed
-  case keyStateNotValidForUse
-  case invalidParameter2
-  case undefined
-  public init?(rawValue: Swift.Int32)
+public struct CPROCSPError : Swift.RawRepresentable, Swift.Error, Swift.Equatable {
+  public var rawValue: Swift.Int32
+  public init(bitPattern: Swift.UInt32)
+  public init(rawValue: Swift.Int32)
+  public static let containerExists: myDSSSDK.CPROCSPError
+  public static let wrongPIN: myDSSSDK.CPROCSPError
+  public static let keysetDoesNotExist: myDSSSDK.CPROCSPError
+  public static let certificateIsMissing: myDSSSDK.CPROCSPError
+  public static let dataIsCorrupted: myDSSSDK.CPROCSPError
+  public static let canceled: myDSSSDK.CPROCSPError
+  public static let badKey: myDSSSDK.CPROCSPError
+  public static let failed: myDSSSDK.CPROCSPError
+  public static let initializationFailed: myDSSSDK.CPROCSPError
+  public static let keyStateNotValidForUse: myDSSSDK.CPROCSPError
+  public static let pukNotSet: myDSSSDK.CPROCSPError
+  public static let noSmartCard: myDSSSDK.CPROCSPError
+  public static let keysetEntryBad: myDSSSDK.CPROCSPError
+  public static let cardIsBlocked: myDSSSDK.CPROCSPError
+  public static let keyDoesNotExist: myDSSSDK.CPROCSPError
+  public static let provTypeNotDefined: myDSSSDK.CPROCSPError
+  public static let invalidCHV: myDSSSDK.CPROCSPError
   public typealias RawValue = Swift.Int32
-  public var rawValue: Swift.Int32 {
+}
+extension myDSSSDK.CPROCSPError {
+  public static func ~= (pattern: myDSSSDK.CPROCSPError, value: any Swift.Error) -> Swift.Bool
+}
+extension myDSSSDK.CPROCSPError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension myDSSSDK.CPROCSPError : Swift.CustomStringConvertible {
+  public var description: Swift.String {
     get
   }
 }
 @_hasMissingDesignatedInitializers final public class DSSCertificatesManager {
-  public static func createCertificate(user: myDSSSDK.DSSUser, dn: [Swift.String : Swift.String], templateId: Swift.String, caId: Swift.Int, isClient: Swift.Bool = false, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSCertificate, Swift.Error>) -> Swift.Void)
-  public static func listCertificates(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSCertificate], Swift.Error>) -> Swift.Void)
-  public static func deleteCertificate(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String?, dssRequestId: Swift.String?, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
-  public static func setCertificate(user: myDSSSDK.DSSUser, content: Foundation.Data, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
-  public static func setCertificateFriendlyName(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String, friendlyName: Swift.String, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
-  public static func setDefaultCertificate(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
-  public static func revokeCertificate(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String, revokeAt timestamp: Foundation.TimeInterval? = nil, reason: myDSSSDK.CertificateRevokingReason = .unspecified, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
-  public static func suspendCertificate(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String, from fromTimestamp: Foundation.TimeInterval? = nil, to toTimestamp: Foundation.TimeInterval, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
-  public static func unSuspendCertificate(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func createCertificate(user: myDSSSDK.DSSUser, dn: [Swift.String : Swift.String], templateId: Swift.String, caId: Swift.Int, isClient: Swift.Bool = false, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSCertificate, any Swift.Error>) -> Swift.Void)
+  public static func listCertificates(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSCertificate], any Swift.Error>) -> Swift.Void)
+  public static func listExternalCertificates(callback: @escaping (_ result: Swift.Result<[Swift.Result<myDSSSDK.DSSCertificate, any Swift.Error>], any Swift.Error>) -> Swift.Void)
+  public static func deleteCertificate(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String?, dssRequestId: Swift.String?, callback: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  public static func setCertificate(user: myDSSSDK.DSSUser, certificate: myDSSSDK.DSSCertificate, callback: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  public static func setCertificateFriendlyName(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String, friendlyName: Swift.String, callback: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  public static func setDefaultCertificate(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String, callback: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  public static func revokeCertificate(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String, revokeAt timestamp: Foundation.TimeInterval? = nil, reason: myDSSSDK.CertificateRevokingReason = .unspecified, callback: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  public static func suspendCertificate(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String, from fromTimestamp: Foundation.TimeInterval? = nil, to toTimestamp: Foundation.TimeInterval, callback: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  public static func unSuspendCertificate(user: myDSSSDK.DSSUser, dssCertificateId: Swift.String, callback: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 extension myDSSSDK.DSSAppearance {
@@ -429,7 +440,7 @@ public struct DSSAppearance {
 public struct DSSSignServerParams : Swift.Decodable {
   public let caPolicies: [myDSSSDK.CaPolicy]
   public let processingTemplates: [myDSSSDK.ProccessingTemplate]
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct CaPolicy : Swift.Decodable {
   public let id: Swift.Int
@@ -441,12 +452,12 @@ public struct CaPolicy : Swift.Decodable {
   public let caType: myDSSSDK.CaPolicy.CaType
   public let ekuTemplates: [Swift.String : [Swift.String]]
   public let templatesInfos: [myDSSSDK.CaPolicy.TemplateInfo]
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
   public struct TemplateInfo : Swift.Decodable {
     public let name: Swift.String
     public let descriptionUri: Foundation.URL
     public let templates: [Swift.String]
-    public init(from decoder: Swift.Decoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
   public struct SubjectNameComponent : Swift.Decodable {
     public let isRequired: Swift.Bool
@@ -455,7 +466,7 @@ public struct CaPolicy : Swift.Decodable {
     public let name: Swift.String
     public let value: Swift.String?
     public let stringIdentifier: Swift.String
-    public init(from decoder: Swift.Decoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
   public enum CaType : Swift.String, Swift.Decodable {
     case CryptoProCA15Enroll
@@ -471,7 +482,7 @@ public struct CaPolicy : Swift.Decodable {
 public struct ProccessingTemplate : Swift.Decodable {
   public let id: Swift.Int
   public let description: Swift.String
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct DSSLoggingCategory : Swift.Equatable, Swift.CustomStringConvertible {
   public var description: Swift.String {
@@ -486,6 +497,7 @@ public struct DSSLoggingCategory : Swift.Equatable, Swift.CustomStringConvertibl
   public static let users: myDSSSDK.DSSLoggingCategory
   public static let backups: myDSSSDK.DSSLoggingCategory
   public static let cprocsp: myDSSSDK.DSSLoggingCategory
+  public static let certificates: myDSSSDK.DSSLoggingCategory
   public static func == (a: myDSSSDK.DSSLoggingCategory, b: myDSSSDK.DSSLoggingCategory) -> Swift.Bool
 }
 public enum DSSEndpoint : Swift.String, Swift.CaseIterable {
@@ -523,13 +535,13 @@ public struct DSSSignResult : Swift.Decodable, Swift.Equatable {
     }
   }
   public static func == (a: myDSSSDK.DSSSignResult, b: myDSSSDK.DSSSignResult) -> Swift.Bool
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct DSSQRCodeVerification : myDSSSDK.DSSQRCode {
   public static var associatedType: Swift.String {
     get
   }
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct DSSUser : Swift.Equatable {
   public let dssUserId: Swift.String
@@ -560,10 +572,38 @@ public struct DSSUser : Swift.Equatable {
   public static func == (a: myDSSSDK.DSSUser, b: myDSSSDK.DSSUser) -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers final public class DSSDevicesManager {
-  public static func listDevices(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSDevice], Swift.Error>) -> Swift.Void)
-  public static func revoke(device: myDSSSDK.DSSDevice, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
-  public static func processAwaitingDevice(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSApprovingResult, Swift.Error>) -> Swift.Void)
+  public static func listDevices(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSDevice], any Swift.Error>) -> Swift.Void)
+  public static func revoke(device: myDSSSDK.DSSDevice, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  public static func processAwaitingDevice(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSApprovingResult, any Swift.Error>) -> Swift.Void)
   @objc deinit
+}
+public struct KeysSourceIdentifier : Swift.RawRepresentable, Swift.Codable, Swift.Equatable, Swift.Hashable {
+  public let rawValue: Swift.String
+  public init(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+}
+extension myDSSSDK.KeysSourceIdentifier {
+  public static let localGeneric: myDSSSDK.KeysSourceIdentifier
+}
+public protocol KeysSource {
+  var identifier: myDSSSDK.KeysSourceIdentifier { get }
+}
+public protocol GenericPinAccessible {
+}
+public protocol PinAccessible {
+  var pin: Swift.String { get }
+}
+public protocol PukInitializable {
+  var puk: Swift.String? { get }
+}
+public protocol MediaQuerable {
+  var mediaFilter: Swift.String { get }
+}
+public protocol NFCRequirable {
+}
+public struct LocalGenericKeysSource : myDSSSDK.KeysSource, myDSSSDK.GenericPinAccessible {
+  public init()
+  public let identifier: myDSSSDK.KeysSourceIdentifier
 }
 public struct DSSApproveRequest : Swift.Encodable, Swift.Equatable {
   public let approvedOperation: myDSSSDK.DSSApproveRequest.ApprovedOperation
@@ -578,8 +618,8 @@ public struct DSSApproveRequest : Swift.Encodable, Swift.Equatable {
     public let declinedDocuments: [myDSSSDK.DSSApproveRequest.ProcessedDocument]?
     public let timeStamp: Swift.Int
     public static func == (a: myDSSSDK.DSSApproveRequest.ApprovedOperation, b: myDSSSDK.DSSApproveRequest.ApprovedOperation) -> Swift.Bool
-    public func encode(to encoder: Swift.Encoder) throws
-    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
   public struct ProcessedDocument : Swift.Codable, Swift.Equatable {
     public let id: Swift.String
@@ -590,11 +630,11 @@ public struct DSSApproveRequest : Swift.Encodable, Swift.Equatable {
     public let signedDocId: Swift.String?
     public let decryptedDocId: Swift.String?
     public static func == (a: myDSSSDK.DSSApproveRequest.ProcessedDocument, b: myDSSSDK.DSSApproveRequest.ProcessedDocument) -> Swift.Bool
-    public func encode(to encoder: Swift.Encoder) throws
-    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
   public static func == (a: myDSSSDK.DSSApproveRequest, b: myDSSSDK.DSSApproveRequest) -> Swift.Bool
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct DSSDevice : Swift.Codable, Swift.Equatable {
   public let myDSSKeyId: Swift.String
@@ -623,34 +663,40 @@ public struct DSSDevice : Swift.Codable, Swift.Equatable {
     }
   }
   public static func == (a: myDSSSDK.DSSDevice, b: myDSSSDK.DSSDevice) -> Swift.Bool
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers final public class DSSPolicyManager {
-  public static func getDSSParams(serviceURL: Foundation.URL, _ callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSParams, Swift.Error>) -> Swift.Void)
-  public static func getDSSParams(user: myDSSSDK.DSSUser, _ callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSParams, Swift.Error>) -> Swift.Void)
-  public static func getDSSSignServerParams(user: myDSSSDK.DSSUser, extended: Swift.Bool = false, _ callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSSignServerParams, Swift.Error>) -> Swift.Void)
+  public static func getDSSParams(serviceURL: Foundation.URL, _ callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSParams, any Swift.Error>) -> Swift.Void)
+  public static func getDSSParams(user: myDSSSDK.DSSUser, _ callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSParams, any Swift.Error>) -> Swift.Void)
+  public static func getDSSSignServerParams(user: myDSSSDK.DSSUser, extended: Swift.Bool = false, _ callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSSignServerParams, any Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 public struct DSSQRCodeKinit : myDSSSDK.DSSQRCode {
   public static var associatedType: Swift.String {
     get
   }
+  public let kid: Swift.String
+  public let uid: Swift.String
+  public let serviceURL: Foundation.URL
+  public let weakness: Swift.Bool
   public var isActivated: Swift.Bool {
     get
   }
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers final public class DSSCertificatesManagerNonQual {
-  public static func sign(certificateRequest: myDSSSDK.DSSCertificate, user: myDSSSDK.DSSUser, keyInfo: myDSSSDK.DSSKeyInfo, pin: Swift.String, completion: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
-  public static func sign(certificateRequest: myDSSSDK.DSSCertificate, user: myDSSSDK.DSSUser, isExportable: Swift.Bool = false, completion: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func sign(certificateRequest: myDSSSDK.DSSCertificate, user: myDSSSDK.DSSUser, keyInfo: myDSSSDK.DSSKeyInfo, pin: Swift.String, completion: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  public static func sign(certificateRequest: myDSSSDK.DSSCertificate, user: myDSSSDK.DSSUser, isExportable: Swift.Bool = false, keysSource: myDSSSDK.KeysSourceIdentifier = .localGeneric, completion: @escaping (_ result: Swift.Result<any myDSSSDK.KeysSource, any Swift.Error>) -> Swift.Void)
   public static func install(certificate: myDSSSDK.DSSCertificate, user: myDSSSDK.DSSUser, keyInfo: myDSSSDK.DSSKeyInfo, pin: Swift.String) throws
+  public static func install(certificate: myDSSSDK.DSSCertificate, user: myDSSSDK.DSSUser, completion: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
   public static func install(certificate: myDSSSDK.DSSCertificate, user: myDSSSDK.DSSUser) throws
   public static func checkIfInstalled(certificate: myDSSSDK.DSSCertificate, for user: myDSSSDK.DSSUser) -> Swift.Bool
   public static func checkIfAccessibleOnThisDevice(certificate: myDSSSDK.DSSCertificate, for user: myDSSSDK.DSSUser) -> Swift.Bool
-  public static func exportPfx(user: myDSSSDK.DSSUser, certificate: myDSSSDK.DSSCertificate, pin: Swift.String?, pfxPin: Swift.String?, completion: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
-  public static func importPfx(user: myDSSSDK.DSSUser, certificate: myDSSSDK.DSSCertificate, pin: Swift.String?, pfxPin: Swift.String?, completion: @escaping (_ result: Swift.Result<myDSSSDK.DSSKeyInfo, Swift.Error>) -> Swift.Void)
-  public static func removePfx(user: myDSSSDK.DSSUser, certificate: myDSSSDK.DSSCertificate, completion: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  public static func checkIsOnExternalMedia(certificate: myDSSSDK.DSSCertificate, for user: myDSSSDK.DSSUser) -> Swift.Bool
+  public static func exportPfx(user: myDSSSDK.DSSUser, certificate: myDSSSDK.DSSCertificate, pin: Swift.String?, pfxPin: Swift.String?, completion: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  public static func importPfx(user: myDSSSDK.DSSUser, certificate: myDSSSDK.DSSCertificate, pin: Swift.String?, pfxPin: Swift.String?, completion: @escaping (_ result: Swift.Result<myDSSSDK.DSSKeyInfo, any Swift.Error>) -> Swift.Void)
+  public static func removePfx(user: myDSSSDK.DSSUser, certificate: myDSSSDK.DSSCertificate, completion: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class DSSUsersManager {
@@ -659,18 +705,18 @@ public struct DSSQRCodeKinit : myDSSSDK.DSSQRCode {
   }
   public static func rename(user: myDSSSDK.DSSUser, newName: Swift.String)
   public static func delete(user: myDSSSDK.DSSUser)
-  public static func updateStatus(user: myDSSSDK.DSSUser, _ callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
-  public static func createDSSUserWithInitQR(name: Swift.String, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, requirePassword: Swift.Bool, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
-  public static func createDSSUser(serviceURL: Foundation.URL, name: Swift.String, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, requirePassword: Swift.Bool, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
-  public static func createDSSUserWithApproval(serviceURL: Foundation.URL, uid: Swift.String, name: Swift.String, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, requirePassword: Swift.Bool, statusCheckingInterval: Foundation.TimeInterval? = nil, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
-  public static func acceptAccountChanges(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
-  public static func checkApprovalStatus(unapprovedUser: myDSSSDK.DSSUser, checkOnly: Swift.Bool = false, statusCheckingInterval: Foundation.TimeInterval? = nil, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
-  public static func submitPassword(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
-  public static func changePassword(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
-  public static func revoke(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
-  public static func getOperationsHistory(user: myDSSSDK.DSSUser, count: Swift.Int = 1, bookmark: Swift.Int?, operationsCodes: [Swift.Int] = [], callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSOperationsHistory, Swift.Error>) -> Swift.Void)
-  public static func updateDeviceInfo(pushNotificationsData: myDSSSDK.PushNotificationsData?, deviceName: Swift.String?, user: myDSSSDK.DSSUser, callback: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
-  public static func renew(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, Swift.Error>) -> Swift.Void)
+  public static func updateStatus(user: myDSSSDK.DSSUser, _ callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, any Swift.Error>) -> Swift.Void)
+  public static func createDSSUserWithInitQR(name: Swift.String, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, dssQRCodeKinit: myDSSSDK.DSSQRCodeKinit? = nil, requirePassword: Swift.Bool, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, any Swift.Error>) -> Swift.Void)
+  public static func createDSSUser(serviceURL: Foundation.URL, name: Swift.String, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, requirePassword: Swift.Bool, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, any Swift.Error>) -> Swift.Void)
+  public static func createDSSUserWithApproval(serviceURL: Foundation.URL, uid: Swift.String, name: Swift.String, pushNotificationsData: myDSSSDK.PushNotificationsData? = nil, deviceName: Swift.String, externalId: Swift.String?, alias: Swift.String?, requirePassword: Swift.Bool, statusCheckingInterval: Foundation.TimeInterval? = nil, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, any Swift.Error>) -> Swift.Void)
+  public static func acceptAccountChanges(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, any Swift.Error>) -> Swift.Void)
+  public static func checkApprovalStatus(unapprovedUser: myDSSSDK.DSSUser, checkOnly: Swift.Bool = false, statusCheckingInterval: Foundation.TimeInterval? = nil, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, any Swift.Error>) -> Swift.Void)
+  public static func submitPassword(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  public static func changePassword(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  public static func revoke(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  public static func getOperationsHistory(user: myDSSSDK.DSSUser, count: Swift.Int = 1, bookmark: Swift.Int?, operationsCodes: [Swift.Int] = [], callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSOperationsHistory, any Swift.Error>) -> Swift.Void)
+  public static func updateDeviceInfo(pushNotificationsData: myDSSSDK.PushNotificationsData?, deviceName: Swift.String?, user: myDSSSDK.DSSUser, callback: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  public static func renew(user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSUser, any Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 public struct DSSCertificate : Swift.Codable {
@@ -708,14 +754,15 @@ public struct DSSCertificate : Swift.Codable {
   public let content: Foundation.Data
   public let friendlyName: Swift.String?
   public let state: myDSSSDK.DSSCertificate.State
-  public let dn: [Swift.String : Swift.String]
+  public let subjectDn: [Swift.String : Swift.String]
+  public let issuerDn: [Swift.String : Swift.String]
   public let notBefore: Foundation.TimeInterval
   public let notAfter: Foundation.TimeInterval
   public let isDefault: Swift.Bool
   public let isClient: Swift.Bool
   public let isArchived: Swift.Bool
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public protocol DSSQRCode : Swift.Decodable {
   static var associatedType: Swift.String { get }
@@ -758,8 +805,8 @@ public enum DSSError : Swift.Error {
   case clientSideKeypairDoesNotExist
   case keyActivationTypesAreMissing
   case networkError(code: Swift.Int, message: Swift.String? = nil)
-  case confirmationError(approveRequest: myDSSSDK.DSSApproveRequest, error: Swift.Error)
-  case signingError(approveRequest: myDSSSDK.DSSApproveRequest, error: Swift.Error)
+  case confirmationError(approveRequest: myDSSSDK.DSSApproveRequest, error: any Swift.Error)
+  case signingError(approveRequest: myDSSSDK.DSSApproveRequest, error: any Swift.Error)
   case operationNotFound
   case invalidDocument(details: Swift.String? = nil)
   case snippetIsMissing
@@ -808,16 +855,16 @@ public enum DSSPasswordPolicy : Swift.Int, Swift.Codable {
   }
 }
 @_hasMissingDesignatedInitializers final public class DSSOperationsManager {
-  public static func getOperationsList(user: myDSSSDK.DSSUser, operationType: Swift.String? = nil, operationId: Swift.String? = nil, clientId: Swift.String? = nil, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSOperation], Swift.Error>) -> Swift.Void)
-  public static func confirmOperation(operation: myDSSSDK.DSSOperation, user: myDSSSDK.DSSUser, signMode: myDSSSDK.DSSSignMode, skipSnippet: Swift.Bool = false, isSelectionEnabled: Swift.Bool = false, checkCertificate: Swift.Bool = false, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSApproveRequest, Swift.Error>) -> Swift.Void)
-  public static func confirmOperation(approveRequest: myDSSSDK.DSSApproveRequest, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
-  public static func getOperationsInfo(user: myDSSSDK.DSSUser, interval: Foundation.TimeInterval? = nil, operationId: Swift.String? = nil, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSOperationInfo], Swift.Error>) -> Swift.Void)
-  public static func getDocumentDescription(documentId: Swift.String, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSDocument, Swift.Error>) -> Swift.Void)
-  public static func uploadDocument(documentContent: Foundation.Data, title: Swift.String, snippetTemplate: Swift.String?, previewTemplate: Swift.String?, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)
-  public static func signDocuments(documentsIDs: [Swift.String], user: myDSSSDK.DSSUser, signParams: myDSSSDK.DSSSignParams, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSSignResult], Swift.Error>) -> Swift.Void)
-  public static func signDocumentsOffline(documentsIDs: [Swift.String], user: myDSSSDK.DSSUser, signParams: myDSSSDK.DSSSignParams, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSApproveRequest, Swift.Error>) -> Swift.Void)
-  public static func signDocuments(approveRequest: myDSSSDK.DSSApproveRequest, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSSignResult], Swift.Error>) -> Swift.Void)
-  public static func getDocumentBinaryData(documentId: Swift.String, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Foundation.URL, Swift.Error>) -> Swift.Void)
+  public static func getOperationsList(user: myDSSSDK.DSSUser, operationType: Swift.String? = nil, operationId: Swift.String? = nil, clientId: Swift.String? = nil, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSOperation], any Swift.Error>) -> Swift.Void)
+  public static func confirmOperation(operation: myDSSSDK.DSSOperation, user: myDSSSDK.DSSUser, signMode: myDSSSDK.DSSSignMode, skipSnippet: Swift.Bool = false, isSelectionEnabled: Swift.Bool = false, checkCertificate: Swift.Bool = false, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSApproveRequest, any Swift.Error>) -> Swift.Void)
+  public static func confirmOperation(approveRequest: myDSSSDK.DSSApproveRequest, callback: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  public static func getOperationsInfo(user: myDSSSDK.DSSUser, interval: Foundation.TimeInterval? = nil, operationId: Swift.String? = nil, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSOperationInfo], any Swift.Error>) -> Swift.Void)
+  public static func getDocumentDescription(documentId: Swift.String, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSDocument, any Swift.Error>) -> Swift.Void)
+  public static func uploadDocument(documentContent: Foundation.Data, title: Swift.String, snippetTemplate: Swift.String?, previewTemplate: Swift.String?, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)
+  public static func signDocuments(documentsIDs: [Swift.String], user: myDSSSDK.DSSUser, signParams: myDSSSDK.DSSSignParams, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSSignResult], any Swift.Error>) -> Swift.Void)
+  public static func signDocumentsOffline(documentsIDs: [Swift.String], user: myDSSSDK.DSSUser, signParams: myDSSSDK.DSSSignParams, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSApproveRequest, any Swift.Error>) -> Swift.Void)
+  public static func signDocuments(approveRequest: myDSSSDK.DSSApproveRequest, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSSignResult], any Swift.Error>) -> Swift.Void)
+  public static func getDocumentBinaryData(documentId: Swift.String, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Foundation.URL, any Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 public enum DSSApprovingResult {
@@ -868,15 +915,15 @@ public struct DSSOperation : Swift.Decodable {
     public let clientId: Swift.String
     public let title: Swift.String?
     public let description: Swift.String?
-    public init(from decoder: Swift.Decoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
   public struct Description : Swift.Decodable {
     public let type: Swift.String
     public let caption: Swift.String
     public let description: Swift.String?
-    public init(from decoder: Swift.Decoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension myDSSSDK.DSSOperation {
   public enum SignatureType : Swift.String {
@@ -953,9 +1000,9 @@ extension myDSSSDK.DSSAppearance {
     public var backgroundColor: UIKit.UIColor?
     public var backgroundColorPressed: UIKit.UIColor?
     public var backgroundColorDisabled: UIKit.UIColor?
-    public var cornerRadius: CoreGraphics.CGFloat
+    public var cornerRadius: CoreFoundation.CGFloat
     public var tintColor: UIKit.UIColor?
-    public init(titleFont: UIKit.UIFont? = nil, titleColor: UIKit.UIColor? = nil, titleColorPressed: UIKit.UIColor? = nil, titleColorDisabled: UIKit.UIColor? = nil, backgroundColor: UIKit.UIColor? = nil, backgroundColorPressed: UIKit.UIColor? = nil, backgroundColorDisabled: UIKit.UIColor? = nil, cornerRadius: CoreGraphics.CGFloat = 0, tintColor: UIKit.UIColor? = nil)
+    public init(titleFont: UIKit.UIFont? = nil, titleColor: UIKit.UIColor? = nil, titleColorPressed: UIKit.UIColor? = nil, titleColorDisabled: UIKit.UIColor? = nil, backgroundColor: UIKit.UIColor? = nil, backgroundColorPressed: UIKit.UIColor? = nil, backgroundColorDisabled: UIKit.UIColor? = nil, cornerRadius: CoreFoundation.CGFloat = 0, tintColor: UIKit.UIColor? = nil)
   }
   public struct Buttons {
     public var primary: myDSSSDK.DSSAppearance.ButtonAppearance
@@ -985,13 +1032,14 @@ public struct DSSKeyInfo : Swift.Equatable, Swift.Hashable, Swift.Codable {
   public let requestId: Swift.String?
   public let userId: Swift.String
   public let isExportable: Swift.Bool
+  public let keysSourceIdentifier: myDSSSDK.KeysSourceIdentifier?
   public static func == (a: myDSSSDK.DSSKeyInfo, b: myDSSSDK.DSSKeyInfo) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension myDSSSDK.DSSKeyInfo {
   public var isInstalled: Swift.Bool {
@@ -1012,12 +1060,12 @@ extension Foundation.Data {
 @_hasMissingDesignatedInitializers final public class DSSOperationsManagerNonQual {
   @available(*, deprecated, message: "\n\nИспользуйте асинхронный метод:\n\npublic static func confirmOperation(\noperation: DSSOperation,\nconfirmedDocuments: [DSSDocument],\ndeclinedDocuments: [DSSDocument],\nuser: DSSUser,\ncompletion: @escaping (_ result: Result<DSSApproveRequest, Error>) -> Void\n)")
   public static func confirmOperation(operation: myDSSSDK.DSSOperation, confirmedDocuments: [myDSSSDK.DSSDocument], declinedDocuments: [myDSSSDK.DSSDocument], user: myDSSSDK.DSSUser) throws -> myDSSSDK.DSSApproveRequest
-  public static func confirmOperation(operation: myDSSSDK.DSSOperation, confirmedDocuments: [myDSSSDK.DSSDocument], declinedDocuments: [myDSSSDK.DSSDocument], user: myDSSSDK.DSSUser, signParams: myDSSSDK.DSSSignParams? = nil, completion: @escaping (_ result: Swift.Result<myDSSSDK.DSSApproveRequest, Swift.Error>) -> Swift.Void)
-  public static func confirmOperation(approveRequest: myDSSSDK.DSSApproveRequest, callback: @escaping (_ result: Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
-  public static func getDocumentPreview(documentId: Swift.String, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
-  public static func getDocumentRawPDF(documentId: Swift.String, pageOffset: Swift.Int?, pageCount: Swift.Int?, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSRawPDFData, Swift.Error>) -> Swift.Void)
-  public static func signDocuments(confirmedDocuments: [myDSSSDK.DSSDocument], declinedDocuments: [myDSSSDK.DSSDocument], user: myDSSSDK.DSSUser, signParams: myDSSSDK.DSSSignParams, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSSignResult], Swift.Error>) -> Swift.Void)
-  public static func signDocuments(approveRequest: myDSSSDK.DSSApproveRequest, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSSignResult], Swift.Error>) -> Swift.Void)
+  public static func confirmOperation(operation: myDSSSDK.DSSOperation, confirmedDocuments: [myDSSSDK.DSSDocument], declinedDocuments: [myDSSSDK.DSSDocument], user: myDSSSDK.DSSUser, signParams: myDSSSDK.DSSSignParams? = nil, keySource: (any myDSSSDK.KeysSource)? = LocalGenericKeysSource(), completion: @escaping (_ result: Swift.Result<myDSSSDK.DSSApproveRequest, any Swift.Error>) -> Swift.Void)
+  public static func confirmOperation(approveRequest: myDSSSDK.DSSApproveRequest, callback: @escaping (_ result: Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  public static func getDocumentPreview(documentId: Swift.String, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<Foundation.Data, any Swift.Error>) -> Swift.Void)
+  public static func getDocumentRawPDF(documentId: Swift.String, pageOffset: Swift.Int?, pageCount: Swift.Int?, user: myDSSSDK.DSSUser, callback: @escaping (_ result: Swift.Result<myDSSSDK.DSSRawPDFData, any Swift.Error>) -> Swift.Void)
+  public static func signDocuments(confirmedDocuments: [myDSSSDK.DSSDocument], declinedDocuments: [myDSSSDK.DSSDocument], user: myDSSSDK.DSSUser, signParams: myDSSSDK.DSSSignParams, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSSignResult], any Swift.Error>) -> Swift.Void)
+  public static func signDocuments(approveRequest: myDSSSDK.DSSApproveRequest, callback: @escaping (_ result: Swift.Result<[myDSSSDK.DSSSignResult], any Swift.Error>) -> Swift.Void)
   public static func signDocumentsOffline(confirmedDocuments: [myDSSSDK.DSSDocument], declinedDocuments: [myDSSSDK.DSSDocument], user: myDSSSDK.DSSUser, signParams: myDSSSDK.DSSSignParams) throws -> myDSSSDK.DSSApproveRequest
   @objc deinit
 }
@@ -1025,14 +1073,29 @@ public struct DSSOperationsHistory : Swift.Decodable {
   public let records: [myDSSSDK.DSSOperationsHistory.AuditRecord]
   public let totalCount: Swift.Int
   public let bookmark: Swift.Int
+  public init(from decoder: any Swift.Decoder) throws
   public struct AuditRecord : Swift.Decodable {
     public let id: Swift.Int
     public let operationCode: Swift.Int
     public let text: Swift.String
     public let date: Foundation.TimeInterval
-    public init(from decoder: Swift.Decoder) throws
+    public let parameters: myDSSSDK.DSSOperationsHistory.AuditRecord.Parameters?
+    public init(from decoder: any Swift.Decoder) throws
+    public struct Parameters : Swift.Decodable {
+      public let transactionId: Swift.String?
+      public let operationID: Swift.String?
+      public let certificateID: Swift.String?
+      public let documentInfo: [myDSSSDK.DSSOperationsHistory.AuditRecord.Parameters.DocumentInfo]?
+      public struct DocumentInfo : Swift.Decodable {
+        public let contentId: Swift.String?
+        public let contentName: Swift.String?
+        public let originalContentId: Swift.String?
+        public let originalContantName: Swift.String?
+        public init(from decoder: any Swift.Decoder) throws
+      }
+      public init(from decoder: any Swift.Decoder) throws
+    }
   }
-  public init(from decoder: Swift.Decoder) throws
 }
 public struct LogLevel : Swift.OptionSet {
   public let rawValue: Swift.Int
@@ -1053,7 +1116,7 @@ public struct ConnectionError : Foundation.LocalizedError {
 }
 extension myDSSSDK.ConnectionError : Swift.Equatable {
   public static func == (lhs: myDSSSDK.ConnectionError, rhs: myDSSSDK.ConnectionError) -> Swift.Bool
-  public static func ~= (pattern: myDSSSDK.ConnectionError, value: Swift.Error) -> Swift.Bool
+  public static func ~= (pattern: myDSSSDK.ConnectionError, value: any Swift.Error) -> Swift.Bool
 }
 extension myDSSSDK.ConnectionError {
   public static let couldntConnect: myDSSSDK.ConnectionError
@@ -1082,9 +1145,6 @@ extension myDSSSDK.RootCertificateType : Swift.Equatable {}
 extension myDSSSDK.RootCertificateType : Swift.Hashable {}
 extension myDSSSDK.DSSSignMode : Swift.Equatable {}
 extension myDSSSDK.DSSSignMode : Swift.Hashable {}
-extension myDSSSDK.CPROCSPError : Swift.Equatable {}
-extension myDSSSDK.CPROCSPError : Swift.Hashable {}
-extension myDSSSDK.CPROCSPError : Swift.RawRepresentable {}
 extension myDSSSDK.CaPolicy.CaType : Swift.Equatable {}
 extension myDSSSDK.CaPolicy.CaType : Swift.Hashable {}
 extension myDSSSDK.CaPolicy.CaType : Swift.RawRepresentable {}

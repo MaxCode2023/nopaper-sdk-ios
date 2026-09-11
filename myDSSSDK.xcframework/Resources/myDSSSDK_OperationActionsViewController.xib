@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -25,10 +27,10 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DS6-UX-hRD" userLabel="Buttons Container View">
-                    <rect key="frame" x="0.0" y="722" width="414" height="174"/>
+                    <rect key="frame" x="0.0" y="676" width="414" height="186"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tma-9i-lx6" customClass="CustomGradientView" customModule="myDSSSDK">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="174"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="186"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="angle">
@@ -43,10 +45,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlR-Mw-eVB" userLabel="Badge" customClass="CustomView" customModule="myDSSSDK">
-                                            <rect key="frame" x="158.5" y="3" width="65.5" height="28.5"/>
+                                            <rect key="frame" x="158.33333333333334" y="2.9999999999999982" width="65.333333333333343" height="28.333333333333329"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFC-0R-yGx" customClass="CustomLabel" customModule="myDSSSDK">
-                                                    <rect key="frame" x="12" y="4" width="41.5" height="20.5"/>
+                                                    <rect key="frame" x="12.000000000000004" y="4" width="41.333333333333343" height="20.333333333333332"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -128,9 +130,9 @@
             <viewLayoutGuide key="safeArea" id="guk-Kb-Ptn"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="DS6-UX-hRD" firstAttribute="bottom" secondItem="o8u-lH-P8G" secondAttribute="bottom" priority="750" id="G8D-zo-mZw"/>
+                <constraint firstItem="DS6-UX-hRD" firstAttribute="bottom" secondItem="guk-Kb-Ptn" secondAttribute="bottom" priority="750" id="G8D-zo-mZw"/>
                 <constraint firstItem="DS6-UX-hRD" firstAttribute="top" secondItem="o8u-lH-P8G" secondAttribute="bottom" id="Lps-0D-ica"/>
-                <constraint firstItem="IXB-23-Eqo" firstAttribute="bottom" secondItem="guk-Kb-Ptn" secondAttribute="bottom" priority="750" constant="-8" id="cOV-38-f0k"/>
+                <constraint firstItem="IXB-23-Eqo" firstAttribute="bottom" secondItem="guk-Kb-Ptn" secondAttribute="bottom" priority="750" constant="-20" id="cOV-38-f0k"/>
                 <constraint firstItem="DS6-UX-hRD" firstAttribute="trailing" secondItem="guk-Kb-Ptn" secondAttribute="trailing" id="itc-8Z-M3Y"/>
                 <constraint firstItem="DS6-UX-hRD" firstAttribute="leading" secondItem="guk-Kb-Ptn" secondAttribute="leading" id="rwE-79-kcE"/>
             </constraints>

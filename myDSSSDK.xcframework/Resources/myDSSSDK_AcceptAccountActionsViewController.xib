@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -25,10 +25,10 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DS6-UX-hRD" userLabel="Buttons Container View">
-                    <rect key="frame" x="0.0" y="694" width="390" height="150"/>
+                    <rect key="frame" x="0.0" y="666" width="390" height="152"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tma-9i-lx6" customClass="CustomGradientView" customModule="myDSSSDK">
-                            <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="152"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="angle">
@@ -91,11 +91,11 @@
             <viewLayoutGuide key="safeArea" id="guk-Kb-Ptn"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="DS6-UX-hRD" firstAttribute="bottom" secondItem="o8u-lH-P8G" secondAttribute="bottom" priority="750" id="G8D-zo-mZw"/>
+                <constraint firstItem="DS6-UX-hRD" firstAttribute="bottom" secondItem="guk-Kb-Ptn" secondAttribute="bottom" priority="750" constant="8" id="G8D-zo-mZw"/>
                 <constraint firstItem="DS6-UX-hRD" firstAttribute="width" secondItem="guk-Kb-Ptn" secondAttribute="width" id="J5v-Px-ESl"/>
                 <constraint firstItem="DS6-UX-hRD" firstAttribute="top" secondItem="o8u-lH-P8G" secondAttribute="bottom" id="Lps-0D-ica"/>
                 <constraint firstItem="DS6-UX-hRD" firstAttribute="centerX" secondItem="o8u-lH-P8G" secondAttribute="centerX" id="Nti-lD-4fY"/>
-                <constraint firstItem="IXB-23-Eqo" firstAttribute="bottom" secondItem="guk-Kb-Ptn" secondAttribute="bottom" priority="750" constant="8" id="cOV-38-f0k"/>
+                <constraint firstItem="IXB-23-Eqo" firstAttribute="bottom" secondItem="guk-Kb-Ptn" secondAttribute="bottom" priority="750" constant="-20" id="cOV-38-f0k"/>
             </constraints>
             <variation key="default">
                 <mask key="constraints">
